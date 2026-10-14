@@ -6,7 +6,7 @@
     <string name="settings_follow_system">Seguir el sistema</string>
     <string name="settings_theme_light">Claro</string>
     <string name="settings_theme_dark">Oscuro</string>
-    <string name="settings_appearance_hint">Solo se aplica a Vela.</string>
+    <string name="settings_appearance_hint">Solo se aplica a MAP-RMG.</string>
     <string name="settings_dynamic_color">Colores Material You</string>
     <string name="settings_dynamic_color_hint">Tiñe botones y acentos según tu fondo de pantalla. El mapa se mantiene neutro.</string>
     <string name="settings_map_style">Estilo del mapa</string>
@@ -28,7 +28,7 @@
     <string name="settings_voice_none_hint">Aún no hay voz: abre la Biblioteca de voces de más abajo para descargar una voz natural en el dispositivo (sin cuenta, en tiempo real incluso en teléfonos antiguos). Un motor de TTS del sistema que instales también aparecerá aquí para elegirlo.</string>
     <string name="settings_voice_test">Probar voz</string>
     <string name="settings_voice_system_settings">Ajustes de voz del sistema</string>
-    <string name="settings_voice_test_hint">Toca Probar voz para escucharla. Se recomienda la voz de Vela; puedes usar en su lugar cualquier motor de texto a voz instalado.</string>
+    <string name="settings_voice_test_hint">Toca Probar voz para escucharla. Se recomienda la voz de MAP-RMG; puedes usar en su lugar cualquier motor de texto a voz instalado.</string>
     <string name="settings_voice_library">Biblioteca de voces</string>
     <string name="settings_voice_advanced">Opciones avanzadas de voz</string>
     <string name="settings_voice_try_label">Prueba la voz con cualquier texto</string>
@@ -57,11 +57,11 @@
     <string name="settings_transit_layer">Resaltar líneas de transporte</string>
     <string name="settings_transit_layer_hint">Dibuja las líneas de tren y metro en el mapa.</string>
     <string name="settings_read_all_reviews">Botón «Leer todas las reseñas»</string>
-    <string name="settings_read_all_reviews_hint">Añade un botón que abre la página completa de reseñas de Google dentro de la app, con todas las reseñas. Desactivado = solo la lista propia de Vela.</string>
+    <string name="settings_read_all_reviews_hint">Añade un botón que abre la página completa de reseñas de Google dentro de la app, con todas las reseñas. Desactivado = solo la lista propia de MAP-RMG.</string>
     <string name="settings_buildings_3d">Edificios en 3D</string>
     <string name="settings_buildings_3d_hint">Edificios en relieve al acercar con el mapa inclinado. Desactivarlo puede suavizar el desplazamiento en móviles antiguos.</string>
     <string name="settings_show_reviews">Mostrar reseñas</string>
-    <string name="settings_show_reviews_hint">Desactivado = las páginas de sitios no muestran reseñas y Vela nunca las descarga.</string>
+    <string name="settings_show_reviews_hint">Desactivado = las páginas de sitios no muestran reseñas y MAP-RMG nunca las descarga.</string>
     <string name="settings_load_photos">Cargar fotos</string>
     <string name="settings_load_photos_hint">Desactivado = las páginas de sitios no muestran fotos y no se descarga nada. Ahorra datos.</string>
     <string name="settings_hide_adult">Ocultar categorías para adultos</string>
@@ -69,7 +69,7 @@
     <string name="settings_hide_external_links">Ocultar sitio web y enlaces externos</string>
     <string name="settings_hide_external_links_hint">Activado = las páginas de lugar no muestran los botones Sitio web, Street View ni Reservar / Pedir (no se abren sitios externos arbitrarios).</string>
     <string name="settings_offline">Mapas sin conexión</string>
-    <string name="settings_offline_hint">Dos formas de usar Vela sin conexión: guarda la zona en la que estás para trayectos cortos, o un estado o país entero más abajo para los largos.</string>
+    <string name="settings_offline_hint">Dos formas de usar MAP-RMG sin conexión: guarda la zona en la que estás para trayectos cortos, o un estado o país entero más abajo para los largos.</string>
     <string name="settings_offline_map_area">Zona local</string>
     <string name="settings_offline_download_viewport">Descargar la zona que estás viendo</string>
     <string name="settings_offline_download_viewport_hint">Guarda el mapa que estás viendo, con sus calles y direcciones, para que esta zona siga funcionando sin señal.</string>
@@ -98,10 +98,10 @@
     <string name="settings_no_saved_places">Aún no hay lugares guardados</string>
     <string name="settings_export">Exportar</string>
     <string name="settings_import">Importar</string>
-    <string name="settings_data_privacy_hint">Vela habla con los endpoints públicos de Google directamente desde este dispositivo: sin backend, sin cuenta, sin clave de API. Google ve tu IP, la búsqueda y la zona del mapa, no quién eres.</string>
+    <string name="settings_data_privacy_hint">MAP-RMG habla con los endpoints públicos de Google directamente desde este dispositivo: sin backend, sin cuenta, sin clave de API. Google ve tu IP, la búsqueda y la zona del mapa, no quién eres.</string>
     <string name="settings_privacy_button">Qué datos recibe Google</string>
     <string name="settings_diagnostics">Diagnóstico</string>
-    <string name="settings_diagnostics_hint">Desactivado por defecto. Al activarlo, Vela guarda un breve registro local que puedes exportar y dar a un desarrollador. No se sube nada, y desactivarlo lo borra.</string>
+    <string name="settings_diagnostics_hint">Desactivado por defecto. Al activarlo, MAP-RMG guarda un breve registro local que puedes exportar y dar a un desarrollador. No se sube nada, y desactivarlo lo borra.</string>
     <string name="settings_share_diagnostics">Compartir diagnóstico</string>
     <string name="settings_diag_nothing">Aún no hay nada registrado: usa la app y luego exporta.</string>
     <string name="settings_diag_export">Exportar sesión de depuración</string>
@@ -115,23 +115,23 @@
     <string name="settings_trip_delete">Eliminar trayecto</string>
     <string name="settings_no_trips_hint">Aún no hay trayectos grabados: navega a algún sitio con esto activado y aparecerá aquí para reproducirlo.</string>
     <string name="settings_trip_consent_title">¿Guardar tus trayectos?</string>
-    <string name="settings_trip_consent_body">Vela grabará el rastro GPS de cada navegación en este teléfono, para que un trayecto pueda reproducirse en pruebas sin volver a conducirlo. Esto revela más que el diagnóstico (captura tus rutas exactas), pero permanece en el teléfono y nunca se sube. Puedes desactivarlo cuando quieras.</string>
+    <string name="settings_trip_consent_body">MAP-RMG grabará el rastro GPS de cada navegación en este teléfono, para que un trayecto pueda reproducirse en pruebas sin volver a conducirlo. Esto revela más que el diagnóstico (captura tus rutas exactas), pero permanece en el teléfono y nunca se sube. Puedes desactivarlo cuando quieras.</string>
     <string name="settings_turn_on">Activar</string>
     <string name="settings_cancel">Cancelar</string>
-    <string name="settings_crash_hint">Vela se cerró de forma inesperada hace poco. Enviar el informe de fallo (traza de la pila) ayuda a corregirlo: es un archivo de texto plano, sin datos personales.</string>
+    <string name="settings_crash_hint">MAP-RMG se cerró de forma inesperada hace poco. Enviar el informe de fallo (traza de la pila) ayuda a corregirlo: es un archivo de texto plano, sin datos personales.</string>
     <string name="settings_crash_export">Exportar informe de fallo</string>
     <string name="settings_crash_discard">Descartar</string>
     <string name="settings_crash_diag_offer">El diagnóstico está desactivado, así que no se registró nada previo a esto. Actívalo para captar más detalles si vuelve a ocurrir.</string>
     <string name="settings_crash_enable_diag">Activar diagnóstico</string>
     <string name="settings_diag_consent_title">¿Activar el diagnóstico?</string>
-    <string name="settings_diag_consent_body">Vela guardará un breve registro local de tus búsquedas, rutas y cualquier error. Nunca sale del teléfono salvo que toques Exportar y elijas a dónde enviarlo. Desactívalo cuando quieras para borrar el registro.</string>
+    <string name="settings_diag_consent_body">MAP-RMG guardará un breve registro local de tus búsquedas, rutas y cualquier error. Nunca sale del teléfono salvo que toques Exportar y elijas a dónde enviarlo. Desactívalo cuando quieras para borrar el registro.</string>
     <string name="settings_about">Acerca de</string>
-    <string name="settings_about_hint">Vela es un cliente de mapas sin Google: mosaicos abiertos para el mapa base, datos de Google extraídos para los puntos de interés, rutas y ETA con tráfico, y una voz Piper que corre en el teléfono. GPLv3. No requiere Play Services.</string>
+    <string name="settings_about_hint">MAP-RMG es un cliente de mapas sin Google: mosaicos abiertos para el mapa base, datos de Google extraídos para los puntos de interés, rutas y ETA con tráfico, y una voz Piper que corre en el teléfono. GPLv3. No requiere Play Services. Vela Maps · GPLv3.</string>
     <string name="settings_support">Apoyar</string>
-    <string name="settings_support_hint">Vela es gratis y sin anuncios. Si te resulta útil, una donación ayuda a mantener el desarrollo en marcha, completamente opcional.</string>
-    <string name="settings_support_button">Apoyar a Vela</string>
+    <string name="settings_support_hint">MAP-RMG es gratis y sin anuncios. Si te resulta útil, una donación ayuda a mantener el desarrollo en marcha, completamente opcional.</string>
+    <string name="settings_support_button">Apoyar a MAP-RMG</string>
     <string name="settings_version">Versión</string>
-    <string name="settings_version_line">Vela %1$s  (compilación %2$d)</string>
+    <string name="settings_version_line">MAP-RMG %1$s  (compilación %2$d)</string>
     <string name="settings_version_copied">Versión copiada</string>
     <string name="settings_collapse">Contraer</string>
     <string name="settings_expand">Expandir</string>
@@ -144,7 +144,7 @@
     <string name="settings_voice_show_less">Mostrar menos</string>
     <string name="settings_voice_this_voice">esta voz</string>
     <string name="settings_voice_remove_title">¿Quitar %1$s?</string>
-    <string name="settings_voice_remove_body">Esta es tu única voz de Vela. Las indicaciones habladas recurrirán a un motor de texto a voz del sistema (o quedarán en silencio si no hay ninguno instalado) hasta que descargues otra.</string>
+    <string name="settings_voice_remove_body">Esta es tu única voz de MAP-RMG. Las indicaciones habladas recurrirán a un motor de texto a voz del sistema (o quedarán en silencio si no hay ninguno instalado) hasta que descargues otra.</string>
     <string name="settings_voice_remove">Quitar</string>
     <string name="settings_voice_gender_female">Femenina</string>
     <string name="settings_voice_gender_male">Masculina</string>
@@ -165,8 +165,8 @@
     <string name="place_close">Cerrar</string>
     <string name="place_permanently_closed">Cerrado permanentemente</string>
     <string name="place_temporarily_closed">Cerrado temporalmente</string>
-    <string name="map_voice_downloading">Descargando la voz Vela · %1$d %%</string>
-    <string name="map_voice_installing">Instalando la voz Vela…</string>
+    <string name="map_voice_downloading">Descargando la voz MAP-RMG · %1$d %%</string>
+    <string name="map_voice_installing">Instalando la voz MAP-RMG…</string>
     <string name="map_region_downloading">Descargando rutas de %1$s · %2$d %%</string>
     <!-- format -->
     <string name="map_region_places_downloading">Guardando lugares de %1$s para la búsqueda sin conexión · %2$d %%</string>
@@ -329,10 +329,10 @@
     <string name="mapscreen_switch">Cambiar</string>
     <string name="root_not_now">Ahora no</string>
     <string name="root_voice_title">Voz de navegación hablada</string>
-    <string name="root_voice_body_intro">La voz propia de Vela funciona por completo en tu teléfono: indicaciones naturales, sin cuenta, sin otra app. Recomendada, una descarga única de %1$d MB.</string>
+    <string name="root_voice_body_intro">La voz propia de MAP-RMG funciona por completo en tu teléfono: indicaciones naturales, sin cuenta, sin otra app. Recomendada, una descarga única de %1$d MB.</string>
     <string name="root_voice_body_system">¿Prefieres que no? Usa una voz que ya tengas en el teléfono.</string>
     <string name="root_voice_body_outro">Cámbiala cuando quieras en Ajustes → Voz.</string>
-    <string name="root_voice_download">Descargar voz de Vela</string>
+    <string name="root_voice_download">Descargar voz de MAP-RMG</string>
     <string name="root_voice_use_system">Usar voz del sistema</string>
     <string name="nav_maneuver_continue">Continúa</string>
     <string name="nav_gps_lost">Buscando señal de GPS…</string>
@@ -356,9 +356,9 @@
     <string name="welcome_feature_open_source_title">Gratis y de código abierto</string>
     <string name="welcome_feature_open_source_body">GPLv3, creada para GrapheneOS y otros teléfonos sin Google.</string>
     <string name="welcome_get_started">Empezar</string>
-    <string name="welcome_donate_title">¿Te gusta Vela?</string>
-    <string name="welcome_donate_body">Vela es gratis y sin anuncios, hecha con muy pocos recursos. Si te resulta útil, una pequeña donación única ayuda a mantenerla en marcha, completamente opcional, y es la única vez que se te pedirá. Siempre habrá también una opción de Apoyar en Ajustes.</string>
-    <string name="welcome_donate_confirm">Apoyar a Vela</string>
+    <string name="welcome_donate_title">¿Te gusta MAP-RMG?</string>
+    <string name="welcome_donate_body">MAP-RMG es gratis y sin anuncios, hecha con muy pocos recursos. Si te resulta útil, una pequeña donación única ayuda a mantenerla en marcha, completamente opcional, y es la única vez que se te pedirá. Siempre habrá también una opción de Apoyar en Ajustes.</string>
+    <string name="welcome_donate_confirm">Apoyar a MAP-RMG</string>
     <string name="welcome_donate_dismiss">Quizá más tarde</string>
     <string name="search_close_cd">Cerrar búsqueda</string>
     <string name="search_placeholder">Buscar</string>
@@ -387,15 +387,15 @@
     <string name="mapvm_voice_lang_missing">Las indicaciones por voz necesitan una voz en %1$s, añádela en Ajustes → Voz</string>
     <string name="mapvm_no_track_to_replay">Ese trayecto no tiene rastro para reproducir</string>
     <string name="mapvm_replaying">Reproduciendo %1$s…</string>
-    <string name="mapvm_export_saved_subject">Lugares guardados de Vela (%1$d)</string>
+    <string name="mapvm_export_saved_subject">Lugares guardados de MAP-RMG (%1$d)</string>
     <string name="mapvm_export_saved_chooser">Exportar lugares guardados</string>
-    <string name="mapvm_export_trip_subject">Trayecto de Vela: %1$s (%2$d puntos)</string>
+    <string name="mapvm_export_trip_subject">Trayecto de MAP-RMG: %1$s (%2$d puntos)</string>
     <string name="mapvm_share_trip_chooser">Compartir trayecto</string>
     <string name="mapvm_voice_sample">En cuatrocientos metros, gira a la derecha hacia la calle Mayor.</string>
     <string name="mapvm_not_enough_space">No hay espacio libre suficiente para %1$s (%2$d MB)</string>
     <string name="mapvm_voice_downloaded">%1$s descargada</string>
     <string name="mapvm_voice_download_failed">Error al descargar %1$s</string>
-    <string name="mapvm_vela_voice_removed">Voz de Vela eliminada</string>
+    <string name="mapvm_vela_voice_removed">Voz de MAP-RMG eliminada</string>
     <string name="mapvm_opening_installer">Abriendo el instalador de %1$s…</string>
     <string name="mapvm_pan_to_area_first">Abre el mapa y desplázate primero a una zona</string>
     <string name="mapvm_offline_routing_ready">Rutas sin conexión listas: %1$s</string>
@@ -427,7 +427,7 @@
     <string name="mapscreen_your_destination">tu destino</string>
     <string name="mapvm_resume_waiting_gps">Esperando el GPS para reanudar la navegación…</string>
     <string name="mapvm_resume_failed">No se pudo reanudar la navegación</string>
-    <string name="update_available_title">Vela %1$s está disponible</string>
+    <string name="update_available_title">MAP-RMG %1$s está disponible</string>
     <string name="update_downloading">Descargando… %1$d%%</string>
     <string name="update_later">Ahora no</string>
     <string name="update_install">Actualizar</string>
@@ -523,7 +523,7 @@
     <string name="settings_places_imported">%1$d lugar(es) importado(s)</string>
     <!-- format -->
     <string name="settings_no_lists">Aún no hay listas para exportar</string>
-    <string name="mapvm_export_lists_subject">Listas de Vela (%1$d)</string>
+    <string name="mapvm_export_lists_subject">Listas de MAP-RMG (%1$d)</string>
     <string name="mapvm_export_lists_chooser">Exportar listas</string>
     <string name="lists_empty_hint">Aún no hay listas. Toca Nueva o guarda un lugar desde su página.</string>
     <plurals name="lists_place_count">
@@ -536,18 +536,18 @@
     <string name="settings_developer">Desarrollador</string>
     <string name="settings_developer_hint">Herramientas para demostraciones, capturas y pruebas. Desactívalas para el uso real.</string>
     <string name="settings_browse_voices">Explorar voces</string>
-    <string name="settings_browse_voices_hint">Descarga y cambia entre las voces de Vela en el dispositivo.</string>
+    <string name="settings_browse_voices_hint">Descarga y cambia entre las voces de MAP-RMG en el dispositivo.</string>
     <string name="voice_capture_listening">Escuchando…</string>
     <string name="voice_capture_starting">Preparando…</string>
     <string name="voice_capture_done">Listo</string>
-    <string name="mapvm_asr_ready">La voz de Vela está lista</string>
+    <string name="mapvm_asr_ready">La voz de MAP-RMG está lista</string>
     <string name="mapvm_asr_download_failed">No se pudo descargar el modelo de voz. Revisa tu conexión e inténtalo de nuevo.</string>
     <string name="mapvm_closing_soon">%1$s cierra a las %2$s y llegas hacia las %3$s</string>
     <!-- format -->
     <string name="mapvm_closing_before_arrival">%1$s cierra a las %2$s, antes de que llegues hacia las %3$s</string>
     <!-- format -->
-    <string name="settings_voice_search_model">Voz de Vela</string>
-    <string name="settings_voice_search_model_hint">La voz de Vela convierte tu voz en una búsqueda directamente en el teléfono: sin otra app y sin subir nada. Descarga única de %1$d MB.</string>
+    <string name="settings_voice_search_model">Voz de MAP-RMG</string>
+    <string name="settings_voice_search_model_hint">La voz de MAP-RMG convierte tu voz en una búsqueda directamente en el teléfono: sin otra app y sin subir nada. Descarga única de %1$d MB.</string>
     <!-- format -->
     <string name="settings_voice_search_download">Descargar (%1$d MB)</string>
     <!-- format -->
@@ -556,24 +556,24 @@
     <!-- format -->
     <string name="settings_voice_search_installing">Instalando…</string>
     <string name="settings_voice_search_engine_title">Al tocar el micrófono</string>
-    <string name="settings_voice_search_engine_auto">Voz de Vela</string>
+    <string name="settings_voice_search_engine_auto">Voz de MAP-RMG</string>
     <string name="settings_voice_search_engine_default">Predeterminada de Android</string>
     <string name="settings_voice_search_engine_system">Otra app de voz</string>
     <string name="map_asr_offer_title">Búsqueda por voz</string>
-    <string name="map_asr_offer_body">Descarga la voz de Vela para dictar tus búsquedas. Funciona por completo en tu teléfono y no sube nada.</string>
+    <string name="map_asr_offer_body">Descarga la voz de MAP-RMG para dictar tus búsquedas. Funciona por completo en tu teléfono y no sube nada.</string>
     <string name="nav_precise_title">Se necesita ubicación precisa</string>
-    <string name="nav_precise_body">La navegación te sigue por GPS, y eso requiere la ubicación precisa. Ahora mismo Vela solo conoce tu zona aproximada.</string>
+    <string name="nav_precise_body">La navegación te sigue por GPS, y eso requiere la ubicación precisa. Ahora mismo MAP-RMG solo conoce tu zona aproximada.</string>
     <string name="nav_precise_allow">Permitir precisa</string>
     <string name="nav_precise_toast">La navegación necesita la ubicación precisa</string>
     <string name="loc_off_title">La ubicación está desactivada</string>
-    <string name="loc_off_body">Vela no tiene acceso a la ubicación. Puedes permitirlo en los ajustes del sistema.</string>
+    <string name="loc_off_body">MAP-RMG no tiene acceso a la ubicación. Puedes permitirlo en los ajustes del sistema.</string>
     <string name="loc_off_settings">Abrir ajustes</string>
     <string name="loc_approx_title">Ubicación aproximada</string>
-    <string name="loc_approx_body">Vela solo conoce tu zona aproximada, no dónde estás. El mapa muestra un círculo amplio en vez de un punto, y la navegación no funcionará. Puedes cambiar a la ubicación precisa cuando quieras.</string>
+    <string name="loc_approx_body">MAP-RMG solo conoce tu zona aproximada, no dónde estás. El mapa muestra un círculo amplio en vez de un punto, y la navegación no funcionará. Puedes cambiar a la ubicación precisa cuando quieras.</string>
     <string name="loc_approx_allow">Permitir precisa</string>
     <string name="loc_approx_keep">Mantener aproximada</string>
     <string name="notif_ask_title">¿Omitir las notificaciones?</string>
-    <string name="notif_ask_body">La navegación mantiene tu próximo giro en una notificación, para que las indicaciones te acompañen con la pantalla apagada o en otra app. Sin ella, solo hay indicaciones dentro de Vela.</string>
+    <string name="notif_ask_body">La navegación mantiene tu próximo giro en una notificación, para que las indicaciones te acompañen con la pantalla apagada o en otra app. Sin ella, solo hay indicaciones dentro de MAP-RMG.</string>
     <string name="notif_ask_allow">Permitir</string>
     <string name="notif_ask_skip">Omitir</string>
     <string name="place_time_past_toast">Esa hora ya pasó. Ajustado a ahora.</string>
@@ -581,7 +581,7 @@
     <string name="settings_map_colors">Colores del mapa</string>
     <string name="settings_map_colors_modern">Moderno</string>
     <string name="settings_map_colors_classic">Clásico</string>
-    <string name="settings_map_colors_hint">Moderno sigue la paleta actual de Google Maps. Clásico es el aspecto anterior de Vela: carreteras blancas, autopistas amarillas, verdes intensos.</string>
+    <string name="settings_map_colors_hint">Moderno sigue la paleta actual de Google Maps. Clásico es el aspecto anterior de MAP-RMG: carreteras blancas, autopistas amarillas, verdes intensos.</string>
     <string name="map_parking_find">Encontrar mi coche</string>
     <string name="map_parking_move_here">Mover aparcamiento aquí</string>
     <string name="map_parking_earlier">Sitios anteriores</string>
@@ -619,13 +619,13 @@
     <string name="place_review_less">Menos</string>
     <string name="settings_traffic_lights">Indicaciones con semáforos</string>
     <string name="settings_traffic_lights_hint">Referencias habladas: pasa el semaforo y gira. Solo ingles, desactivado por defecto.</string>
-    <string name="map_asr_downloading">Descargando el micro Vela Voice · %1$d %%</string>
-    <string name="map_asr_installing">Instalando el micro Vela Voice…</string>
-    <string name="map_asr_waiting">Micro Vela Voice · esperando la voz Vela</string>
+    <string name="map_asr_downloading">Descargando el micro MAP-RMG Voice · %1$d %%</string>
+    <string name="map_asr_installing">Instalando el micro MAP-RMG Voice…</string>
+    <string name="map_asr_waiting">Micro MAP-RMG Voice · esperando la voz MAP-RMG</string>
     <string name="mapscreen_filter_top_rated">4,0★</string>
     <string name="mapscreen_section_recent_searches">Búsquedas recientes</string>
     <string name="mapscreen_clear_recent_searches">Borrar búsquedas recientes</string>
-    <string name="root_diag_title">¿Ayudar a mejorar Vela?</string>
+    <string name="root_diag_title">¿Ayudar a mejorar MAP-RMG?</string>
     <string name="root_diag_body">Ambos permanecen en tu teléfono: no se envía nada salvo que lo exportes. Cambia cualquiera cuando quieras en Ajustes.</string>
     <string name="root_diag_share_title">Compartir diagnóstico</string>
     <string name="root_diag_share_desc">Un breve registro local de búsquedas, rutas y errores.</string>
@@ -640,7 +640,7 @@
     <!-- format -->
     <string name="root_voice_none_picked">Marca una opción o elige Ahora no.</string>
     <string name="root_offline_title">Mapas sin conexión</string>
-    <string name="root_offline_body">Vela obtiene lugares, búsqueda e indicaciones de Google, así que sin señal solo funcionarán las zonas que hayas descargado. Configura una zona ahora para estar cubierto cuando pierdas la conexión.</string>
+    <string name="root_offline_body">MAP-RMG obtiene lugares, búsqueda e indicaciones de Google, así que sin señal solo funcionarán las zonas que hayas descargado. Configura una zona ahora para estar cubierto cuando pierdas la conexión.</string>
     <string name="root_offline_setup">Configurar sin conexión</string>
     <string name="mapvm_stop_added">Parada añadida</string>
     <string name="shortcut_home">Casa</string>
@@ -648,7 +648,7 @@
     <string name="settings_asr_engines_hint">La voz se convierte en busqueda en el telefono. Nada se sube. Elige el motor del microfono.</string>
     <string name="settings_asr_engine_meta">%1$s · %2$d MB</string>
     <!-- format -->
-    <string name="settings_asr_langs_whisper">Todos los idiomas que admite Vela</string>
+    <string name="settings_asr_langs_whisper">Todos los idiomas que admite MAP-RMG</string>
     <string name="settings_asr_langs_sensevoice">Inglés, chino, japonés, coreano, cantonés</string>
     <string name="settings_asr_langs_moonshine">Solo inglés</string>
     <string name="settings_asr_active">Activo</string>
@@ -669,9 +669,9 @@
     <string name="voice_error_title">La búsqueda por voz no se inició</string>
     <string name="voice_error_retry">Reintentar</string>
     <string name="voice_error_model">El modelo de voz no está listo. Vuelve a descargarlo en Ajustes \u2192 Búsqueda.</string>
-    <string name="voice_error_permission">Vela necesita permiso de micrófono para escuchar. Concédelo en los ajustes de la aplicación de Android.</string>
+    <string name="voice_error_permission">MAP-RMG necesita permiso de micrófono para escuchar. Concédelo en los ajustes de la aplicación de Android.</string>
     <string name="voice_error_vad">Falta parte del modelo de voz. Vuelve a descargarlo en Ajustes \u2192 Búsqueda.</string>
-    <string name="voice_error_audio">Este teléfono no abrió su micrófono para Vela. Cierra cualquier otra app que grabe audio e inténtalo de nuevo.</string>
+    <string name="voice_error_audio">Este teléfono no abrió su micrófono para MAP-RMG. Cierra cualquier otra app que grabe audio e inténtalo de nuevo.</string>
     <string name="voice_error_recording">La grabación se detuvo inesperadamente. Inténtalo de nuevo.</string>
     <string name="place_tab_reviews">Reseñas</string>
     <string name="place_tab_about">Información</string>
@@ -698,7 +698,7 @@
     <string name="settings_search_none">Sin coincidencias</string>
     <string name="settings_app_name_title">Nombre de la app</string>
     <string name="settings_app_name_generic">Llamarla solo «Mapas»</string>
-    <string name="settings_app_name_generic_hint">Muestra el icono del lanzador como «Mapas» en vez de «Vela Maps», para un aspecto de serie. Puede que tengas que volver a añadir el acceso directo en la pantalla de inicio después del cambio.</string>
+    <string name="settings_app_name_generic_hint">Muestra el icono del lanzador como «Mapas» en vez de «MAP-RMG Maps», para un aspecto de serie. Puede que tengas que volver a añadir el acceso directo en la pantalla de inicio después del cambio.</string>
     <string name="settings_contacts_search">Buscar en tus contactos</string>
     <string name="settings_contacts_search_hint">Al escribir el nombre de un contacto se sugieren sus direcciones guardadas, con su foto y la etiqueta de la dirección de tu agenda. Tus contactos no salen de este teléfono; al elegir uno, esa dirección se busca como cualquier consulta escrita y se abre con el nombre del contacto.</string>
     <string name="suggestion_contact_badge">Contacto</string>
@@ -715,14 +715,14 @@
     <string name="settings_nav_trace_hint">Graba cómo se mueve la cámara del mapa mientras navegas, para poder diagnosticar un mapa con tirones o que parece flotar. No contiene datos de ubicación, solo rumbos, velocidades y tiempos, así que puedes adjuntarlo sin problema a un informe de error.</string>
     <string name="settings_nav_trace_export">Compartir el rastro de navegación</string>
     <string name="settings_nav_trace_empty">Aún no hay ningún rastro grabado. Navega a algún sitio primero.</string>
-    <string name="settings_voice_vela_name">Voz de Vela (%1$s)</string>
-    <string name="settings_voice_install_vela">Instalar la voz de Vela (%1$d MB)</string>
+    <string name="settings_voice_vela_name">Voz de MAP-RMG (%1$s)</string>
+    <string name="settings_voice_install_vela">Instalar la voz de MAP-RMG (%1$d MB)</string>
     <string name="settings_voice_install_vela_hint">La voz de navegación recomendada. Reinstálala aquí siempre que falte o falle una descarga.</string>
     <string name="settings_texture_render">Renderizado de compatibilidad</string>
     <string name="settings_texture_render_hint">Dibuja el mapa por una vía de compatibilidad que evita los fallos del controlador gráfico de algunos dispositivos. Se activa solo si el mapa provocó un cierre de la app al iniciarla. Es algo más lento y requiere reiniciar la app para aplicarse.</string>
     <string name="settings_texture_render_auto_hint">Se activó automáticamente en %1$s después de que el mapa provocara dos cierres al iniciar. Si el mapa funciona con esto desactivado, déjalo desactivado: es más lento y puede hacer que el mapa dé tirones al conducir. Requiere reiniciar la app para aplicarse.</string>
     <string name="settings_offline_places_with_downloads">Incluir lugares en las descargas</string>
-    <string name="settings_offline_places_with_downloads_hint">Al descargar una región también se traen los datos de lugares de Vela, para que los negocios aparezcan en el mapa sin señal. Alrededor de medio gigabyte para un estado grande. Desactivado = los lugares solo se cargan con conexión.</string>
+    <string name="settings_offline_places_with_downloads_hint">Al descargar una región también se traen los datos de lugares de MAP-RMG, para que los negocios aparezcan en el mapa sin señal. Alrededor de medio gigabyte para un estado grande. Desactivado = los lugares solo se cargan con conexión.</string>
     <string name="settings_routing_size_installed_here">Unos %1$s una vez instalada · cubre tu ubicación</string>
     <string name="settings_routing_size_installed">Unos %1$s una vez instalada</string>
     <string name="settings_storage_title">Almacenamiento</string>
@@ -736,7 +736,7 @@
     <string name="settings_map_cache_cleared">Caché del mapa borrada</string>
     <string name="settings_import_nothing_new">Todo lo que hay en ese archivo ya está guardado.</string>
     <string name="settings_import_unreadable">No se pudo abrir ese archivo.</string>
-    <string name="settings_import_wrong_format">No se encontraron lugares en ese archivo. Vela lee sus propias exportaciones y los archivos GPX, KML o GeoJSON guardados desde otras apps de mapas.</string>
+    <string name="settings_import_wrong_format">No se encontraron lugares en ese archivo. MAP-RMG lee sus propias exportaciones y los archivos GPX, KML o GeoJSON guardados desde otras apps de mapas.</string>
     <string name="settings_import_wrong_format_named">No se encontraron lugares en ese archivo %1$s.</string>
     <string name="settings_import_no_picker">Este dispositivo no tiene selector de archivos, así que no se puede elegir ninguno.</string>
     <string name="nav_overview">Vista general de la ruta</string>
@@ -749,18 +749,18 @@
     <string name="settings_show_pois">Mostrar lugares</string>
     <string name="settings_show_pois_hint">Iconos de negocios y lugares en el mapa al explorar. Desactivado = un mapa limpio; los lugares que busques se siguen mostrando.</string>
     <string name="settings_places_source">Iconos de lugares en el mapa</string>
-    <string name="settings_places_source_open">Datos de Vela</string>
+    <string name="settings_places_source_open">Datos de MAP-RMG</string>
     <string name="settings_places_source_google">Google</string>
     <string name="settings_places_source_both">Ambos</string>
-    <string name="settings_places_source_open_hint">Los iconos salen de los datos propios de Vela. Desplazar el mapa nunca consulta a Google y funciona sin conexión.</string>
+    <string name="settings_places_source_open_hint">Los iconos salen de los datos propios de MAP-RMG. Desplazar el mapa nunca consulta a Google y funciona sin conexión.</string>
     <string name="settings_places_source_google_hint">Los iconos vienen de Google. Cada desplazamiento envía tu posición del mapa a Google y no se dibuja nada sin conexión.</string>
-    <string name="settings_places_source_both_hint">Los iconos de Vela, más lo que Google tenga de más cuando dejas de desplazar el mapa.</string>
+    <string name="settings_places_source_both_hint">Los iconos de MAP-RMG, más lo que Google tenga de más cuando dejas de desplazar el mapa.</string>
     <string name="settings_places_source_more">Más información</string>
     <string name="settings_places_source_more_credit">Overture Maps</string>
     <string name="settings_places_lookup">Buscar en Google los lugares que tocas</string>
-    <string name="settings_places_lookup_hint">Al tocar un lugar se obtienen su horario, sus reseñas y sus fotos de Google, y Vela recuerda la coincidencia para que el siguiente toque sea instantáneo. Desactivado = un lugar que toques muestra solo lo que tienen los datos de Vela (nombre, tipo, dirección, teléfono, sitio web) y nada de ese toque llega a Google. La búsqueda y las indicaciones siguen usando Google.</string>
-    <string name="settings_places_source_more_title">De dónde vienen los datos de lugares de Vela</string>
-    <string name="settings_places_source_more_body">Los datos de lugares de Vela son de Overture Maps, un conjunto de datos abierto de negocios mantenido por Meta, Microsoft y otros. Vela los sirve desde su propio repositorio de GitHub, así que nada sobre dónde miras llega a Meta ni a Google.\n\nSe cargan a medida que exploras y se descargan junto con una región para usarlos sin conexión. Donde Vela aún no tiene datos de una zona, el mapa recurre a Google.\n\nLa búsqueda, los detalles de los lugares, el horario, las reseñas y las fotos siempre vienen de Google, elijas la opción que elijas.</string>
+    <string name="settings_places_lookup_hint">Al tocar un lugar se obtienen su horario, sus reseñas y sus fotos de Google, y MAP-RMG recuerda la coincidencia para que el siguiente toque sea instantáneo. Desactivado = un lugar que toques muestra solo lo que tienen los datos de MAP-RMG (nombre, tipo, dirección, teléfono, sitio web) y nada de ese toque llega a Google. La búsqueda y las indicaciones siguen usando Google.</string>
+    <string name="settings_places_source_more_title">De dónde vienen los datos de lugares de MAP-RMG</string>
+    <string name="settings_places_source_more_body">Los datos de lugares de MAP-RMG son de Overture Maps, un conjunto de datos abierto de negocios mantenido por Meta, Microsoft y otros. MAP-RMG los sirve desde su propio repositorio de GitHub, así que nada sobre dónde miras llega a Meta ni a Google.\n\nSe cargan a medida que exploras y se descargan junto con una región para usarlos sin conexión. Donde MAP-RMG aún no tiene datos de una zona, el mapa recurre a Google.\n\nLa búsqueda, los detalles de los lugares, el horario, las reseñas y las fotos siempre vienen de Google, elijas la opción que elijas.</string>
     <string name="settings_show_civic">Parques, escuelas y lugares públicos</string>
     <string name="settings_show_civic_hint">La capa de iconos de lugares que no son negocios. Desactivado = solo negocios.</string>
     <string name="settings_show_transit_stops">Paradas de transporte</string>
@@ -771,7 +771,7 @@
     <string name="settings_poi_size_large">Grande</string>
     <string name="settings_poi_icon_size_hint">El tamaño pequeño va bien en pantallas de baja resolución, como las de los equipos de coche, donde los iconos predeterminados se ven enormes.</string>
     <string name="settings_live_rechecks">Consultar el tráfico en directo al navegar</string>
-    <string name="settings_live_rechecks_hint">Cada pocos minutos durante un trayecto, Vela pide a Google el tráfico actualizado desde tu posición. Eso permite ofrecerte rutas más rápidas y la hora de llegada en directo, pero también le indica a Google por qué punto de la ruta vas. Desactivado: tu ruta se sigue recalculando si te sales de ella.</string>
+    <string name="settings_live_rechecks_hint">Cada pocos minutos durante un trayecto, MAP-RMG pide a Google el tráfico actualizado desde tu posición. Eso permite ofrecerte rutas más rápidas y la hora de llegada en directo, pero también le indica a Google por qué punto de la ruta vas. Desactivado: tu ruta se sigue recalculando si te sales de ella.</string>
     <string name="settings_clear_history">Borrar el historial</string>
     <string name="settings_clear_history_hint">Búsquedas recientes, lugares recientes, historial de aparcamiento y trayectos grabados. Los lugares guardados y las listas se conservan.</string>
     <string name="settings_clear_history_action">Borrar</string>
@@ -797,7 +797,7 @@
     <string name="settings_trip_share_selected">Compartir %1$d</string>
     <string name="settings_trip_select_all">Seleccionar todo</string>
     <string name="settings_name_trips">Poner nombre a cada trayecto al guardarlo</string>
-    <string name="settings_name_trips_hint">Cuando termina un trayecto grabado, Vela te pregunta cómo llamarlo. Desactivado por defecto; siempre puedes renombrar un trayecto más tarde en la lista de abajo.</string>
+    <string name="settings_name_trips_hint">Cuando termina un trayecto grabado, MAP-RMG te pregunta cómo llamarlo. Desactivado por defecto; siempre puedes renombrar un trayecto más tarde en la lista de abajo.</string>
     <string name="trip_name_prompt_title">Ponle nombre a este trayecto</string>
     <string name="trip_name_prompt_save">Guardar nombre</string>
     <string name="trip_name_prompt_skip">Ahora no</string>
@@ -827,13 +827,13 @@
     <string name="whatsnew_full_notes">Notas completas</string>
     <string name="settings_whatsnew">Novedades de esta versión</string>
     <string name="settings_whatsnew_hint">Las notas de la versión que tienes instalada. También se muestran una vez después de cada actualización.</string>
-    <string name="mapvm_export_trips_subject">Trayectos de Vela: %1$d recorridos (%2$d puntos)</string>
-    <string name="mapvm_export_trip_scrubbed_subject">Trayecto de Vela: %1$d puntos, extremos recortados</string>
+    <string name="mapvm_export_trips_subject">Trayectos de MAP-RMG: %1$d recorridos (%2$d puntos)</string>
+    <string name="mapvm_export_trip_scrubbed_subject">Trayecto de MAP-RMG: %1$d puntos, extremos recortados</string>
     <string name="mapvm_area_uses_pack">Los lugares y las direcciones de esta zona vienen con la descarga de %1$s</string>
     <string name="navservice_channel_turns_name">Avisos hablados de giro</string>
     <string name="download_notif_channel">Descargas</string>
     <string name="download_notif_title">Descargando %1$s</string>
-    <string name="download_label_update">actualización de Vela</string>
+    <string name="download_label_update">actualización de MAP-RMG</string>
     <string name="download_label_map_data">datos del mapa</string>
     <string name="download_label_offline_places">lugares sin conexión</string>
     <string name="map_area_downloading">Guardando esta zona para usarla sin conexión · %1$d%%</string>
@@ -860,7 +860,7 @@
     <string name="settings_voice_volume_normal">Normal</string>
     <string name="settings_voice_volume_louder">Más alto</string>
     <string name="settings_voice_volume_loudest">Máximo</string>
-    <string name="settings_voice_volume_hint">Con qué volumen suenan las indicaciones habladas por encima de tu música. Los niveles más altos se aplican a la voz de Vela; las voces del sistema solo se pueden bajar.</string>
+    <string name="settings_voice_volume_hint">Con qué volumen suenan las indicaciones habladas por encima de tu música. Los niveles más altos se aplican a la voz de MAP-RMG; las voces del sistema solo se pueden bajar.</string>
     <string name="settings_asr_engines_title">Motor de reconocimiento en el dispositivo</string>
     <string name="voice_capture_examples_title">Cosas que puedes decir</string>
     <string name="voice_capture_example_home">«Llévame a casa» o «llévame al trabajo»</string>
@@ -897,7 +897,7 @@
     <string name="settings_bike_safe">Las rutas en bici prefieren carriles bici y calles tranquilas</string>
     <string name="settings_bike_safe_hint">Las rutas en bicicleta favorecen las vías ciclistas señalizadas, los carriles bici y las calles residenciales frente a la carretera más rápida, igual que Google con las bicis. Usa el mapa sin conexión si tienes uno descargado; si no, un servicio de rutas abierto con conexión. Desactivado da la ruta en bici más rápida sin más.</string>
     <string name="settings_route_bar">Barra del camino por delante</string>
-    <string name="settings_route_bar_hint">Una franja junto al mapa que muestra el tráfico y lo que viene en el resto de tu ruta. Solo muestra lo que Vela sabe de verdad: retenciones, semáforos, señales de stop, pasos a nivel, badenes y cámaras de vigilancia. Solo en vertical.</string>
+    <string name="settings_route_bar_hint">Una franja junto al mapa que muestra el tráfico y lo que viene en el resto de tu ruta. Solo muestra lo que MAP-RMG sabe de verdad: retenciones, semáforos, señales de stop, pasos a nivel, badenes y cámaras de vigilancia. Solo en vertical.</string>
     <string name="settings_font">Fuente</string>
     <string name="settings_font_system">Fuente del sistema</string>
     <string name="settings_font_choose">Elegir un archivo de fuente…</string>
@@ -957,18 +957,18 @@
     <string name="nav_stop_offer_remove">Quitar parada</string>
     <string name="settings_google_session">Sesión de Google</string>
     <string name="settings_block_google_telemetry">Bloquear la telemetría de las páginas de Google</string>
-    <string name="settings_block_google_telemetry_hint">Las páginas de Google informan sobre sí mismas: pings de registro y llamadas en segundo plano de la barra de la cuenta. Nada de lo que muestra Vela las necesita. Se envían por defecto porque un navegador que nunca las manda se parece menos a una persona para Google, y eso influye en si tu sesión recibe la vista limitada. Actívalo para responderlas en el propio teléfono.</string>
+    <string name="settings_block_google_telemetry_hint">Las páginas de Google informan sobre sí mismas: pings de registro y llamadas en segundo plano de la barra de la cuenta. Nada de lo que muestra MAP-RMG las necesita. Se envían por defecto porque un navegador que nunca las manda se parece menos a una persona para Google, y eso influye en si tu sesión recibe la vista limitada. Actívalo para responderlas en el propio teléfono.</string>
     <string name="settings_google_session_limited">Ahora mismo Google le da a este teléfono una vista limitada: menos fotos por página, sin horas populares en algunos lugares, y «Más reseñas» no carga nada. Suele pasarse sola al cabo de un rato. Una sesión nueva también empieza limitada, así que iniciar una rara vez ayuda.</string>
     <string name="place_limited_view">Ahora mismo Google muestra una vista limitada, así que aquí pueden faltar las horas populares y más reseñas.</string>
-    <string name="settings_google_session_hint">Google reconoce este teléfono por una cookie, así que lo que Vela consulta mientras dura puede vincularse, sin nombre ni cuenta. Iniciar una nueva lo limita. Una sesión nueva recibe de Google una vista reducida durante un tiempo (menos reseñas, sin horas populares en algunos lugares).</string>
+    <string name="settings_google_session_hint">Google reconoce este teléfono por una cookie, así que lo que MAP-RMG consulta mientras dura puede vincularse, sin nombre ni cuenta. Iniciar una nueva lo limita. Una sesión nueva recibe de Google una vista reducida durante un tiempo (menos reseñas, sin horas populares en algunos lugares).</string>
     <string name="settings_google_session_week">Iniciar una nueva cada semana (recomendado)</string>
     <string name="settings_google_session_day">Iniciar una nueva cada día</string>
-    <string name="settings_google_session_launch">Iniciar una nueva cada vez que se abre Vela (más privado)</string>
+    <string name="settings_google_session_launch">Iniciar una nueva cada vez que se abre MAP-RMG (más privado)</string>
     <string name="settings_google_session_launch_hint">Lo que cuesta: Google trata cada sesión como un visitante nuevo, así que casi siempre recibes su vista reducida (unas cinco reseñas, a menudo sin horas populares). Los lugares cargan algo más lento y gastan más datos, porque las primeras respuestas de una sesión nueva llegan recortadas y se vuelven a pedir. Android reinicia las apps en segundo plano, así que esto puede suponer varias sesiones nuevas al día, y muchos visitantes nuevos desde una misma conexión pueden provocar más comprobaciones antibots de Google. Google sigue viendo tu dirección IP, que de todos modos vincula las sesiones de una misma conexión durante un tiempo corto.</string>
     <string name="settings_google_session_now">Iniciar una sesión nueva ahora</string>
     <string name="settings_google_session_done">Nueva sesión de Google iniciada</string>
-    <string name="settings_google_free">Usar Vela sin Google</string>
-    <string name="settings_google_free_hint">No se envía nada a Google. La búsqueda usa OpenStreetMap y tus regiones descargadas, los lugares del mapa vienen de los datos propios de Vela y las rutas vienen del servicio de rutas abierto, sin tráfico en directo. Pierdes las reseñas, las fotos, los horarios, las horas de llegada en directo, Street View, las indicaciones en transporte público y los primeros planos por satélite; las regiones descargadas siguen funcionando por completo sin conexión.</string>
+    <string name="settings_google_free">Usar MAP-RMG sin Google</string>
+    <string name="settings_google_free_hint">No se envía nada a Google. La búsqueda usa OpenStreetMap y tus regiones descargadas, los lugares del mapa vienen de los datos propios de MAP-RMG y las rutas vienen del servicio de rutas abierto, sin tráfico en directo. Pierdes las reseñas, las fotos, los horarios, las horas de llegada en directo, Street View, las indicaciones en transporte público y los primeros planos por satélite; las regiones descargadas siguen funcionando por completo sin conexión.</string>
     <string name="settings_diag_redact_trips_hint">Oculta búsquedas, destinos, enlaces y nombres de lugares en la exportación de diagnóstico y redondea sus coordenadas a unos 10 km. Los tiempos, recuentos y errores se mantienen. Los trayectos compartidos empiezan con la distancia de recorte más grande.</string>
     <string name="settings_trip_more">Más opciones del trayecto</string>
     <string name="settings_trip_batch_title">Compartir los trayectos seleccionados</string>
@@ -1003,8 +1003,8 @@
     <string name="mapvm_graphs_retired">Las rutas sin conexión usan ahora un formato más pequeño. Vuelve a descargar tus regiones en Ajustes, Mapas sin conexión.</string>
     <string name="navservice_notif_action_pause">Pausar</string>
     <string name="navservice_notif_action_resume">Reanudar</string>
-    <string name="update_car_title">Esta actualización quitará Vela de Android Auto</string>
-    <string name="update_car_body">Vela se instaló de la forma que acepta Android Auto. Instalar esta actualización aquí lo reemplaza, y el coche dejará de mostrar Vela hasta que instales el archivo con la herramienta que usaste la primera vez (AAEnabler, King Installer).\n\nGuarda el archivo e instálalo de esa forma para que siga funcionando en el coche.</string>
+    <string name="update_car_title">Esta actualización quitará MAP-RMG de Android Auto</string>
+    <string name="update_car_body">MAP-RMG se instaló de la forma que acepta Android Auto. Instalar esta actualización aquí lo reemplaza, y el coche dejará de mostrar MAP-RMG hasta que instales el archivo con la herramienta que usaste la primera vez (AAEnabler, King Installer).\n\nGuarda el archivo e instálalo de esa forma para que siga funcionando en el coche.</string>
     <string name="update_car_save">Guardar el archivo</string>
     <string name="update_car_anyway">Actualizar igualmente</string>
     <string name="place_transit_cached">Última actualización: %1$s. Sin conexión, así que los horarios pueden haber cambiado.</string>
@@ -1015,7 +1015,7 @@
     <string name="car_along_none">No se encontró nada cerca</string>
     <string name="car_stop_added">Siguiente parada añadida: %1$s</string>
     <string name="car_continue_on">Continúa por %1$s</string>
-    <string name="map_import_needs_google">Una lista compartida de Google Maps no se puede abrir mientras Vela funciona sin Google.</string>
+    <string name="map_import_needs_google">Una lista compartida de Google Maps no se puede abrir mientras MAP-RMG funciona sin Google.</string>
     <string name="map_link_needs_google">«Abrir enlaces compartidos de Google Maps» está desactivado en Ajustes ▸ Privacidad.</string>
     <string name="map_link_unreadable">No se pudo abrir ese enlace.</string>
     <string name="settings_performance">Rendimiento</string>
@@ -1024,10 +1024,10 @@
     <string name="settings_full_place_load">Cargar todas las fotos y reseñas</string>
     <string name="settings_full_place_load_hint">Si está desactivado, un lugar carga sus primeras fotos y la primera página de reseñas, y «Más fotos» o «Todas las reseñas» traen el resto. Si está activado, cada lugar que abres recorre toda su galería de fotos y hasta 50 reseñas, lo que es más lento y envía muchas más peticiones a Google.</string>
     <string name="settings_speech_preload">Cargar la búsqueda por voz al iniciar</string>
-    <string name="settings_speech_preload_hint">Carga el modelo de búsqueda por voz al abrir Vela, para que el micrófono escuche al instante. Ocupa unos 300 MB hasta que pasan dos minutos sin uso. Si está desactivado, se carga al tocar el cuadro de búsqueda. Activado por defecto en teléfonos con unos 8 GB de memoria o más.</string>
+    <string name="settings_speech_preload_hint">Carga el modelo de búsqueda por voz al abrir MAP-RMG, para que el micrófono escuche al instante. Ocupa unos 300 MB hasta que pasan dos minutos sin uso. Si está desactivado, se carga al tocar el cuadro de búsqueda. Activado por defecto en teléfonos con unos 8 GB de memoria o más.</string>
     <string name="settings_google_free_links">Abrir enlaces compartidos de Google Maps</string>
-    <string name="settings_google_free_links_hint">Un enlace corto de Google Maps (maps.app.goo.gl) no dice adónde lleva. Con esto activado, Vela consulta una vez al acortador de enlaces de Google, sin cookies, y abre el lugar con las fuentes abiertas. Los enlaces completos de google.com/maps se abren sin consultar. Las listas compartidas siguen necesitando Google.</string>
-    <string name="place_avoid_not_honored">Estas rutas pueden seguir usando peajes, autopistas o ferris: no se pudo contactar con Google para evitarlos, y el servicio de rutas abierto no puede hacerlo. En una zona descargada, Vela los evita sin conexión.</string>
+    <string name="settings_google_free_links_hint">Un enlace corto de Google Maps (maps.app.goo.gl) no dice adónde lleva. Con esto activado, MAP-RMG consulta una vez al acortador de enlaces de Google, sin cookies, y abre el lugar con las fuentes abiertas. Los enlaces completos de google.com/maps se abren sin consultar. Las listas compartidas siguen necesitando Google.</string>
+    <string name="place_avoid_not_honored">Estas rutas pueden seguir usando peajes, autopistas o ferris: no se pudo contactar con Google para evitarlos, y el servicio de rutas abierto no puede hacerlo. En una zona descargada, MAP-RMG los evita sin conexión.</string>
     <string name="settings_road_label_inbar">Dentro de la barra inferior</string>
     <string name="settings_faster_auto">Tomar rutas más rápidas automáticamente</string>
     <string name="settings_faster_auto_hint">Cuando aparece una ruta más rápida durante el trayecto, se toma si no respondes en unos segundos. Si lo desactivas, una oferta sin respuesta se descarta. En ambos casos, la oferta nunca se queda esperando en el mapa.</string>
@@ -1035,7 +1035,7 @@
     <string name="settings_pause_in_bar_hint">Pone la pausa junto a los datos del trayecto, donde iría el botón de la lista de pasos, y deja el silencio con los botones del mapa. Si está desactivado, ambos van en un solo botón a la derecha del mapa. En cualquier caso, desliza hacia arriba o usa la flecha para abrir la lista de pasos.</string>
     <string name="settings_pause_in_bar_hint_buttons">Con «Preferir botones antes que gestos» activado, la barra lleva la pausa y el botón de la lista de pasos uno al lado del otro, y los datos del trayecto se reducen para caber.</string>
     <string name="settings_route_picker">Selector de rutas al estilo de Google</string>
-    <string name="settings_route_picker_hint">Muestra una ruta cada vez, con las demás a un toque y sus tiempos en el mapa, e Iniciar en la parte inferior. Desactívalo para usar el panel clásico de Vela, que muestra todas las rutas a la vez.</string>
+    <string name="settings_route_picker_hint">Muestra una ruta cada vez, con las demás a un toque y sus tiempos en el mapa, e Iniciar en la parte inferior. Desactívalo para usar el panel clásico de MAP-RMG, que muestra todas las rutas a la vez.</string>
     <string name="nav_hold_controls">Pausar o silenciar</string>
     <string name="nav_stop_offer_detour">+%1$s</string>
     <plurals name="exp_chooser_alts">
@@ -1056,7 +1056,7 @@
     <string name="settings_photos_on_tap">Cargar fotos solo al tocar</string>
     <string name="settings_photos_on_tap_hint">Un lugar muestra un botón Mostrar fotos en vez de cargarlas. Ahorra una petición a Google por lugar.</string>
     <string name="settings_details_retry">Esperar las horas de mayor afluencia</string>
-    <string name="settings_details_retry_hint">Google suele omitir la afluencia en su primera respuesta, así que Vela vuelve a preguntar hasta dos veces. Desactivado = una petición por lugar, y puede faltar la afluencia.</string>
+    <string name="settings_details_retry_hint">Google suele omitir la afluencia en su primera respuesta, así que MAP-RMG vuelve a preguntar hasta dos veces. Desactivado = una petición por lugar, y puede faltar la afluencia.</string>
     <string name="place_show_photos">Mostrar fotos</string>
     <string name="place_no_photos">Aún no hay fotos</string>
     <string name="place_all_n_reviews_open">Las %1$d reseñas</string>
@@ -1116,9 +1116,9 @@
     <string name="settings_storage_no_space">No hay espacio suficiente: los datos sin conexión necesitan unos %1$d MB.</string>
     <string name="settings_storage_moved">Datos sin conexión movidos.</string>
     <string name="settings_storage_failed">No se completó el traslado; los datos sin conexión siguen donde estaban.</string>
-    <string name="settings_maps_links_on">Los enlaces de Google Maps se abren en Vela.</string>
-    <string name="settings_maps_links_partial">Algunos enlaces de Google Maps se abren en Vela. Añade el resto en Abrir de forma predeterminada para que se abran todos.</string>
-    <string name="settings_maps_links_off">Android abre los enlaces de Google Maps en el navegador. Para abrirlos en Vela, activa Abrir enlaces compatibles y añade los enlaces en Abrir de forma predeterminada.</string>
+    <string name="settings_maps_links_on">Los enlaces de Google Maps se abren en MAP-RMG.</string>
+    <string name="settings_maps_links_partial">Algunos enlaces de Google Maps se abren en MAP-RMG. Añade el resto en Abrir de forma predeterminada para que se abran todos.</string>
+    <string name="settings_maps_links_off">Android abre los enlaces de Google Maps en el navegador. Para abrirlos en MAP-RMG, activa Abrir enlaces compatibles y añade los enlaces en Abrir de forma predeterminada.</string>
     <string name="settings_maps_links_open">Ajustes de Abrir de forma predeterminada</string>
     <string name="mapvm_cells_progress">%1$s, parte %2$d de %3$d</string>
     <string name="mapvm_cells_ready">Las rutas y los lugares de esta parte de %1$s funcionan sin conexión</string>
@@ -1201,7 +1201,7 @@
     <string name="settings_link_action_place">Mostrar el lugar</string>
     <string name="settings_link_action_directions">Abrir indicaciones</string>
     <string name="settings_link_action_start">Iniciar la navegación</string>
-    <string name="settings_link_action_hint">Qué ocurre cuando otra app le pasa una ubicación a Vela. Iniciar la navegación va bien con las apps de reparto que envían una parada tras otra.</string>
+    <string name="settings_link_action_hint">Qué ocurre cuando otra app le pasa una ubicación a MAP-RMG. Iniciar la navegación va bien con las apps de reparto que envían una parada tras otra.</string>
     <string name="car_nearby">Cerca</string>
     <string name="car_more_nearby">Más cerca</string>
     <string name="car_saved">Guardados</string>
@@ -1214,8 +1214,8 @@
     <string name="car_setting_avoid_highways">Evitar autopistas</string>
     <string name="car_setting_avoid_ferries">Evitar ferris</string>
     <string name="car_location_title">Permitir ubicación</string>
-    <string name="car_location_body">Vela la necesita para mostrar dónde estás y darte indicaciones</string>
-    <string name="car_location_denied">La ubicación está desactivada. Actívala para Vela en los ajustes de tu teléfono.</string>
+    <string name="car_location_body">MAP-RMG la necesita para mostrar dónde estás y darte indicaciones</string>
+    <string name="car_location_denied">La ubicación está desactivada. Actívala para MAP-RMG en los ajustes de tu teléfono.</string>
     <string name="settings_page_transitions">Transiciones de página</string>
     <string name="settings_page_transitions_hint">Anima las páginas y los paneles inferiores al abrirse y cerrarse, y muestra una vista previa de la página anterior al deslizar para volver.</string>
     <string name="place_avoid_label">Evitar</string>
@@ -1309,17 +1309,17 @@
     <string name="settings_map_names_hint">Los nombres romanizados se generan a máquina donde OpenStreetMap no tiene nombre en inglés, y se leen mal en hebreo y en otros alfabetos. El idioma de la app y la voz no cambian.</string>
     <string name="settings_project">Proyecto</string>
     <string name="settings_project_hint">El código fuente, los informes de errores y las discusiones están en GitHub.</string>
-    <string name="settings_project_github_button">Vela en GitHub</string>
+    <string name="settings_project_github_button">MAP-RMG en GitHub</string>
     <string name="mapvm_rechecking_connection">Comprobando la conexión…</string>
     <string name="mapvm_back_online">Conexión recuperada</string>
-    <string name="mapvm_still_offline">Sigues sin conexión. Vela lo notará en cuanto vuelva.</string>
+    <string name="mapvm_still_offline">Sigues sin conexión. MAP-RMG lo notará en cuanto vuelva.</string>
     <string name="search_offline_recheck">Sin conexión. Toca para volver a comprobar</string>
     <string name="settings_turn_declutter">Simplificar el mapa en los giros</string>
     <string name="settings_turn_declutter_hint">Mientras el mapa gira en una curva, solo quedan los nombres de las calles. Los lugares, las señales y las cámaras vuelven en cuanto se estabiliza. Mantiene los giros fluidos en teléfonos más lentos.</string>
     <string name="settings_softkeys">Teclas de función físicas</string>
     <string name="settings_softkeys_hint">Acerca y aleja el mapa con las dos teclas de función del teléfono. Solo en teléfonos con teclado.</string>
     <string name="settings_softkeys_calibrate">Calibrar teclas de función</string>
-    <string name="settings_softkeys_calibrate_hint">Si las teclas de función no hacen zoom, toca aquí y pulsa la tecla de función izquierda y luego la derecha para que Vela aprenda sus códigos.</string>
+    <string name="settings_softkeys_calibrate_hint">Si las teclas de función no hacen zoom, toca aquí y pulsa la tecla de función izquierda y luego la derecha para que MAP-RMG aprenda sus códigos.</string>
     <string name="map_zoom_mode_hint">Zoom:  ◀ alejar   ·   acercar ▶      ATRÁS para salir</string>
     <string name="map_move_mode_hint">Mover mapa:  ◀ ▲ ▼ ▶      ATRÁS para salir</string>
     <string name="softkey_zoom_menu">Zoom (◀ − ▶ +)</string>

@@ -24,10 +24,10 @@
     <string name="settings_follow_system">Li gorî pergalê</string>
     <string name="settings_theme_light">Ronî</string>
     <string name="settings_theme_dark">Tarî</string>
-    <string name="settings_appearance_hint">Tenê ji bo Vela derbasdar e.</string>
+    <string name="settings_appearance_hint">Tenê ji bo MAP-RMG derbasdar e.</string>
     <string name="settings_app_name_title">Navê sepanê</string>
     <string name="settings_app_name_generic">Bêje tenê “Nexşe”</string>
-    <string name="settings_app_name_generic_hint">Îkona destpêkê li şûna nexşeyên Vela wekî nexşe nîşan dide, ji bo xuyaniyek berdest. Dibe ku piştî guhertinê pêdivî bi tevlîkirina kurteriyek dîmendera destpêkê hebe.</string>
+    <string name="settings_app_name_generic_hint">Îkona destpêkê li şûna nexşeyên MAP-RMG wekî nexşe nîşan dide, ji bo xuyaniyek berdest. Dibe ku piştî guhertinê pêdivî bi tevlîkirina kurteriyek dîmendera destpêkê hebe.</string>
     <string name="settings_dynamic_color">Rengên Material You</string>
     <string name="settings_dynamic_color_hint">Rengên bişkok û devokan ji wêneyê dîwarê te digire. Nexşe bêalî dimîne.</string>
     <string name="settings_map_style">Şêwaza nexşeyê</string>
@@ -158,7 +158,7 @@
     <string name="settings_map_names_hint">Navên bi tîpên latînî ji aliyê makîneyê ve çêdibin li cihên ku OpenStreetMap navê îngilîzî tune, û di îbranî û hin nivîsên din de xirab tên xwendin. Zimanê sepanê û deng naguherin.</string>
     <string name="settings_project">Proje</string>
     <string name="settings_project_hint">Koda çavkanî, raporên çewtiyan û gotûbêj li ser GitHub in.</string>
-    <string name="settings_project_github_button">Vela li ser GitHub</string>
+    <string name="settings_project_github_button">MAP-RMG li ser GitHub</string>
     <string name="nav_end">Biqedîne</string>
     <string name="settings_font">Cûrenivîs</string>
     <string name="settings_voice_variant_go">Biçe</string>

@@ -24,7 +24,7 @@
     <string name="settings_follow_system">Järgi süsteemi kujundust</string>
     <string name="settings_theme_light">Hele kujundus</string>
     <string name="settings_theme_dark">Tume kujundus</string>
-    <string name="settings_appearance_hint">Kehtib vaid Vela jaoks.</string>
+    <string name="settings_appearance_hint">Kehtib vaid MAP-RMG jaoks.</string>
     <string name="settings_app_name_title">Rakenduse nimi</string>
     <string name="settings_mode_cycling">Rattasõit</string>
     <string name="settings_mode_transit">Ühistransport</string>
@@ -80,7 +80,7 @@
     <string name="welcome_feature_open_source_title">Vaba ja avatud lähtekoodiga</string>
     <string name="welcome_feature_open_source_body">Avaldatud GPLv3 litsentsi alusel, mõeldud GrapheneOS-i ja teiste ilma Google\'ita Androidipõhiste seadmete jaoks.</string>
     <string name="welcome_get_started">Alustame siis</string>
-    <string name="welcome_donate_confirm">Toeta Vela arendust</string>
+    <string name="welcome_donate_confirm">Toeta MAP-RMG arendust</string>
     <string name="welcome_donate_dismiss">Võib-olla hiljem</string>
     <string name="search_close_cd">Sulge otsing</string>
     <string name="search_fill_cd">Pane otsingukasti</string>

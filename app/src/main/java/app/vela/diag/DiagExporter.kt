@@ -57,8 +57,8 @@ class DiagExporter @Inject constructor(
         return shareFileIntent(
             context, file,
             mime = "application/json",
-            subject = "Vela debug session (${events.size} events)",
-            text = "Attached: a Vela diagnostics export to help debug an issue.",
+            subject = "MAP-RMG debug session (${events.size} events)",
+            text = "Attached: a MAP-RMG diagnostics export to help debug an issue.",
             title = "Share debug session",
         )
     }

@@ -624,7 +624,7 @@ class MapViewModel @Inject constructor(
                     app.vela.ui.map.MapPerf.reset(); _state.first { it.navigating }
                     // The drive's first note: what it ran on. No account, no place.
                     app.vela.diag.TripNote.add(
-                        "build: Vela ${app.vela.BuildConfig.VERSION_NAME} (${app.vela.BuildConfig.VERSION_CODE}), Android ${android.os.Build.VERSION.RELEASE}, " +
+                        "build: MAP-RMG ${app.vela.BuildConfig.VERSION_NAME} (${app.vela.BuildConfig.VERSION_CODE}), Android ${android.os.Build.VERSION.RELEASE}, " +
                             "${android.os.Build.MANUFACTURER} ${android.os.Build.MODEL}, voice ${_state.value.selectedEngine?.packageName ?: "system"}, " +
                             "places ${app.vela.ui.MapPoiPrefs.placesSource.value}, icon ${app.vela.ui.PuckStyle.key()}",
                     )

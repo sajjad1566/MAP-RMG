@@ -28,7 +28,7 @@
     <string name="settings_voice_none_hint">Brak głosu, otwórz Bibliotekę głosów poniżej, aby pobrać naturalny głos działający na urządzeniu (bez konta, w czasie rzeczywistym nawet na starszych telefonach). Zainstalowany systemowy silnik TTS również pojawi się tutaj do wyboru.</string>
     <string name="settings_voice_test">Przetestuj głos</string>
     <string name="settings_voice_system_settings">Systemowe ustawienia głosu</string>
-    <string name="settings_voice_test_hint">Dotknij Przetestuj głos, aby go usłyszeć. Zalecany jest głos Vela; możesz go zastąpić dowolnym zainstalowanym silnikiem syntezy mowy.</string>
+    <string name="settings_voice_test_hint">Dotknij Przetestuj głos, aby go usłyszeć. Zalecany jest głos MAP-RMG; możesz go zastąpić dowolnym zainstalowanym silnikiem syntezy mowy.</string>
     <string name="settings_voice_library">Biblioteka głosów</string>
     <string name="settings_voice_advanced">Zaawansowane opcje głosu</string>
     <string name="settings_voice_try_label">Wypróbuj głos na dowolnym tekście</string>
@@ -61,7 +61,7 @@
     <string name="settings_buildings_3d">Budynki 3D</string>
     <string name="settings_buildings_3d_hint">Wypukłe budynki przy dużym zbliżeniu, gdy mapa jest pochylona. Wyłączenie może wygładzić przesuwanie na starszych telefonach.</string>
     <string name="settings_show_reviews">Pokazuj recenzje</string>
-    <string name="settings_show_reviews_hint">Wył. = strony miejsc nie pokazują recenzji i Vela nigdy ich nie pobiera.</string>
+    <string name="settings_show_reviews_hint">Wył. = strony miejsc nie pokazują recenzji i MAP-RMG nigdy ich nie pobiera.</string>
     <string name="settings_load_photos">Wczytuj zdjęcia</string>
     <string name="settings_load_photos_hint">Wył. = strony miejsc nie pokazują zdjęć i nic nie jest pobierane. Oszczędza dane.</string>
     <string name="settings_hide_adult">Ukryj kategorie dla dorosłych</string>
@@ -113,12 +113,12 @@
     <string name="settings_no_saved_places">Brak zapisanych miejsc</string>
     <string name="settings_export">Eksportuj</string>
     <string name="settings_import">Importuj</string>
-    <string name="settings_data_privacy_hint">Vela łączy się z publicznymi punktami Google prosto z tego urządzenia: bez backendu, konta i klucza API. Google widzi IP, zapytanie i obszar mapy, nie to, kim jesteś.</string>
+    <string name="settings_data_privacy_hint">MAP-RMG łączy się z publicznymi punktami Google prosto z tego urządzenia: bez backendu, konta i klucza API. Google widzi IP, zapytanie i obszar mapy, nie to, kim jesteś.</string>
     <string name="settings_privacy_button">Jakie dane otrzymuje Google</string>
     <string name="settings_google_free">Używaj Veli bez Google</string>
     <string name="settings_google_free_hint">Nic nie jest wysyłane do Google. Wyszukiwanie korzysta z OpenStreetMap i pobranych regionów, miejsca na mapie pochodzą z własnych danych Veli, a trasy z otwartego planera tras, bez ruchu na żywo. Tracisz opinie, zdjęcia, godziny otwarcia, czasy przyjazdu na żywo, Street View, trasy komunikacji i zbliżenia satelitarne; pobrane regiony nadal działają w pełni offline.</string>
     <string name="settings_diagnostics">Diagnostyka</string>
-    <string name="settings_diagnostics_hint">Domyślnie wyłączone. Po włączeniu Vela prowadzi krótki lokalny dziennik, który możesz wyeksportować i przekazać deweloperowi. Nic nie jest wysyłane, a wyłączenie go czyści.</string>
+    <string name="settings_diagnostics_hint">Domyślnie wyłączone. Po włączeniu MAP-RMG prowadzi krótki lokalny dziennik, który możesz wyeksportować i przekazać deweloperowi. Nic nie jest wysyłane, a wyłączenie go czyści.</string>
     <string name="settings_share_diagnostics">Udostępnij diagnostykę</string>
     <string name="settings_diag_nothing">Nic jeszcze nie zapisano, użyj aplikacji, a następnie wyeksportuj.</string>
     <string name="settings_diag_export">Eksportuj sesję debugowania</string>
@@ -133,23 +133,23 @@
     <string name="settings_trip_delete">Usuń podróż</string>
     <string name="settings_no_trips_hint">Brak zapisanych podróży, nawiguj gdzieś z włączoną tą opcją, a pojawi się tutaj do odtworzenia.</string>
     <string name="settings_trip_consent_title">Zapisywać Twoje podróże?</string>
-    <string name="settings_trip_consent_body">Vela będzie zapisywać ślad GPS każdej nawigacji na tym telefonie, aby przejazd można było odtworzyć do testów bez ponownej jazdy. Jest to bardziej ujawniające niż diagnostyka, rejestruje Twoje dokładne trasy, ale pozostaje na telefonie i nigdy nie jest przesyłane. Możesz to wyłączyć w dowolnej chwili.</string>
+    <string name="settings_trip_consent_body">MAP-RMG będzie zapisywać ślad GPS każdej nawigacji na tym telefonie, aby przejazd można było odtworzyć do testów bez ponownej jazdy. Jest to bardziej ujawniające niż diagnostyka, rejestruje Twoje dokładne trasy, ale pozostaje na telefonie i nigdy nie jest przesyłane. Możesz to wyłączyć w dowolnej chwili.</string>
     <string name="settings_turn_on">Włącz</string>
     <string name="settings_cancel">Anuluj</string>
-    <string name="settings_crash_hint">Vela zamknęła się niespodziewanie. Wysłanie raportu o awarii (ślad stosu) pomaga ją naprawić, to zwykły plik tekstowy, bez danych osobowych.</string>
+    <string name="settings_crash_hint">MAP-RMG zamknęła się niespodziewanie. Wysłanie raportu o awarii (ślad stosu) pomaga ją naprawić, to zwykły plik tekstowy, bez danych osobowych.</string>
     <string name="settings_crash_export">Eksportuj raport o awarii</string>
     <string name="settings_crash_discard">Odrzuć</string>
     <string name="settings_crash_diag_offer">Diagnostyka jest wyłączona, więc nic nie zostało zapisane przed tą awarią. Włącz ją, aby następnym razem zebrać więcej szczegółów.</string>
     <string name="settings_crash_enable_diag">Włącz diagnostykę</string>
     <string name="settings_diag_consent_title">Włączyć diagnostykę?</string>
-    <string name="settings_diag_consent_body">Vela będzie prowadzić krótki lokalny dziennik Twoich wyszukiwań, tras i wszelkich błędów. Nigdy nie opuszcza telefonu, chyba że dotkniesz Eksportuj i wybierzesz miejsce docelowe. Wyłącz w dowolnej chwili, aby wyczyścić dziennik.</string>
+    <string name="settings_diag_consent_body">MAP-RMG będzie prowadzić krótki lokalny dziennik Twoich wyszukiwań, tras i wszelkich błędów. Nigdy nie opuszcza telefonu, chyba że dotkniesz Eksportuj i wybierzesz miejsce docelowe. Wyłącz w dowolnej chwili, aby wyczyścić dziennik.</string>
     <string name="settings_about">Informacje</string>
-    <string name="settings_about_hint">Vela to odgooglowany klient map: otwarte kafelki dla mapy podkładowej, scrapowany Google dla POI, wyznaczanie tras i czasy przyjazdu uwzględniające ruch, głos Piper działający na telefonie. GPLv3. Nie wymaga Usług Play.</string>
+    <string name="settings_about_hint">MAP-RMG to odgooglowany klient map: otwarte kafelki dla mapy podkładowej, scrapowany Google dla POI, wyznaczanie tras i czasy przyjazdu uwzględniające ruch, głos Piper działający na telefonie. GPLv3. Nie wymaga Usług Play. Vela Maps · GPLv3.</string>
     <string name="settings_support">Wsparcie</string>
-    <string name="settings_support_hint">Vela jest darmowa i bez reklam. Jeśli okazała się przydatna, darowizna pomaga kontynuować rozwój, całkowicie dobrowolnie.</string>
-    <string name="settings_support_button">Wesprzyj Vela</string>
+    <string name="settings_support_hint">MAP-RMG jest darmowa i bez reklam. Jeśli okazała się przydatna, darowizna pomaga kontynuować rozwój, całkowicie dobrowolnie.</string>
+    <string name="settings_support_button">Wesprzyj MAP-RMG</string>
     <string name="settings_version">Wersja</string>
-    <string name="settings_version_line">Vela %1$s  (kompilacja %2$d)</string>
+    <string name="settings_version_line">MAP-RMG %1$s  (kompilacja %2$d)</string>
     <string name="settings_installer_play">Zainstalowano przez %1$s. Ta instalacja jest przygotowana pod Android Auto; aktualizacja z poziomu aplikacji by to cofnęła, więc aktualizuj tym samym instalatorem.</string>
     <string name="settings_installer_none">Zainstalowano ręcznie (brak zapisanego instalatora). Android Auto nie pokaże tej instalacji.</string>
     <string name="settings_installer_other">Zainstalowano przez %1$s. Android Auto nie pokaże tej instalacji.</string>
@@ -165,7 +165,7 @@
     <string name="settings_voice_show_less">Pokaż mniej</string>
     <string name="settings_voice_this_voice">ten głos</string>
     <string name="settings_voice_remove_title">Usunąć %1$s?</string>
-    <string name="settings_voice_remove_body">To Twój jedyny głos Vela. Wskazówki głosowe przełączą się na systemowy silnik syntezy mowy (albo zamilkną, jeśli żaden nie jest zainstalowany), dopóki nie pobierzesz kolejnego.</string>
+    <string name="settings_voice_remove_body">To Twój jedyny głos MAP-RMG. Wskazówki głosowe przełączą się na systemowy silnik syntezy mowy (albo zamilkną, jeśli żaden nie jest zainstalowany), dopóki nie pobierzesz kolejnego.</string>
     <string name="settings_voice_remove">Usuń</string>
     <string name="settings_voice_gender_female">Kobiecy</string>
     <string name="settings_voice_gender_male">Męski</string>
@@ -186,8 +186,8 @@
     <string name="place_close">Zamknij</string>
     <string name="place_permanently_closed">Zamknięte na stałe</string>
     <string name="place_temporarily_closed">Tymczasowo zamknięte</string>
-    <string name="map_voice_downloading">Pobieranie głosu Vela · %1$d %%</string>
-    <string name="map_voice_installing">Instalowanie głosu Vela…</string>
+    <string name="map_voice_downloading">Pobieranie głosu MAP-RMG · %1$d %%</string>
+    <string name="map_voice_installing">Instalowanie głosu MAP-RMG…</string>
     <string name="map_region_downloading">Pobieranie tras: %1$s · %2$d%%</string>
     <!-- format -->
     <string name="map_region_places_downloading">Zapisywanie miejsc regionu %1$s do wyszukiwania offline · %2$d%%</string>
@@ -370,7 +370,7 @@
     <string name="root_voice_body_intro">Własny głos Veli działa w całości na telefonie: naturalne wskazówki, bez konta i dodatkowej aplikacji. Polecany, jednorazowe pobranie %1$d MB.</string>
     <string name="root_voice_body_system">Wolisz nie? Użyj głosu, który już masz w telefonie.</string>
     <string name="root_voice_body_outro">Zmienisz to kiedykolwiek w Ustawieniach → Głos.</string>
-    <string name="root_voice_download">Pobierz głos Vela</string>
+    <string name="root_voice_download">Pobierz głos MAP-RMG</string>
     <string name="root_voice_use_system">Użyj głosu systemowego</string>
     <string name="nav_maneuver_continue">Jedź dalej</string>
     <string name="nav_gps_lost">Szukanie sygnału GPS…</string>
@@ -397,9 +397,9 @@
     <string name="welcome_feature_open_source_title">Darmowe i otwartoźródłowe</string>
     <string name="welcome_feature_open_source_body">GPLv3, stworzone dla GrapheneOS i innych odgooglowanych telefonów.</string>
     <string name="welcome_get_started">Rozpocznij</string>
-    <string name="welcome_donate_title">Podoba Ci się Vela?</string>
-    <string name="welcome_donate_body">Vela jest darmowa i bez reklam, tworzona za grosze. Jeśli okazała się przydatna, mała jednorazowa darowizna pomaga ją utrzymać, całkowicie dobrowolnie i tylko ten jeden raz o to poprosimy. W Ustawieniach zawsze jest też pozycja Wsparcie.</string>
-    <string name="welcome_donate_confirm">Wesprzyj Vela</string>
+    <string name="welcome_donate_title">Podoba Ci się MAP-RMG?</string>
+    <string name="welcome_donate_body">MAP-RMG jest darmowa i bez reklam, tworzona za grosze. Jeśli okazała się przydatna, mała jednorazowa darowizna pomaga ją utrzymać, całkowicie dobrowolnie i tylko ten jeden raz o to poprosimy. W Ustawieniach zawsze jest też pozycja Wsparcie.</string>
+    <string name="welcome_donate_confirm">Wesprzyj MAP-RMG</string>
     <string name="welcome_donate_dismiss">Może później</string>
     <string name="search_close_cd">Zamknij wyszukiwanie</string>
     <string name="search_fill_cd">Wstaw do pola wyszukiwania</string>
@@ -436,15 +436,15 @@
     <string name="mapvm_voice_lang_missing">Wskazówki głosowe wymagają głosu %1$s, dodaj go w Ustawienia → Głos</string>
     <string name="mapvm_no_track_to_replay">Ta podróż nie ma zapisu do odtworzenia</string>
     <string name="mapvm_replaying">Odtwarzanie %1$s…</string>
-    <string name="mapvm_export_saved_subject">Zapisane miejsca Vela (%1$d)</string>
+    <string name="mapvm_export_saved_subject">Zapisane miejsca MAP-RMG (%1$d)</string>
     <string name="mapvm_export_saved_chooser">Eksportuj zapisane miejsca</string>
-    <string name="mapvm_export_trip_subject">Podróż Vela: %1$s (%2$d punktów)</string>
+    <string name="mapvm_export_trip_subject">Podróż MAP-RMG: %1$s (%2$d punktów)</string>
     <string name="mapvm_share_trip_chooser">Udostępnij podróż</string>
     <string name="mapvm_voice_sample">Za czterysta metrów skręć w prawo w ulicę Główną.</string>
     <string name="mapvm_not_enough_space">Za mało wolnego miejsca na %1$s (%2$d MB)</string>
     <string name="mapvm_voice_downloaded">Pobrano %1$s</string>
     <string name="mapvm_voice_download_failed">Pobieranie %1$s nie powiodło się</string>
-    <string name="mapvm_vela_voice_removed">Usunięto głos Vela</string>
+    <string name="mapvm_vela_voice_removed">Usunięto głos MAP-RMG</string>
     <string name="mapvm_opening_installer">Otwieranie instalatora dla %1$s…</string>
     <string name="mapvm_pan_to_area_first">Najpierw otwórz mapę i przewiń do obszaru</string>
     <string name="mapvm_offline_routing_ready">Trasy offline gotowe: %1$s</string>
@@ -479,13 +479,13 @@
     <string name="mapscreen_your_destination">celu</string>
     <string name="mapvm_resume_waiting_gps">Oczekiwanie na GPS, aby wznowić nawigację…</string>
     <string name="mapvm_resume_failed">Nie udało się wznowić nawigacji</string>
-    <string name="update_available_title">Dostępna jest Vela %1$s</string>
+    <string name="update_available_title">Dostępna jest MAP-RMG %1$s</string>
     <string name="update_downloading">Pobieranie… %1$d%%</string>
     <string name="update_later">Nie teraz</string>
     <string name="update_install">Aktualizuj</string>
     <string name="update_download_failed">Pobieranie aktualizacji nie powiodło się. Spróbuj później.</string>
     <string name="update_car_title">Ta aktualizacja usunie Velę z Android Auto</string>
-    <string name="update_car_body">Vela została zainstalowana w sposób akceptowany przez Android Auto. Zainstalowanie tej aktualizacji tutaj to zastąpi i samochód przestanie pokazywać Velę, dopóki nie zainstalujesz pliku narzędziem użytym za pierwszym razem (AAEnabler, King Installer).\n\nZapisz plik i zainstaluj go w ten sposób, aby Vela nadal działała w samochodzie.</string>
+    <string name="update_car_body">MAP-RMG została zainstalowana w sposób akceptowany przez Android Auto. Zainstalowanie tej aktualizacji tutaj to zastąpi i samochód przestanie pokazywać Velę, dopóki nie zainstalujesz pliku narzędziem użytym za pierwszym razem (AAEnabler, King Installer).\n\nZapisz plik i zainstaluj go w ten sposób, aby MAP-RMG nadal działała w samochodzie.</string>
     <string name="update_car_save">Zapisz plik</string>
     <string name="update_car_anyway">Aktualizuj mimo to</string>
     <string name="settings_update_auto">Sprawdzaj aktualizacje przy starcie</string>
@@ -591,7 +591,7 @@
     <string name="settings_places_imported">Zaimportowano %1$d miejsc(a)</string>
     <!-- format -->
     <string name="settings_no_lists">Brak list do wyeksportowania</string>
-    <string name="mapvm_export_lists_subject">Listy Vela (%1$d)</string>
+    <string name="mapvm_export_lists_subject">Listy MAP-RMG (%1$d)</string>
     <string name="mapvm_export_lists_chooser">Eksportuj listy</string>
     <string name="lists_empty_hint">Brak list. Dotknij Nowa lub zapisz miejsce z jego strony.</string>
     <plurals name="lists_place_count">
@@ -606,18 +606,18 @@
     <string name="settings_developer">Deweloper</string>
     <string name="settings_developer_hint">Narzędzia do wersji demo, zrzutów ekranu i testów. Wyłącz je do zwykłego użytku.</string>
     <string name="settings_browse_voices">Przeglądaj głosy</string>
-    <string name="settings_browse_voices_hint">Pobieraj i przełączaj głosy Vela na urządzeniu.</string>
+    <string name="settings_browse_voices_hint">Pobieraj i przełączaj głosy MAP-RMG na urządzeniu.</string>
     <string name="voice_capture_listening">Słucham…</string>
     <string name="voice_capture_starting">Przygotowywanie…</string>
     <string name="voice_capture_done">Gotowe</string>
-    <string name="mapvm_asr_ready">Głos Vela jest gotowy</string>
+    <string name="mapvm_asr_ready">Głos MAP-RMG jest gotowy</string>
     <string name="mapvm_asr_download_failed">Nie udało się pobrać modelu głosu. Sprawdź połączenie i spróbuj ponownie.</string>
     <string name="mapvm_closing_soon">%1$s zamyka się o %2$s, a ty dojedziesz około %3$s</string>
     <!-- format -->
     <string name="mapvm_closing_before_arrival">%1$s zamyka się o %2$s, zanim dojedziesz (około %3$s)</string>
     <!-- format -->
-    <string name="settings_voice_search_model">Głos Vela</string>
-    <string name="settings_voice_search_model_hint">Głos Vela zamienia mowę w wyszukiwanie bezpośrednio na telefonie: bez innej aplikacji i bez wysyłania czegokolwiek. Jednorazowe pobranie %1$d MB.</string>
+    <string name="settings_voice_search_model">Głos MAP-RMG</string>
+    <string name="settings_voice_search_model_hint">Głos MAP-RMG zamienia mowę w wyszukiwanie bezpośrednio na telefonie: bez innej aplikacji i bez wysyłania czegokolwiek. Jednorazowe pobranie %1$d MB.</string>
     <!-- format -->
     <string name="settings_voice_search_download">Pobierz (%1$d MB)</string>
     <!-- format -->
@@ -626,20 +626,20 @@
     <!-- format -->
     <string name="settings_voice_search_installing">Instalowanie…</string>
     <string name="settings_voice_search_engine_title">Po dotknięciu mikrofonu</string>
-    <string name="settings_voice_search_engine_auto">Głos Vela</string>
+    <string name="settings_voice_search_engine_auto">Głos MAP-RMG</string>
     <string name="settings_voice_search_engine_default">Domyślna w Androidzie</string>
     <string name="settings_voice_search_engine_system">Inna aplikacja głosowa</string>
     <string name="map_asr_offer_title">Wyszukiwanie głosowe</string>
-    <string name="map_asr_offer_body">Pobierz głos Vela, aby dyktować wyszukiwania. Działa w całości na telefonie i niczego nie wysyła.</string>
+    <string name="map_asr_offer_body">Pobierz głos MAP-RMG, aby dyktować wyszukiwania. Działa w całości na telefonie i niczego nie wysyła.</string>
     <string name="nav_precise_title">Potrzebna dokładna lokalizacja</string>
-    <string name="nav_precise_body">Nawigacja śledzi cię przez GPS, a to wymaga dokładnej lokalizacji. Na razie Vela zna tylko twoją przybliżoną okolicę.</string>
+    <string name="nav_precise_body">Nawigacja śledzi cię przez GPS, a to wymaga dokładnej lokalizacji. Na razie MAP-RMG zna tylko twoją przybliżoną okolicę.</string>
     <string name="nav_precise_allow">Zezwól na dokładną</string>
     <string name="nav_precise_toast">Nawigacja wymaga dokładnej lokalizacji</string>
     <string name="loc_off_title">Lokalizacja jest wyłączona</string>
-    <string name="loc_off_body">Vela nie ma dostępu do lokalizacji. Możesz go włączyć w ustawieniach systemu.</string>
+    <string name="loc_off_body">MAP-RMG nie ma dostępu do lokalizacji. Możesz go włączyć w ustawieniach systemu.</string>
     <string name="loc_off_settings">Otwórz ustawienia</string>
     <string name="loc_approx_title">Przybliżona lokalizacja</string>
-    <string name="loc_approx_body">Vela zna tylko twoją przybliżoną okolicę, nie to, gdzie jesteś. Mapa pokazuje szerokie koło zamiast punktu, a nawigacja nie zadziała. Na dokładną lokalizację możesz przejść w każdej chwili.</string>
+    <string name="loc_approx_body">MAP-RMG zna tylko twoją przybliżoną okolicę, nie to, gdzie jesteś. Mapa pokazuje szerokie koło zamiast punktu, a nawigacja nie zadziała. Na dokładną lokalizację możesz przejść w każdej chwili.</string>
     <string name="loc_approx_allow">Zezwól na dokładną</string>
     <string name="loc_approx_keep">Zostaw przybliżoną</string>
     <string name="notif_ask_title">Pominąć powiadomienia?</string>
@@ -651,13 +651,13 @@
     <string name="settings_map_colors">Kolory mapy</string>
     <string name="settings_map_colors_modern">Nowoczesne</string>
     <string name="settings_map_colors_classic">Klasyczne</string>
-    <string name="settings_map_colors_hint">Nowoczesne odpowiadają obecnej palecie Google Maps. Klasyczne to wcześniejszy wygląd Vela: białe drogi, żółte autostrady, wyraziste zielenie.</string>
+    <string name="settings_map_colors_hint">Nowoczesne odpowiadają obecnej palecie Google Maps. Klasyczne to wcześniejszy wygląd MAP-RMG: białe drogi, żółte autostrady, wyraziste zielenie.</string>
     <string name="map_parking_find">Znajdź mój samochód</string>
     <string name="map_parking_move_here">Przenieś parking tutaj</string>
     <string name="map_parking_earlier">Wcześniejsze miejsca</string>
     <string name="map_parking_clear">Usuń parking</string>
     <string name="map_parking_moved">Przeniesiono parking tutaj</string>
-    <string name="map_import_needs_google">Udostępnionej listy Google Maps nie da się otworzyć, gdy Vela działa bez Google.</string>
+    <string name="map_import_needs_google">Udostępnionej listy Google Maps nie da się otworzyć, gdy MAP-RMG działa bez Google.</string>
     <string name="map_link_needs_google">Opcja \"Otwieraj udostępnione linki Google Maps\" jest wyłączona w Ustawienia &gt; Prywatność.</string>
     <string name="map_link_unreadable">Nie udało się otworzyć tego linku.</string>
     <string name="settings_performance">Wydajność</string>
@@ -668,7 +668,7 @@
     <string name="settings_speech_preload">Wczytuj wyszukiwanie głosowe przy starcie</string>
     <string name="settings_speech_preload_hint">Wczytuje model wyszukiwania głosowego przy otwarciu Veli, żeby mikrofon słuchał od razu. Zajmuje około 300 MB, dopóki nie miną dwie minuty bezczynności. Wyłączone: wczytuje się po dotknięciu pola wyszukiwania. Domyślnie włączone na telefonach z około 8 GB pamięci lub więcej.</string>
     <string name="settings_google_free_links">Otwieraj udostępnione linki Google Maps</string>
-    <string name="settings_google_free_links_hint">Krótki link Google Maps (maps.app.goo.gl) nie mówi, dokąd prowadzi. Gdy to jest włączone, Vela raz pyta skracacz linków Google, bez plików cookie, i otwiera miejsce z otwartych źródeł. Pełne linki google.com/maps otwierają się bez pytania. Udostępnione listy nadal wymagają Google.</string>
+    <string name="settings_google_free_links_hint">Krótki link Google Maps (maps.app.goo.gl) nie mówi, dokąd prowadzi. Gdy to jest włączone, MAP-RMG raz pyta skracacz linków Google, bez plików cookie, i otwiera miejsce z otwartych źródeł. Pełne linki google.com/maps otwierają się bez pytania. Udostępnione listy nadal wymagają Google.</string>
     <string name="mapscreen_system_voices">Głosy systemowe</string>
     <string name="mapvm_voice_lang_system">Wskazówki dla języka %1$s używają głosu telefonu. Dodaj go w systemowych ustawieniach głosu.</string>
     <string name="settings_topography">Cieniowanie terenu</string>
@@ -703,13 +703,13 @@
     <string name="place_review_less">Mniej</string>
     <string name="settings_traffic_lights">Wskazówki przy sygnalizacji</string>
     <string name="settings_traffic_lights_hint">Glosowe punkty odniesienia: minac swiatla i skrecic. Tylko angielski, domyslnie wylaczone.</string>
-    <string name="map_asr_downloading">Pobieranie mikrofonu Vela Voice · %1$d %%</string>
-    <string name="map_asr_installing">Instalowanie mikrofonu Vela Voice…</string>
-    <string name="map_asr_waiting">Mikrofon Vela Voice · czeka na głos Vela</string>
+    <string name="map_asr_downloading">Pobieranie mikrofonu MAP-RMG Voice · %1$d %%</string>
+    <string name="map_asr_installing">Instalowanie mikrofonu MAP-RMG Voice…</string>
+    <string name="map_asr_waiting">Mikrofon MAP-RMG Voice · czeka na głos MAP-RMG</string>
     <string name="mapscreen_filter_top_rated">4,0★</string>
     <string name="mapscreen_section_recent_searches">Ostatnie wyszukiwania</string>
     <string name="mapscreen_clear_recent_searches">Wyczyść ostatnie wyszukiwania</string>
-    <string name="root_diag_title">Pomóc ulepszyć Vela?</string>
+    <string name="root_diag_title">Pomóc ulepszyć MAP-RMG?</string>
     <string name="root_diag_body">Oba pozostają na telefonie - nic nie jest wysyłane, dopóki tego nie wyeksportujesz. Możesz je zmienić w dowolnej chwili w Ustawieniach.</string>
     <string name="root_diag_share_title">Udostępnij diagnostykę</string>
     <string name="root_diag_share_desc">Krótki lokalny dziennik wyszukiwań, tras i błędów.</string>
@@ -724,7 +724,7 @@
     <!-- format -->
     <string name="root_voice_none_picked">Zaznacz opcję lub wybierz Nie teraz.</string>
     <string name="root_offline_title">Mapy offline</string>
-    <string name="root_offline_body">Vela pobiera miejsca, wyszukiwanie i trasy z Google, więc bez sygnału zadziałają tylko obszary, które pobrałeś. Skonfiguruj obszar teraz, aby mieć pokrycie, gdy stracisz zasięg.</string>
+    <string name="root_offline_body">MAP-RMG pobiera miejsca, wyszukiwanie i trasy z Google, więc bez sygnału zadziałają tylko obszary, które pobrałeś. Skonfiguruj obszar teraz, aby mieć pokrycie, gdy stracisz zasięg.</string>
     <string name="root_offline_setup">Skonfiguruj offline</string>
     <string name="mapvm_stop_added">Dodano przystanek</string>
     <string name="shortcut_home">Dom</string>
@@ -732,7 +732,7 @@
     <string name="settings_asr_engines_hint">Mowa staje sie wyszukiwaniem w telefonie. Nic nie jest wysylane. Wybierz silnik mikrofonu.</string>
     <string name="settings_asr_engine_meta">%1$s · %2$d MB</string>
     <!-- format -->
-    <string name="settings_asr_langs_whisper">Wszystkie języki obsługiwane przez Vela</string>
+    <string name="settings_asr_langs_whisper">Wszystkie języki obsługiwane przez MAP-RMG</string>
     <string name="settings_asr_langs_sensevoice">angielski, chiński, japoński, koreański, kantoński</string>
     <string name="settings_asr_langs_moonshine">Tylko angielski</string>
     <string name="settings_asr_active">Aktywny</string>
@@ -753,7 +753,7 @@
     <string name="voice_error_title">Wyszukiwanie głosowe nie ruszyło</string>
     <string name="voice_error_retry">Spróbuj ponownie</string>
     <string name="voice_error_model">Model głosowy nie jest gotowy. Pobierz go ponownie w Ustawienia \u2192 Wyszukiwanie.</string>
-    <string name="voice_error_permission">Vela potrzebuje uprawnienia do mikrofonu. Przyznaj je w ustawieniach aplikacji Androida.</string>
+    <string name="voice_error_permission">MAP-RMG potrzebuje uprawnienia do mikrofonu. Przyznaj je w ustawieniach aplikacji Androida.</string>
     <string name="voice_error_vad">Brakuje części modelu głosowego. Pobierz go ponownie w Ustawienia \u2192 Wyszukiwanie.</string>
     <string name="voice_error_audio">Ten telefon nie udostępnił mikrofonu Veli. Zamknij inne aplikacje nagrywające dźwięk i spróbuj ponownie.</string>
     <string name="voice_error_recording">Nagrywanie nieoczekiwanie się zatrzymało. Spróbuj ponownie.</string>
@@ -782,7 +782,7 @@
     <string name="settings_search_none">Brak wyników</string>
     <string name="settings_app_name_title">Nazwa aplikacji</string>
     <string name="settings_app_name_generic">Nazwij ją po prostu „Maps”</string>
-    <string name="settings_app_name_generic_hint">Pokazuje ikonę w menu aplikacji jako zwykłe Maps zamiast Vela Maps, dla systemowego wyglądu. Po przełączeniu może być konieczne ponowne dodanie skrótu na ekranie głównym.</string>
+    <string name="settings_app_name_generic_hint">Pokazuje ikonę w menu aplikacji jako zwykłe Maps zamiast MAP-RMG Maps, dla systemowego wyglądu. Po przełączeniu może być konieczne ponowne dodanie skrótu na ekranie głównym.</string>
     <string name="settings_contacts_search">Przeszukuj kontakty</string>
     <string name="settings_contacts_search_hint">Wpisanie nazwy kontaktu podpowiada zapisane u niego adresy, wraz ze zdjęciem i etykietą adresu z książki adresowej. Twoje kontakty zostają na tym telefonie; wybranie jednego wyszukuje ten adres jak każde wpisane zapytanie i otwiera go pod nazwą kontaktu.</string>
     <string name="suggestion_contact_badge">Kontakt</string>
@@ -805,8 +805,8 @@
     <string name="settings_nav_trace_hint">Rejestruje, jak porusza się kamera mapy podczas nawigacji, aby dało się zdiagnozować drgającą lub pływającą mapę. Nie zawiera danych o lokalizacji, tylko kierunki, prędkości i czasy, więc można go bezpiecznie dołączyć do zgłoszenia błędu.</string>
     <string name="settings_nav_trace_export">Udostępnij ślad nawigacji</string>
     <string name="settings_nav_trace_empty">Nie zarejestrowano jeszcze żadnego śladu. Najpierw gdzieś nawiguj.</string>
-    <string name="settings_voice_vela_name">Głos Vela (%1$s)</string>
-    <string name="settings_voice_install_vela">Zainstaluj głos Vela (%1$d MB)</string>
+    <string name="settings_voice_vela_name">Głos MAP-RMG (%1$s)</string>
+    <string name="settings_voice_install_vela">Zainstaluj głos MAP-RMG (%1$d MB)</string>
     <string name="settings_voice_install_vela_hint">Zalecany głos nawigacji. Zainstaluj go tutaj ponownie, gdy zniknie albo gdy pobieranie się nie powiedzie.</string>
     <string name="settings_texture_render">Renderowanie zgodności</string>
     <string name="settings_texture_render_hint">Rysuje mapę ścieżką zgodności, która omija błędy sterowników graficznych niektórych urządzeń. Włącza się samo, jeśli mapa wywołała awarię aplikacji przy starcie. Nieco wolniejsze; wymaga ponownego uruchomienia aplikacji.</string>
@@ -831,7 +831,7 @@
     <string name="mapvm_offline_all_deleted">Usunięto dane offline</string>
     <string name="settings_import_nothing_new">Wszystko z tego pliku jest już zapisane.</string>
     <string name="settings_import_unreadable">Nie udało się otworzyć tego pliku.</string>
-    <string name="settings_import_wrong_format">Nie znaleziono miejsc w tym pliku. Vela odczytuje własne eksporty oraz pliki GPX, KML i GeoJSON zapisane w innych aplikacjach map.</string>
+    <string name="settings_import_wrong_format">Nie znaleziono miejsc w tym pliku. MAP-RMG odczytuje własne eksporty oraz pliki GPX, KML i GeoJSON zapisane w innych aplikacjach map.</string>
     <string name="settings_import_wrong_format_named">Nie znaleziono miejsc w tym pliku %1$s.</string>
     <string name="settings_import_no_picker">Na tym urządzeniu nie ma menedżera plików, więc nie można wybrać pliku.</string>
     <string name="nav_overview">Podgląd trasy</string>
@@ -853,9 +853,9 @@
     <string name="settings_places_source_more">Dowiedz się więcej</string>
     <string name="settings_places_source_more_credit">Overture Maps</string>
     <string name="settings_places_lookup">Sprawdzaj dotknięte miejsca w Google</string>
-    <string name="settings_places_lookup_hint">Dotknięcie miejsca pobiera jego godziny, opinie i zdjęcia z Google, a Vela zapamiętuje dopasowanie, więc kolejne dotknięcie jest natychmiastowe. Wył. = dotknięte miejsce pokazuje tylko to, co mają dane Veli (nazwa, typ, adres, telefon, strona), a nic o dotknięciu nie trafia do Google. Wyszukiwanie i trasy nadal korzystają z Google.</string>
+    <string name="settings_places_lookup_hint">Dotknięcie miejsca pobiera jego godziny, opinie i zdjęcia z Google, a MAP-RMG zapamiętuje dopasowanie, więc kolejne dotknięcie jest natychmiastowe. Wył. = dotknięte miejsce pokazuje tylko to, co mają dane Veli (nazwa, typ, adres, telefon, strona), a nic o dotknięciu nie trafia do Google. Wyszukiwanie i trasy nadal korzystają z Google.</string>
     <string name="settings_places_source_more_title">Skąd pochodzą dane miejsc Veli</string>
-    <string name="settings_places_source_more_body">Dane miejsc Veli to Overture Maps, otwarty zbiór danych o firmach utrzymywany przez Meta, Microsoft i innych. Vela udostępnia go z własnego repozytorium GitHub, więc nic o tym, gdzie patrzysz, nie trafia do Meta ani Google.\n\nWczytują się w trakcie przeglądania i pobierają razem z regionem do użytku offline. Tam, gdzie Vela nie ma jeszcze danych dla obszaru, mapa korzysta z Google.\n\nWyszukiwanie, szczegóły miejsc, godziny, opinie i zdjęcia zawsze pochodzą z Google, niezależnie od wybranej opcji.</string>
+    <string name="settings_places_source_more_body">Dane miejsc Veli to Overture Maps, otwarty zbiór danych o firmach utrzymywany przez Meta, Microsoft i innych. MAP-RMG udostępnia go z własnego repozytorium GitHub, więc nic o tym, gdzie patrzysz, nie trafia do Meta ani Google.\n\nWczytują się w trakcie przeglądania i pobierają razem z regionem do użytku offline. Tam, gdzie MAP-RMG nie ma jeszcze danych dla obszaru, mapa korzysta z Google.\n\nWyszukiwanie, szczegóły miejsc, godziny, opinie i zdjęcia zawsze pochodzą z Google, niezależnie od wybranej opcji.</string>
     <string name="settings_show_civic">Parki, szkoły i obiekty publiczne</string>
     <string name="settings_show_civic_hint">Warstwa ikon miejsc niebędących firmami. Wył. pokazuje tylko firmy.</string>
     <string name="settings_show_transit_stops">Przystanki komunikacji</string>
@@ -866,7 +866,7 @@
     <string name="settings_poi_size_large">Duże</string>
     <string name="settings_poi_icon_size_hint">Małe pasują do ekranów o niskiej rozdzielczości, takich jak radia samochodowe, gdzie domyślne ikony są za duże.</string>
     <string name="settings_live_rechecks">Sprawdzanie ruchu na żywo podczas nawigacji</string>
-    <string name="settings_live_rechecks_hint">Co kilka minut jazdy Vela pyta Google o świeże dane o ruchu z twojej bieżącej pozycji. Dzięki temu działają propozycje szybszych tras i czas przyjazdu na żywo, ale to także mówi Google, w którym miejscu trasy jesteś. Wył.: trasa i tak przeliczy się, gdy z niej zjedziesz.</string>
+    <string name="settings_live_rechecks_hint">Co kilka minut jazdy MAP-RMG pyta Google o świeże dane o ruchu z twojej bieżącej pozycji. Dzięki temu działają propozycje szybszych tras i czas przyjazdu na żywo, ale to także mówi Google, w którym miejscu trasy jesteś. Wył.: trasa i tak przeliczy się, gdy z niej zjedziesz.</string>
     <string name="nav_edit_route">Edytuj trasę</string>
     <string name="nav_edit_route_hint">Dodaj przystanek po drodze</string>
     <string name="nav_stops_remove_next">Usuń następny</string>
@@ -875,10 +875,10 @@
     <string name="nav_stop_offer_remove">Usuń przystanek</string>
     <string name="settings_google_session">Sesja Google</string>
     <string name="settings_block_google_telemetry">Blokuj telemetrię stron Google</string>
-    <string name="settings_block_google_telemetry_hint">Strony Google raportują same o sobie: pingi logujące i zapytania w tle z paska konta. Nic, co pokazuje Vela, ich nie potrzebuje. Domyślnie są wysyłane, bo przeglądarka, która nigdy ich nie wysyła, mniej przypomina dla Google człowieka, a to po części decyduje, czy twoja sesja dostanie ograniczony widok. Włącz to, aby zamiast tego odpowiadać na nie na telefonie.</string>
+    <string name="settings_block_google_telemetry_hint">Strony Google raportują same o sobie: pingi logujące i zapytania w tle z paska konta. Nic, co pokazuje MAP-RMG, ich nie potrzebuje. Domyślnie są wysyłane, bo przeglądarka, która nigdy ich nie wysyła, mniej przypomina dla Google człowieka, a to po części decyduje, czy twoja sesja dostanie ograniczony widok. Włącz to, aby zamiast tego odpowiadać na nie na telefonie.</string>
     <string name="settings_google_session_limited">Google daje teraz temu telefonowi ograniczony widok: mniej zdjęć na stronę, brak popularnych godzin przy niektórych miejscach, a Więcej opinii nic nie wczytuje. Zwykle mija to samo po jakimś czasie. Zupełnie nowa sesja też zaczyna od ograniczonego widoku, więc rozpoczęcie nowej rzadko pomaga.</string>
     <string name="place_limited_view">Google pokazuje teraz ograniczony widok, więc może tu brakować popularnych godzin i dalszych opinii.</string>
-    <string name="settings_google_session_hint">Google rozpoznaje ten telefon po pliku cookie, więc to, czego Vela szuka, póki ten plik jest ważny, można ze sobą powiązać, bez imienia ani konta. Rozpoczęcie nowej sesji to ogranicza. Nowa sesja przez jakiś czas dostaje od Google skrócony widok (mniej opinii, przy niektórych miejscach brak popularnych godzin).</string>
+    <string name="settings_google_session_hint">Google rozpoznaje ten telefon po pliku cookie, więc to, czego MAP-RMG szuka, póki ten plik jest ważny, można ze sobą powiązać, bez imienia ani konta. Rozpoczęcie nowej sesji to ogranicza. Nowa sesja przez jakiś czas dostaje od Google skrócony widok (mniej opinii, przy niektórych miejscach brak popularnych godzin).</string>
     <string name="settings_google_session_week">Nowa sesja co tydzień (zalecane)</string>
     <string name="settings_google_session_day">Nowa sesja codziennie</string>
     <string name="settings_google_session_launch">Nowa sesja przy każdym otwarciu Veli (najbardziej prywatne)</string>
@@ -917,7 +917,7 @@
     <string name="settings_trip_batch_none">Każda wybrana podróż jest krótsza niż odległość przycięcia, więc nie zostaje nic do udostępnienia. Spróbuj mniejszej.</string>
     <string name="settings_trip_batch_confirm">Udostępnij zip</string>
     <string name="settings_name_trips">Nazywaj każdą podróż przy zapisie</string>
-    <string name="settings_name_trips_hint">Po zakończeniu zapisanego przejazdu Vela pyta, jak go nazwać. Domyślnie wyłączone; nazwę podróży zawsze możesz zmienić później na liście poniżej.</string>
+    <string name="settings_name_trips_hint">Po zakończeniu zapisanego przejazdu MAP-RMG pyta, jak go nazwać. Domyślnie wyłączone; nazwę podróży zawsze możesz zmienić później na liście poniżej.</string>
     <string name="trip_name_prompt_title">Nazwij ten przejazd</string>
     <string name="trip_name_prompt_save">Zapisz nazwę</string>
     <string name="trip_name_prompt_skip">Nie teraz</string>
@@ -947,13 +947,13 @@
     <string name="whatsnew_full_notes">Pełne informacje</string>
     <string name="settings_whatsnew">Co nowego w tej wersji</string>
     <string name="settings_whatsnew_hint">Informacje o wydaniu kompilacji, której używasz. Pokazują się też raz po każdej aktualizacji.</string>
-    <string name="mapvm_export_trips_subject">Podróże Vela: %1$d przejazdów (%2$d punktów)</string>
-    <string name="mapvm_export_trip_scrubbed_subject">Podróż Vela: %1$d punktów, końce przycięte</string>
+    <string name="mapvm_export_trips_subject">Podróże MAP-RMG: %1$d przejazdów (%2$d punktów)</string>
+    <string name="mapvm_export_trip_scrubbed_subject">Podróż MAP-RMG: %1$d punktów, końce przycięte</string>
     <string name="mapvm_area_uses_pack">Miejsca i adresy dla tego obszaru są w pobraniu %1$s</string>
     <string name="navservice_channel_turns_name">Głosowe zapowiedzi zakrętów</string>
     <string name="download_notif_channel">Pobieranie</string>
     <string name="download_notif_title">Pobieranie %1$s</string>
-    <string name="download_label_update">aktualizacji Vela</string>
+    <string name="download_label_update">aktualizacji MAP-RMG</string>
     <string name="download_label_map_data">danych mapy</string>
     <string name="download_label_offline_places">miejsc offline</string>
     <string name="map_area_downloading">Zapisywanie tego obszaru do trybu offline · %1$d%%</string>
@@ -980,8 +980,8 @@
     <string name="settings_voice_volume_normal">Normalnie</string>
     <string name="settings_voice_volume_louder">Głośniej</string>
     <string name="settings_voice_volume_loudest">Najgłośniej</string>
-    <string name="settings_voice_volume_hint">Jak głośno wskazówki głosowe odtwarzają się na tle twoich multimediów. Głośniejsze poziomy dotyczą głosu Vela; głosy systemowe można tylko ściszyć.</string>
-    <string name="place_avoid_not_honored">Te trasy mogą nadal prowadzić płatnymi drogami, autostradami lub promami: nie udało się połączyć z Google, żeby je ominąć, a otwarty planer tras tego nie potrafi. W pobranym obszarze Vela omija je offline.</string>
+    <string name="settings_voice_volume_hint">Jak głośno wskazówki głosowe odtwarzają się na tle twoich multimediów. Głośniejsze poziomy dotyczą głosu MAP-RMG; głosy systemowe można tylko ściszyć.</string>
+    <string name="place_avoid_not_honored">Te trasy mogą nadal prowadzić płatnymi drogami, autostradami lub promami: nie udało się połączyć z Google, żeby je ominąć, a otwarty planer tras tego nie potrafi. W pobranym obszarze MAP-RMG omija je offline.</string>
     <string name="settings_asr_engines_title">Silnik rozpoznawania mowy na urządzeniu</string>
     <string name="voice_capture_examples_title">Co możesz powiedzieć</string>
     <string name="voice_capture_example_home">„Zawieź mnie do domu” lub „zawieź mnie do pracy”</string>
@@ -1026,7 +1026,7 @@
     <string name="settings_route_picker">Wybór trasy w stylu Google</string>
     <string name="settings_route_picker_hint">Pokazuje jedną trasę naraz, pozostałe po dotknięciu z czasami na mapie, a Start na dole. Wyłącz, aby wrócić do klasycznego panelu Veli, który pokazuje wszystkie trasy naraz.</string>
     <string name="settings_route_bar">Pasek drogi przed tobą</string>
-    <string name="settings_route_bar_hint">Pasek obok mapy pokazujący ruch i to, co czeka cię na dalszej części trasy. Pokazuje tylko to, co Vela naprawdę wie: korki, sygnalizację, znaki stop, przejazdy kolejowe, progi zwalniające i kamery monitoringu. Tylko w pionie.</string>
+    <string name="settings_route_bar_hint">Pasek obok mapy pokazujący ruch i to, co czeka cię na dalszej części trasy. Pokazuje tylko to, co MAP-RMG naprawdę wie: korki, sygnalizację, znaki stop, przejazdy kolejowe, progi zwalniające i kamery monitoringu. Tylko w pionie.</string>
     <string name="settings_font">Czcionka</string>
     <string name="settings_font_system">Czcionka systemowa</string>
     <string name="settings_font_choose">Wybierz plik czcionki…</string>
@@ -1070,7 +1070,7 @@
     <string name="settings_photos_on_tap">Wczytuj zdjęcia tylko po dotknięciu</string>
     <string name="settings_photos_on_tap_hint">Miejsce pokazuje przycisk Pokaż zdjęcia zamiast je wczytywać. Oszczędza jedno zapytanie do Google na miejsce.</string>
     <string name="settings_details_retry">Czekaj na godziny szczytu</string>
-    <string name="settings_details_retry_hint">Google często pomija godziny szczytu w pierwszej odpowiedzi, więc Vela pyta ponownie do dwóch razy. Wyłączone = jedno zapytanie na miejsce, a godzin szczytu może zabraknąć.</string>
+    <string name="settings_details_retry_hint">Google często pomija godziny szczytu w pierwszej odpowiedzi, więc MAP-RMG pyta ponownie do dwóch razy. Wyłączone = jedno zapytanie na miejsce, a godzin szczytu może zabraknąć.</string>
     <string name="place_show_photos">Pokaż zdjęcia</string>
     <string name="place_no_photos">Brak zdjęć</string>
     <string name="place_all_n_reviews_open">Wszystkie opinie (%1$d)</string>
@@ -1236,7 +1236,7 @@
     <string name="car_setting_avoid_highways">Unikaj autostrad</string>
     <string name="car_setting_avoid_ferries">Unikaj promów</string>
     <string name="car_location_title">Zezwól na lokalizację</string>
-    <string name="car_location_body">Vela potrzebuje jej, aby pokazać, gdzie jesteś, i prowadzić do celu</string>
+    <string name="car_location_body">MAP-RMG potrzebuje jej, aby pokazać, gdzie jesteś, i prowadzić do celu</string>
     <string name="car_location_denied">Lokalizacja jest wyłączona. Włącz ją dla Veli w ustawieniach telefonu.</string>
     <string name="settings_page_transitions">Przejścia między stronami</string>
     <string name="settings_page_transitions_hint">Animuje otwieranie i zamykanie stron oraz paneli u dołu ekranu i wyświetla podgląd poprzedniej strony podczas przesuwania wstecz.</string>
@@ -1265,7 +1265,7 @@
     <string name="exp_chooser_share_text">Trasa do %1$s: %2$s, %3$s</string>
     <string name="settings_flock_route_alert">Omijaj kamery monitoringu</string>
     <string name="settings_flock_detour">Próbuj bocznych ulic wokół kamer</string>
-    <string name="settings_flock_detour_hint">Gdy najlepsza trasa nadal mija kamery, Vela przy każdej kamerze próbuje punktu tuż obok drogi i prowadzi trasę przez niego, tak jak po przytrzymaniu palca na mapie. Trasa, która przy tym samym niewielkim objeździe mija mniej kamer, trafia na początek listy. Kosztuje kilka dodatkowych zapytań o trasę na podróż. Domyślnie wyłączone.</string>
+    <string name="settings_flock_detour_hint">Gdy najlepsza trasa nadal mija kamery, MAP-RMG przy każdej kamerze próbuje punktu tuż obok drogi i prowadzi trasę przez niego, tak jak po przytrzymaniu palca na mapie. Trasa, która przy tym samym niewielkim objeździe mija mniej kamer, trafia na początek listy. Kosztuje kilka dodatkowych zapytań o trasę na podróż. Domyślnie wyłączone.</string>
     <string name="settings_flock_route_alert_hint">Liczy kamery odczytujące tablice rejestracyjne (Flock) na każdej trasie (kamera skierowana w poprzek drogi jest pomijana, bo odczytuje ruch poprzeczny) i sama wybiera trasę z mniejszą liczbą kamer, jeśli jest tylko trochę dłuższa. Nigdy nie prowadzi daleko okrężną drogą, więc tam, gdzie kamer nie da się ominąć, pokazuje tylko ich liczbę i zostawia wybór tobie. Przytrzymaj mapę, aby samodzielnie poprowadzić trasę przez wybrany punkt. Domyślnie wyłączone.</string>
     <plurals name="dir_cameras_avoided">
         <item quantity="one">O %1$d kamerę mniej niż na najszybszej trasie</item>
@@ -1291,7 +1291,7 @@
     <string name="street_view_offline">Street View wymaga tutaj połączenia: to miejsce nie było wcześniej oglądane</string>
     <string name="mapscreen_other_locations">Pokaż inne lokalizacje</string>
     <string name="settings_other_locations_auto">Znajduj inne lokalizacje automatycznie</string>
-    <string name="settings_other_locations_auto_hint">Gdy wyszukiwanie nazwy trafia na jedno miejsce, Vela pyta też Google o jego inne lokalizacje. To kilka dodatkowych zapytań do Google przy każdym takim wyszukiwaniu. Po wyłączeniu robi to przycisk „Pokaż inne lokalizacje”, gdy go dotkniesz.</string>
+    <string name="settings_other_locations_auto_hint">Gdy wyszukiwanie nazwy trafia na jedno miejsce, MAP-RMG pyta też Google o jego inne lokalizacje. To kilka dodatkowych zapytań do Google przy każdym takim wyszukiwaniu. Po wyłączeniu robi to przycisk „Pokaż inne lokalizacje”, gdy go dotkniesz.</string>
     <string name="mapscreen_view_map">Pokaż mapę</string>
     <string name="whatsnew_show_after_updates">Pokazuj nowości po aktualizacjach</string>
     <string name="replay_play">Odtwórz</string>
@@ -1335,17 +1335,17 @@
     <string name="settings_map_names_hint">Nazwy w transliteracji są tworzone maszynowo tam, gdzie OpenStreetMap nie ma nazwy angielskiej, i źle się je czyta w hebrajskim i niektórych innych pismach. Język aplikacji i głos się nie zmieniają.</string>
     <string name="settings_project">Projekt</string>
     <string name="settings_project_hint">Kod źródłowy, zgłoszenia błędów i dyskusje są na GitHubie.</string>
-    <string name="settings_project_github_button">Vela na GitHubie</string>
+    <string name="settings_project_github_button">MAP-RMG na GitHubie</string>
     <string name="mapvm_rechecking_connection">Sprawdzanie połączenia…</string>
     <string name="mapvm_back_online">Znów online</string>
-    <string name="mapvm_still_offline">Nadal offline. Vela zauważy, gdy tylko połączenie wróci.</string>
+    <string name="mapvm_still_offline">Nadal offline. MAP-RMG zauważy, gdy tylko połączenie wróci.</string>
     <string name="search_offline_recheck">Offline. Dotknij, aby sprawdzić ponownie</string>
     <string name="settings_turn_declutter">Upraszczaj mapę na zakrętach</string>
     <string name="settings_turn_declutter_hint">Gdy mapa obraca się na zakręcie, zostają na niej tylko nazwy ulic. Miejsca, znaki i kamery wracają, gdy tylko się ustabilizuje. Dzięki temu zakręty są płynne na wolniejszych telefonach.</string>
     <string name="settings_softkeys">Sprzętowe klawisze funkcyjne</string>
     <string name="settings_softkeys_hint">Przybliżaj i oddalaj mapę dwoma klawiszami funkcyjnymi telefonu. Tylko telefony z klawiaturą.</string>
     <string name="settings_softkeys_calibrate">Skalibruj klawisze funkcyjne</string>
-    <string name="settings_softkeys_calibrate_hint">Jeśli klawisze funkcyjne nie zmieniają powiększenia, dotknij tutaj i naciśnij lewy, a potem prawy klawisz funkcyjny, aby Vela poznała ich kody.</string>
+    <string name="settings_softkeys_calibrate_hint">Jeśli klawisze funkcyjne nie zmieniają powiększenia, dotknij tutaj i naciśnij lewy, a potem prawy klawisz funkcyjny, aby MAP-RMG poznała ich kody.</string>
     <string name="map_zoom_mode_hint">Zoom:  ◀ oddal   ·   przybliż ▶      WSTECZ, aby wyjść</string>
     <string name="map_move_mode_hint">Przesuwanie mapy:  ◀ ▲ ▼ ▶      WSTECZ, aby wyjść</string>
     <string name="softkey_zoom_menu">Zoom (◀ − ▶ +)</string>
@@ -1363,15 +1363,15 @@
     <string name="settings_start_view_here">Gdzie jestem</string>
     <string name="settings_start_view_place">Miejsce które wybieram</string>
     <string name="settings_start_view_use_current">Użyj bieżącego widoku mapy</string>
-    <string name="settings_start_view_hint">Tu znajduje się mapa w momencie uruchomienia aplikacji Vela. Link z innej aplikacji nadal otwiera się w swoim własnym widoku.</string>
+    <string name="settings_start_view_hint">Tu znajduje się mapa w momencie uruchomienia aplikacji MAP-RMG. Link z innej aplikacji nadal otwiera się w swoim własnym widoku.</string>
     <string name="nav_bar_to_stop">Do %1$s</string>
     <string name="nav_bar_your_stop">twój przystanek</string>
     <string name="nav_bar_stop_cd">%1$s i %2$s do %3$s, przyjazd o %4$s. Cała podróż %5$s i %6$s, przyjazd o %7$s.</string>
     <string name="nav_stops_whole_trip">Cała podróż: %1$s · %2$s · przyjazd %3$s</string>
     <string name="settings_voice_row_other_language">Wskazówki są podawane w języku %1$s. Aby usłyszeć ten głos, ustaw język wskazówek na %2$s.</string>
     <string name="settings_directions_language">Język wskazówek</string>
-    <string name="welcome_feature_private_body">Bez konta, bez reklam, bez analityki i bez serwera Vela.</string>
-    <string name="settings_start_view_saved">Vela otworzy się w tym widoku.</string>
+    <string name="welcome_feature_private_body">Bez konta, bez reklam, bez analityki i bez serwera MAP-RMG.</string>
+    <string name="settings_start_view_saved">MAP-RMG otworzy się w tym widoku.</string>
     <string name="nav_bar_trip">Podróż %1$s · %2$s</string>
     <string name="mapscreen_location_tip_body">Sam GPS często nie jest w stanie ustalić pozycji wewnątrz budynków. W systemie GrapheneOS włącz lokalizację sieciową w sekcji Ustawienia &gt; Lokalizacja &gt; Usługi lokalizacji.</string>
     <string name="mapscreen_location_tip_settings">Ustawienia lokalizacji</string>

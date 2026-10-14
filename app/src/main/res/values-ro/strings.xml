@@ -24,10 +24,10 @@
     <string name="settings_follow_system">Urmează sistemul</string>
     <string name="settings_theme_light">Luminos</string>
     <string name="settings_theme_dark">Întunecat</string>
-    <string name="settings_appearance_hint">Se aplică doar pentru Vela.</string>
+    <string name="settings_appearance_hint">Se aplică doar pentru MAP-RMG.</string>
     <string name="settings_app_name_title">Numele aplicației</string>
     <string name="settings_app_name_generic">Numește-o pur și simplu „Hărți”</string>
-    <string name="settings_app_name_generic_hint">Afișează pictograma lansatorului ca Hărți în loc de Hărți Vela, pentru un aspect standard. Este posibil să fie nevoie să adaugi din nou o comandă rapidă pe ecranul de pornire după schimbare.</string>
+    <string name="settings_app_name_generic_hint">Afișează pictograma lansatorului ca Hărți în loc de Hărți MAP-RMG, pentru un aspect standard. Este posibil să fie nevoie să adaugi din nou o comandă rapidă pe ecranul de pornire după schimbare.</string>
     <string name="settings_dynamic_color">Culori Material You</string>
     <string name="settings_dynamic_color_hint">Colorează butoanele și accentele pentru a se potrivi cu imaginea de fundal. Harta rămâne neutră.</string>
     <string name="settings_map_style">Stil hartă</string>
@@ -56,7 +56,7 @@
     <string name="settings_voice_none_hint">Nicio voce încă. Deschide biblioteca vocală de mai jos pentru a descărca o voce naturală pe dispozitiv (fără cont, în timp real chiar și pe telefoanele vechi). Un motor TTS de sistem instalat va apărea și aici, pentru a-l selecta.</string>
     <string name="settings_voice_test">Testează vocea</string>
     <string name="settings_voice_system_settings">Setările vocale ale sistemului</string>
-    <string name="settings_voice_test_hint">Atinge Testează vocea pentru a o auzi. Se recomandă Vela Voice; poți înlocui cu orice motor de text-în-vorbire instalat.</string>
+    <string name="settings_voice_test_hint">Atinge Testează vocea pentru a o auzi. Se recomandă MAP-RMG Voice; poți înlocui cu orice motor de text-în-vorbire instalat.</string>
     <string name="settings_voice_library">Biblioteca de voci</string>
     <string name="settings_voice_advanced">Opțiuni vocale avansate</string>
     <string name="settings_voice_try_label">Încearcă vocea pe orice text</string>
@@ -79,8 +79,8 @@
     <string name="settings_vibrate_hint">Vibrații codificate în funcție de direcție la fiecare viraj, distincte pentru stânga și dreapta, astfel încât să poți urma un traseu după cum simți. Setează în funcție de modul de deplasare (de exemplu, activat pentru ciclism și mers pe jos, dezactivat în timpul conducerii).</string>
     <string name="settings_keep_screen_on">Menține ecranul pornit în timpul navigării</string>
     <string name="settings_keep_screen_on_hint">Menține ecranul activ în timpul procesului pas cu pas.</string>
-    <string name="map_voice_downloading">Se descarcă Vela Voice · %1$d%%</string>
-    <string name="map_voice_installing">Se instalează Vela Voice…</string>
+    <string name="map_voice_downloading">Se descarcă MAP-RMG Voice · %1$d%%</string>
+    <string name="map_voice_installing">Se instalează MAP-RMG Voice…</string>
     <string name="map_region_downloading">Încărcarea rutelor: %1$s · %2$d%%</string>
     <string name="map_region_places_downloading">Se salvează %1$s locuri pentru căutare off-line · %2$d%%</string>
     <string name="map_region_placesfile_downloading">Se salvează %1$s locuri pentru hartă · %2$d%%</string>
@@ -153,7 +153,7 @@
         <item quantity="other">%1$d de camere pe acest traseu</item>
     </plurals>
     <string name="settings_read_all_reviews">Butonul „Citește toate recenziile”</string>
-    <string name="settings_read_all_reviews_hint">Adaugă un buton „Citește toate recenziile” care deschide pagina completă de recenzii Google în aplicație, cu fiecare recenzie. Dezactivat = Doar lista proprie de recenzii Vela.</string>
+    <string name="settings_read_all_reviews_hint">Adaugă un buton „Citește toate recenziile” care deschide pagina completă de recenzii Google în aplicație, cu fiecare recenzie. Dezactivat = Doar lista proprie de recenzii MAP-RMG.</string>
     <string name="settings_buildings_3d">Clădiri 3D</string>
     <string name="settings_buildings_3d_hint">Clădiri volumetrice la zoom apropiat când harta este înclinată. Dezactivarea acestei opțiuni poate face panoramarea mai lină pe telefoanele mai vechi.</string>
     <string name="settings_building_overlay">Completează clădirile lipsă</string>
@@ -164,14 +164,14 @@
     <string name="settings_nav_trace_hint">Înregistrează modul în care se mișcă camera hărții în timp ce navighezi, astfel încât să se poată diagnostica o hartă tremurândă sau „plutirea” hărții. Nu conține date despre locație, ci doar direcții, viteze și temporizări, deci poate fi atașată în siguranță la un raport de eroare.</string>
     <string name="settings_nav_trace_export">Partajează traseul de navigare</string>
     <string name="settings_nav_trace_empty">Nu s-a înregistrat încă niciun traseu. Navighează undeva mai întâi.</string>
-    <string name="settings_voice_vela_name">Voce Vela (%1$s)</string>
-    <string name="settings_voice_install_vela">Instalează vocea Vela (%1$d MB)</string>
+    <string name="settings_voice_vela_name">Voce MAP-RMG (%1$s)</string>
+    <string name="settings_voice_install_vela">Instalează vocea MAP-RMG (%1$d MB)</string>
     <string name="settings_voice_install_vela_hint">Vocea de navigare recomandată. Reinstaleaz-o aici de fiecare dată când dispare sau o descărcare a eșuat.</string>
     <string name="settings_texture_render">Compatibilitate randare</string>
     <string name="settings_texture_render_hint">Desenează harta printr-o cale de compatibilitate care evită erorile driverelor grafice ale unor dispozitive. Se pornește automat dacă harta a blocat aplicația la pornire. Puțin mai lent; necesită o repornire a aplicației pentru a se aplica.</string>
     <string name="settings_texture_render_auto_hint">Activat automat pe %1$s după ce harta s-a blocat de două ori la pornire. Dacă harta funcționează cu această opțiune dezactivată, las-o dezactivată: este mai lentă și poate face ca harta să se tremure în timpul conducerii. Necesită o repornire a aplicației pentru a se aplica.</string>
     <string name="settings_show_reviews">Afișează recenziile</string>
-    <string name="settings_show_reviews_hint">Dezactivat = paginile locației nu afișează recenzii, iar Vela nu le preia niciodată.</string>
+    <string name="settings_show_reviews_hint">Dezactivat = paginile locației nu afișează recenzii, iar MAP-RMG nu le preia niciodată.</string>
     <string name="settings_load_photos">Încarcă fotografiile</string>
     <string name="settings_load_photos_hint">Dezactivat = paginile locațiilor nu afișează fotografii și nu se descarcă nimic pentru acestea. Salvează date.</string>
     <string name="settings_hide_adult">Ascunde categoriile pentru adulți</string>
@@ -187,7 +187,7 @@
     <string name="settings_region_updates_wifi">Prin Wi-Fi</string>
     <string name="settings_region_updates_mobile">Prin Wi-Fi și date mobile</string>
     <string name="settings_offline_places_with_downloads">Descarcă locațiile împreună cu regiunea</string>
-    <string name="settings_offline_places_with_downloads_hint">O descărcare a regiunii aduce și datele despre locațiile Vela, astfel încât afacerile de pe hartă sunt afișate fără semnal. Aproximativ o jumătate de gigabyte pentru un stat mare. Dezactivat = locațiile sunt transmise în flux doar când sunt online.</string>
+    <string name="settings_offline_places_with_downloads_hint">O descărcare a regiunii aduce și datele despre locațiile MAP-RMG, astfel încât afacerile de pe hartă sunt afișate fără semnal. Aproximativ o jumătate de gigabyte pentru un stat mare. Dezactivat = locațiile sunt transmise în flux doar când sunt online.</string>
     <string name="settings_offline_cached_places">Păstrează locațiile vizualizate pentru off-line</string>
     <string name="settings_offline_cached_places_hint">Fiecare loc pe care îl deschizi în timp ce ești online este păstrat pe acest telefon cu ceea ce a fost încărcat pentru el (detalii, recenzii și fotografii pe care le-ai văzut), așa că se deschide în continuare fără semnal. Cele mai noi 400 sunt păstrate timp de o lună. Ștergerea istoricului și Ștergerea tuturor datelor off-line le elimină.</string>
     <string name="settings_offline_cached_places_clear">Șterge locațiile salvate</string>
@@ -236,7 +236,7 @@
     <string name="settings_link_action_place">Arată locul</string>
     <string name="settings_link_action_directions">Deschide indicațiile de orientare</string>
     <string name="settings_link_action_start">Începe navigarea</string>
-    <string name="settings_link_action_hint">Ce se întâmplă când o altă aplicație își partajează locația cu Vela? Începe navigarea este potrivit pentru aplicațiile de livrare care te trimit la destinație după destinație.</string>
+    <string name="settings_link_action_hint">Ce se întâmplă când o altă aplicație își partajează locația cu MAP-RMG? Începe navigarea este potrivit pentru aplicațiile de livrare care te trimit la destinație după destinație.</string>
     <string name="settings_confirm_end_nav">Întreabă înainte de a încheia navigarea</string>
     <string name="settings_confirm_end_nav_hint">Întotdeauna întreabă mai întâi în timpul unei curse. Dacă este activat, și X-ul roșu întreabă</string>
     <string name="nav_end_confirm_title">Finalizezi navigarea?</string>
@@ -289,13 +289,13 @@
     <string name="settings_saved_places_hint">Creează o copie de rezervă a locațiilor marcate cu stea într-un fișier sau restaurează-le pe un alt dispozitiv. Importul se îmbină cu ceea ce ai deja. Nu suprascrie și nu elimină niciodată nimic și citește, de asemenea, fișiere GPX, KML și GeoJSON exportate din alte aplicații de hărți.</string>
     <string name="settings_import_nothing_new">Tot ce este în acel fișier este deja salvat.</string>
     <string name="settings_import_unreadable">Fișierul respectiv nu a putut fi deschis.</string>
-    <string name="settings_import_wrong_format">Nu s-au găsit locuri în acel fișier. Vela citește propriile exporturi și fișierele GPX, KML sau GeoJSON salvate din alte aplicații de hărți.</string>
+    <string name="settings_import_wrong_format">Nu s-au găsit locuri în acel fișier. MAP-RMG citește propriile exporturi și fișierele GPX, KML sau GeoJSON salvate din alte aplicații de hărți.</string>
     <string name="settings_import_wrong_format_named">Nu s-au găsit locuri în fișierul %1$s.</string>
     <string name="settings_import_no_picker">Nu este disponibil niciun selector de fișiere pe acest dispozitiv, deci nu se poate alege un fișier.</string>
     <string name="settings_no_saved_places">Nicio locație salvată încă</string>
     <string name="settings_export">Exportă</string>
     <string name="settings_import">Import</string>
-    <string name="settings_data_privacy_hint">Vela comunică cu endpoint-urile publice ale Google direct de pe acest dispozitiv: fără backend, fără cont, fără cheie API. Google îți vede adresa IP, interogarea și zona de pe hartă, nu cine ești.</string>
+    <string name="settings_data_privacy_hint">MAP-RMG comunică cu endpoint-urile publice ale Google direct de pe acest dispozitiv: fără backend, fără cont, fără cheie API. Google îți vede adresa IP, interogarea și zona de pe hartă, nu cine ești.</string>
     <string name="nav_overview">Prezentare generală a traseului</string>
     <string name="settings_map_places">Locuri pe hartă</string>
     <string name="settings_house_numbers">Numere de casă</string>
@@ -306,22 +306,22 @@
     <string name="settings_show_pois">Afișează locurile</string>
     <string name="settings_show_pois_hint">Pictograme pentru afaceri și locuri pe harta de navigare. Dezactivat = o hartă curată; locurile căutate sunt afișate în continuare.</string>
     <string name="settings_places_source">Pictogramele locațiilor pe hartă</string>
-    <string name="settings_places_source_open">Date Vela</string>
+    <string name="settings_places_source_open">Date MAP-RMG</string>
     <string name="settings_places_source_google">Google</string>
     <string name="settings_places_source_both">Ambele</string>
-    <string name="settings_places_source_open_hint">Pictogramele provin din datele proprii ale Vela. Panoramarea nu contactează niciodată Google și funcționează off-line.</string>
+    <string name="settings_places_source_open_hint">Pictogramele provin din datele proprii ale MAP-RMG. Panoramarea nu contactează niciodată Google și funcționează off-line.</string>
     <string name="settings_places_source_google_hint">Pictogramele provin de la Google. Fiecare panoramare trimite poziția ta pe hartă către Google și nimic nu se afișează off-line.</string>
-    <string name="settings_places_source_both_hint">Pictogramele Vela, plus orice altceva are Google după ce oprești panoramarea.</string>
+    <string name="settings_places_source_both_hint">Pictogramele MAP-RMG, plus orice altceva are Google după ce oprești panoramarea.</string>
     <string name="settings_places_source_note">Când cauți sau dai clic pe o locație, programul de lucru, recenziile și fotografiile provin în continuare de la Google, indiferent de ce alegi.</string>
     <string name="settings_places_source_more">Află mai multe</string>
     <string name="settings_places_source_more_credit">Hărți Overture</string>
     <string name="settings_places_lookup">Caută locurile atinse în Google</string>
-    <string name="settings_places_lookup_hint">Atingerea unui loc îi preia programul de lucru, recenziile și fotografiile de pe Google, iar Vela memorizează potrivirea, astfel încât următoarea atingere este instantanee. Dezactivat = un loc atins afișează doar datele din Vela (nume, tip, adresă, telefon, site web) și nimic despre atingere nu ajunge la Google. Căutarea și indicațiile de orientare folosesc în continuare Google.</string>
-    <string name="settings_places_source_more_title">De unde provin datele despre locațiile Vela</string>
+    <string name="settings_places_lookup_hint">Atingerea unui loc îi preia programul de lucru, recenziile și fotografiile de pe Google, iar MAP-RMG memorizează potrivirea, astfel încât următoarea atingere este instantanee. Dezactivat = un loc atins afișează doar datele din MAP-RMG (nume, tip, adresă, telefon, site web) și nimic despre atingere nu ajunge la Google. Căutarea și indicațiile de orientare folosesc în continuare Google.</string>
+    <string name="settings_places_source_more_title">De unde provin datele despre locațiile MAP-RMG</string>
     <string name="settings_directions_language">Limba indicațiilor de orientare</string>
     <string name="settings_directions_same_as_app">La fel ca limba aplicației</string>
     <string name="settings_directions_language_hint">Indicațiile de orientare vocale sunt afișate și rostite. Alege o voce potrivită din biblioteca de voci.</string>
-    <string name="settings_places_source_more_body">Datele despre locațiile Vela provin de la Overture Maps, un set de date deschis al organizațiilor, gestionat de Meta, Microsoft și alții. Vela le oferă din propriul depozit GitHub, așa că nimic despre locul căutat nu ajunge la Meta sau Google.\n\nSe încarcă pe măsură ce navighezi și se descarcă împreună cu regiunea pentru utilizare off-line. În cazul în care Vela nu are încă date pentru o anumită zonă, harta revine la Google.\n\nCăutarea, informațiile despre locații, orele de lucru, recenziile și fotografiile provin întotdeauna de la Google, indiferent de opțiunea aleasă.</string>
+    <string name="settings_places_source_more_body">Datele despre locațiile MAP-RMG provin de la Overture Maps, un set de date deschis al organizațiilor, gestionat de Meta, Microsoft și alții. MAP-RMG le oferă din propriul depozit GitHub, așa că nimic despre locul căutat nu ajunge la Meta sau Google.\n\nSe încarcă pe măsură ce navighezi și se descarcă împreună cu regiunea pentru utilizare off-line. În cazul în care MAP-RMG nu are încă date pentru o anumită zonă, harta revine la Google.\n\nCăutarea, informațiile despre locații, orele de lucru, recenziile și fotografiile provin întotdeauna de la Google, indiferent de opțiunea aleasă.</string>
     <string name="settings_show_civic">Parcuri, școli și locuri publice</string>
     <string name="settings_show_civic_hint">Strat de locuri necomerciale. Dezactivat = se afișează doar companiile.</string>
     <string name="settings_show_transit_stops">Stații de transport</string>
@@ -332,7 +332,7 @@
     <string name="settings_poi_size_large">Mare</string>
     <string name="settings_poi_icon_size_hint">Mic se potrivește ecranelor cu rezoluție mică, cum ar fi unitățile principale ale mașinilor, unde pictogramele implicite sunt afișate supradimensionate.</string>
     <string name="settings_live_rechecks">Verificări ale traficului în timp real în timpul navigării</string>
-    <string name="settings_live_rechecks_hint">La fiecare câteva minute, în timpul unei călătorii cu mașina, Vela solicită de la Google informații despre traficul recent din poziția ta actuală. Acest lucru permite sugestii de traseu mai rapide și ore de sosire precise, dar permite ca și Google să știe unde te afli pe traseu. Dezactivat: Traseul va fi în continuare redirecționat dacă te abați de la el.</string>
+    <string name="settings_live_rechecks_hint">La fiecare câteva minute, în timpul unei călătorii cu mașina, MAP-RMG solicită de la Google informații despre traficul recent din poziția ta actuală. Acest lucru permite sugestii de traseu mai rapide și ore de sosire precise, dar permite ca și Google să știe unde te afli pe traseu. Dezactivat: Traseul va fi în continuare redirecționat dacă te abați de la el.</string>
     <string name="nav_edit_route">Editează ruta</string>
     <string name="nav_edit_route_hint">Adaugă o oprire pe traseu</string>
     <string name="nav_stops_remove_next">Elimină următoarea</string>
@@ -360,13 +360,13 @@
     <string name="google_usage_kind_lists">Liste partajate</string>
     <string name="google_usage_kind_page">Pagini Google (%1$s)</string>
     <string name="google_usage_kind_other">Altele</string>
-    <string name="settings_block_google_telemetry_hint">Paginile Google își raportează propriul comportament: înregistrează ping-urile și solicitările din tabloul de bord al contului în fundal. Nimic din ceea ce afișează Vela nu le necesită. Sunt trimise în mod implicit, deoarece un browser care nu le trimite niciodată este mai puțin uman pentru Google, iar acest lucru determină parțial dacă sesiunea ta primește versiunea limitată. Activează această opțiune pentru a răspunde direct pe telefon.</string>
+    <string name="settings_block_google_telemetry_hint">Paginile Google își raportează propriul comportament: înregistrează ping-urile și solicitările din tabloul de bord al contului în fundal. Nimic din ceea ce afișează MAP-RMG nu le necesită. Sunt trimise în mod implicit, deoarece un browser care nu le trimite niciodată este mai puțin uman pentru Google, iar acest lucru determină parțial dacă sesiunea ta primește versiunea limitată. Activează această opțiune pentru a răspunde direct pe telefon.</string>
     <string name="settings_google_session_limited">Google afișează în prezent pentru acest telefon o versiune limitată: mai puține fotografii pe pagină, unele locuri nu au ore de popularitate, iar funcția „Mai multe recenzii” nu încarcă nimic. De obicei, problema se rezolvă singură după un timp. Sesiunile noi sunt, de asemenea, limitate la început, așa că începerea uneia noi rareori ajută.</string>
     <string name="place_limited_view">Google afișează o vizualizare limitată în acest moment, așa că este posibil să lipsească orele de popularitate și mai multe recenzii.</string>
-    <string name="settings_google_session_hint">Google recunoaște acest dispozitiv prin intermediul cookie, așadar tot ceea ce caută Vela cât timp este activă pot fi legat între ele, deși fără un nume sau un cont. Acest lucru limitează noua sesiune. Pentru o perioadă, o nouă sesiune primește o versiune prescurtată de la Google (mai puține recenzii, unele locațiile nu au ore de popularitate).</string>
+    <string name="settings_google_session_hint">Google recunoaște acest dispozitiv prin intermediul cookie, așadar tot ceea ce caută MAP-RMG cât timp este activă pot fi legat între ele, deși fără un nume sau un cont. Acest lucru limitează noua sesiune. Pentru o perioadă, o nouă sesiune primește o versiune prescurtată de la Google (mai puține recenzii, unele locațiile nu au ore de popularitate).</string>
     <string name="settings_google_session_week">Începe una nouă în fiecare săptămână (recomandat)</string>
     <string name="settings_google_session_day">Începe una nouă în fiecare zi</string>
-    <string name="settings_google_session_launch">Începe una nouă de fiecare dată când se deschide Vela (cea mai privată)</string>
+    <string name="settings_google_session_launch">Începe una nouă de fiecare dată când se deschide MAP-RMG (cea mai privată)</string>
     <string name="settings_google_session_launch_hint">Cât valorează asta: Google consideră fiecare sesiune un vizitator nou, așa că de obicei primești o versiune trunchiată (aproximativ cinci recenzii, adesea fără ore de popularitate). Site-urile se încarcă puțin mai lent și utilizează mai multe date, deoarece primele răspunsuri ale unei noi sesiuni sunt trunchiate și solicitate din nou. Android repornește aplicațiile în fundal, așa că pot exista mai multe sesiuni noi pe zi, iar mulți vizitatori noi dintr-o singură conexiune pot declanșa mai frecvent verificările anti-bot ale Google. Google vede în continuare adresa ta IP, care deja asociază sesiuni dintr-o singură conexiune pe o perioadă scurtă de timp.</string>
     <string name="settings_google_session_now">Începe o sesiune nouă acum</string>
     <string name="settings_google_session_done">O nouă sesiune Google a început</string>
@@ -377,10 +377,10 @@
     <string name="settings_clear_history_confirm_body">Căutările recente, locurile recente, istoricul parcărilor și fiecare traseu înregistrat vor fi șterse. Această acțiune nu poate fi anulată. Locurile și listele salvate nu sunt afectate.</string>
     <string name="settings_clear_history_done">Istoricul a fost șters</string>
     <string name="settings_privacy_button">Ce date primește Google</string>
-    <string name="settings_google_free">Folosește Vela fără Google</string>
-    <string name="settings_google_free_hint">Nu se trimite nimic către Google. Funcția de căutare utilizează OpenStreetMap și regiunile descărcate de tine, locațiile de pe hartă provin din datele proprii ale aplicației Vela, iar traseele sunt generate de OpenRouter, fără informații în timp real despre trafic. Nu ai acces la recenzii, fotografii, programul de funcționare de la Google, timpii de sosire în timp real, Street View și imaginile detaliate din satelit. Itinerariile de transport în comun provin din planificatorul deschis. Regiunile descărcate funcționează în continuare complet off-line.</string>
+    <string name="settings_google_free">Folosește MAP-RMG fără Google</string>
+    <string name="settings_google_free_hint">Nu se trimite nimic către Google. Funcția de căutare utilizează OpenStreetMap și regiunile descărcate de tine, locațiile de pe hartă provin din datele proprii ale aplicației MAP-RMG, iar traseele sunt generate de OpenRouter, fără informații în timp real despre trafic. Nu ai acces la recenzii, fotografii, programul de funcționare de la Google, timpii de sosire în timp real, Street View și imaginile detaliate din satelit. Itinerariile de transport în comun provin din planificatorul deschis. Regiunile descărcate funcționează în continuare complet off-line.</string>
     <string name="settings_diagnostics">Diagnosticare</string>
-    <string name="settings_diagnostics_hint">Opțiunea este dezactivată în mod implicit. Când este activată, Vela păstrează un jurnal local succint pe care îl poți exporta și transmite unui dezvoltator. Nu se încarcă nimic, iar dezactivarea opțiunii șterge jurnalul.</string>
+    <string name="settings_diagnostics_hint">Opțiunea este dezactivată în mod implicit. Când este activată, MAP-RMG păstrează un jurnal local succint pe care îl poți exporta și transmite unui dezvoltator. Nu se încarcă nimic, iar dezactivarea opțiunii șterge jurnalul.</string>
     <string name="settings_share_diagnostics">Partajare rezultate de diagnosticare</string>
     <string name="settings_diag_nothing">Nu s-a înregistrat încă nimic. Folosește aplicația, apoi exportă datele.</string>
     <string name="settings_diag_export">Exportare sesiune de depanare</string>
@@ -421,30 +421,30 @@
     <string name="settings_trip_batch_none">Fiecare traseu selectat este mai scurt decât distanța de decupare, așa că nu rămâne nimic ce ar putea fi partajat. Încearcă o distanță mai mică.</string>
     <string name="settings_trip_batch_confirm">Distribuie fișierul zip</string>
     <string name="settings_name_trips">Denumește fiecare călătorie atunci când o salvezi</string>
-    <string name="settings_name_trips_hint">După ce se încheie o călătorie înregistrată, Vela te întreabă cum să o denumească. Opțiunea este dezactivată în mod implicit; poți oricând să redenumești o călătorie ulterior, din lista de mai jos.</string>
+    <string name="settings_name_trips_hint">După ce se încheie o călătorie înregistrată, MAP-RMG te întreabă cum să o denumească. Opțiunea este dezactivată în mod implicit; poți oricând să redenumești o călătorie ulterior, din lista de mai jos.</string>
     <string name="trip_name_prompt_title">Denumește călătoria</string>
     <string name="trip_name_prompt_save">Salvează numele</string>
     <string name="trip_name_prompt_skip">Nu acum</string>
     <string name="settings_no_trips_hint">Nu s-au înregistrat încă călătorii. Dacă te deplasezi undeva cu această funcție activată, călătoria va apărea aici și o vei putea revedea.</string>
     <string name="settings_trip_consent_title">Vrei să-ți salvezi călătoriile?</string>
-    <string name="settings_trip_consent_body">Vela va înregistra traseul GPS al fiecărei deplasări pe acest telefon, astfel încât un traseu să poată fi redat în scopuri de testare, fără a mai fi necesar să îl parcurgi din nou. Această funcție oferă informații mai detaliate decât diagnosticarea (înregistrează traseele exacte), iar datele rămân pe telefon și nu sunt încărcate niciodată. O poți dezactiva oricând.</string>
+    <string name="settings_trip_consent_body">MAP-RMG va înregistra traseul GPS al fiecărei deplasări pe acest telefon, astfel încât un traseu să poată fi redat în scopuri de testare, fără a mai fi necesar să îl parcurgi din nou. Această funcție oferă informații mai detaliate decât diagnosticarea (înregistrează traseele exacte), iar datele rămân pe telefon și nu sunt încărcate niciodată. O poți dezactiva oricând.</string>
     <string name="settings_turn_on">Pornește</string>
     <string name="settings_cancel">Anulează</string>
-    <string name="settings_crash_hint">Vela s-a închis neașteptat de curând. Trimiterea raportului de eroare (stack trace) ajută la remedierea problemei. Este un fișier text simplu, fără date personale.</string>
+    <string name="settings_crash_hint">MAP-RMG s-a închis neașteptat de curând. Trimiterea raportului de eroare (stack trace) ajută la remedierea problemei. Este un fișier text simplu, fără date personale.</string>
     <string name="settings_crash_export">Exportare raport de eroare</string>
     <string name="settings_crash_discard">Renunță</string>
     <string name="settings_crash_diag_offer">Funcția de diagnosticare este dezactivată, așa că nu s-a înregistrat nimic până în acest moment. Activează-o pentru a captura mai multe detalii dacă se întâmplă din nou.</string>
     <string name="settings_crash_enable_diag">Activează funcția de diagnosticare</string>
     <string name="settings_diag_consent_title">Activezi funcția de diagnosticare?</string>
-    <string name="settings_diag_consent_body">Vela va păstra un jurnal local succint al căutărilor, traseelor și eventualelor erori. Acesta nu părăsește niciodată telefonul, cu excepția cazului în care apeși pe „Export” și alegi unde să-l trimiți. Poți dezactiva această funcție oricând pentru a șterge jurnalul.</string>
+    <string name="settings_diag_consent_body">MAP-RMG va păstra un jurnal local succint al căutărilor, traseelor și eventualelor erori. Acesta nu părăsește niciodată telefonul, cu excepția cazului în care apeși pe „Export” și alegi unde să-l trimiți. Poți dezactiva această funcție oricând pentru a șterge jurnalul.</string>
     <string name="settings_about">Despre</string>
-    <string name="settings_about_hint">Vela este un client de hărți fără servicii Google: folosește OpenTiles pentru harta de bază, preia date de la Google pentru puncte de interes (POI), oferă rute și estimări ale timpului de sosire (ETA) în funcție de trafic, iar vocea este o voce Piper care rulează pe telefon. Licențiat sub GPLv3. Nu sunt necesare serviciile Play.</string>
+    <string name="settings_about_hint">MAP-RMG este un client de hărți fără servicii Google: folosește OpenTiles pentru harta de bază, preia date de la Google pentru puncte de interes (POI), oferă rute și estimări ale timpului de sosire (ETA) în funcție de trafic, iar vocea este o voce Piper care rulează pe telefon. Licențiat sub GPLv3. Nu sunt necesare serviciile Play. Vela Maps · GPLv3.</string>
     <string name="settings_support">Sprijin</string>
-    <string name="settings_support_hint">Vela este gratuită și nu conține reclame. Dacă ți s-a dovedit utilă, o donație ne ajută să continuăm dezvoltarea aplicației. Este o opțiune complet facultativă.</string>
-    <string name="settings_support_button">Susține Vela</string>
+    <string name="settings_support_hint">MAP-RMG este gratuită și nu conține reclame. Dacă ți s-a dovedit utilă, o donație ne ajută să continuăm dezvoltarea aplicației. Este o opțiune complet facultativă.</string>
+    <string name="settings_support_button">Susține MAP-RMG</string>
     <string name="donate_no_browser">Nu ai instalat niciun browser pentru a deschide pagina de donații</string>
     <string name="settings_version">Versiune</string>
-    <string name="settings_version_line">Vela %1$s (asamblare %2$d)</string>
+    <string name="settings_version_line">MAP-RMG %1$s (asamblare %2$d)</string>
     <string name="settings_installer_play">Aplicația a fost instalată de %1$s. Această instalare este configurată pentru Android Auto; o actualizare din aplicație ar anula această configurare, așa că actualizează folosind același program de instalare.</string>
     <string name="settings_installer_started_by">Instalarea a fost inițiată de %1$s, iar acesta este elementul verificat de versiunile mai recente ale Android Auto.</string>
     <string name="settings_installer_none">Instalare manuală (nu există program de instalare înregistrat). Android Auto nu va afișa această instalare.</string>
@@ -460,7 +460,7 @@
     <string name="settings_voice_show_less">Arată mai puține</string>
     <string name="settings_voice_this_voice">acestă voce</string>
     <string name="settings_voice_remove_title">Elimini %1$s?</string>
-    <string name="settings_voice_remove_body">Aceasta este singura ta versiune Vela Voice. Instrucțiunile vocale vor fi redate prin intermediul unui motor de sintetizare vocală al sistemului (sau nu se va auzi nimic dacă nu este instalat niciunul) până când vei descărca o altă versiune.</string>
+    <string name="settings_voice_remove_body">Aceasta este singura ta versiune MAP-RMG Voice. Instrucțiunile vocale vor fi redate prin intermediul unui motor de sintetizare vocală al sistemului (sau nu se va auzi nimic dacă nu este instalat niciunul) până când vei descărca o altă versiune.</string>
     <string name="settings_voice_remove">Elimină</string>
     <string name="settings_voice_gender_female">Femeie</string>
     <string name="settings_voice_gender_male">Bărbat</string>
@@ -638,7 +638,7 @@
     <string name="mapscreen_more_results">Mai multe rezultate</string>
     <string name="mapscreen_other_locations">Afișează alte locații</string>
     <string name="settings_other_locations_auto">Găsește automat alte locații</string>
-    <string name="settings_other_locations_auto_hint">Atunci când căutarea după denumire găsește o singură locație, Vela solicită, de asemenea, de la Google informații despre celelalte locații ale acesteia. Aceasta înseamnă câteva cereri suplimentare către Google la fiecare astfel de căutare. Dacă această opțiune este dezactivată, butonul „Afișează alte locații” are același efect atunci când îl apeși.</string>
+    <string name="settings_other_locations_auto_hint">Atunci când căutarea după denumire găsește o singură locație, MAP-RMG solicită, de asemenea, de la Google informații despre celelalte locații ale acesteia. Aceasta înseamnă câteva cereri suplimentare către Google la fiecare astfel de căutare. Dacă această opțiune este dezactivată, butonul „Afișează alte locații” are același efect atunci când îl apeși.</string>
     <string name="mapscreen_view_map">Vezi harta</string>
     <string name="intent_home_unset">Setează mai întâi „Acasă” (pe pagina de căutare, sub bara de căutare)</string>
     <string name="intent_work_unset">Setează mai întâi „Serviciu” (pe pagina de căutare, sub bara de căutare)</string>
@@ -686,5 +686,5 @@
     <string name="mapscreen_your_destination">destinația ta</string>
     <string name="root_not_now">Nu acum</string>
     <string name="root_voice_title">Vocea de navigație</string>
-    <string name="root_voice_body_intro">Vocea Vela funcționează exclusiv pe telefonul tău: indicații vocale naturale, fără cont, fără aplicație suplimentară. Recomandat, descărcare unică de %1$d MB.</string>
+    <string name="root_voice_body_intro">Vocea MAP-RMG funcționează exclusiv pe telefonul tău: indicații vocale naturale, fără cont, fără aplicație suplimentară. Recomandat, descărcare unică de %1$d MB.</string>
 </resources>

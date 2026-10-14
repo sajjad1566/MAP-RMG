@@ -93,7 +93,7 @@ object NavTrace {
             val dir = File(context.cacheDir, "export").apply { mkdirs() }
             val file = File(dir, "vela-nav-trace-${java.text.SimpleDateFormat("yyyy-MM-dd-HHmm", java.util.Locale.US).format(java.util.Date())}.csv")
             file.bufferedWriter().use { w ->
-                w.write("# Vela nav smoothness trace. No position data: bearings, along-route\n")
+                w.write("# MAP-RMG nav smoothness trace. No position data: bearings, along-route\n")
                 w.write("# distance, speed and frame timings only, safe to attach to an issue.\n")
                 // What a report is read against: without the build nobody can tell which camera ran.
                 w.write("# vela ${app.vela.BuildConfig.VERSION_NAME} (build ${app.vela.BuildConfig.VERSION_CODE})\n")
@@ -111,7 +111,7 @@ object NavTrace {
             }
             shareFileIntent(
                 context, file, "text/csv",
-                "Vela nav smoothness trace",
+                "MAP-RMG nav smoothness trace",
                 "Nav camera trace (no location data).",
                 "Share nav trace",
             )

@@ -6,7 +6,7 @@
     <string name="settings_follow_system">Systeem volgen</string>
     <string name="settings_theme_light">Licht</string>
     <string name="settings_theme_dark">Donker</string>
-    <string name="settings_appearance_hint">Geldt alleen voor Vela.</string>
+    <string name="settings_appearance_hint">Geldt alleen voor MAP-RMG.</string>
     <string name="settings_dynamic_color">Material You-kleuren</string>
     <string name="settings_dynamic_color_hint">Kleurt knoppen en accenten naar je achtergrond. De kaart blijft neutraal.</string>
     <string name="settings_map_style">Kaartstijl</string>
@@ -28,7 +28,7 @@
     <string name="settings_voice_none_hint">Nog geen stem, open hieronder de Stembibliotheek om een natuurlijke stem op het toestel te downloaden (geen account, realtime zelfs op oude telefoons). Een geïnstalleerde systeem-TTS-engine verschijnt hier ook om te kiezen.</string>
     <string name="settings_voice_test">Stem testen</string>
     <string name="settings_voice_system_settings">Systeemstem-instellingen</string>
-    <string name="settings_voice_test_hint">Tik op Stem testen om te luisteren. De stem van Vela wordt aanbevolen; u kunt overschakelen naar elke geïnstalleerde tekst-naar-spraak-engine.</string>
+    <string name="settings_voice_test_hint">Tik op Stem testen om te luisteren. De stem van MAP-RMG wordt aanbevolen; u kunt overschakelen naar elke geïnstalleerde tekst-naar-spraak-engine.</string>
     <string name="settings_voice_library">Stembibliotheek</string>
     <string name="settings_voice_advanced">Geavanceerde stemopties</string>
     <string name="settings_voice_try_label">Probeer de stem op een willekeurige tekst</string>
@@ -57,11 +57,11 @@
     <string name="settings_transit_layer">Ov-lijnen markeren</string>
     <string name="settings_transit_layer_hint">Tekent trein- en metrolijnen op de kaart.</string>
     <string name="settings_read_all_reviews">Knop “Alle recensies lezen”</string>
-    <string name="settings_read_all_reviews_hint">Voegt een knop toe die Googles volledige reviewpagina in de app opent, met alle reviews. Uit = alleen Vela\'s eigen lijst.</string>
+    <string name="settings_read_all_reviews_hint">Voegt een knop toe die Googles volledige reviewpagina in de app opent, met alle reviews. Uit = alleen MAP-RMG\'s eigen lijst.</string>
     <string name="settings_buildings_3d">3D-gebouwen</string>
     <string name="settings_buildings_3d_hint">Verhoogde gebouwen bij dichtbij zoomen als de kaart gekanteld is. Uitzetten kan het pannen soepeler maken op oudere telefoons.</string>
     <string name="settings_show_reviews">Reviews tonen</string>
-    <string name="settings_show_reviews_hint">Uit = plaatspagina\'s tonen geen reviews en Vela haalt ze ook nooit op.</string>
+    <string name="settings_show_reviews_hint">Uit = plaatspagina\'s tonen geen reviews en MAP-RMG haalt ze ook nooit op.</string>
     <string name="settings_load_photos">Foto\'s laden</string>
     <string name="settings_load_photos_hint">Uit = plaatspagina\'s tonen geen foto\'s en er wordt niets voor gedownload. Bespaart data.</string>
     <string name="settings_hide_adult">Volwassen categorieën verbergen</string>
@@ -69,7 +69,7 @@
     <string name="settings_hide_external_links">Website en externe links verbergen</string>
     <string name="settings_hide_external_links_hint">Aan = plaatspagina’s tonen geen Website-, Street View- of Reserveren / Bestellen-knoppen (geen willekeurige externe sites geopend).</string>
     <string name="settings_offline">Offlinekaarten</string>
-    <string name="settings_offline_hint">Twee manieren om Vela offline te gebruiken: bewaar het gebied waar je bent voor korte ritten, of hieronder een hele staat of een heel land voor langere.</string>
+    <string name="settings_offline_hint">Twee manieren om MAP-RMG offline te gebruiken: bewaar het gebied waar je bent voor korte ritten, of hieronder een hele staat of een heel land voor langere.</string>
     <string name="settings_offline_map_area">Lokaal gebied</string>
     <string name="settings_offline_download_viewport">Download het gebied dat u bekijkt</string>
     <string name="settings_region_updates">Gedownloade regio\'s bijwerken</string>
@@ -113,12 +113,12 @@
     <string name="settings_no_saved_places">Nog geen opgeslagen plaatsen</string>
     <string name="settings_export">Exporteren</string>
     <string name="settings_import">Importeren</string>
-    <string name="settings_data_privacy_hint">Vela praat rechtstreeks vanaf dit apparaat met Googles publieke endpoints: geen backend, geen account, geen API-sleutel. Google ziet je IP, zoekopdracht en kaartgebied, niet wie je bent.</string>
+    <string name="settings_data_privacy_hint">MAP-RMG praat rechtstreeks vanaf dit apparaat met Googles publieke endpoints: geen backend, geen account, geen API-sleutel. Google ziet je IP, zoekopdracht en kaartgebied, niet wie je bent.</string>
     <string name="settings_privacy_button">Welke gegevens Google ontvangt</string>
-    <string name="settings_google_free">Vela zonder Google gebruiken</string>
-    <string name="settings_google_free_hint">Er wordt niets naar Google gestuurd. Zoeken gebruikt OpenStreetMap en je gedownloade regio\'s, plaatsen op de kaart komen uit Vela\'s eigen gegevens, en routes komen van de open routeplanner, zonder live verkeer. Je verliest recensies, foto\'s, openingstijden, live aankomsttijden, Street View, ov-routes en de satellietbeelden van dichtbij; gedownloade regio\'s werken nog steeds volledig offline.</string>
+    <string name="settings_google_free">MAP-RMG zonder Google gebruiken</string>
+    <string name="settings_google_free_hint">Er wordt niets naar Google gestuurd. Zoeken gebruikt OpenStreetMap en je gedownloade regio\'s, plaatsen op de kaart komen uit MAP-RMG\'s eigen gegevens, en routes komen van de open routeplanner, zonder live verkeer. Je verliest recensies, foto\'s, openingstijden, live aankomsttijden, Street View, ov-routes en de satellietbeelden van dichtbij; gedownloade regio\'s werken nog steeds volledig offline.</string>
     <string name="settings_diagnostics">Diagnostiek</string>
-    <string name="settings_diagnostics_hint">Standaard uit. Indien aan houdt Vela een kort lokaal logboek bij dat je kunt exporteren en aan een ontwikkelaar geven. Er wordt niets geüpload, en uitzetten wist het.</string>
+    <string name="settings_diagnostics_hint">Standaard uit. Indien aan houdt MAP-RMG een kort lokaal logboek bij dat je kunt exporteren en aan een ontwikkelaar geven. Er wordt niets geüpload, en uitzetten wist het.</string>
     <string name="settings_share_diagnostics">Diagnostiek delen</string>
     <string name="settings_diag_nothing">Nog niets vastgelegd, gebruik de app en exporteer daarna.</string>
     <string name="settings_diag_export">Debugsessie exporteren</string>
@@ -133,23 +133,23 @@
     <string name="settings_trip_delete">Rit verwijderen</string>
     <string name="settings_no_trips_hint">Nog geen ritten opgenomen, navigeer ergens naartoe terwijl dit aan staat en het verschijnt hier om te herhalen.</string>
     <string name="settings_trip_consent_title">Uw ritten opslaan?</string>
-    <string name="settings_trip_consent_body">Vela legt het GPS-spoor van elke navigatie op deze telefoon vast, zodat een rit kan worden herhaald om te testen zonder opnieuw te rijden. Dit is onthullender dan diagnostiek, het legt uw exacte routes vast, maar het blijft op de telefoon en wordt nooit geüpload. U kunt het op elk moment uitschakelen.</string>
+    <string name="settings_trip_consent_body">MAP-RMG legt het GPS-spoor van elke navigatie op deze telefoon vast, zodat een rit kan worden herhaald om te testen zonder opnieuw te rijden. Dit is onthullender dan diagnostiek, het legt uw exacte routes vast, maar het blijft op de telefoon en wordt nooit geüpload. U kunt het op elk moment uitschakelen.</string>
     <string name="settings_turn_on">Inschakelen</string>
     <string name="settings_cancel">Annuleren</string>
-    <string name="settings_crash_hint">Vela is onlangs onverwacht gesloten. Het crashrapport (stacktrace) sturen helpt het op te lossen, het is een gewoon tekstbestand, zonder persoonlijke gegevens.</string>
+    <string name="settings_crash_hint">MAP-RMG is onlangs onverwacht gesloten. Het crashrapport (stacktrace) sturen helpt het op te lossen, het is een gewoon tekstbestand, zonder persoonlijke gegevens.</string>
     <string name="settings_crash_export">Crashrapport exporteren</string>
     <string name="settings_crash_discard">Verwijderen</string>
     <string name="settings_crash_diag_offer">Diagnostiek staat uit, dus er is niets vastgelegd vlak voor deze crash. Zet het aan om de volgende keer meer details te bewaren.</string>
     <string name="settings_crash_enable_diag">Diagnostiek inschakelen</string>
     <string name="settings_diag_consent_title">Diagnostiek inschakelen?</string>
-    <string name="settings_diag_consent_body">Vela houdt een kort lokaal logboek bij van uw zoekopdrachten, routes en eventuele fouten. Het verlaat de telefoon nooit tenzij u op Exporteren tikt en kiest waar het naartoe gaat. Schakel het op elk moment uit om het logboek te wissen.</string>
+    <string name="settings_diag_consent_body">MAP-RMG houdt een kort lokaal logboek bij van uw zoekopdrachten, routes en eventuele fouten. Het verlaat de telefoon nooit tenzij u op Exporteren tikt en kiest waar het naartoe gaat. Schakel het op elk moment uit om het logboek te wissen.</string>
     <string name="settings_about">Over</string>
-    <string name="settings_about_hint">Vela is een gedegoogelde kaartenclient: open tegels voor de basiskaart, gescrapet van Google voor POI\'s, routering en verkeersbewuste aankomsttijden, een Piper-stem die op de telefoon draait. GPLv3. Geen Play Services vereist.</string>
+    <string name="settings_about_hint">MAP-RMG is een gedegoogelde kaartenclient: open tegels voor de basiskaart, gescrapet van Google voor POI\'s, routering en verkeersbewuste aankomsttijden, een Piper-stem die op de telefoon draait. GPLv3. Geen Play Services vereist. Vela Maps · GPLv3.</string>
     <string name="settings_support">Ondersteunen</string>
-    <string name="settings_support_hint">Vela is gratis en reclamevrij. Als het nuttig is geworden, helpt een donatie de ontwikkeling voort te zetten, geheel optioneel.</string>
-    <string name="settings_support_button">Vela steunen</string>
+    <string name="settings_support_hint">MAP-RMG is gratis en reclamevrij. Als het nuttig is geworden, helpt een donatie de ontwikkeling voort te zetten, geheel optioneel.</string>
+    <string name="settings_support_button">MAP-RMG steunen</string>
     <string name="settings_version">Versie</string>
-    <string name="settings_version_line">Vela %1$s  (build %2$d)</string>
+    <string name="settings_version_line">MAP-RMG %1$s  (build %2$d)</string>
     <string name="settings_installer_play">Geïnstalleerd door %1$s. Deze installatie is ingesteld voor Android Auto; een update vanuit de app zou dat ongedaan maken, dus werk bij via hetzelfde installatieprogramma.</string>
     <string name="settings_installer_none">Gesideload (geen installatieprogramma vastgelegd). Android Auto toont deze installatie niet.</string>
     <string name="settings_installer_other">Geïnstalleerd door %1$s. Android Auto toont deze installatie niet.</string>
@@ -165,7 +165,7 @@
     <string name="settings_voice_show_less">Minder tonen</string>
     <string name="settings_voice_this_voice">deze stem</string>
     <string name="settings_voice_remove_title">%1$s verwijderen?</string>
-    <string name="settings_voice_remove_body">Dit is uw enige Vela-stem. Gesproken instructies vallen terug op een systeem-tekst-naar-spraak-engine (of vallen stil als er geen is geïnstalleerd) totdat u een andere downloadt.</string>
+    <string name="settings_voice_remove_body">Dit is uw enige MAP-RMG-stem. Gesproken instructies vallen terug op een systeem-tekst-naar-spraak-engine (of vallen stil als er geen is geïnstalleerd) totdat u een andere downloadt.</string>
     <string name="settings_voice_remove">Verwijderen</string>
     <string name="settings_voice_gender_female">Vrouwelijk</string>
     <string name="settings_voice_gender_male">Mannelijk</string>
@@ -186,8 +186,8 @@
     <string name="place_close">Sluiten</string>
     <string name="place_permanently_closed">Permanent gesloten</string>
     <string name="place_temporarily_closed">Tijdelijk gesloten</string>
-    <string name="map_voice_downloading">Vela-stem wordt gedownload · %1$d %%</string>
-    <string name="map_voice_installing">Vela-stem wordt geïnstalleerd…</string>
+    <string name="map_voice_downloading">MAP-RMG-stem wordt gedownload · %1$d %%</string>
+    <string name="map_voice_installing">MAP-RMG-stem wordt geïnstalleerd…</string>
     <string name="map_region_downloading">Routes voor %1$s downloaden · %2$d%%</string>
     <!-- format -->
     <string name="map_region_places_downloading">Plaatsen in %1$s opslaan voor offline zoeken · %2$d%%</string>
@@ -363,10 +363,10 @@
     <string name="mapscreen_switch">Overschakelen</string>
     <string name="root_not_now">Niet nu</string>
     <string name="root_voice_title">Gesproken navigatiestem</string>
-    <string name="root_voice_body_intro">Vela\'s eigen stem draait volledig op je telefoon: natuurlijke aanwijzingen, geen account, geen extra app. Aanbevolen, een eenmalige download van %1$d MB.</string>
+    <string name="root_voice_body_intro">MAP-RMG\'s eigen stem draait volledig op je telefoon: natuurlijke aanwijzingen, geen account, geen extra app. Aanbevolen, een eenmalige download van %1$d MB.</string>
     <string name="root_voice_body_system">Liever niet? Gebruik een stem die al op je telefoon staat.</string>
     <string name="root_voice_body_outro">Wijzig het altijd in Instellingen → Stem.</string>
-    <string name="root_voice_download">Vela-stem downloaden</string>
+    <string name="root_voice_download">MAP-RMG-stem downloaden</string>
     <string name="root_voice_use_system">Systeemstem gebruiken</string>
     <string name="nav_maneuver_continue">Doorgaan</string>
     <string name="nav_gps_lost">GPS-signaal zoeken…</string>
@@ -393,9 +393,9 @@
     <string name="welcome_feature_open_source_title">Gratis en open source</string>
     <string name="welcome_feature_open_source_body">GPLv3, gebouwd voor GrapheneOS en andere gedegoogelde telefoons.</string>
     <string name="welcome_get_started">Aan de slag</string>
-    <string name="welcome_donate_title">Bevalt Vela u?</string>
-    <string name="welcome_donate_body">Vela is gratis en reclamevrij, gebouwd met een minimaal budget. Als het nuttig is geworden, helpt een kleine eenmalige donatie het voort te zetten, geheel optioneel, en dit is de enige keer dat het erom vraagt. Er staat ook altijd een item Ondersteunen in Instellingen.</string>
-    <string name="welcome_donate_confirm">Vela steunen</string>
+    <string name="welcome_donate_title">Bevalt MAP-RMG u?</string>
+    <string name="welcome_donate_body">MAP-RMG is gratis en reclamevrij, gebouwd met een minimaal budget. Als het nuttig is geworden, helpt een kleine eenmalige donatie het voort te zetten, geheel optioneel, en dit is de enige keer dat het erom vraagt. Er staat ook altijd een item Ondersteunen in Instellingen.</string>
+    <string name="welcome_donate_confirm">MAP-RMG steunen</string>
     <string name="welcome_donate_dismiss">Misschien later</string>
     <string name="search_close_cd">Zoeken sluiten</string>
     <string name="search_fill_cd">In zoekveld zetten</string>
@@ -432,15 +432,15 @@
     <string name="mapvm_voice_lang_missing">Gesproken instructies vereisen een %1$s-stem, voeg er een toe via Instellingen → Stem</string>
     <string name="mapvm_no_track_to_replay">Die rit heeft geen spoor om te herhalen</string>
     <string name="mapvm_replaying">%1$s herhalen…</string>
-    <string name="mapvm_export_saved_subject">Vela opgeslagen plaatsen (%1$d)</string>
+    <string name="mapvm_export_saved_subject">MAP-RMG opgeslagen plaatsen (%1$d)</string>
     <string name="mapvm_export_saved_chooser">Opgeslagen plaatsen exporteren</string>
-    <string name="mapvm_export_trip_subject">Vela-rit: %1$s (%2$d punten)</string>
+    <string name="mapvm_export_trip_subject">MAP-RMG-rit: %1$s (%2$d punten)</string>
     <string name="mapvm_share_trip_chooser">Rit delen</string>
     <string name="mapvm_voice_sample">Sla over 400 meter rechts af de Dorpsstraat in.</string>
     <string name="mapvm_not_enough_space">Niet genoeg vrije ruimte voor %1$s (%2$d MB)</string>
     <string name="mapvm_voice_downloaded">%1$s gedownload</string>
     <string name="mapvm_voice_download_failed">%1$s downloaden mislukt</string>
-    <string name="mapvm_vela_voice_removed">Vela-stem verwijderd</string>
+    <string name="mapvm_vela_voice_removed">MAP-RMG-stem verwijderd</string>
     <string name="mapvm_opening_installer">Installatieprogramma openen voor %1$s…</string>
     <string name="mapvm_pan_to_area_first">Open eerst de kaart en verschuif naar een gebied</string>
     <string name="mapvm_offline_routing_ready">Offline routering gereed: %1$s</string>
@@ -475,13 +475,13 @@
     <string name="mapscreen_your_destination">uw bestemming</string>
     <string name="mapvm_resume_waiting_gps">Wachten op GPS om de navigatie te hervatten…</string>
     <string name="mapvm_resume_failed">Kon navigatie niet hervatten</string>
-    <string name="update_available_title">Vela %1$s is beschikbaar</string>
+    <string name="update_available_title">MAP-RMG %1$s is beschikbaar</string>
     <string name="update_downloading">Downloaden… %1$d%%</string>
     <string name="update_later">Niet nu</string>
     <string name="update_install">Bijwerken</string>
     <string name="update_download_failed">Downloaden van de update is mislukt. Probeer het later opnieuw.</string>
-    <string name="update_car_title">Deze update haalt Vela uit Android Auto</string>
-    <string name="update_car_body">Vela is geïnstalleerd op de manier die Android Auto accepteert. Deze update hier installeren vervangt dat, en de auto toont Vela niet meer totdat je het bestand installeert met de tool die je de eerste keer gebruikte (AAEnabler, King Installer).\n\nBewaar het bestand en installeer het op die manier, dan blijft Vela in de auto werken.</string>
+    <string name="update_car_title">Deze update haalt MAP-RMG uit Android Auto</string>
+    <string name="update_car_body">MAP-RMG is geïnstalleerd op de manier die Android Auto accepteert. Deze update hier installeren vervangt dat, en de auto toont MAP-RMG niet meer totdat je het bestand installeert met de tool die je de eerste keer gebruikte (AAEnabler, King Installer).\n\nBewaar het bestand en installeer het op die manier, dan blijft MAP-RMG in de auto werken.</string>
     <string name="update_car_save">Bestand opslaan</string>
     <string name="update_car_anyway">Toch bijwerken</string>
     <string name="settings_update_auto">Bij het starten op updates controleren</string>
@@ -583,7 +583,7 @@
     <string name="settings_places_imported">%1$d plaats(en) geïmporteerd</string>
     <!-- format -->
     <string name="settings_no_lists">Nog geen lijsten om te exporteren</string>
-    <string name="mapvm_export_lists_subject">Vela-lijsten (%1$d)</string>
+    <string name="mapvm_export_lists_subject">MAP-RMG-lijsten (%1$d)</string>
     <string name="mapvm_export_lists_chooser">Lijsten exporteren</string>
     <string name="lists_empty_hint">Nog geen lijsten. Tik op Nieuw of sla een plaats op vanaf zijn pagina.</string>
     <plurals name="lists_place_count">
@@ -596,18 +596,18 @@
     <string name="settings_developer">Ontwikkelaar</string>
     <string name="settings_developer_hint">Hulpmiddelen voor demo\'s, schermafbeeldingen en tests. Zet ze uit voor echt gebruik.</string>
     <string name="settings_browse_voices">Stemmen bekijken</string>
-    <string name="settings_browse_voices_hint">Download en wissel tussen Vela\'s stemmen op het apparaat.</string>
+    <string name="settings_browse_voices_hint">Download en wissel tussen MAP-RMG\'s stemmen op het apparaat.</string>
     <string name="voice_capture_listening">Luisteren…</string>
     <string name="voice_capture_starting">Voorbereiden…</string>
     <string name="voice_capture_done">Klaar</string>
-    <string name="mapvm_asr_ready">De Vela-stem is klaar</string>
+    <string name="mapvm_asr_ready">De MAP-RMG-stem is klaar</string>
     <string name="mapvm_asr_download_failed">Kan het spraakmodel niet downloaden. Controleer je verbinding en probeer opnieuw.</string>
     <string name="mapvm_closing_soon">%1$s sluit om %2$s en je komt rond %3$s aan</string>
     <!-- format -->
     <string name="mapvm_closing_before_arrival">%1$s sluit om %2$s, voordat je rond %3$s aankomt</string>
     <!-- format -->
-    <string name="settings_voice_search_model">Vela-stem</string>
-    <string name="settings_voice_search_model_hint">De Vela-stem zet spraak direct op je telefoon om in een zoekopdracht: geen andere app nodig en er wordt niets geüpload. Eenmalige download van %1$d MB.</string>
+    <string name="settings_voice_search_model">MAP-RMG-stem</string>
+    <string name="settings_voice_search_model_hint">De MAP-RMG-stem zet spraak direct op je telefoon om in een zoekopdracht: geen andere app nodig en er wordt niets geüpload. Eenmalige download van %1$d MB.</string>
     <!-- format -->
     <string name="settings_voice_search_download">Downloaden (%1$d MB)</string>
     <!-- format -->
@@ -616,24 +616,24 @@
     <!-- format -->
     <string name="settings_voice_search_installing">Installeren…</string>
     <string name="settings_voice_search_engine_title">Als je op de microfoon tikt</string>
-    <string name="settings_voice_search_engine_auto">Vela-stem</string>
+    <string name="settings_voice_search_engine_auto">MAP-RMG-stem</string>
     <string name="settings_voice_search_engine_default">Android-standaard</string>
     <string name="settings_voice_search_engine_system">Andere spraak-app</string>
     <string name="map_asr_offer_title">Spraakzoeken</string>
-    <string name="map_asr_offer_body">Download de Vela-stem om je zoekopdrachten in te spreken. Hij draait volledig op je telefoon en uploadt niets.</string>
+    <string name="map_asr_offer_body">Download de MAP-RMG-stem om je zoekopdrachten in te spreken. Hij draait volledig op je telefoon en uploadt niets.</string>
     <string name="nav_precise_title">Precieze locatie nodig</string>
-    <string name="nav_precise_body">Navigatie volgt je via gps en heeft daarvoor de precieze locatie nodig. Op dit moment kent Vela alleen je globale omgeving.</string>
+    <string name="nav_precise_body">Navigatie volgt je via gps en heeft daarvoor de precieze locatie nodig. Op dit moment kent MAP-RMG alleen je globale omgeving.</string>
     <string name="nav_precise_allow">Precies toestaan</string>
     <string name="nav_precise_toast">Navigatie heeft je precieze locatie nodig</string>
     <string name="loc_off_title">Locatie staat uit</string>
-    <string name="loc_off_body">Vela heeft geen locatietoegang. Je kunt dit toestaan in de systeeminstellingen.</string>
+    <string name="loc_off_body">MAP-RMG heeft geen locatietoegang. Je kunt dit toestaan in de systeeminstellingen.</string>
     <string name="loc_off_settings">Instellingen openen</string>
     <string name="loc_approx_title">Locatie bij benadering</string>
-    <string name="loc_approx_body">Vela kent alleen je globale omgeving, niet waar je bent. De kaart toont een grote cirkel in plaats van een punt, en navigatie werkt niet. Je kunt altijd overstappen op de precieze locatie.</string>
+    <string name="loc_approx_body">MAP-RMG kent alleen je globale omgeving, niet waar je bent. De kaart toont een grote cirkel in plaats van een punt, en navigatie werkt niet. Je kunt altijd overstappen op de precieze locatie.</string>
     <string name="loc_approx_allow">Precies toestaan</string>
     <string name="loc_approx_keep">Bij benadering houden</string>
     <string name="notif_ask_title">Meldingen overslaan?</string>
-    <string name="notif_ask_body">Navigatie houdt je volgende afslag in een melding, zodat de aanwijzingen bij je blijven met het scherm uit of in een andere app. Zonder melding zie je aanwijzingen alleen in Vela.</string>
+    <string name="notif_ask_body">Navigatie houdt je volgende afslag in een melding, zodat de aanwijzingen bij je blijven met het scherm uit of in een andere app. Zonder melding zie je aanwijzingen alleen in MAP-RMG.</string>
     <string name="notif_ask_allow">Toestaan</string>
     <string name="notif_ask_skip">Overslaan</string>
     <string name="place_time_past_toast">Die tijd is al geweest. Ingesteld op nu.</string>
@@ -641,13 +641,13 @@
     <string name="settings_map_colors">Kaartkleuren</string>
     <string name="settings_map_colors_modern">Modern</string>
     <string name="settings_map_colors_classic">Klassiek</string>
-    <string name="settings_map_colors_hint">Modern volgt het huidige palet van Google Maps. Klassiek is de eerdere look van Vela: witte wegen, gele snelwegen, echte groentinten.</string>
+    <string name="settings_map_colors_hint">Modern volgt het huidige palet van Google Maps. Klassiek is de eerdere look van MAP-RMG: witte wegen, gele snelwegen, echte groentinten.</string>
     <string name="map_parking_find">Mijn auto zoeken</string>
     <string name="map_parking_move_here">Parkeerplek hierheen verplaatsen</string>
     <string name="map_parking_earlier">Eerdere parkeerplekken</string>
     <string name="map_parking_clear">Parkeerplek wissen</string>
     <string name="map_parking_moved">Parkeerplek hierheen verplaatst</string>
-    <string name="map_import_needs_google">Een gedeelde Google Maps-lijst kan niet worden geopend zolang Vela zonder Google draait.</string>
+    <string name="map_import_needs_google">Een gedeelde Google Maps-lijst kan niet worden geopend zolang MAP-RMG zonder Google draait.</string>
     <string name="map_link_needs_google">\"Gedeelde Google Maps-links openen\" staat uit in Instellingen &gt; Privacy.</string>
     <string name="map_link_unreadable">Kon die link niet openen.</string>
     <string name="settings_performance">Prestaties</string>
@@ -656,9 +656,9 @@
     <string name="settings_full_place_load">Alle foto\'s en recensies laden</string>
     <string name="settings_full_place_load_hint">Uit: een plaats laadt de eerste paar foto\'s en de eerste pagina recensies, en Meer foto\'s of Alle recensies haalt de rest op. Aan: elke plaats die je opent laadt de hele fotogalerij en tot 50 recensies, wat trager is en Google veel meer verzoeken stuurt.</string>
     <string name="settings_speech_preload">Spraakzoeken laden bij opstarten</string>
-    <string name="settings_speech_preload_hint">Laadt het spraakzoekmodel wanneer Vela opent, zodat de microfoon meteen luistert. Het gebruikt ongeveer 300 MB totdat er twee stille minuten voorbij zijn. Uit: het laadt wanneer je op het zoekveld tikt. Standaard aan op telefoons met ongeveer 8 GB geheugen of meer.</string>
+    <string name="settings_speech_preload_hint">Laadt het spraakzoekmodel wanneer MAP-RMG opent, zodat de microfoon meteen luistert. Het gebruikt ongeveer 300 MB totdat er twee stille minuten voorbij zijn. Uit: het laadt wanneer je op het zoekveld tikt. Standaard aan op telefoons met ongeveer 8 GB geheugen of meer.</string>
     <string name="settings_google_free_links">Gedeelde Google Maps-links openen</string>
-    <string name="settings_google_free_links_hint">Een korte Google Maps-link (maps.app.goo.gl) zegt niet waar hij naartoe wijst. Als dit aan staat, vraagt Vela het één keer aan de linkverkorter van Google, zonder cookies, en opent de plaats met de open bronnen. Volledige google.com/maps-links openen zonder te vragen. Gedeelde lijsten hebben nog steeds Google nodig.</string>
+    <string name="settings_google_free_links_hint">Een korte Google Maps-link (maps.app.goo.gl) zegt niet waar hij naartoe wijst. Als dit aan staat, vraagt MAP-RMG het één keer aan de linkverkorter van Google, zonder cookies, en opent de plaats met de open bronnen. Volledige google.com/maps-links openen zonder te vragen. Gedeelde lijsten hebben nog steeds Google nodig.</string>
     <string name="mapscreen_system_voices">Systeemstemmen</string>
     <string name="mapvm_voice_lang_system">Aanwijzingen in het %1$s gebruiken de stem van je telefoon. Voeg er een toe in je systeemstem-instellingen.</string>
     <string name="settings_topography">Terreinschaduw</string>
@@ -691,13 +691,13 @@
     <string name="place_review_less">Minder</string>
     <string name="settings_traffic_lights">Stoplicht-aanwijzingen</string>
     <string name="settings_traffic_lights_hint">Gesproken herkenningspunten: na het stoplicht afslaan. Alleen Engels, standaard uit.</string>
-    <string name="map_asr_downloading">Vela Voice-micro wordt gedownload · %1$d %%</string>
-    <string name="map_asr_installing">Vela Voice-micro wordt geïnstalleerd…</string>
-    <string name="map_asr_waiting">Vela Voice-micro · wacht op de Vela-stem</string>
+    <string name="map_asr_downloading">MAP-RMG Voice-micro wordt gedownload · %1$d %%</string>
+    <string name="map_asr_installing">MAP-RMG Voice-micro wordt geïnstalleerd…</string>
+    <string name="map_asr_waiting">MAP-RMG Voice-micro · wacht op de MAP-RMG-stem</string>
     <string name="mapscreen_filter_top_rated">4,0★</string>
     <string name="mapscreen_section_recent_searches">Recente zoekopdrachten</string>
     <string name="mapscreen_clear_recent_searches">Recente zoekopdrachten wissen</string>
-    <string name="root_diag_title">Helpt u Vela verbeteren?</string>
+    <string name="root_diag_title">Helpt u MAP-RMG verbeteren?</string>
     <string name="root_diag_body">Beide blijven op uw telefoon - er wordt niets verzonden tenzij u het exporteert. U kunt beide op elk moment wijzigen in Instellingen.</string>
     <string name="root_diag_share_title">Diagnostiek delen</string>
     <string name="root_diag_share_desc">Een kort lokaal logboek van zoekopdrachten, routes en fouten.</string>
@@ -712,7 +712,7 @@
     <!-- format -->
     <string name="root_voice_none_picked">Vink een optie aan of kies Niet nu.</string>
     <string name="root_offline_title">Offlinekaarten</string>
-    <string name="root_offline_body">Vela haalt plaatsen, zoekopdrachten en routes van Google, dus zonder signaal werken alleen gebieden die je hebt gedownload. Stel nu een gebied in zodat je gedekt bent als je bereik verliest.</string>
+    <string name="root_offline_body">MAP-RMG haalt plaatsen, zoekopdrachten en routes van Google, dus zonder signaal werken alleen gebieden die je hebt gedownload. Stel nu een gebied in zodat je gedekt bent als je bereik verliest.</string>
     <string name="root_offline_setup">Offline instellen</string>
     <string name="mapvm_stop_added">Tussenstop toegevoegd</string>
     <string name="shortcut_home">Thuis</string>
@@ -720,7 +720,7 @@
     <string name="settings_asr_engines_hint">Spraak wordt een zoekopdracht op de telefoon. Niets wordt geupload. Kies de engine voor de mic.</string>
     <string name="settings_asr_engine_meta">%1$s · %2$d MB</string>
     <!-- format -->
-    <string name="settings_asr_langs_whisper">Alle talen die Vela ondersteunt</string>
+    <string name="settings_asr_langs_whisper">Alle talen die MAP-RMG ondersteunt</string>
     <string name="settings_asr_langs_sensevoice">Engels, Chinees, Japans, Koreaans, Kantonees</string>
     <string name="settings_asr_langs_moonshine">Alleen Engels</string>
     <string name="settings_asr_active">Actief</string>
@@ -741,9 +741,9 @@
     <string name="voice_error_title">Zoeken met spraak startte niet</string>
     <string name="voice_error_retry">Opnieuw proberen</string>
     <string name="voice_error_model">Het spraakmodel is niet gereed. Download het opnieuw via Instellingen \u2192 Zoeken.</string>
-    <string name="voice_error_permission">Vela heeft microfoontoestemming nodig om te luisteren. Geef die in de app-instellingen van Android.</string>
+    <string name="voice_error_permission">MAP-RMG heeft microfoontoestemming nodig om te luisteren. Geef die in de app-instellingen van Android.</string>
     <string name="voice_error_vad">Een deel van het spraakmodel ontbreekt. Download het opnieuw via Instellingen \u2192 Zoeken.</string>
-    <string name="voice_error_audio">Deze telefoon opende de microfoon niet voor Vela. Sluit andere apps die audio opnemen en probeer opnieuw.</string>
+    <string name="voice_error_audio">Deze telefoon opende de microfoon niet voor MAP-RMG. Sluit andere apps die audio opnemen en probeer opnieuw.</string>
     <string name="voice_error_recording">De opname stopte onverwacht. Probeer opnieuw.</string>
     <string name="place_tab_reviews">Reviews</string>
     <string name="place_tab_about">Info</string>
@@ -770,7 +770,7 @@
     <string name="settings_search_none">Geen resultaten</string>
     <string name="settings_app_name_title">Appnaam</string>
     <string name="settings_app_name_generic">Noem het gewoon “Maps”</string>
-    <string name="settings_app_name_generic_hint">Toont het pictogram als gewoon Maps in plaats van Vela Maps, voor een standaarduiterlijk. Mogelijk moet je na het wisselen een snelkoppeling op je startscherm opnieuw toevoegen.</string>
+    <string name="settings_app_name_generic_hint">Toont het pictogram als gewoon Maps in plaats van MAP-RMG Maps, voor een standaarduiterlijk. Mogelijk moet je na het wisselen een snelkoppeling op je startscherm opnieuw toevoegen.</string>
     <string name="settings_contacts_search">Je contacten doorzoeken</string>
     <string name="settings_contacts_search_hint">Typ je de naam van een contact, dan worden de opgeslagen adressen voorgesteld, met de foto en het adreslabel uit je adresboek. Je contacten blijven op deze telefoon; kies je er een, dan wordt dat adres net als elke getypte zoekopdracht opgezocht en geopend onder de naam van het contact.</string>
     <string name="suggestion_contact_badge">Contact</string>
@@ -793,14 +793,14 @@
     <string name="settings_nav_trace_hint">Legt vast hoe de kaartcamera beweegt terwijl je navigeert, zodat een schokkende of zwevende kaart onderzocht kan worden. Bevat geen locatiegegevens, alleen richtingen, snelheden en tijden, dus je kunt het veilig aan een bugrapport toevoegen.</string>
     <string name="settings_nav_trace_export">Navigatietrace delen</string>
     <string name="settings_nav_trace_empty">Nog geen trace opgenomen. Navigeer eerst ergens naartoe.</string>
-    <string name="settings_voice_vela_name">Vela-stem (%1$s)</string>
-    <string name="settings_voice_install_vela">Vela-stem installeren (%1$d MB)</string>
+    <string name="settings_voice_vela_name">MAP-RMG-stem (%1$s)</string>
+    <string name="settings_voice_install_vela">MAP-RMG-stem installeren (%1$d MB)</string>
     <string name="settings_voice_install_vela_hint">De aanbevolen navigatiestem. Installeer hem hier opnieuw als hij ontbreekt of een download is mislukt.</string>
     <string name="settings_texture_render">Compatibiliteitsweergave</string>
     <string name="settings_texture_render_hint">Tekent de kaart via een compatibiliteitspad dat de bugs in de grafische driver van sommige toestellen omzeilt. Gaat vanzelf aan als de kaart de app bij het starten liet crashen. Iets trager; vereist een herstart van de app.</string>
     <string name="settings_texture_render_auto_hint">Automatisch ingeschakeld op %1$s nadat de kaart bij het starten twee keer crashte. Werkt de kaart ook zonder, laat het dan uit: het is trager en kan de kaart tijdens het rijden laten haperen. Vereist een herstart van de app.</string>
     <string name="settings_offline_places_with_downloads">Plaatsen meenemen bij downloads</string>
-    <string name="settings_offline_places_with_downloads_hint">Bij het downloaden van een regio komen ook Vela\'s plaatsgegevens mee, zodat de bedrijven op de kaart zonder bereik zichtbaar zijn. Ongeveer een halve gigabyte voor een grote staat. Uit = plaatsen komen alleen online binnen.</string>
+    <string name="settings_offline_places_with_downloads_hint">Bij het downloaden van een regio komen ook MAP-RMG\'s plaatsgegevens mee, zodat de bedrijven op de kaart zonder bereik zichtbaar zijn. Ongeveer een halve gigabyte voor een grote staat. Uit = plaatsen komen alleen online binnen.</string>
     <string name="settings_routing_size_installed_here">Ongeveer %1$s na installatie · dekt je locatie</string>
     <string name="settings_routing_size_installed">Ongeveer %1$s na installatie</string>
     <string name="settings_storage_title">Opslag</string>
@@ -819,7 +819,7 @@
     <string name="mapvm_offline_all_deleted">Offline gegevens verwijderd</string>
     <string name="settings_import_nothing_new">Alles in dat bestand is al opgeslagen.</string>
     <string name="settings_import_unreadable">Dat bestand kon niet worden geopend.</string>
-    <string name="settings_import_wrong_format">Geen plaatsen gevonden in dat bestand. Vela leest zijn eigen exports, en GPX-, KML- of GeoJSON-bestanden uit andere kaart-apps.</string>
+    <string name="settings_import_wrong_format">Geen plaatsen gevonden in dat bestand. MAP-RMG leest zijn eigen exports, en GPX-, KML- of GeoJSON-bestanden uit andere kaart-apps.</string>
     <string name="settings_import_wrong_format_named">Geen plaatsen gevonden in dat %1$s-bestand.</string>
     <string name="settings_import_no_picker">Er is geen bestandskiezer op dit toestel, dus er kan geen bestand worden gekozen.</string>
     <string name="nav_overview">Routeoverzicht</string>
@@ -832,18 +832,18 @@
     <string name="settings_show_pois">Plaatsen tonen</string>
     <string name="settings_show_pois_hint">Pictogrammen van bedrijven en plaatsen op de kaart. Uit = een schone kaart; gezochte plaatsen blijven zichtbaar.</string>
     <string name="settings_places_source">Plaatspictogrammen op de kaart</string>
-    <string name="settings_places_source_open">Vela-gegevens</string>
+    <string name="settings_places_source_open">MAP-RMG-gegevens</string>
     <string name="settings_places_source_google">Google</string>
     <string name="settings_places_source_both">Allebei</string>
-    <string name="settings_places_source_open_hint">De pictogrammen komen uit Vela\'s eigen gegevens. Pannen vraagt nooit iets aan Google en het werkt offline.</string>
+    <string name="settings_places_source_open_hint">De pictogrammen komen uit MAP-RMG\'s eigen gegevens. Pannen vraagt nooit iets aan Google en het werkt offline.</string>
     <string name="settings_places_source_google_hint">De pictogrammen komen van Google. Elke pan stuurt je kaartpositie naar Google en offline wordt er niets getekend.</string>
-    <string name="settings_places_source_both_hint">Vela\'s pictogrammen, plus wat Google extra heeft zodra je stopt met pannen.</string>
+    <string name="settings_places_source_both_hint">MAP-RMG\'s pictogrammen, plus wat Google extra heeft zodra je stopt met pannen.</string>
     <string name="settings_places_source_more">Meer info</string>
     <string name="settings_places_source_more_credit">Overture Maps</string>
     <string name="settings_places_lookup">Aangetikte plaatsen opzoeken bij Google</string>
-    <string name="settings_places_lookup_hint">Op een plaats tikken haalt de openingstijden, recensies en foto\'s bij Google op, en Vela onthoudt de koppeling zodat de volgende tik direct is. Uit = een aangetikte plaats toont alleen wat Vela\'s eigen gegevens hebben (naam, type, adres, telefoon, website) en er bereikt niets over die tik Google. Zoeken en routes gebruiken nog steeds Google.</string>
-    <string name="settings_places_source_more_title">Waar Vela\'s plaatsgegevens vandaan komen</string>
-    <string name="settings_places_source_more_body">Vela\'s plaatsgegevens zijn Overture Maps, een open dataset van bedrijven die wordt onderhouden door Meta, Microsoft en anderen. Vela levert die vanuit zijn eigen GitHub-repository, dus er gaat niets over waar jij kijkt naar Meta of Google.\n\nDe gegevens komen binnen terwijl je de kaart bekijkt en worden met een regio gedownload voor offline gebruik. Waar Vela nog geen gegevens voor een gebied heeft, valt de kaart terug op Google.\n\nZoeken, plaatsdetails, openingstijden, recensies en foto\'s komen altijd van Google, welke optie je ook kiest.</string>
+    <string name="settings_places_lookup_hint">Op een plaats tikken haalt de openingstijden, recensies en foto\'s bij Google op, en MAP-RMG onthoudt de koppeling zodat de volgende tik direct is. Uit = een aangetikte plaats toont alleen wat MAP-RMG\'s eigen gegevens hebben (naam, type, adres, telefoon, website) en er bereikt niets over die tik Google. Zoeken en routes gebruiken nog steeds Google.</string>
+    <string name="settings_places_source_more_title">Waar MAP-RMG\'s plaatsgegevens vandaan komen</string>
+    <string name="settings_places_source_more_body">MAP-RMG\'s plaatsgegevens zijn Overture Maps, een open dataset van bedrijven die wordt onderhouden door Meta, Microsoft en anderen. MAP-RMG levert die vanuit zijn eigen GitHub-repository, dus er gaat niets over waar jij kijkt naar Meta of Google.\n\nDe gegevens komen binnen terwijl je de kaart bekijkt en worden met een regio gedownload voor offline gebruik. Waar MAP-RMG nog geen gegevens voor een gebied heeft, valt de kaart terug op Google.\n\nZoeken, plaatsdetails, openingstijden, recensies en foto\'s komen altijd van Google, welke optie je ook kiest.</string>
     <string name="settings_show_civic">Parken, scholen en openbare plaatsen</string>
     <string name="settings_show_civic_hint">De niet-zakelijke laag van plaatspictogrammen. Uit toont alleen bedrijven.</string>
     <string name="settings_show_transit_stops">OV-haltes</string>
@@ -854,7 +854,7 @@
     <string name="settings_poi_size_large">Groot</string>
     <string name="settings_poi_icon_size_hint">Klein past bij schermen met een lage resolutie, zoals autoschermen, waar de standaardpictogrammen te groot worden weergegeven.</string>
     <string name="settings_live_rechecks">Verkeer opnieuw controleren tijdens het navigeren</string>
-    <string name="settings_live_rechecks_hint">Om de paar minuten tijdens een rit vraagt Vela Google om actueel verkeer vanaf je huidige positie. Dat maakt voorstellen voor een snellere route en de live aankomsttijd mogelijk, maar het vertelt Google ook waar op de route je bent. Uit: je route wordt nog steeds herberekend zodra je ervan afwijkt.</string>
+    <string name="settings_live_rechecks_hint">Om de paar minuten tijdens een rit vraagt MAP-RMG Google om actueel verkeer vanaf je huidige positie. Dat maakt voorstellen voor een snellere route en de live aankomsttijd mogelijk, maar het vertelt Google ook waar op de route je bent. Uit: je route wordt nog steeds herberekend zodra je ervan afwijkt.</string>
     <string name="nav_edit_route">Route bewerken</string>
     <string name="nav_edit_route_hint">Onderweg een stop toevoegen</string>
     <string name="nav_stops_remove_next">Volgende verwijderen</string>
@@ -863,13 +863,13 @@
     <string name="nav_stop_offer_remove">Stop verwijderen</string>
     <string name="settings_google_session">Google-sessie</string>
     <string name="settings_block_google_telemetry">Paginatelemetrie van Google blokkeren</string>
-    <string name="settings_block_google_telemetry_hint">De pagina\'s van Google rapporteren over zichzelf: logpings en achtergrondverzoeken van de accountbalk. Niets wat Vela toont heeft ze nodig. Standaard gaan ze toch de deur uit, omdat een browser die ze nooit stuurt voor Google minder op een mens lijkt, en dat bepaalt mede of je sessie de beperkte weergave krijgt. Zet dit aan om ze in plaats daarvan op de telefoon zelf te beantwoorden.</string>
+    <string name="settings_block_google_telemetry_hint">De pagina\'s van Google rapporteren over zichzelf: logpings en achtergrondverzoeken van de accountbalk. Niets wat MAP-RMG toont heeft ze nodig. Standaard gaan ze toch de deur uit, omdat een browser die ze nooit stuurt voor Google minder op een mens lijkt, en dat bepaalt mede of je sessie de beperkte weergave krijgt. Zet dit aan om ze in plaats daarvan op de telefoon zelf te beantwoorden.</string>
     <string name="settings_google_session_limited">Google geeft deze telefoon op dit moment een beperkte weergave: minder foto\'s per pagina, bij sommige plaatsen geen drukke tijden, en Meer recensies laadt niets. Meestal gaat dat na een tijdje vanzelf over. Een gloednieuwe sessie begint ook beperkt, dus een nieuwe starten helpt zelden.</string>
     <string name="place_limited_view">Google toont op dit moment een beperkte weergave, dus drukke tijden en meer recensies kunnen hier ontbreken.</string>
-    <string name="settings_google_session_hint">Google herkent deze telefoon aan een cookie, dus wat Vela opzoekt zolang die geldig is, kan aan elkaar worden gekoppeld, zonder naam of account. Een nieuwe starten beperkt dat. Een nieuwe sessie krijgt een tijdje een kortere weergave van Google (minder recensies, bij sommige plaatsen geen drukke tijden).</string>
+    <string name="settings_google_session_hint">Google herkent deze telefoon aan een cookie, dus wat MAP-RMG opzoekt zolang die geldig is, kan aan elkaar worden gekoppeld, zonder naam of account. Een nieuwe starten beperkt dat. Een nieuwe sessie krijgt een tijdje een kortere weergave van Google (minder recensies, bij sommige plaatsen geen drukke tijden).</string>
     <string name="settings_google_session_week">Elke week een nieuwe starten (aanbevolen)</string>
     <string name="settings_google_session_day">Elke dag een nieuwe starten</string>
-    <string name="settings_google_session_launch">Elke keer dat Vela opent een nieuwe starten (meest privé)</string>
+    <string name="settings_google_session_launch">Elke keer dat MAP-RMG opent een nieuwe starten (meest privé)</string>
     <string name="settings_google_session_launch_hint">Wat dit kost: Google behandelt elke sessie als een nieuwe bezoeker, dus je krijgt meestal de kortere weergave (ongeveer vijf recensies, vaak geen drukke tijden). Plaatsen laden iets trager en gebruiken meer data, omdat de eerste antwoorden van een nieuwe sessie ingekort terugkomen en opnieuw worden opgevraagd. Android herstart apps op de achtergrond, dus dit kan meerdere nieuwe sessies per dag betekenen, en veel nieuwe bezoekers vanaf één verbinding kunnen meer botcontroles van Google opleveren. Google ziet nog steeds je IP-adres, dat sessies vanaf één verbinding over een korte tijd toch al aan elkaar koppelt.</string>
     <string name="settings_google_session_now">Nu een nieuwe sessie starten</string>
     <string name="settings_google_session_done">Nieuwe Google-sessie gestart</string>
@@ -905,7 +905,7 @@
     <string name="settings_trip_batch_none">Elke geselecteerde rit is korter dan de inkortafstand, dus er blijft niets over om te delen. Probeer een kleinere.</string>
     <string name="settings_trip_batch_confirm">Zip delen</string>
     <string name="settings_name_trips">Elke rit een naam geven bij het opslaan</string>
-    <string name="settings_name_trips_hint">Nadat een opgenomen rit is afgelopen, vraagt Vela hoe je hem wilt noemen. Standaard uit; je kunt een rit later altijd hernoemen in de lijst hieronder.</string>
+    <string name="settings_name_trips_hint">Nadat een opgenomen rit is afgelopen, vraagt MAP-RMG hoe je hem wilt noemen. Standaard uit; je kunt een rit later altijd hernoemen in de lijst hieronder.</string>
     <string name="trip_name_prompt_title">Deze rit een naam geven</string>
     <string name="trip_name_prompt_save">Naam opslaan</string>
     <string name="trip_name_prompt_skip">Niet nu</string>
@@ -935,13 +935,13 @@
     <string name="whatsnew_full_notes">Volledige notities</string>
     <string name="settings_whatsnew">Wat is er nieuw in deze versie</string>
     <string name="settings_whatsnew_hint">De releasenotities van de build die je gebruikt. Ze verschijnen ook één keer na elke update.</string>
-    <string name="mapvm_export_trips_subject">Vela-ritten: %1$d ritten (%2$d punten)</string>
-    <string name="mapvm_export_trip_scrubbed_subject">Vela-rit: %1$d punten, uiteinden ingekort</string>
+    <string name="mapvm_export_trips_subject">MAP-RMG-ritten: %1$d ritten (%2$d punten)</string>
+    <string name="mapvm_export_trip_scrubbed_subject">MAP-RMG-rit: %1$d punten, uiteinden ingekort</string>
     <string name="mapvm_area_uses_pack">Plaatsen en adressen voor dit gebied komen mee met de download van %1$s</string>
     <string name="navservice_channel_turns_name">Gesproken afslagmeldingen</string>
     <string name="download_notif_channel">Downloads</string>
     <string name="download_notif_title">%1$s downloaden</string>
-    <string name="download_label_update">Vela-update</string>
+    <string name="download_label_update">MAP-RMG-update</string>
     <string name="download_label_map_data">kaartgegevens</string>
     <string name="download_label_offline_places">offline plaatsen</string>
     <string name="map_area_downloading">Dit gebied offline opslaan · %1$d%%</string>
@@ -968,8 +968,8 @@
     <string name="settings_voice_volume_normal">Normaal</string>
     <string name="settings_voice_volume_louder">Luider</string>
     <string name="settings_voice_volume_loudest">Luidst</string>
-    <string name="settings_voice_volume_hint">Hoe luid gesproken aanwijzingen over je media klinken. De luidere standen gelden voor de Vela-stem; systeemstemmen kunnen alleen zachter.</string>
-    <string name="place_avoid_not_honored">Deze routes kunnen nog steeds tolwegen, snelwegen of veerboten gebruiken: Google was niet bereikbaar om eromheen te plannen, en de open routeplanner kan dat niet. In een gedownload gebied vermijdt Vela ze offline.</string>
+    <string name="settings_voice_volume_hint">Hoe luid gesproken aanwijzingen over je media klinken. De luidere standen gelden voor de MAP-RMG-stem; systeemstemmen kunnen alleen zachter.</string>
+    <string name="place_avoid_not_honored">Deze routes kunnen nog steeds tolwegen, snelwegen of veerboten gebruiken: Google was niet bereikbaar om eromheen te plannen, en de open routeplanner kan dat niet. In een gedownload gebied vermijdt MAP-RMG ze offline.</string>
     <string name="settings_asr_engines_title">Spraakherkenning op het toestel</string>
     <string name="voice_capture_examples_title">Dingen die je kunt zeggen</string>
     <string name="voice_capture_example_home">\"Breng me naar huis\" of \"breng me naar mijn werk\"</string>
@@ -1012,9 +1012,9 @@
     <string name="settings_bike_safe">Fietsroutes kiezen fietspaden en rustige straten</string>
     <string name="settings_bike_safe_hint">Fietsroutes geven de voorkeur aan bewegwijzerde fietsroutes, fietspaden en woonstraten boven de snelste weg, zoals Google fietsroutes berekent. Gebruikt de offlinekaart waar je er een hebt gedownload, en anders online een open router. Uit geeft de gewone snelste fietsroute.</string>
     <string name="settings_route_picker">Routekiezer in Google-stijl</string>
-    <string name="settings_route_picker_hint">Toont één route tegelijk, met de andere achter een tik en hun tijden op de kaart, en Start onderaan. Zet dit uit voor het klassieke paneel van Vela, dat alle routes tegelijk toont.</string>
+    <string name="settings_route_picker_hint">Toont één route tegelijk, met de andere achter een tik en hun tijden op de kaart, en Start onderaan. Zet dit uit voor het klassieke paneel van MAP-RMG, dat alle routes tegelijk toont.</string>
     <string name="settings_route_bar">Balk met de weg vooruit</string>
-    <string name="settings_route_bar_hint">Een strook naast de kaart die het verkeer toont en wat er op de rest van je route aankomt. Toont alleen wat Vela echt weet: files, verkeerslichten, stopborden, spoorwegovergangen, verkeersdrempels en camera\'s. Alleen staand.</string>
+    <string name="settings_route_bar_hint">Een strook naast de kaart die het verkeer toont en wat er op de rest van je route aankomt. Toont alleen wat MAP-RMG echt weet: files, verkeerslichten, stopborden, spoorwegovergangen, verkeersdrempels en camera\'s. Alleen staand.</string>
     <string name="settings_font">Lettertype</string>
     <string name="settings_font_system">Systeemlettertype</string>
     <string name="settings_font_choose">Een lettertypebestand kiezen…</string>
@@ -1056,7 +1056,7 @@
     <string name="settings_photos_on_tap">Foto\'s alleen laden als ik tik</string>
     <string name="settings_photos_on_tap_hint">Een plaats toont een knop Foto\'s tonen in plaats van de foto\'s te laden. Scheelt één Google-verzoek per plaats.</string>
     <string name="settings_details_retry">Wachten op drukke tijden</string>
-    <string name="settings_details_retry_hint">Google laat de drukke tijden vaak weg in het eerste antwoord, dus Vela vraagt tot twee keer opnieuw. Uit = één verzoek per plaats, en de drukke tijden kunnen ontbreken.</string>
+    <string name="settings_details_retry_hint">Google laat de drukke tijden vaak weg in het eerste antwoord, dus MAP-RMG vraagt tot twee keer opnieuw. Uit = één verzoek per plaats, en de drukke tijden kunnen ontbreken.</string>
     <string name="place_show_photos">Foto\'s tonen</string>
     <string name="place_no_photos">Nog geen foto\'s</string>
     <string name="place_all_n_reviews_open">Alle %1$d reviews</string>
@@ -1116,9 +1116,9 @@
     <string name="settings_storage_no_space">Daar is niet genoeg ruimte: de offline gegevens hebben ongeveer %1$d MB nodig.</string>
     <string name="settings_storage_moved">Offline gegevens verplaatst.</string>
     <string name="settings_storage_failed">Het verplaatsen is niet voltooid; de offline gegevens blijven waar ze waren.</string>
-    <string name="settings_maps_links_on">Links naar Google Maps openen in Vela.</string>
-    <string name="settings_maps_links_partial">Sommige Google Maps-links openen in Vela. Voeg de rest toe onder Standaard openen, dan werkt elk soort link.</string>
-    <string name="settings_maps_links_off">Android opent Google Maps-links in de browser. Om ze in Vela te openen, zet je Ondersteunde links openen aan en voeg je de links toe onder Standaard openen.</string>
+    <string name="settings_maps_links_on">Links naar Google Maps openen in MAP-RMG.</string>
+    <string name="settings_maps_links_partial">Sommige Google Maps-links openen in MAP-RMG. Voeg de rest toe onder Standaard openen, dan werkt elk soort link.</string>
+    <string name="settings_maps_links_off">Android opent Google Maps-links in de browser. Om ze in MAP-RMG te openen, zet je Ondersteunde links openen aan en voeg je de links toe onder Standaard openen.</string>
     <string name="settings_maps_links_open">Instellingen voor Standaard openen</string>
     <string name="mapvm_cells_progress">%1$s, deel %2$d van %3$d</string>
     <string name="mapvm_cells_ready">Routes en plaatsen voor dit deel van %1$s werken offline</string>
@@ -1201,7 +1201,7 @@
     <string name="settings_link_action_place">Plaats tonen</string>
     <string name="settings_link_action_directions">Route openen</string>
     <string name="settings_link_action_start">Navigatie starten</string>
-    <string name="settings_link_action_hint">Wat er gebeurt als een andere app een locatie aan Vela doorgeeft. Navigatie starten past bij bezorgapps die de ene stop na de andere sturen.</string>
+    <string name="settings_link_action_hint">Wat er gebeurt als een andere app een locatie aan MAP-RMG doorgeeft. Navigatie starten past bij bezorgapps die de ene stop na de andere sturen.</string>
     <string name="car_nearby">In de buurt</string>
     <string name="car_more_nearby">Meer in de buurt</string>
     <string name="car_saved">Opgeslagen</string>
@@ -1214,8 +1214,8 @@
     <string name="car_setting_avoid_highways">Snelwegen vermijden</string>
     <string name="car_setting_avoid_ferries">Veerboten vermijden</string>
     <string name="car_location_title">Locatie toestaan</string>
-    <string name="car_location_body">Vela heeft die nodig om te tonen waar je bent en je de weg te wijzen</string>
-    <string name="car_location_denied">Locatie staat uit. Zet die aan voor Vela in de instellingen van je telefoon.</string>
+    <string name="car_location_body">MAP-RMG heeft die nodig om te tonen waar je bent en je de weg te wijzen</string>
+    <string name="car_location_denied">Locatie staat uit. Zet die aan voor MAP-RMG in de instellingen van je telefoon.</string>
     <string name="settings_page_transitions">Paginaovergangen</string>
     <string name="settings_page_transitions_hint">Animeert pagina\'s en panelen onderaan bij het openen en sluiten, en toont een voorbeeld van de vorige pagina wanneer je terugveegt.</string>
     <string name="place_avoid_label">Vermijden</string>
@@ -1243,7 +1243,7 @@
     <string name="exp_chooser_share_text">Route naar %1$s: %2$s, %3$s</string>
     <string name="settings_flock_route_alert">Bewakingscamera\'s vermijden</string>
     <string name="settings_flock_detour">Zijstraten proberen om camera\'s heen</string>
-    <string name="settings_flock_detour_hint">Als de beste route nog steeds langs camera\'s komt, probeert Vela bij elke camera een punt net naast de weg en plant de route daarlangs, zoals je zelf zou doen door de kaart lang ingedrukt te houden. Een route die binnen dezelfde kleine omweg langs minder camera\'s komt, gaat naar de top van de lijst. Kost een paar extra routeverzoeken per rit. Standaard uit.</string>
+    <string name="settings_flock_detour_hint">Als de beste route nog steeds langs camera\'s komt, probeert MAP-RMG bij elke camera een punt net naast de weg en plant de route daarlangs, zoals je zelf zou doen door de kaart lang ingedrukt te houden. Een route die binnen dezelfde kleine omweg langs minder camera\'s komt, gaat naar de top van de lijst. Kost een paar extra routeverzoeken per rit. Standaard uit.</string>
     <string name="settings_flock_route_alert_hint">Telt de kentekencamera\'s (Flock) op elke route (een camera die op een kruisende weg is gericht telt niet mee, want die leest het kruisende verkeer) en kiest automatisch een route met minder camera\'s als die maar iets langer duurt. Je wordt nooit ver omgeleid, dus waar camera\'s onvermijdelijk zijn, zie je alleen de aantallen en is de keuze aan jou. Houd de kaart lang ingedrukt om zelf via een punt te rijden. Standaard uit.</string>
     <plurals name="dir_cameras_avoided">
         <item quantity="one">Komt langs %1$d camera minder dan de snelste route</item>
@@ -1265,7 +1265,7 @@
     <string name="street_view_offline">Street View heeft hier een verbinding nodig: deze plek is niet eerder bekeken</string>
     <string name="mapscreen_other_locations">Andere locaties tonen</string>
     <string name="settings_other_locations_auto">Andere locaties automatisch zoeken</string>
-    <string name="settings_other_locations_auto_hint">Als een zoekopdracht op naam bij één plaats uitkomt, vraagt Vela Google ook naar de andere locaties. Dat zijn bij elke zoekopdracht van dit soort een paar extra verzoeken aan Google. Uit: een knop \"Andere locaties tonen\" doet dit wanneer je erop tikt.</string>
+    <string name="settings_other_locations_auto_hint">Als een zoekopdracht op naam bij één plaats uitkomt, vraagt MAP-RMG Google ook naar de andere locaties. Dat zijn bij elke zoekopdracht van dit soort een paar extra verzoeken aan Google. Uit: een knop \"Andere locaties tonen\" doet dit wanneer je erop tikt.</string>
     <string name="mapscreen_view_map">Kaart bekijken</string>
     <string name="whatsnew_show_after_updates">Na updates tonen wat er nieuw is</string>
     <string name="replay_play">Afspelen</string>
@@ -1309,17 +1309,17 @@
     <string name="settings_map_names_hint">Geromaniseerde namen worden machinaal gemaakt waar OpenStreetMap geen Engelse naam heeft, en lezen slecht in het Hebreeuws en enkele andere schriften. De app-taal en de stem veranderen niet.</string>
     <string name="settings_project">Project</string>
     <string name="settings_project_hint">Broncode, bugmeldingen en discussies staan op GitHub.</string>
-    <string name="settings_project_github_button">Vela op GitHub</string>
+    <string name="settings_project_github_button">MAP-RMG op GitHub</string>
     <string name="mapvm_rechecking_connection">Verbinding controleren…</string>
     <string name="mapvm_back_online">Weer online</string>
-    <string name="mapvm_still_offline">Nog steeds offline. Vela merkt het meteen als de verbinding terug is.</string>
+    <string name="mapvm_still_offline">Nog steeds offline. MAP-RMG merkt het meteen als de verbinding terug is.</string>
     <string name="search_offline_recheck">Offline. Tik om opnieuw te controleren</string>
     <string name="settings_turn_declutter">Kaart vereenvoudigen in bochten</string>
     <string name="settings_turn_declutter_hint">Terwijl de kaart door een bocht draait, blijven alleen straatnamen zichtbaar. Plaatsen, borden en camera\'s komen terug zodra de kaart tot rust komt. Houdt bochten vloeiend op tragere telefoons.</string>
     <string name="settings_softkeys">Fysieke softkeys</string>
     <string name="settings_softkeys_hint">Zoom de kaart met de twee softkeys van de telefoon. Alleen voor telefoons met toetsen.</string>
     <string name="settings_softkeys_calibrate">Softkeys kalibreren</string>
-    <string name="settings_softkeys_calibrate_hint">Zoomen de softkeys niet? Tik hier en druk eerst op je linker- en dan op je rechtersoftkey, zodat Vela hun codes leert.</string>
+    <string name="settings_softkeys_calibrate_hint">Zoomen de softkeys niet? Tik hier en druk eerst op je linker- en dan op je rechtersoftkey, zodat MAP-RMG hun codes leert.</string>
     <string name="map_zoom_mode_hint">Zoom:  ◀ uit   ·   in ▶      TERUG om te sluiten</string>
     <string name="map_move_mode_hint">Kaart verplaatsen:  ◀ ▲ ▼ ▶      TERUG om te sluiten</string>
     <string name="softkey_zoom_menu">Zoom (◀ − ▶ +)</string>

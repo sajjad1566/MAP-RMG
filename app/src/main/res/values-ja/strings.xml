@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Vela Maps</string>
+    <string name="app_name">MAP-RMG Maps</string>
     <!-- shared search-category chip labels (map + along-route); the search QUERY stays English in code -->
     <string name="cat_restaurants">レストラン</string>
     <string name="cat_coffee">コーヒー</string>
@@ -17,7 +17,7 @@
     <string name="settings_follow_system">システムに合わせる</string>
     <string name="settings_theme_light">ライト</string>
     <string name="settings_theme_dark">ダーク</string>
-    <string name="settings_appearance_hint">Vela にのみ適用されます。</string>
+    <string name="settings_appearance_hint">MAP-RMG にのみ適用されます。</string>
     <string name="settings_dynamic_color">Material You カラー</string>
     <string name="settings_dynamic_color_hint">壁紙に合わせてボタンやアクセントの色を付けます。地図の色は変わりません。</string>
     <string name="settings_map_style">地図のスタイル</string>
@@ -40,7 +40,7 @@
     <string name="settings_voice_none_hint">音声はまだありません。下の音声ライブラリを開いて、端末上で動く自然な音声をダウンロードしてください（アカウント不要、古い端末でもリアルタイムで動作します）。インストール済みのシステム TTS エンジンもここに表示され、選択できます。</string>
     <string name="settings_voice_test">音声をテスト</string>
     <string name="settings_voice_system_settings">システムの音声設定</string>
-    <string name="settings_voice_test_hint">「音声をテスト」をタップすると試聴できます。Vela 音声がおすすめですが、インストール済みの任意のテキスト読み上げエンジンに変更することもできます。</string>
+    <string name="settings_voice_test_hint">「音声をテスト」をタップすると試聴できます。MAP-RMG 音声がおすすめですが、インストール済みの任意のテキスト読み上げエンジンに変更することもできます。</string>
     <string name="settings_voice_library">音声ライブラリ</string>
     <string name="settings_voice_advanced">音声の詳細オプション</string>
     <string name="settings_voice_try_label">好きなテキストで音声を試す</string>
@@ -66,8 +66,8 @@
     <string name="settings_vibrate_hint">曲がり角ごとに、左折と右折で異なるパターンの振動でお知らせします。感覚だけでルートをたどれます。移動手段ごとに設定できます（例：自転車と徒歩はオン、車はオフ）。</string>
     <string name="settings_keep_screen_on">ナビ中は画面をオンのままにする</string>
     <string name="settings_keep_screen_on_hint">ターンバイターン案内中、画面が消灯しないようにします。</string>
-    <string name="map_voice_downloading">Vela 音声をダウンロード中 · %1$d%%</string>
-    <string name="map_voice_installing">Vela 音声をインストール中…</string>
+    <string name="map_voice_downloading">MAP-RMG 音声をダウンロード中 · %1$d%%</string>
+    <string name="map_voice_installing">MAP-RMG 音声をインストール中…</string>
     <string name="map_region_downloading">%1$s の経路データをダウンロード中 · %2$d%%</string>
     <!-- format -->
     <string name="map_region_places_downloading">%1$s の場所をオフライン検索用に保存中 · %2$d%%</string>
@@ -86,11 +86,11 @@
     <string name="settings_transit_layer">交通機関の路線を強調</string>
     <string name="settings_transit_layer_hint">鉄道や地下鉄の路線を地図上に表示します。</string>
     <string name="settings_read_all_reviews">「クチコミをすべて読む」ボタン</string>
-    <string name="settings_read_all_reviews_hint">アプリ内で Google のクチコミページ全体を開く「クチコミをすべて読む」ボタンを追加します。すべてのクチコミを確認できます。オフの場合は Vela 独自のクチコミ一覧のみ表示します。</string>
+    <string name="settings_read_all_reviews_hint">アプリ内で Google のクチコミページ全体を開く「クチコミをすべて読む」ボタンを追加します。すべてのクチコミを確認できます。オフの場合は MAP-RMG 独自のクチコミ一覧のみ表示します。</string>
     <string name="settings_buildings_3d">3D 建物</string>
     <string name="settings_buildings_3d_hint">地図を傾けてズームインすると、建物を立体表示します。オフにすると、古い端末では地図の動きが滑らかになることがあります。</string>
     <string name="settings_show_reviews">クチコミを表示</string>
-    <string name="settings_show_reviews_hint">オフにすると、場所のページにクチコミが表示されず、Vela がクチコミを取得することもありません。</string>
+    <string name="settings_show_reviews_hint">オフにすると、場所のページにクチコミが表示されず、MAP-RMG がクチコミを取得することもありません。</string>
     <string name="settings_load_photos">写真を読み込む</string>
     <string name="settings_load_photos_hint">オフにすると、場所のページに写真が表示されず、写真のダウンロードも行われません。通信量を節約できます。</string>
     <string name="settings_hide_adult">アダルトカテゴリを非表示</string>
@@ -98,7 +98,7 @@
     <string name="settings_hide_external_links">ウェブサイトと外部リンクを非表示</string>
     <string name="settings_hide_external_links_hint">オンにすると、場所のページにウェブサイト、ストリートビュー、予約・注文のボタンを表示しません（外部サイトを開くことがなくなります）。</string>
     <string name="settings_offline">オフライン マップ</string>
-    <string name="settings_offline_hint">Vela をオフラインで使う方法は 2 つあります。近場の移動には今いるエリアを、遠出には下から州や国全体を保存してください。</string>
+    <string name="settings_offline_hint">MAP-RMG をオフラインで使う方法は 2 つあります。近場の移動には今いるエリアを、遠出には下から州や国全体を保存してください。</string>
     <string name="settings_offline_map_area">周辺エリア</string>
     <string name="settings_offline_download_viewport">表示中のエリアをダウンロード</string>
     <string name="settings_offline_download_viewport_hint">表示中の地図を道路や住所ごと保存し、電波がなくてもこのエリアを使えるようにします。</string>
@@ -129,10 +129,10 @@
     <string name="settings_no_saved_places">保存済みの場所はまだありません</string>
     <string name="settings_export">エクスポート</string>
     <string name="settings_import">インポート</string>
-    <string name="settings_data_privacy_hint">Vela はこの端末から直接 Google の公開エンドポイントと通信します。バックエンドなし、アカウント不要、API キーも不要です。Google に見えるのは IP アドレス、検索内容、地図の表示範囲だけで、あなたが誰かは分かりません。</string>
+    <string name="settings_data_privacy_hint">MAP-RMG はこの端末から直接 Google の公開エンドポイントと通信します。バックエンドなし、アカウント不要、API キーも不要です。Google に見えるのは IP アドレス、検索内容、地図の表示範囲だけで、あなたが誰かは分かりません。</string>
     <string name="settings_privacy_button">Google に送信されるデータ</string>
     <string name="settings_diagnostics">診断</string>
-    <string name="settings_diagnostics_hint">初期状態ではオフです。オンにすると、Vela は端末内に短いログを保存し、エクスポートして開発者に渡せます。何もアップロードされず、オフにするとログは消去されます。</string>
+    <string name="settings_diagnostics_hint">初期状態ではオフです。オンにすると、MAP-RMG は端末内に短いログを保存し、エクスポートして開発者に渡せます。何もアップロードされず、オフにするとログは消去されます。</string>
     <string name="settings_share_diagnostics">診断データを共有</string>
     <string name="settings_diag_nothing">まだ何も記録されていません。アプリを使ってからエクスポートしてください。</string>
     <string name="settings_diag_export">デバッグセッションをエクスポート</string>
@@ -146,23 +146,23 @@
     <string name="settings_trip_delete">移動記録を削除</string>
     <string name="settings_no_trips_hint">記録された移動はまだありません。オンのままどこかへナビすると、ここに表示されてリプレイできます。</string>
     <string name="settings_trip_consent_title">移動を記録しますか？</string>
-    <string name="settings_trip_consent_body">Vela はナビのたびに GPS 軌跡をこの端末に記録します。走り直さなくても、テスト用に走行をリプレイできるようになります。診断データより踏み込んだ記録（実際のルートそのもの）ですが、端末内にとどまり、アップロードされることはありません。いつでもオフにできます。</string>
+    <string name="settings_trip_consent_body">MAP-RMG はナビのたびに GPS 軌跡をこの端末に記録します。走り直さなくても、テスト用に走行をリプレイできるようになります。診断データより踏み込んだ記録（実際のルートそのもの）ですが、端末内にとどまり、アップロードされることはありません。いつでもオフにできます。</string>
     <string name="settings_turn_on">オンにする</string>
     <string name="settings_cancel">キャンセル</string>
-    <string name="settings_crash_hint">Vela が最近予期せず終了しました。クラッシュレポート（スタックトレース）を送っていただくと修正に役立ちます。個人データを含まない、ただのテキストファイルです。</string>
+    <string name="settings_crash_hint">MAP-RMG が最近予期せず終了しました。クラッシュレポート（スタックトレース）を送っていただくと修正に役立ちます。個人データを含まない、ただのテキストファイルです。</string>
     <string name="settings_crash_export">クラッシュレポートをエクスポート</string>
     <string name="settings_crash_discard">破棄</string>
     <string name="settings_crash_diag_offer">診断がオフだったため、終了直前の記録はありません。オンにしておくと、次に起きたときに詳しい情報を記録できます。</string>
     <string name="settings_crash_enable_diag">診断をオンにする</string>
     <string name="settings_diag_consent_title">診断をオンにしますか？</string>
-    <string name="settings_diag_consent_body">Vela は検索、経路、エラーの短いログを端末内に保存します。「エクスポート」をタップして送信先を選ばない限り、端末の外に出ることはありません。いつでもオフにでき、オフにするとログは消去されます。</string>
+    <string name="settings_diag_consent_body">MAP-RMG は検索、経路、エラーの短いログを端末内に保存します。「エクスポート」をタップして送信先を選ばない限り、端末の外に出ることはありません。いつでもオフにでき、オフにするとログは消去されます。</string>
     <string name="settings_about">このアプリについて</string>
-    <string name="settings_about_hint">Vela は脱Googleの地図クライアントです。ベースマップにはオープンな地図タイル、場所・経路・交通状況を反映した到着予測には Google から取得したデータ、音声には端末上で動く Piper の音声を使用しています。GPLv3。Play 開発者サービスは不要です。</string>
+    <string name="settings_about_hint">MAP-RMG は脱Googleの地図クライアントです。ベースマップにはオープンな地図タイル、場所・経路・交通状況を反映した到着予測には Google から取得したデータ、音声には端末上で動く Piper の音声を使用しています。GPLv3。Play 開発者サービスは不要です。. Vela Maps · GPLv3.</string>
     <string name="settings_support">支援</string>
-    <string name="settings_support_hint">Vela は無料で広告もありません。役に立っていると感じたら、寄付が開発の継続に役立ちます。完全に任意です。</string>
-    <string name="settings_support_button">Vela を支援</string>
+    <string name="settings_support_hint">MAP-RMG は無料で広告もありません。役に立っていると感じたら、寄付が開発の継続に役立ちます。完全に任意です。</string>
+    <string name="settings_support_button">MAP-RMG を支援</string>
     <string name="settings_version">バージョン</string>
-    <string name="settings_version_line">Vela %1$s（ビルド %2$d）</string>
+    <string name="settings_version_line">MAP-RMG %1$s（ビルド %2$d）</string>
     <!-- format -->
     <string name="settings_collapse">折りたたむ</string>
     <string name="settings_expand">展開する</string>
@@ -177,7 +177,7 @@
     <string name="settings_voice_this_voice">この音声</string>
     <string name="settings_voice_remove_title">%1$sを削除しますか？</string>
     <!-- format -->
-    <string name="settings_voice_remove_body">これは唯一の Vela 音声です。別の音声をダウンロードするまで、音声案内はシステムのテキスト読み上げエンジンを使用します（未インストールの場合は無音になります）。</string>
+    <string name="settings_voice_remove_body">これは唯一の MAP-RMG 音声です。別の音声をダウンロードするまで、音声案内はシステムのテキスト読み上げエンジンを使用します（未インストールの場合は無音になります）。</string>
     <string name="settings_voice_remove">削除</string>
     <string name="settings_voice_gender_female">女性</string>
     <string name="settings_voice_gender_male">男性</string>
@@ -375,10 +375,10 @@
     <!-- root: VelaRoot.kt -->
     <string name="root_not_now">後で</string>
     <string name="root_voice_title">ナビの音声</string>
-    <string name="root_voice_body_intro">Vela の音声は完全に端末上で動作します。自然な音声案内で、アカウントも追加アプリも不要。おすすめです（初回のみ %1$d MB のダウンロード）。</string>
+    <string name="root_voice_body_intro">MAP-RMG の音声は完全に端末上で動作します。自然な音声案内で、アカウントも追加アプリも不要。おすすめです（初回のみ %1$d MB のダウンロード）。</string>
     <string name="root_voice_body_system">ダウンロードしない場合は、端末にすでにある音声も使えます。</string>
     <string name="root_voice_body_outro">設定 → 音声 でいつでも変更できます。</string>
-    <string name="root_voice_download">Vela 音声をダウンロード</string>
+    <string name="root_voice_download">MAP-RMG 音声をダウンロード</string>
     <string name="root_voice_use_system">システムの音声を使用</string>
     <!-- nav: NavOverlays.kt -->
     <string name="nav_maneuver_continue">直進</string>
@@ -405,9 +405,9 @@
     <string name="welcome_feature_open_source_title">無料・オープンソース</string>
     <string name="welcome_feature_open_source_body">GPLv3。GrapheneOS をはじめとする脱Google端末のために作られています。</string>
     <string name="welcome_get_started">はじめる</string>
-    <string name="welcome_donate_title">Vela を気に入っていただけましたか？</string>
-    <string name="welcome_donate_body">Vela は無料・広告なしで、ごくわずかな資金で開発されています。役に立っていると感じたら、一度きりの少額の寄付が継続の支えになります。完全に任意で、このお願いが表示されるのは今回だけです。設定にはいつでも「支援」の項目があります。</string>
-    <string name="welcome_donate_confirm">Vela を支援</string>
+    <string name="welcome_donate_title">MAP-RMG を気に入っていただけましたか？</string>
+    <string name="welcome_donate_body">MAP-RMG は無料・広告なしで、ごくわずかな資金で開発されています。役に立っていると感じたら、一度きりの少額の寄付が継続の支えになります。完全に任意で、このお願いが表示されるのは今回だけです。設定にはいつでも「支援」の項目があります。</string>
+    <string name="welcome_donate_confirm">MAP-RMG を支援</string>
     <string name="welcome_donate_dismiss">また今度</string>
     <!-- search: SearchBar.kt -->
     <string name="search_close_cd">検索を閉じる</string>
@@ -448,10 +448,10 @@
     <string name="mapvm_no_track_to_replay">この移動記録にはリプレイできる軌跡がありません</string>
     <string name="mapvm_replaying">%1$s をリプレイ中…</string>
     <!-- format -->
-    <string name="mapvm_export_saved_subject">Vela の保存済みの場所（%1$d 件）</string>
+    <string name="mapvm_export_saved_subject">MAP-RMG の保存済みの場所（%1$d 件）</string>
     <!-- format -->
     <string name="mapvm_export_saved_chooser">保存済みの場所をエクスポート</string>
-    <string name="mapvm_export_trip_subject">Vela の移動記録：%1$s（%2$d 点）</string>
+    <string name="mapvm_export_trip_subject">MAP-RMG の移動記録：%1$s（%2$d 点）</string>
     <!-- format -->
     <string name="mapvm_share_trip_chooser">移動記録を共有</string>
     <string name="mapvm_voice_sample">400メートル先、中央通りを右折です。</string>
@@ -461,7 +461,7 @@
     <!-- format -->
     <string name="mapvm_voice_download_failed">%1$s のダウンロードに失敗しました</string>
     <!-- format -->
-    <string name="mapvm_vela_voice_removed">Vela 音声を削除しました</string>
+    <string name="mapvm_vela_voice_removed">MAP-RMG 音声を削除しました</string>
     <string name="mapvm_opening_installer">%1$s のインストーラーを開いています…</string>
     <!-- format -->
     <string name="mapvm_pan_to_area_first">先に地図を開いて、保存するエリアを表示してください</string>
@@ -486,7 +486,7 @@
     <string name="navservice_notif_text_faster_available"> · より速いルートあり</string>
     <string name="navservice_notif_action_end">終了</string>
     <string name="navservice_channel_name">ナビゲーション</string>
-    <string name="update_available_title">Vela %1$s が利用可能です</string>
+    <string name="update_available_title">MAP-RMG %1$s が利用可能です</string>
     <string name="update_downloading">ダウンロード中… %1$d%%</string>
     <string name="update_later">後で</string>
     <string name="update_install">更新</string>
@@ -580,7 +580,7 @@
     <string name="settings_places_imported">場所を %1$d 件インポートしました</string>
     <!-- format -->
     <string name="settings_no_lists">エクスポートするリストはまだありません</string>
-    <string name="mapvm_export_lists_subject">Vela のリスト（%1$d 件）</string>
+    <string name="mapvm_export_lists_subject">MAP-RMG のリスト（%1$d 件）</string>
     <string name="mapvm_export_lists_chooser">リストをエクスポート</string>
     <string name="lists_empty_hint">リストはまだありません。「新規」をタップして作成するか、場所のページから保存してください。</string>
     <plurals name="lists_place_count">
@@ -592,18 +592,18 @@
     <string name="settings_developer">開発者向け</string>
     <string name="settings_developer_hint">デモ、スクリーンショット、テスト用のツールです。通常の利用時はすべてオフにしてください。</string>
     <string name="settings_browse_voices">音声を探す</string>
-    <string name="settings_browse_voices_hint">Vela の端末内音声をダウンロードして切り替えます。</string>
+    <string name="settings_browse_voices_hint">MAP-RMG の端末内音声をダウンロードして切り替えます。</string>
     <string name="voice_capture_listening">聞き取っています…</string>
     <string name="voice_capture_starting">準備しています…</string>
     <string name="voice_capture_done">完了</string>
-    <string name="mapvm_asr_ready">Vela 音声の準備ができました</string>
+    <string name="mapvm_asr_ready">MAP-RMG 音声の準備ができました</string>
     <string name="mapvm_asr_download_failed">音声モデルをダウンロードできませんでした。接続を確認してもう一度お試しください。</string>
     <string name="mapvm_closing_soon">%1$s は %2$s に閉まりますが、到着は %3$s頃です</string>
     <!-- format -->
     <string name="mapvm_closing_before_arrival">%1$s は %2$s に閉まるため、%3$s頃の到着では間に合いません</string>
     <!-- format -->
-    <string name="settings_voice_search_model">Vela 音声</string>
-    <string name="settings_voice_search_model_hint">Vela 音声は、話した言葉を端末上でそのまま検索に変えます。ほかのアプリは不要で、何もアップロードされません。初回のみ %1$d MB のダウンロードです。</string>
+    <string name="settings_voice_search_model">MAP-RMG 音声</string>
+    <string name="settings_voice_search_model_hint">MAP-RMG 音声は、話した言葉を端末上でそのまま検索に変えます。ほかのアプリは不要で、何もアップロードされません。初回のみ %1$d MB のダウンロードです。</string>
     <!-- format -->
     <string name="settings_voice_search_download">ダウンロード（%1$d MB）</string>
     <!-- format -->
@@ -612,24 +612,24 @@
     <!-- format -->
     <string name="settings_voice_search_installing">インストールしています…</string>
     <string name="settings_voice_search_engine_title">マイクをタップしたとき</string>
-    <string name="settings_voice_search_engine_auto">Vela 音声</string>
+    <string name="settings_voice_search_engine_auto">MAP-RMG 音声</string>
     <string name="settings_voice_search_engine_default">Android のデフォルト</string>
     <string name="settings_voice_search_engine_system">その他の音声アプリ</string>
     <string name="map_asr_offer_title">音声検索</string>
-    <string name="map_asr_offer_body">Vela 音声をダウンロードすると、話して検索できるようになります。完全に端末上で動作し、何もアップロードしません。</string>
+    <string name="map_asr_offer_body">MAP-RMG 音声をダウンロードすると、話して検索できるようになります。完全に端末上で動作し、何もアップロードしません。</string>
     <string name="nav_precise_title">正確な位置情報が必要です</string>
-    <string name="nav_precise_body">ターンバイターン案内は GPS で現在地を追跡するため、正確な位置情報が必要です。今の Vela はおおよそのエリアしか分かりません。</string>
+    <string name="nav_precise_body">ターンバイターン案内は GPS で現在地を追跡するため、正確な位置情報が必要です。今の MAP-RMG はおおよそのエリアしか分かりません。</string>
     <string name="nav_precise_allow">正確な位置情報を許可</string>
     <string name="nav_precise_toast">ターンバイターン案内には正確な位置情報が必要です</string>
     <string name="loc_off_title">位置情報がオフです</string>
-    <string name="loc_off_body">Vela は位置情報にアクセスできません。システム設定で許可できます。</string>
+    <string name="loc_off_body">MAP-RMG は位置情報にアクセスできません。システム設定で許可できます。</string>
     <string name="loc_off_settings">設定を開く</string>
     <string name="loc_approx_title">おおよその位置情報</string>
-    <string name="loc_approx_body">Vela が分かるのはおおよそのエリアだけで、正確な現在地は分かりません。地図には点の代わりに大きな円が表示され、ターンバイターンのナビは動作しません。正確な位置情報にはいつでも切り替えられます。</string>
+    <string name="loc_approx_body">MAP-RMG が分かるのはおおよそのエリアだけで、正確な現在地は分かりません。地図には点の代わりに大きな円が表示され、ターンバイターンのナビは動作しません。正確な位置情報にはいつでも切り替えられます。</string>
     <string name="loc_approx_allow">正確な位置情報を許可</string>
     <string name="loc_approx_keep">おおよそのまま使う</string>
     <string name="notif_ask_title">通知をスキップしますか？</string>
-    <string name="notif_ask_body">ナビ中は次の曲がり角が通知に表示されるため、画面が消えていても、他のアプリに切り替えても案内を確認できます。通知がないと、案内は Vela 内でのみ表示されます。</string>
+    <string name="notif_ask_body">ナビ中は次の曲がり角が通知に表示されるため、画面が消えていても、他のアプリに切り替えても案内を確認できます。通知がないと、案内は MAP-RMG 内でのみ表示されます。</string>
     <string name="notif_ask_allow">許可</string>
     <string name="notif_ask_skip">スキップ</string>
     <string name="place_time_past_toast">その時刻は過ぎています。現在時刻に設定しました。</string>
@@ -637,7 +637,7 @@
     <string name="settings_map_colors">地図の色</string>
     <string name="settings_map_colors_modern">モダン</string>
     <string name="settings_map_colors_classic">クラシック</string>
-    <string name="settings_map_colors_hint">モダンは Google アプリの現在の配色に合わせています。クラシックは Vela の以前の見た目です：白い道路、黄色い高速道路、本来の緑。</string>
+    <string name="settings_map_colors_hint">モダンは Google アプリの現在の配色に合わせています。クラシックは MAP-RMG の以前の見た目です：白い道路、黄色い高速道路、本来の緑。</string>
     <string name="map_parking_find">車を探す</string>
     <string name="map_parking_move_here">駐車位置をここに移動</string>
     <string name="map_parking_earlier">以前の駐車位置</string>
@@ -673,9 +673,9 @@
     <string name="settings_theme_amoled">AMOLEDブラック</string>
     <string name="settings_traffic_lights">信号を使った案内</string>
     <string name="settings_traffic_lights_hint">音声の目印案内:信号を過ぎて曲がる。英語のみ、デフォルトはオフ。</string>
-    <string name="map_asr_downloading">Vela Voice マイクをダウンロード中 · %1$d%%</string>
-    <string name="map_asr_installing">Vela Voice マイクをインストール中…</string>
-    <string name="map_asr_waiting">Vela Voice マイク · Vela 音声を待機中</string>
+    <string name="map_asr_downloading">MAP-RMG Voice マイクをダウンロード中 · %1$d%%</string>
+    <string name="map_asr_installing">MAP-RMG Voice マイクをインストール中…</string>
+    <string name="map_asr_waiting">MAP-RMG Voice マイク · MAP-RMG 音声を待機中</string>
     <!-- format -->
     <string name="place_review_more">もっと見る</string>
     <string name="place_review_less">折りたたむ</string>
@@ -692,7 +692,7 @@
     <string name="settings_asr_engines_hint">音声が端末内で検索になります。何もアップロードされません。マイクのエンジンを選択。</string>
     <string name="settings_asr_engine_meta">%1$s · %2$d MB</string>
     <!-- format -->
-    <string name="settings_asr_langs_whisper">Vela が対応するすべての言語</string>
+    <string name="settings_asr_langs_whisper">MAP-RMG が対応するすべての言語</string>
     <string name="settings_asr_langs_sensevoice">英語、中国語、日本語、韓国語、広東語</string>
     <string name="settings_asr_langs_moonshine">英語のみ</string>
     <string name="settings_asr_active">使用中</string>
@@ -701,7 +701,7 @@
     <string name="mapscreen_filter_top_rated">4.0★</string>
     <string name="mapscreen_section_recent_searches">最近の検索</string>
     <string name="mapscreen_clear_recent_searches">最近の検索を消去</string>
-    <string name="root_diag_title">Velaの改善に協力しますか？</string>
+    <string name="root_diag_title">MAP-RMGの改善に協力しますか？</string>
     <string name="root_diag_body">どちらも端末内に保存されます。エクスポートしない限り送信されません。設定でいつでも変更できます。</string>
     <string name="root_diag_share_title">診断情報を共有</string>
     <string name="root_diag_share_desc">検索、経路、エラーの短いローカルログ。</string>
@@ -709,7 +709,7 @@
     <string name="root_diag_trips_desc">テスト用に運転を再生できるよう、ナビのGPS軌跡を記録します。より詳細な情報：正確な経路。</string>
     <string name="root_diag_save">選択を保存</string>
     <string name="root_offline_title">オフラインマップ</string>
-    <string name="root_offline_body">VelaはGoogleから場所・検索・経路を取得するため、圏外ではダウンロード済みのエリアのみ利用できます。今のうちにエリアを設定して、圏外でも使えるようにしましょう。</string>
+    <string name="root_offline_body">MAP-RMGはGoogleから場所・検索・経路を取得するため、圏外ではダウンロード済みのエリアのみ利用できます。今のうちにエリアを設定して、圏外でも使えるようにしましょう。</string>
     <string name="root_offline_setup">オフラインを設定</string>
     <string name="no_browser_installed">お使いの端末にはブラウザがありません</string>
     <string name="street_view_none">No Street View imagery here</string>
@@ -756,7 +756,7 @@
     <string name="settings_search_none">一致する項目はありません</string>
     <string name="settings_app_name_title">アプリ名</string>
     <string name="settings_app_name_generic">「Maps」とだけ表示する</string>
-    <string name="settings_app_name_generic_hint">ランチャーのアイコン名を Vela Maps ではなく Maps にして、標準アプリのような見た目にします。切り替えたあと、ホーム画面のショートカットを追加し直す必要がある場合があります。</string>
+    <string name="settings_app_name_generic_hint">ランチャーのアイコン名を MAP-RMG Maps ではなく Maps にして、標準アプリのような見た目にします。切り替えたあと、ホーム画面のショートカットを追加し直す必要がある場合があります。</string>
     <string name="settings_contacts_search">連絡先を検索</string>
     <string name="settings_contacts_search_hint">連絡先の名前を入力すると、保存されている住所を写真とアドレス帳のラベル付きで候補に表示します。連絡先はこの端末内にとどまります。候補を選ぶと、入力した検索と同じようにその住所を調べ、連絡先の名前で開きます。</string>
     <string name="suggestion_contact_badge">連絡先</string>
@@ -773,14 +773,14 @@
     <string name="settings_nav_trace_hint">ナビ中に地図のカメラがどう動いたかを記録し、地図のガタつきや流れるような動きを調べられるようにします。位置情報は含まず、方位・速度・タイミングのみなので、不具合報告に添付しても安全です。</string>
     <string name="settings_nav_trace_export">ナビのトレースを共有</string>
     <string name="settings_nav_trace_empty">トレースはまだ記録されていません。まずどこかへナビしてください。</string>
-    <string name="settings_voice_vela_name">Vela 音声（%1$s）</string>
-    <string name="settings_voice_install_vela">Vela 音声をインストール（%1$d MB）</string>
+    <string name="settings_voice_vela_name">MAP-RMG 音声（%1$s）</string>
+    <string name="settings_voice_install_vela">MAP-RMG 音声をインストール（%1$d MB）</string>
     <string name="settings_voice_install_vela_hint">おすすめの音声案内用の音声です。見つからなくなったときやダウンロードに失敗したときは、ここから再インストールできます。</string>
     <string name="settings_texture_render">互換レンダリング</string>
     <string name="settings_texture_render_hint">一部の端末のグラフィックドライバの不具合を避ける互換経路で地図を描画します。起動時に地図が原因でアプリが落ちた場合は自動的にオンになります。動作はやや遅くなり、適用にはアプリの再起動が必要です。</string>
     <string name="settings_texture_render_auto_hint">起動時に地図が 2 回クラッシュしたため、%1$s では自動的にオンになりました。オフでも地図が正常に動くなら、オフのままにしてください。オンでは動作が遅くなり、運転中に地図がカクつくことがあります。適用にはアプリの再起動が必要です。</string>
     <string name="settings_offline_places_with_downloads">ダウンロードに場所データを含める</string>
-    <string name="settings_offline_places_with_downloads_hint">地域をダウンロードすると Vela の場所データも一緒に取得し、電波がなくても地図上に店舗などが表示されます。大きな州で 0.5 GB ほどです。オフの場合、場所はオンライン時のみ読み込まれます。</string>
+    <string name="settings_offline_places_with_downloads_hint">地域をダウンロードすると MAP-RMG の場所データも一緒に取得し、電波がなくても地図上に店舗などが表示されます。大きな州で 0.5 GB ほどです。オフの場合、場所はオンライン時のみ読み込まれます。</string>
     <string name="settings_routing_size_installed_here">インストール後の容量は約 %1$s · 現在地を含みます</string>
     <string name="settings_routing_size_installed">インストール後の容量は約 %1$s</string>
     <string name="settings_storage_title">ストレージ</string>
@@ -794,7 +794,7 @@
     <string name="settings_map_cache_cleared">地図キャッシュを消去しました</string>
     <string name="settings_import_nothing_new">そのファイルの内容はすべて保存済みです。</string>
     <string name="settings_import_unreadable">そのファイルを開けませんでした。</string>
-    <string name="settings_import_wrong_format">そのファイルに場所が見つかりませんでした。Vela は自身のエクスポートファイルのほか、他の地図アプリで保存した GPX、KML、GeoJSON を読み込めます。</string>
+    <string name="settings_import_wrong_format">そのファイルに場所が見つかりませんでした。MAP-RMG は自身のエクスポートファイルのほか、他の地図アプリで保存した GPX、KML、GeoJSON を読み込めます。</string>
     <string name="settings_import_wrong_format_named">その %1$s ファイルに場所が見つかりませんでした。</string>
     <string name="settings_import_no_picker">この端末には使えるファイル選択アプリがないため、ファイルを選べません。</string>
     <string name="nav_overview">ルート全体を表示</string>
@@ -807,18 +807,18 @@
     <string name="settings_show_pois">場所を表示</string>
     <string name="settings_show_pois_hint">地図の閲覧中に店舗や施設のアイコンを表示します。オフにすると地図がすっきりしますが、検索した場所は表示されます。</string>
     <string name="settings_places_source">地図上の場所アイコン</string>
-    <string name="settings_places_source_open">Vela のデータ</string>
+    <string name="settings_places_source_open">MAP-RMG のデータ</string>
     <string name="settings_places_source_google">Google</string>
     <string name="settings_places_source_both">両方</string>
-    <string name="settings_places_source_open_hint">アイコンは Vela 独自のデータから表示します。地図を動かしても Google に問い合わせず、オフラインでも動作します。</string>
+    <string name="settings_places_source_open_hint">アイコンは MAP-RMG 独自のデータから表示します。地図を動かしても Google に問い合わせず、オフラインでも動作します。</string>
     <string name="settings_places_source_google_hint">アイコンは Google から取得します。地図を動かすたびに表示位置が Google に送信され、オフラインでは何も表示されません。</string>
-    <string name="settings_places_source_both_hint">Vela のアイコンに加えて、地図を動かし終えたときに Google にしかない場所を補います。</string>
+    <string name="settings_places_source_both_hint">MAP-RMG のアイコンに加えて、地図を動かし終えたときに Google にしかない場所を補います。</string>
     <string name="settings_places_source_more">詳細</string>
     <string name="settings_places_source_more_credit">Overture Maps</string>
     <string name="settings_places_lookup">タップした場所を Google で調べる</string>
-    <string name="settings_places_lookup_hint">場所をタップすると、営業時間・クチコミ・写真を Google から取得します。照合した結果は Vela が記憶するため、次に同じ場所をタップしたときはすぐに表示されます。オフの場合、タップした場所には Vela のデータにある情報（名称、種類、住所、電話番号、ウェブサイト）だけが表示され、タップの内容が Google に伝わることはありません。検索と経路には引き続き Google を使用します。</string>
-    <string name="settings_places_source_more_title">Vela の場所データについて</string>
-    <string name="settings_places_source_more_body">Vela の場所データは、Meta や Microsoft などが運営する店舗のオープンデータセット Overture Maps です。Vela は自身の GitHub リポジトリから配信しているため、どこを見ているかが Meta や Google に伝わることはありません。\n\n閲覧に合わせて読み込まれ、地域をダウンロードするとオフラインでも使えます。Vela にまだデータがない地域では、Google のデータで表示します。\n\n検索、場所の詳細、営業時間、クチコミ、写真は、どの設定を選んでも常に Google から取得します。</string>
+    <string name="settings_places_lookup_hint">場所をタップすると、営業時間・クチコミ・写真を Google から取得します。照合した結果は MAP-RMG が記憶するため、次に同じ場所をタップしたときはすぐに表示されます。オフの場合、タップした場所には MAP-RMG のデータにある情報（名称、種類、住所、電話番号、ウェブサイト）だけが表示され、タップの内容が Google に伝わることはありません。検索と経路には引き続き Google を使用します。</string>
+    <string name="settings_places_source_more_title">MAP-RMG の場所データについて</string>
+    <string name="settings_places_source_more_body">MAP-RMG の場所データは、Meta や Microsoft などが運営する店舗のオープンデータセット Overture Maps です。MAP-RMG は自身の GitHub リポジトリから配信しているため、どこを見ているかが Meta や Google に伝わることはありません。\n\n閲覧に合わせて読み込まれ、地域をダウンロードするとオフラインでも使えます。MAP-RMG にまだデータがない地域では、Google のデータで表示します。\n\n検索、場所の詳細、営業時間、クチコミ、写真は、どの設定を選んでも常に Google から取得します。</string>
     <string name="settings_show_civic">公園・学校・公共施設</string>
     <string name="settings_show_civic_hint">店舗以外の場所アイコンです。オフにすると店舗のみ表示します。</string>
     <string name="settings_show_transit_stops">停留所・駅</string>
@@ -855,7 +855,7 @@
     <string name="settings_trip_share_selected">%1$d 件を共有</string>
     <string name="settings_trip_select_all">すべて選択</string>
     <string name="settings_name_trips">保存時に移動ごとに名前を付ける</string>
-    <string name="settings_name_trips_hint">記録した走行が終わるたびに、Vela が名前を尋ねます。初期状態ではオフです。後から下の一覧でいつでも名前を変更できます。</string>
+    <string name="settings_name_trips_hint">記録した走行が終わるたびに、MAP-RMG が名前を尋ねます。初期状態ではオフです。後から下の一覧でいつでも名前を変更できます。</string>
     <string name="trip_name_prompt_title">この走行に名前を付ける</string>
     <string name="trip_name_prompt_save">名前を保存</string>
     <string name="trip_name_prompt_skip">後で</string>
@@ -885,13 +885,13 @@
     <string name="whatsnew_full_notes">リリースノート全文</string>
     <string name="settings_whatsnew">このバージョンの新機能</string>
     <string name="settings_whatsnew_hint">ご使用中のビルドのリリースノートです。アップデート後にも 1 回表示されます。</string>
-    <string name="mapvm_export_trips_subject">Vela の移動記録：走行 %1$d 件（%2$d 点）</string>
-    <string name="mapvm_export_trip_scrubbed_subject">Vela の移動記録：%1$d 点、両端をトリミング済み</string>
+    <string name="mapvm_export_trips_subject">MAP-RMG の移動記録：走行 %1$d 件（%2$d 点）</string>
+    <string name="mapvm_export_trip_scrubbed_subject">MAP-RMG の移動記録：%1$d 点、両端をトリミング済み</string>
     <string name="mapvm_area_uses_pack">このエリアの場所と住所は %1$s のダウンロードに含まれます</string>
     <string name="navservice_channel_turns_name">曲がり角の音声案内</string>
     <string name="download_notif_channel">ダウンロード</string>
     <string name="download_notif_title">%1$s をダウンロード中</string>
-    <string name="download_label_update">Vela の更新</string>
+    <string name="download_label_update">MAP-RMG の更新</string>
     <string name="download_label_map_data">地図データ</string>
     <string name="download_label_offline_places">オフラインの場所データ</string>
     <string name="map_area_downloading">このエリアをオフライン用に保存中 · %1$d%%</string>
@@ -918,7 +918,7 @@
     <string name="settings_voice_volume_normal">標準</string>
     <string name="settings_voice_volume_louder">大きめ</string>
     <string name="settings_voice_volume_loudest">最大</string>
-    <string name="settings_voice_volume_hint">メディア音声に重ねて再生される音声案内の大きさです。「大きめ」以上は Vela 音声にのみ適用され、システムの音声は小さくすることしかできません。</string>
+    <string name="settings_voice_volume_hint">メディア音声に重ねて再生される音声案内の大きさです。「大きめ」以上は MAP-RMG 音声にのみ適用され、システムの音声は小さくすることしかできません。</string>
     <string name="settings_asr_engines_title">端末内の音声認識エンジン</string>
     <string name="voice_capture_examples_title">話しかけられる例</string>
     <string name="voice_capture_example_home">「自宅に帰る」「職場まで」</string>
@@ -955,7 +955,7 @@
     <string name="settings_bike_safe">自転車ルートは自転車レーンや静かな道を優先</string>
     <string name="settings_bike_safe_hint">Google の自転車ルートと同じように、最速の道路よりも、案内標識のある自転車ルート、自転車レーン、住宅街の道を優先します。ダウンロード済みのオフライン地図があればそれを使い、なければオンラインのオープンな経路検索を使います。オフにすると、単純に最速の自転車ルートになります。</string>
     <string name="settings_route_bar">この先の道路バー</string>
-    <string name="settings_route_bar_hint">地図の横に、交通状況とこの先のルートの様子を示す帯を表示します。表示されるのは Vela が実際に把握している情報だけです（渋滞、信号、一時停止、踏切、ハンプ、監視カメラ）。縦画面のみ対応です。</string>
+    <string name="settings_route_bar_hint">地図の横に、交通状況とこの先のルートの様子を示す帯を表示します。表示されるのは MAP-RMG が実際に把握している情報だけです（渋滞、信号、一時停止、踏切、ハンプ、監視カメラ）。縦画面のみ対応です。</string>
     <string name="settings_font">フォント</string>
     <string name="settings_font_system">システムのフォント</string>
     <string name="settings_font_choose">フォントファイルを選択…</string>
@@ -1015,18 +1015,18 @@
     <string name="nav_stop_offer_remove">経由地を削除</string>
     <string name="settings_google_session">Google セッション</string>
     <string name="settings_block_google_telemetry">Google ページのテレメトリをブロック</string>
-    <string name="settings_block_google_telemetry_hint">Google のページは自身の動作を報告しています。ログ送信の ping や、アカウントバーがバックグラウンドで行う通信です。Vela が表示する内容には一切必要ありません。初期状態で送信しているのは、これらをまったく送らないブラウザは Google から見て人間らしくなく、それがセッションを制限付きの表示にするかどうかの判断材料の一つになるためです。オンにすると、送信せずに端末内で応答を返します。</string>
+    <string name="settings_block_google_telemetry_hint">Google のページは自身の動作を報告しています。ログ送信の ping や、アカウントバーがバックグラウンドで行う通信です。MAP-RMG が表示する内容には一切必要ありません。初期状態で送信しているのは、これらをまったく送らないブラウザは Google から見て人間らしくなく、それがセッションを制限付きの表示にするかどうかの判断材料の一つになるためです。オンにすると、送信せずに端末内で応答を返します。</string>
     <string name="settings_google_session_limited">現在、Google はこの端末に制限付きの表示を返しています。ページあたりの写真が少なく、一部の場所で混雑する時間帯が表示されず、「クチコミをもっと見る」を押しても何も読み込まれません。通常はしばらくすると自然に解除されます。新しいセッションも最初は制限付きなので、新しく始めてもほとんど効果はありません。</string>
     <string name="place_limited_view">現在 Google が制限付きの表示を返しているため、ここでは混雑する時間帯や追加のクチコミが表示されないことがあります。</string>
-    <string name="settings_google_session_hint">Google は Cookie でこの端末を識別するため、その Cookie が有効な間に Vela が調べた内容は、名前やアカウントがなくても互いに結び付けられます。新しいセッションを始めると、それを区切れます。新しいセッションでは、しばらく Google の表示が制限されます（クチコミが少なく、一部の場所で混雑する時間帯が表示されない）。</string>
+    <string name="settings_google_session_hint">Google は Cookie でこの端末を識別するため、その Cookie が有効な間に MAP-RMG が調べた内容は、名前やアカウントがなくても互いに結び付けられます。新しいセッションを始めると、それを区切れます。新しいセッションでは、しばらく Google の表示が制限されます（クチコミが少なく、一部の場所で混雑する時間帯が表示されない）。</string>
     <string name="settings_google_session_week">毎週新しく始める（おすすめ）</string>
     <string name="settings_google_session_day">毎日新しく始める</string>
-    <string name="settings_google_session_launch">Vela を開くたびに新しく始める（最もプライベート）</string>
+    <string name="settings_google_session_launch">MAP-RMG を開くたびに新しく始める（最もプライベート）</string>
     <string name="settings_google_session_launch_hint">注意点：Google はセッションごとに新しい訪問者として扱うため、ほとんどの場合は制限付きの表示になります（クチコミは 5 件ほどで、混雑する時間帯もよく欠けます）。新しいセッションの最初の応答は情報が削られていて取得し直すため、場所の読み込みが少し遅くなり、通信量も増えます。Android はバックグラウンドでアプリを再起動するので、1 日に何度も新しいセッションになることがあり、1 つの接続から新しい訪問者が多数あると Google のボット確認が増えることもあります。また Google には IP アドレスが見えているため、同じ接続からのセッションは短い期間ならいずれにせよ結び付けられます。</string>
     <string name="settings_google_session_now">今すぐ新しいセッションを開始</string>
     <string name="settings_google_session_done">新しい Google セッションを開始しました</string>
-    <string name="settings_google_free">Google なしで Vela を使う</string>
-    <string name="settings_google_free_hint">Google には何も送信しません。検索には OpenStreetMap とダウンロード済みの地域を使い、地図上の場所は Vela 独自のデータから、経路はオープンな経路検索から取得します（リアルタイムの交通状況なし）。クチコミ、写真、営業時間、リアルタイムの到着時刻、ストリートビュー、公共交通機関の経路、航空写真の拡大表示は使えなくなります。ダウンロード済みの地域は引き続き完全にオフラインで使えます。</string>
+    <string name="settings_google_free">Google なしで MAP-RMG を使う</string>
+    <string name="settings_google_free_hint">Google には何も送信しません。検索には OpenStreetMap とダウンロード済みの地域を使い、地図上の場所は MAP-RMG 独自のデータから、経路はオープンな経路検索から取得します（リアルタイムの交通状況なし）。クチコミ、写真、営業時間、リアルタイムの到着時刻、ストリートビュー、公共交通機関の経路、航空写真の拡大表示は使えなくなります。ダウンロード済みの地域は引き続き完全にオフラインで使えます。</string>
     <string name="settings_diag_redact_trips_hint">診断データのエクスポートから検索語句、目的地、リンク、場所の名前を伏せ、座標を約 10 km 単位に丸めます。タイミング、件数、エラーは残ります。共有する移動記録は、最大のトリミング距離から始まります。</string>
     <string name="settings_trip_more">この移動記録のその他の操作</string>
     <string name="settings_trip_batch_title">選択した移動記録を共有</string>
@@ -1061,8 +1061,8 @@
     <string name="mapvm_graphs_retired">オフライン経路検索のデータ形式が小さくなりました。設定 ▸ オフライン マップ で地域をもう一度ダウンロードしてください。</string>
     <string name="navservice_notif_action_pause">一時停止</string>
     <string name="navservice_notif_action_resume">再開</string>
-    <string name="update_car_title">この更新で Vela が Android Auto から消えます</string>
-    <string name="update_car_body">Vela は Android Auto が受け付ける方法でインストールされています。ここでこの更新をインストールするとその状態が置き換わり、最初に使ったツール（AAEnabler、King Installer）でファイルをインストールし直すまで、車に Vela が表示されなくなります。\n\n車で使い続けるには、ファイルを保存してその方法でインストールしてください。</string>
+    <string name="update_car_title">この更新で MAP-RMG が Android Auto から消えます</string>
+    <string name="update_car_body">MAP-RMG は Android Auto が受け付ける方法でインストールされています。ここでこの更新をインストールするとその状態が置き換わり、最初に使ったツール（AAEnabler、King Installer）でファイルをインストールし直すまで、車に MAP-RMG が表示されなくなります。\n\n車で使い続けるには、ファイルを保存してその方法でインストールしてください。</string>
     <string name="update_car_save">ファイルを保存</string>
     <string name="update_car_anyway">このまま更新</string>
     <string name="place_transit_cached">%1$s に取得しました。接続がないため、時刻が変わっている可能性があります。</string>
@@ -1073,7 +1073,7 @@
     <string name="car_along_none">近くに見つかりませんでした</string>
     <string name="car_stop_added">%1$s を次の経由地に追加しました</string>
     <string name="car_continue_on">%1$s をそのまま進む</string>
-    <string name="map_import_needs_google">Google なしで Vela を使っている間は、共有された Google マップのリストを開けません。</string>
+    <string name="map_import_needs_google">Google なしで MAP-RMG を使っている間は、共有された Google マップのリストを開けません。</string>
     <string name="map_link_needs_google">「共有された Google マップのリンクを開く」は 設定 ▸ プライバシー でオフになっています。</string>
     <string name="map_link_unreadable">そのリンクを開けませんでした。</string>
     <string name="settings_performance">パフォーマンス</string>
@@ -1082,10 +1082,10 @@
     <string name="settings_full_place_load">すべての写真とクチコミを読み込む</string>
     <string name="settings_full_place_load_hint">オフの場合、場所ごとに最初の数枚の写真とクチコミの 1 ページ目だけを読み込み、残りは「写真をもっと見る」や「すべてのクチコミ」で取得します。オンにすると、開いた場所ごとに写真ギャラリー全体と最大 50 件のクチコミを読み込むため、表示が遅くなり、Google へのリクエストも大幅に増えます。</string>
     <string name="settings_speech_preload">起動時に音声検索を読み込む</string>
-    <string name="settings_speech_preload_hint">Vela を開いたときに音声検索のモデルを読み込み、マイクがすぐに聞き取れるようにします。音声のない状態が 2 分続くまで、約 300 MB を使用します。オフの場合は、検索ボックスをタップしたときに読み込みます。メモリが約 8 GB 以上の端末では初期状態でオンです。</string>
+    <string name="settings_speech_preload_hint">MAP-RMG を開いたときに音声検索のモデルを読み込み、マイクがすぐに聞き取れるようにします。音声のない状態が 2 分続くまで、約 300 MB を使用します。オフの場合は、検索ボックスをタップしたときに読み込みます。メモリが約 8 GB 以上の端末では初期状態でオンです。</string>
     <string name="settings_google_free_links">共有された Google マップのリンクを開く</string>
-    <string name="settings_google_free_links_hint">Google マップの短縮リンク（maps.app.goo.gl）だけでは行き先が分かりません。オンにすると、Vela が Cookie なしで Google のリンク短縮サービスに 1 回だけ問い合わせ、オープンなデータでその場所を開きます。google.com/maps の完全なリンクは問い合わせなしで開きます。共有されたリストには引き続き Google が必要です。</string>
-    <string name="place_avoid_not_honored">これらのルートは有料道路、高速道路、フェリーを通る可能性があります。Google に接続できず回避ルートを検索できなかったためで、オープンな経路検索では回避できません。ダウンロード済みのエリアでは、Vela がオフラインで回避します。</string>
+    <string name="settings_google_free_links_hint">Google マップの短縮リンク（maps.app.goo.gl）だけでは行き先が分かりません。オンにすると、MAP-RMG が Cookie なしで Google のリンク短縮サービスに 1 回だけ問い合わせ、オープンなデータでその場所を開きます。google.com/maps の完全なリンクは問い合わせなしで開きます。共有されたリストには引き続き Google が必要です。</string>
+    <string name="place_avoid_not_honored">これらのルートは有料道路、高速道路、フェリーを通る可能性があります。Google に接続できず回避ルートを検索できなかったためで、オープンな経路検索では回避できません。ダウンロード済みのエリアでは、MAP-RMG がオフラインで回避します。</string>
     <string name="settings_road_label_inbar">下部バーの中</string>
     <string name="settings_faster_auto">より速いルートに自動で切り替える</string>
     <string name="settings_faster_auto_hint">走行中により速いルートが見つかったとき、数秒以内に応答しなければそのルートに切り替えます。オフにすると、応答しなかった提案は取り消されます。どちらの場合も、提案が地図上に残り続けることはありません。</string>
@@ -1093,7 +1093,7 @@
     <string name="settings_pause_in_bar_hint">一時停止ボタンを走行情報の横（ルート詳細ボタンの位置）に置き、ミュートは地図のボタンと一緒に残します。オフにすると、両方を地図の右側の 1 つのボタンにまとめます。どちらの場合も、上にスワイプするか矢印を使うとルート詳細を開けます。</string>
     <string name="settings_pause_in_bar_hint_buttons">「スワイプよりボタンを優先」がオンのときは、バーに一時停止ボタンとルート詳細ボタンが並び、走行情報は縮小して表示されます。</string>
     <string name="settings_route_picker">Google 風のルート選択</string>
-    <string name="settings_route_picker_hint">ルートを 1 本ずつ表示し、ほかのルートはタップで切り替えて所要時間を地図上に示し、下部に「開始」を置きます。オフにすると、すべてのルートを一度に並べる Vela の従来のパネルになります。</string>
+    <string name="settings_route_picker_hint">ルートを 1 本ずつ表示し、ほかのルートはタップで切り替えて所要時間を地図上に示し、下部に「開始」を置きます。オフにすると、すべてのルートを一度に並べる MAP-RMG の従来のパネルになります。</string>
     <plurals name="exp_chooser_alts">
         <item quantity="other">ほかのルート %1$d 件</item>
     </plurals>
@@ -1113,7 +1113,7 @@
     <string name="settings_photos_on_tap">タップしたときだけ写真を読み込む</string>
     <string name="settings_photos_on_tap_hint">写真を読み込む代わりに「写真を表示」ボタンを出します。場所ごとにGoogleへのリクエストが1回減ります。</string>
     <string name="settings_details_retry">混雑する時間帯を待つ</string>
-    <string name="settings_details_retry_hint">Googleは最初の応答で混雑する時間帯を省くことが多いため、Velaは最大2回まで再度問い合わせます。オフにすると場所ごとに1回だけになり、混雑する時間帯が表示されないことがあります。</string>
+    <string name="settings_details_retry_hint">Googleは最初の応答で混雑する時間帯を省くことが多いため、MAP-RMGは最大2回まで再度問い合わせます。オフにすると場所ごとに1回だけになり、混雑する時間帯が表示されないことがあります。</string>
     <string name="place_show_photos">写真を表示</string>
     <string name="place_no_photos">写真はまだありません</string>
     <string name="place_all_n_reviews_open">クチコミ %1$d 件をすべて表示</string>
@@ -1173,9 +1173,9 @@
     <string name="settings_storage_no_space">移動先の空き容量が足りません。オフラインデータには約 %1$d MB 必要です。</string>
     <string name="settings_storage_moved">オフラインデータを移動しました。</string>
     <string name="settings_storage_failed">移動を完了できませんでした。オフラインデータは元の場所に残っています。</string>
-    <string name="settings_maps_links_on">Google マップのリンクは Vela で開きます。</string>
-    <string name="settings_maps_links_partial">一部の Google マップのリンクは Vela で開きます。すべてのリンクを Vela で開くには、「デフォルトで開く」で残りを追加してください。</string>
-    <string name="settings_maps_links_off">Android は Google マップのリンクをブラウザで開きます。Vela で開くには、「サポートされているリンクを開く」をオンにして、「デフォルトで開く」でリンクを追加してください。</string>
+    <string name="settings_maps_links_on">Google マップのリンクは MAP-RMG で開きます。</string>
+    <string name="settings_maps_links_partial">一部の Google マップのリンクは MAP-RMG で開きます。すべてのリンクを MAP-RMG で開くには、「デフォルトで開く」で残りを追加してください。</string>
+    <string name="settings_maps_links_off">Android は Google マップのリンクをブラウザで開きます。MAP-RMG で開くには、「サポートされているリンクを開く」をオンにして、「デフォルトで開く」でリンクを追加してください。</string>
     <string name="settings_maps_links_open">「デフォルトで開く」の設定</string>
     <string name="mapvm_cells_progress">%1$s: パーツ %2$d/%3$d</string>
     <string name="mapvm_cells_ready">%1$s のこの部分で経路と場所をオフラインで使えます</string>
@@ -1254,7 +1254,7 @@
     <string name="settings_link_action_place">場所を表示</string>
     <string name="settings_link_action_directions">経路を開く</string>
     <string name="settings_link_action_start">ナビを開始</string>
-    <string name="settings_link_action_hint">他のアプリから Vela に場所が渡されたときの動作です。「ナビを開始」は、配達先を次々に送ってくる配達アプリに向いています。</string>
+    <string name="settings_link_action_hint">他のアプリから MAP-RMG に場所が渡されたときの動作です。「ナビを開始」は、配達先を次々に送ってくる配達アプリに向いています。</string>
     <string name="car_nearby">周辺</string>
     <string name="car_more_nearby">周辺をもっと見る</string>
     <string name="car_saved">保存済み</string>
@@ -1268,7 +1268,7 @@
     <string name="car_setting_avoid_ferries">フェリーを回避</string>
     <string name="car_location_title">位置情報を許可</string>
     <string name="car_location_body">現在地の表示とルート案内に必要です</string>
-    <string name="car_location_denied">位置情報がオフです。スマートフォンの設定で Vela の位置情報をオンにしてください。</string>
+    <string name="car_location_denied">位置情報がオフです。スマートフォンの設定で MAP-RMG の位置情報をオンにしてください。</string>
     <string name="settings_page_transitions">ページの切り替え</string>
     <string name="settings_page_transitions_hint">ページや画面下部のパネルの開閉をアニメーションで表示し、戻るスワイプ操作中に前のページをプレビューします。</string>
     <string name="place_avoid_label">回避</string>
@@ -1360,17 +1360,17 @@
     <string name="settings_map_names_hint">ローマ字の名前は、OpenStreetMapに英語名がない場所で機械的に作られ、ヘブライ語などいくつかの文字では読みにくくなります。アプリの言語と音声は変わりません。</string>
     <string name="settings_project">プロジェクト</string>
     <string name="settings_project_hint">ソースコード、バグ報告、ディスカッションはGitHubにあります。</string>
-    <string name="settings_project_github_button">GitHubのVela</string>
+    <string name="settings_project_github_button">GitHubのMAP-RMG</string>
     <string name="mapvm_rechecking_connection">接続を確認しています…</string>
     <string name="mapvm_back_online">オンラインに戻りました</string>
-    <string name="mapvm_still_offline">まだオフラインです。接続が戻りしだい、Vela が自動で検知します。</string>
+    <string name="mapvm_still_offline">まだオフラインです。接続が戻りしだい、MAP-RMG が自動で検知します。</string>
     <string name="search_offline_recheck">オフラインです。タップして再確認</string>
     <string name="settings_turn_declutter">曲がるときは地図を簡略化</string>
     <string name="settings_turn_declutter_hint">曲がり角で地図が回転している間は、道路名だけを表示します。回転が落ち着くと、場所、標識、カメラがすぐに戻ります。処理の遅い端末でも曲がり角の動きが滑らかになります。</string>
     <string name="settings_softkeys">ハードウェア ソフトキー</string>
     <string name="settings_softkeys_hint">端末の 2 つのソフトキーで地図を拡大・縮小します。キーパッド付きの端末専用です。</string>
     <string name="settings_softkeys_calibrate">ソフトキーを調整</string>
-    <string name="settings_softkeys_calibrate_hint">ソフトキーでズームできない場合は、ここをタップしてから左、右の順にソフトキーを押してください。Vela がキーコードを記憶します。</string>
+    <string name="settings_softkeys_calibrate_hint">ソフトキーでズームできない場合は、ここをタップしてから左、右の順にソフトキーを押してください。MAP-RMG がキーコードを記憶します。</string>
     <string name="map_zoom_mode_hint">ズーム:  ◀ 縮小   ·   拡大 ▶      戻るで終了</string>
     <string name="map_move_mode_hint">地図を移動:  ◀ ▲ ▼ ▶      戻るで終了</string>
     <string name="softkey_zoom_menu">ズーム（◀ − ▶ +）</string>

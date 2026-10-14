@@ -6,7 +6,7 @@
     <string name="settings_follow_system">Följ systemet</string>
     <string name="settings_theme_light">Ljust</string>
     <string name="settings_theme_dark">Mörkt</string>
-    <string name="settings_appearance_hint">Gäller endast Vela.</string>
+    <string name="settings_appearance_hint">Gäller endast MAP-RMG.</string>
     <string name="settings_dynamic_color">Material You-färger</string>
     <string name="settings_dynamic_color_hint">Färgar knappar och accenter efter bakgrunden. Kartan förblir neutral.</string>
     <string name="settings_map_style">Kartstil</string>
@@ -28,7 +28,7 @@
     <string name="settings_voice_none_hint">Ingen röst ännu, öppna Röstbiblioteket nedan för att hämta en naturlig röst på enheten (inget konto, i realtid även på äldre telefoner). En system-TTS-motor som du installerar visas också här att välja.</string>
     <string name="settings_voice_test">Testa rösten</string>
     <string name="settings_voice_system_settings">Systemets röstinställningar</string>
-    <string name="settings_voice_test_hint">Tryck på Testa rösten för att höra den. Vela-rösten rekommenderas; du kan byta till valfri installerad text-till-tal-motor.</string>
+    <string name="settings_voice_test_hint">Tryck på Testa rösten för att höra den. MAP-RMG-rösten rekommenderas; du kan byta till valfri installerad text-till-tal-motor.</string>
     <string name="settings_voice_library">Röstbibliotek</string>
     <string name="settings_voice_advanced">Avancerade röstalternativ</string>
     <string name="settings_voice_try_label">Prova rösten på valfri text</string>
@@ -57,11 +57,11 @@
     <string name="settings_transit_layer">Markera kollektivtrafiklinjer</string>
     <string name="settings_transit_layer_hint">Ritar tåg- och tunnelbanelinjer på kartan.</string>
     <string name="settings_read_all_reviews">Knappen ”Läs alla recensioner”</string>
-    <string name="settings_read_all_reviews_hint">Lägger till en knapp som öppnar Googles fullständiga recensionssida i appen, med alla recensioner. Av = endast Velas egen lista.</string>
+    <string name="settings_read_all_reviews_hint">Lägger till en knapp som öppnar Googles fullständiga recensionssida i appen, med alla recensioner. Av = endast MAP-RMG:s egen lista.</string>
     <string name="settings_buildings_3d">3D-byggnader</string>
     <string name="settings_buildings_3d_hint">Upphöjda byggnader vid nära zoom när kartan är lutad. Att stänga av kan göra panorering mjukare på äldre telefoner.</string>
     <string name="settings_show_reviews">Visa recensioner</string>
-    <string name="settings_show_reviews_hint">Av = platssidor visar inga recensioner och Vela hämtar dem aldrig.</string>
+    <string name="settings_show_reviews_hint">Av = platssidor visar inga recensioner och MAP-RMG hämtar dem aldrig.</string>
     <string name="settings_load_photos">Ladda foton</string>
     <string name="settings_load_photos_hint">Av = platssidor visar inga foton och inget laddas ner. Sparar data.</string>
     <string name="settings_hide_adult">Dölj vuxenkategorier</string>
@@ -69,7 +69,7 @@
     <string name="settings_hide_external_links">Dölj webbplats och externa länkar</string>
     <string name="settings_hide_external_links_hint">På = platssidor visar inte knapparna Webbplats, Street View eller Boka / Beställ (inga godtyckliga externa webbplatser öppnas).</string>
     <string name="settings_offline">Offlinekartor</string>
-    <string name="settings_offline_hint">Två sätt att använda Vela offline: spara området där du är för korta resor, eller en hel delstat eller ett helt land nedan för längre.</string>
+    <string name="settings_offline_hint">Två sätt att använda MAP-RMG offline: spara området där du är för korta resor, eller en hel delstat eller ett helt land nedan för längre.</string>
     <string name="settings_offline_map_area">Lokalt område</string>
     <string name="settings_offline_download_viewport">Hämta området du tittar på</string>
     <string name="settings_offline_download_viewport_hint">Sparar kartan du tittar på, med vägar och adresser, så att området fortsätter fungera utan täckning.</string>
@@ -98,10 +98,10 @@
     <string name="settings_no_saved_places">Inga sparade platser ännu</string>
     <string name="settings_export">Exportera</string>
     <string name="settings_import">Importera</string>
-    <string name="settings_data_privacy_hint">Vela pratar med Googles publika endpoints direkt från den här enheten: ingen backend, inget konto, ingen API-nyckel. Google ser din IP, sökning och kartområde, inte vem du är.</string>
+    <string name="settings_data_privacy_hint">MAP-RMG pratar med Googles publika endpoints direkt från den här enheten: ingen backend, inget konto, ingen API-nyckel. Google ser din IP, sökning och kartområde, inte vem du är.</string>
     <string name="settings_privacy_button">Vilka data Google får</string>
     <string name="settings_diagnostics">Diagnostik</string>
-    <string name="settings_diagnostics_hint">Av som standard. När på för Vela en kort lokal logg som du kan exportera och ge till en utvecklare. Inget laddas upp, och att stänga av rensar den.</string>
+    <string name="settings_diagnostics_hint">Av som standard. När på för MAP-RMG en kort lokal logg som du kan exportera och ge till en utvecklare. Inget laddas upp, och att stänga av rensar den.</string>
     <string name="settings_share_diagnostics">Dela diagnostik</string>
     <string name="settings_diag_nothing">Inget inspelat ännu, använd appen och exportera sedan.</string>
     <string name="settings_diag_export">Exportera felsökningssession</string>
@@ -115,23 +115,23 @@
     <string name="settings_trip_delete">Ta bort resa</string>
     <string name="settings_no_trips_hint">Inga resor inspelade ännu, navigera någonstans med detta på så dyker den upp här att spela upp.</string>
     <string name="settings_trip_consent_title">Spara dina resor?</string>
-    <string name="settings_trip_consent_body">Vela spelar in GPS-spåret för varje navigering på den här telefonen, så att en körning kan spelas upp för testning utan att köra den igen. Detta avslöjar mer än diagnostik, det fångar dina exakta rutter, men det stannar på telefonen och laddas aldrig upp. Slå av det när som helst.</string>
+    <string name="settings_trip_consent_body">MAP-RMG spelar in GPS-spåret för varje navigering på den här telefonen, så att en körning kan spelas upp för testning utan att köra den igen. Detta avslöjar mer än diagnostik, det fångar dina exakta rutter, men det stannar på telefonen och laddas aldrig upp. Slå av det när som helst.</string>
     <string name="settings_turn_on">Slå på</string>
     <string name="settings_cancel">Avbryt</string>
-    <string name="settings_crash_hint">Vela stängdes oväntat nyligen. Att skicka kraschrapporten (stackspår) hjälper till att åtgärda det, det är en vanlig textfil, inga personuppgifter.</string>
+    <string name="settings_crash_hint">MAP-RMG stängdes oväntat nyligen. Att skicka kraschrapporten (stackspår) hjälper till att åtgärda det, det är en vanlig textfil, inga personuppgifter.</string>
     <string name="settings_crash_export">Exportera kraschrapport</string>
     <string name="settings_crash_discard">Släng</string>
     <string name="settings_crash_diag_offer">Diagnostik är av, så inget spelades in före kraschen. Slå på den för att fånga mer information nästa gång.</string>
     <string name="settings_crash_enable_diag">Slå på diagnostik</string>
     <string name="settings_diag_consent_title">Slå på diagnostik?</string>
-    <string name="settings_diag_consent_body">Vela håller en kort lokal logg över dina sökningar, rutter och eventuella fel. Den lämnar aldrig telefonen om du inte trycker på Exportera och väljer var den ska skickas. Slå av den när som helst för att radera loggen.</string>
+    <string name="settings_diag_consent_body">MAP-RMG håller en kort lokal logg över dina sökningar, rutter och eventuella fel. Den lämnar aldrig telefonen om du inte trycker på Exportera och väljer var den ska skickas. Slå av den när som helst för att radera loggen.</string>
     <string name="settings_about">Om</string>
-    <string name="settings_about_hint">Vela är en avgooglad kartklient: öppna rutor för baskartan, skrapad Google för intressepunkter, ruttning och trafikmedvetna ankomsttider, en Piper-röst som körs på telefonen. GPLv3. Inga Play Services krävs.</string>
+    <string name="settings_about_hint">MAP-RMG är en avgooglad kartklient: öppna rutor för baskartan, skrapad Google för intressepunkter, ruttning och trafikmedvetna ankomsttider, en Piper-röst som körs på telefonen. GPLv3. Inga Play Services krävs. Vela Maps · GPLv3.</string>
     <string name="settings_support">Stöd</string>
-    <string name="settings_support_hint">Vela är gratis och reklamfri. Om den blivit användbar hjälper en donation till att hålla utvecklingen igång, helt frivilligt.</string>
-    <string name="settings_support_button">Stöd Vela</string>
+    <string name="settings_support_hint">MAP-RMG är gratis och reklamfri. Om den blivit användbar hjälper en donation till att hålla utvecklingen igång, helt frivilligt.</string>
+    <string name="settings_support_button">Stöd MAP-RMG</string>
     <string name="settings_version">Version</string>
-    <string name="settings_version_line">Vela %1$s  (bygge %2$d)</string>
+    <string name="settings_version_line">MAP-RMG %1$s  (bygge %2$d)</string>
     <string name="settings_version_copied">Version kopierad</string>
     <string name="settings_collapse">Fäll ihop</string>
     <string name="settings_expand">Expandera</string>
@@ -144,7 +144,7 @@
     <string name="settings_voice_show_less">Visa mindre</string>
     <string name="settings_voice_this_voice">den här rösten</string>
     <string name="settings_voice_remove_title">Ta bort %1$s?</string>
-    <string name="settings_voice_remove_body">Detta är din enda Vela-röst. Talade vägbeskrivningar faller tillbaka på en system-text-till-tal-motor (eller blir tysta om ingen är installerad) tills du hämtar en annan.</string>
+    <string name="settings_voice_remove_body">Detta är din enda MAP-RMG-röst. Talade vägbeskrivningar faller tillbaka på en system-text-till-tal-motor (eller blir tysta om ingen är installerad) tills du hämtar en annan.</string>
     <string name="settings_voice_remove">Ta bort</string>
     <string name="settings_voice_gender_female">Kvinna</string>
     <string name="settings_voice_gender_male">Man</string>
@@ -165,8 +165,8 @@
     <string name="place_close">Stäng</string>
     <string name="place_permanently_closed">Permanent stängt</string>
     <string name="place_temporarily_closed">Tillfälligt stängt</string>
-    <string name="map_voice_downloading">Laddar ner Vela-rösten · %1$d %%</string>
-    <string name="map_voice_installing">Installerar Vela-rösten…</string>
+    <string name="map_voice_downloading">Laddar ner MAP-RMG-rösten · %1$d %%</string>
+    <string name="map_voice_installing">Installerar MAP-RMG-rösten…</string>
     <string name="map_region_downloading">Laddar ner rutter för %1$s · %2$d%%</string>
     <!-- format -->
     <string name="map_region_places_downloading">Sparar platser i %1$s för offlinesökning · %2$d%%</string>
@@ -329,10 +329,10 @@
     <string name="mapscreen_switch">Byt</string>
     <string name="root_not_now">Inte nu</string>
     <string name="root_voice_title">Röst för talad navigering</string>
-    <string name="root_voice_body_intro">Velas egen röst körs helt på din telefon: naturliga anvisningar, inget konto, ingen extra app. Rekommenderas, en engångsnedladdning på %1$d MB.</string>
+    <string name="root_voice_body_intro">MAP-RMG:s egen röst körs helt på din telefon: naturliga anvisningar, inget konto, ingen extra app. Rekommenderas, en engångsnedladdning på %1$d MB.</string>
     <string name="root_voice_body_system">Vill du hellre inte? Använd en röst du redan har i telefonen.</string>
     <string name="root_voice_body_outro">Ändra det när som helst i Inställningar → Röst.</string>
-    <string name="root_voice_download">Hämta Vela-röst</string>
+    <string name="root_voice_download">Hämta MAP-RMG-röst</string>
     <string name="root_voice_use_system">Använd systemröst</string>
     <string name="nav_maneuver_continue">Fortsätt</string>
     <string name="nav_gps_lost">Söker GPS-signal…</string>
@@ -356,9 +356,9 @@
     <string name="welcome_feature_open_source_title">Fri &amp; öppen källkod</string>
     <string name="welcome_feature_open_source_body">GPLv3, byggd för GrapheneOS och andra avgooglade telefoner.</string>
     <string name="welcome_get_started">Kom igång</string>
-    <string name="welcome_donate_title">Gillar du Vela?</string>
-    <string name="welcome_donate_body">Vela är gratis och reklamfri, byggd på en knapp budget. Om den blivit användbar hjälper en liten engångsdonation till att hålla den igång, helt frivilligt, och det här är enda gången den frågar. Det finns alltid en Stöd-post i Inställningar också.</string>
-    <string name="welcome_donate_confirm">Stöd Vela</string>
+    <string name="welcome_donate_title">Gillar du MAP-RMG?</string>
+    <string name="welcome_donate_body">MAP-RMG är gratis och reklamfri, byggd på en knapp budget. Om den blivit användbar hjälper en liten engångsdonation till att hålla den igång, helt frivilligt, och det här är enda gången den frågar. Det finns alltid en Stöd-post i Inställningar också.</string>
+    <string name="welcome_donate_confirm">Stöd MAP-RMG</string>
     <string name="welcome_donate_dismiss">Kanske senare</string>
     <string name="search_close_cd">Stäng sökning</string>
     <string name="search_placeholder">Sök</string>
@@ -387,15 +387,15 @@
     <string name="mapvm_voice_lang_missing">Talade vägbeskrivningar kräver en %1$s-röst, lägg till en i Inställningar → Röst</string>
     <string name="mapvm_no_track_to_replay">Den resan har inget spår att spela upp</string>
     <string name="mapvm_replaying">Spelar upp %1$s…</string>
-    <string name="mapvm_export_saved_subject">Vela sparade platser (%1$d)</string>
+    <string name="mapvm_export_saved_subject">MAP-RMG sparade platser (%1$d)</string>
     <string name="mapvm_export_saved_chooser">Exportera sparade platser</string>
-    <string name="mapvm_export_trip_subject">Vela-resa: %1$s (%2$d punkter)</string>
+    <string name="mapvm_export_trip_subject">MAP-RMG-resa: %1$s (%2$d punkter)</string>
     <string name="mapvm_share_trip_chooser">Dela resa</string>
     <string name="mapvm_voice_sample">Om 400 meter, sväng höger in på Storgatan.</string>
     <string name="mapvm_not_enough_space">Inte tillräckligt med ledigt utrymme för %1$s (%2$d MB)</string>
     <string name="mapvm_voice_downloaded">%1$s hämtad</string>
     <string name="mapvm_voice_download_failed">Hämtning av %1$s misslyckades</string>
-    <string name="mapvm_vela_voice_removed">Vela-röst borttagen</string>
+    <string name="mapvm_vela_voice_removed">MAP-RMG-röst borttagen</string>
     <string name="mapvm_opening_installer">Öppnar installationsprogram för %1$s…</string>
     <string name="mapvm_pan_to_area_first">Öppna kartan och panorera till ett område först</string>
     <string name="mapvm_offline_routing_ready">Offlineruttning klar: %1$s</string>
@@ -427,7 +427,7 @@
     <string name="mapscreen_your_destination">ditt mål</string>
     <string name="mapvm_resume_waiting_gps">Väntar på GPS för att återuppta navigeringen…</string>
     <string name="mapvm_resume_failed">Kunde inte återuppta navigeringen</string>
-    <string name="update_available_title">Vela %1$s finns tillgänglig</string>
+    <string name="update_available_title">MAP-RMG %1$s finns tillgänglig</string>
     <string name="update_downloading">Laddar ner… %1$d%%</string>
     <string name="update_later">Inte nu</string>
     <string name="update_install">Uppdatera</string>
@@ -523,7 +523,7 @@
     <string name="settings_places_imported">Importerade %1$d plats(er)</string>
     <!-- format -->
     <string name="settings_no_lists">Inga listor att exportera än</string>
-    <string name="mapvm_export_lists_subject">Vela-listor (%1$d)</string>
+    <string name="mapvm_export_lists_subject">MAP-RMG-listor (%1$d)</string>
     <string name="mapvm_export_lists_chooser">Exportera listor</string>
     <string name="lists_empty_hint">Inga listor än. Tryck på Ny eller spara en plats från dess sida.</string>
     <plurals name="lists_place_count">
@@ -536,18 +536,18 @@
     <string name="settings_developer">Utvecklare</string>
     <string name="settings_developer_hint">Verktyg för demos, skärmbilder och tester. Stäng av dem för verklig användning.</string>
     <string name="settings_browse_voices">Bläddra bland röster</string>
-    <string name="settings_browse_voices_hint">Ladda ner och växla mellan Velas röster på enheten.</string>
+    <string name="settings_browse_voices_hint">Ladda ner och växla mellan MAP-RMG:s röster på enheten.</string>
     <string name="voice_capture_listening">Lyssnar…</string>
     <string name="voice_capture_starting">Förbereder…</string>
     <string name="voice_capture_done">Klar</string>
-    <string name="mapvm_asr_ready">Vela-rösten är klar</string>
+    <string name="mapvm_asr_ready">MAP-RMG-rösten är klar</string>
     <string name="mapvm_asr_download_failed">Det gick inte att ladda ner röstmodellen. Kontrollera anslutningen och försök igen.</string>
     <string name="mapvm_closing_soon">%1$s stänger %2$s och du är framme runt %3$s</string>
     <!-- format -->
     <string name="mapvm_closing_before_arrival">%1$s stänger %2$s, innan du är framme (runt %3$s)</string>
     <!-- format -->
-    <string name="settings_voice_search_model">Vela-röst</string>
-    <string name="settings_voice_search_model_hint">Vela-rösten gör tal till en sökning direkt på telefonen: ingen annan app behövs och inget laddas upp. Engångsnedladdning på %1$d MB.</string>
+    <string name="settings_voice_search_model">MAP-RMG-röst</string>
+    <string name="settings_voice_search_model_hint">MAP-RMG-rösten gör tal till en sökning direkt på telefonen: ingen annan app behövs och inget laddas upp. Engångsnedladdning på %1$d MB.</string>
     <!-- format -->
     <string name="settings_voice_search_download">Ladda ner (%1$d MB)</string>
     <!-- format -->
@@ -556,24 +556,24 @@
     <!-- format -->
     <string name="settings_voice_search_installing">Installerar…</string>
     <string name="settings_voice_search_engine_title">När du trycker på mikrofonen</string>
-    <string name="settings_voice_search_engine_auto">Vela-röst</string>
+    <string name="settings_voice_search_engine_auto">MAP-RMG-röst</string>
     <string name="settings_voice_search_engine_default">Androids standard</string>
     <string name="settings_voice_search_engine_system">Annan röstapp</string>
     <string name="map_asr_offer_title">Röstsökning</string>
-    <string name="map_asr_offer_body">Ladda ner Vela-rösten för att tala in dina sökningar. Den körs helt på telefonen och laddar inte upp något.</string>
+    <string name="map_asr_offer_body">Ladda ner MAP-RMG-rösten för att tala in dina sökningar. Den körs helt på telefonen och laddar inte upp något.</string>
     <string name="nav_precise_title">Exakt plats krävs</string>
-    <string name="nav_precise_body">Navigeringen följer dig via GPS, vilket kräver exakt plats. Just nu känner Vela bara till ditt ungefärliga område.</string>
+    <string name="nav_precise_body">Navigeringen följer dig via GPS, vilket kräver exakt plats. Just nu känner MAP-RMG bara till ditt ungefärliga område.</string>
     <string name="nav_precise_allow">Tillåt exakt</string>
     <string name="nav_precise_toast">Navigering kräver exakt plats</string>
     <string name="loc_off_title">Platsen är av</string>
-    <string name="loc_off_body">Vela har inte platsåtkomst. Du kan tillåta det i systeminställningarna.</string>
+    <string name="loc_off_body">MAP-RMG har inte platsåtkomst. Du kan tillåta det i systeminställningarna.</string>
     <string name="loc_off_settings">Öppna inställningar</string>
     <string name="loc_approx_title">Ungefärlig plats</string>
-    <string name="loc_approx_body">Vela känner bara till ditt ungefärliga område, inte var du är. Kartan visar en stor cirkel i stället för en punkt, och navigeringen fungerar inte. Du kan byta till exakt plats när du vill.</string>
+    <string name="loc_approx_body">MAP-RMG känner bara till ditt ungefärliga område, inte var du är. Kartan visar en stor cirkel i stället för en punkt, och navigeringen fungerar inte. Du kan byta till exakt plats när du vill.</string>
     <string name="loc_approx_allow">Tillåt exakt</string>
     <string name="loc_approx_keep">Behåll ungefärlig</string>
     <string name="notif_ask_title">Hoppa över aviseringar?</string>
-    <string name="notif_ask_body">Navigeringen håller nästa sväng i en avisering, så att anvisningarna följer med när skärmen är släckt eller du byter app. Utan den syns anvisningar bara inne i Vela.</string>
+    <string name="notif_ask_body">Navigeringen håller nästa sväng i en avisering, så att anvisningarna följer med när skärmen är släckt eller du byter app. Utan den syns anvisningar bara inne i MAP-RMG.</string>
     <string name="notif_ask_allow">Tillåt</string>
     <string name="notif_ask_skip">Hoppa över</string>
     <string name="place_time_past_toast">Den tiden har passerat. Inställd på nu.</string>
@@ -581,7 +581,7 @@
     <string name="settings_map_colors">Kartfärger</string>
     <string name="settings_map_colors_modern">Modern</string>
     <string name="settings_map_colors_classic">Klassisk</string>
-    <string name="settings_map_colors_hint">Modern följer Google Maps nuvarande palett. Klassisk är Velas tidigare utseende: vita vägar, gula motorvägar, riktiga gröna toner.</string>
+    <string name="settings_map_colors_hint">Modern följer Google Maps nuvarande palett. Klassisk är MAP-RMG:s tidigare utseende: vita vägar, gula motorvägar, riktiga gröna toner.</string>
     <string name="map_parking_find">Hitta min bil</string>
     <string name="map_parking_move_here">Flytta parkeringen hit</string>
     <string name="map_parking_earlier">Tidigare parkeringar</string>
@@ -619,13 +619,13 @@
     <string name="place_review_less">Mindre</string>
     <string name="settings_traffic_lights">Trafikljusvägledning</string>
     <string name="settings_traffic_lights_hint">Talade riktmarken: passera ljuset och svang. Endast engelska, av som standard.</string>
-    <string name="map_asr_downloading">Laddar ner Vela Voice-mikrofonen · %1$d %%</string>
-    <string name="map_asr_installing">Installerar Vela Voice-mikrofonen…</string>
-    <string name="map_asr_waiting">Vela Voice-mikrofonen · väntar på Vela-rösten</string>
+    <string name="map_asr_downloading">Laddar ner MAP-RMG Voice-mikrofonen · %1$d %%</string>
+    <string name="map_asr_installing">Installerar MAP-RMG Voice-mikrofonen…</string>
+    <string name="map_asr_waiting">MAP-RMG Voice-mikrofonen · väntar på MAP-RMG-rösten</string>
     <string name="mapscreen_filter_top_rated">4,0★</string>
     <string name="mapscreen_section_recent_searches">Senaste sökningar</string>
     <string name="mapscreen_clear_recent_searches">Rensa senaste sökningar</string>
-    <string name="root_diag_title">Hjälp till att förbättra Vela?</string>
+    <string name="root_diag_title">Hjälp till att förbättra MAP-RMG?</string>
     <string name="root_diag_body">Båda stannar på din telefon, inget skickas om du inte exporterar det. Ändra endera när som helst i Inställningar.</string>
     <string name="root_diag_share_title">Dela diagnostik</string>
     <string name="root_diag_share_desc">En kort lokal logg över sökningar, rutter &amp; fel.</string>
@@ -640,7 +640,7 @@
     <!-- format -->
     <string name="root_voice_none_picked">Kryssa i ett alternativ eller välj Inte nu.</string>
     <string name="root_offline_title">Offlinekartor</string>
-    <string name="root_offline_body">Vela hämtar platser, sökning och vägbeskrivningar från Google, så utan signal fungerar bara områden du har laddat ner. Ställ in ett område nu så att du är täckt när du tappar täckning.</string>
+    <string name="root_offline_body">MAP-RMG hämtar platser, sökning och vägbeskrivningar från Google, så utan signal fungerar bara områden du har laddat ner. Ställ in ett område nu så att du är täckt när du tappar täckning.</string>
     <string name="root_offline_setup">Ställ in offline</string>
     <string name="mapvm_stop_added">Stopp tillagt</string>
     <string name="shortcut_home">Hem</string>
@@ -648,7 +648,7 @@
     <string name="settings_asr_engines_hint">Tal blir en sokning pa telefonen. Inget laddas upp. Valj motor for mikrofonen.</string>
     <string name="settings_asr_engine_meta">%1$s · %2$d MB</string>
     <!-- format -->
-    <string name="settings_asr_langs_whisper">Alla språk som Vela stöder</string>
+    <string name="settings_asr_langs_whisper">Alla språk som MAP-RMG stöder</string>
     <string name="settings_asr_langs_sensevoice">Engelska, kinesiska, japanska, koreanska, kantonesiska</string>
     <string name="settings_asr_langs_moonshine">Endast engelska</string>
     <string name="settings_asr_active">Aktiv</string>
@@ -669,9 +669,9 @@
     <string name="voice_error_title">Röstsökningen startade inte</string>
     <string name="voice_error_retry">Försök igen</string>
     <string name="voice_error_model">Röstmodellen är inte redo. Ladda ner den igen under Inställningar \u2192 Sök.</string>
-    <string name="voice_error_permission">Vela behöver mikrofonbehörighet för att lyssna. Ge den i Androids appinställningar.</string>
+    <string name="voice_error_permission">MAP-RMG behöver mikrofonbehörighet för att lyssna. Ge den i Androids appinställningar.</string>
     <string name="voice_error_vad">En del av röstmodellen saknas. Ladda ner den igen under Inställningar \u2192 Sök.</string>
-    <string name="voice_error_audio">Telefonen öppnade inte mikrofonen för Vela. Stäng andra appar som spelar in ljud och försök igen.</string>
+    <string name="voice_error_audio">Telefonen öppnade inte mikrofonen för MAP-RMG. Stäng andra appar som spelar in ljud och försök igen.</string>
     <string name="voice_error_recording">Inspelningen stoppades oväntat. Försök igen.</string>
     <string name="place_tab_reviews">Recensioner</string>
     <string name="place_tab_about">Om</string>
@@ -698,7 +698,7 @@
     <string name="settings_search_none">Inga träffar</string>
     <string name="settings_app_name_title">Appnamn</string>
     <string name="settings_app_name_generic">Kalla den bara ”Kartor”</string>
-    <string name="settings_app_name_generic_hint">Visar appikonen som bara Kartor i stället för Vela Maps, för ett standardutseende. Du kan behöva lägga till genvägen på startskärmen igen efter bytet.</string>
+    <string name="settings_app_name_generic_hint">Visar appikonen som bara Kartor i stället för MAP-RMG Maps, för ett standardutseende. Du kan behöva lägga till genvägen på startskärmen igen efter bytet.</string>
     <string name="settings_contacts_search">Sök i dina kontakter</string>
     <string name="settings_contacts_search_hint">När du skriver namnet på en kontakt föreslås deras sparade adresser, med foto och adressetiketten från din adressbok. Dina kontakter stannar på den här telefonen; att välja en slår upp den adressen som vilken sökning som helst och öppnar den under kontaktens namn.</string>
     <string name="suggestion_contact_badge">Kontakt</string>
@@ -715,14 +715,14 @@
     <string name="settings_nav_trace_hint">Spelar in hur kartkameran rör sig medan du navigerar, så att en ryckig eller flytande karta går att felsöka. Innehåller inga platsdata, bara riktningar, hastigheter och tider, så den är säker att bifoga i en felrapport.</string>
     <string name="settings_nav_trace_export">Dela navigeringsspår</string>
     <string name="settings_nav_trace_empty">Inget spår inspelat ännu. Navigera någonstans först.</string>
-    <string name="settings_voice_vela_name">Vela-röst (%1$s)</string>
-    <string name="settings_voice_install_vela">Installera Vela-rösten (%1$d MB)</string>
+    <string name="settings_voice_vela_name">MAP-RMG-röst (%1$s)</string>
+    <string name="settings_voice_install_vela">Installera MAP-RMG-rösten (%1$d MB)</string>
     <string name="settings_voice_install_vela_hint">Den rekommenderade navigeringsrösten. Installera om den här när som helst om den försvinner eller en nedladdning misslyckades.</string>
     <string name="settings_texture_render">Kompatibilitetsrendering</string>
     <string name="settings_texture_render_hint">Ritar kartan via en kompatibilitetsväg som undviker grafikdrivrutinsfel på vissa enheter. Slås på av sig själv om kartan kraschade appen vid start. Något långsammare; kräver omstart av appen.</string>
     <string name="settings_texture_render_auto_hint">Slogs på automatiskt på %1$s efter att kartan kraschat vid start två gånger. Om kartan fungerar med detta av, låt det vara av: det är långsammare och kan göra kartan ryckig under körning. Kräver omstart av appen.</string>
     <string name="settings_offline_places_with_downloads">Ta med platser vid nedladdning</string>
-    <string name="settings_offline_places_with_downloads_hint">En regionnedladdning tar även med Velas platsdata för den, så att företagen på kartan syns utan täckning. Runt en halv gigabyte för en stor delstat. Av = platser strömmas bara när du är online.</string>
+    <string name="settings_offline_places_with_downloads_hint">En regionnedladdning tar även med MAP-RMG:s platsdata för den, så att företagen på kartan syns utan täckning. Runt en halv gigabyte för en stor delstat. Av = platser strömmas bara när du är online.</string>
     <string name="settings_routing_size_installed_here">Cirka %1$s installerat · täcker din plats</string>
     <string name="settings_routing_size_installed">Cirka %1$s installerat</string>
     <string name="settings_storage_title">Lagring</string>
@@ -736,7 +736,7 @@
     <string name="settings_map_cache_cleared">Kartcachen rensad</string>
     <string name="settings_import_nothing_new">Allt i den filen är redan sparat.</string>
     <string name="settings_import_unreadable">Den filen gick inte att öppna.</string>
-    <string name="settings_import_wrong_format">Inga platser hittades i den filen. Vela läser sina egna exporter samt GPX-, KML- och GeoJSON-filer sparade från andra kartappar.</string>
+    <string name="settings_import_wrong_format">Inga platser hittades i den filen. MAP-RMG läser sina egna exporter samt GPX-, KML- och GeoJSON-filer sparade från andra kartappar.</string>
     <string name="settings_import_wrong_format_named">Inga platser hittades i den där %1$s-filen.</string>
     <string name="settings_import_no_picker">Det finns ingen filväljare på den här enheten, så ingen fil kan väljas.</string>
     <string name="nav_overview">Ruttöversikt</string>
@@ -749,18 +749,18 @@
     <string name="settings_show_pois">Visa platser</string>
     <string name="settings_show_pois_hint">Ikoner för företag och platser på kartan du bläddrar i. Av = en ren karta; sökta platser visas ändå.</string>
     <string name="settings_places_source">Platsikoner på kartan</string>
-    <string name="settings_places_source_open">Vela-data</string>
+    <string name="settings_places_source_open">MAP-RMG-data</string>
     <string name="settings_places_source_google">Google</string>
     <string name="settings_places_source_both">Båda</string>
-    <string name="settings_places_source_open_hint">Ikonerna kommer från Velas egna data. Panorering frågar aldrig Google, och det fungerar offline.</string>
+    <string name="settings_places_source_open_hint">Ikonerna kommer från MAP-RMG:s egna data. Panorering frågar aldrig Google, och det fungerar offline.</string>
     <string name="settings_places_source_google_hint">Ikonerna kommer från Google. Varje panorering skickar din kartposition till Google, och inget ritas offline.</string>
-    <string name="settings_places_source_both_hint">Velas ikoner, plus det Google har utöver dem när du slutat panorera.</string>
+    <string name="settings_places_source_both_hint">MAP-RMG:s ikoner, plus det Google har utöver dem när du slutat panorera.</string>
     <string name="settings_places_source_more">Läs mer</string>
     <string name="settings_places_source_more_credit">Overture Maps</string>
     <string name="settings_places_lookup">Slå upp platser du trycker på hos Google</string>
-    <string name="settings_places_lookup_hint">Att trycka på en plats hämtar dess öppettider, recensioner och foton från Google, och Vela kommer ihåg matchningen så att nästa tryck går direkt. Av = en plats du trycker på visar bara det som finns i Velas data (namn, typ, adress, telefon, webbplats) och inget om trycket når Google. Sökning och vägbeskrivningar använder fortfarande Google.</string>
-    <string name="settings_places_source_more_title">Varifrån Velas platsdata kommer</string>
-    <string name="settings_places_source_more_body">Velas platsdata är Overture Maps, ett öppet dataset över företag som underhålls av Meta, Microsoft och andra. Vela levererar det från sitt eget GitHub-arkiv, så inget om var du tittar går till Meta eller Google.\n\nDet strömmas in medan du bläddrar och hämtas med en region för offlinebruk. Där Vela ännu inte har data för ett område faller kartan tillbaka på Google.\n\nSökning, platsdetaljer, öppettider, recensioner och foton kommer alltid från Google, oavsett vilket alternativ du väljer.</string>
+    <string name="settings_places_lookup_hint">Att trycka på en plats hämtar dess öppettider, recensioner och foton från Google, och MAP-RMG kommer ihåg matchningen så att nästa tryck går direkt. Av = en plats du trycker på visar bara det som finns i MAP-RMG:s data (namn, typ, adress, telefon, webbplats) och inget om trycket når Google. Sökning och vägbeskrivningar använder fortfarande Google.</string>
+    <string name="settings_places_source_more_title">Varifrån MAP-RMG:s platsdata kommer</string>
+    <string name="settings_places_source_more_body">MAP-RMG:s platsdata är Overture Maps, ett öppet dataset över företag som underhålls av Meta, Microsoft och andra. MAP-RMG levererar det från sitt eget GitHub-arkiv, så inget om var du tittar går till Meta eller Google.\n\nDet strömmas in medan du bläddrar och hämtas med en region för offlinebruk. Där MAP-RMG ännu inte har data för ett område faller kartan tillbaka på Google.\n\nSökning, platsdetaljer, öppettider, recensioner och foton kommer alltid från Google, oavsett vilket alternativ du väljer.</string>
     <string name="settings_show_civic">Parker, skolor och samhällsplatser</string>
     <string name="settings_show_civic_hint">Nivån med platsikoner som inte är företag. Av visar bara företag.</string>
     <string name="settings_show_transit_stops">Hållplatser</string>
@@ -771,7 +771,7 @@
     <string name="settings_poi_size_large">Stor</string>
     <string name="settings_poi_icon_size_hint">Liten passar lågupplösta skärmar som bilstereor, där standardikonerna blir för stora.</string>
     <string name="settings_live_rechecks">Kontrollera realtidstrafiken under navigering</string>
-    <string name="settings_live_rechecks_hint">Med några minuters mellanrum under en körning frågar Vela Google om färsk trafik från din aktuella position. Det driver erbjudanden om snabbare rutter och ankomsttiden i realtid, men det berättar också för Google var längs rutten du är. Av: rutten räknas fortfarande om när du lämnar den.</string>
+    <string name="settings_live_rechecks_hint">Med några minuters mellanrum under en körning frågar MAP-RMG Google om färsk trafik från din aktuella position. Det driver erbjudanden om snabbare rutter och ankomsttiden i realtid, men det berättar också för Google var längs rutten du är. Av: rutten räknas fortfarande om när du lämnar den.</string>
     <string name="settings_clear_history">Rensa historik</string>
     <string name="settings_clear_history_hint">Senaste sökningar, senaste platser, parkeringshistorik och inspelade resor. Sparade platser och listor behålls.</string>
     <string name="settings_clear_history_action">Rensa</string>
@@ -797,7 +797,7 @@
     <string name="settings_trip_share_selected">Dela %1$d</string>
     <string name="settings_trip_select_all">Markera alla</string>
     <string name="settings_name_trips">Namnge varje resa när den sparas</string>
-    <string name="settings_name_trips_hint">När en inspelad körning avslutats frågar Vela vad den ska heta. Av som standard; du kan alltid byta namn på en resa senare i listan nedan.</string>
+    <string name="settings_name_trips_hint">När en inspelad körning avslutats frågar MAP-RMG vad den ska heta. Av som standard; du kan alltid byta namn på en resa senare i listan nedan.</string>
     <string name="trip_name_prompt_title">Namnge den här körningen</string>
     <string name="trip_name_prompt_save">Spara namn</string>
     <string name="trip_name_prompt_skip">Inte nu</string>
@@ -827,13 +827,13 @@
     <string name="whatsnew_full_notes">Alla nyheter</string>
     <string name="settings_whatsnew">Nyheter i den här versionen</string>
     <string name="settings_whatsnew_hint">Versionsinformationen för bygget du kör. Den visas också en gång efter varje uppdatering.</string>
-    <string name="mapvm_export_trips_subject">Vela-resor: %1$d körningar (%2$d punkter)</string>
-    <string name="mapvm_export_trip_scrubbed_subject">Vela-resa: %1$d punkter, ändarna beskurna</string>
+    <string name="mapvm_export_trips_subject">MAP-RMG-resor: %1$d körningar (%2$d punkter)</string>
+    <string name="mapvm_export_trip_scrubbed_subject">MAP-RMG-resa: %1$d punkter, ändarna beskurna</string>
     <string name="mapvm_area_uses_pack">Platser och adresser för det här området följer med nedladdningen av %1$s</string>
     <string name="navservice_channel_turns_name">Talade svängvarningar</string>
     <string name="download_notif_channel">Nedladdningar</string>
     <string name="download_notif_title">Laddar ner %1$s</string>
-    <string name="download_label_update">Vela-uppdatering</string>
+    <string name="download_label_update">MAP-RMG-uppdatering</string>
     <string name="download_label_map_data">kartdata</string>
     <string name="download_label_offline_places">offlineplatser</string>
     <string name="map_area_downloading">Sparar det här området för offline · %1$d%%</string>
@@ -860,7 +860,7 @@
     <string name="settings_voice_volume_normal">Normal</string>
     <string name="settings_voice_volume_louder">Högre</string>
     <string name="settings_voice_volume_loudest">Högst</string>
-    <string name="settings_voice_volume_hint">Hur högt talade vägbeskrivningar spelas över din media. De högre nivåerna gäller Vela-rösten; systemröster går bara att göra tystare.</string>
+    <string name="settings_voice_volume_hint">Hur högt talade vägbeskrivningar spelas över din media. De högre nivåerna gäller MAP-RMG-rösten; systemröster går bara att göra tystare.</string>
     <string name="settings_asr_engines_title">Igenkänningsmotor på enheten</string>
     <string name="voice_capture_examples_title">Saker du kan säga</string>
     <string name="voice_capture_example_home">\"Ta mig hem\" eller \"kör mig till jobbet\"</string>
@@ -897,7 +897,7 @@
     <string name="settings_bike_safe">Cykelrutter föredrar cykelbanor och lugna gator</string>
     <string name="settings_bike_safe_hint">Cykelrutter väljer skyltade cykelleder, cykelbanor och bostadsgator framför den snabbaste vägen, på samma sätt som Google ruttar cyklar. Använder offlinekartan där du hämtat en, annars en öppen ruttjänst online. Av ger den vanliga snabbaste cykelrutten.</string>
     <string name="settings_route_bar">Fält för vägen framåt</string>
-    <string name="settings_route_bar_hint">En remsa bredvid kartan som visar trafiken och vad som kommer på resten av rutten. Visar bara det Vela faktiskt känner till: köer, trafikljus, stoppskyltar, järnvägsövergångar, farthinder och övervakningskameror. Endast i stående läge.</string>
+    <string name="settings_route_bar_hint">En remsa bredvid kartan som visar trafiken och vad som kommer på resten av rutten. Visar bara det MAP-RMG faktiskt känner till: köer, trafikljus, stoppskyltar, järnvägsövergångar, farthinder och övervakningskameror. Endast i stående läge.</string>
     <string name="settings_font">Typsnitt</string>
     <string name="settings_font_system">Systemets typsnitt</string>
     <string name="settings_font_choose">Välj en typsnittsfil…</string>
@@ -928,7 +928,7 @@
     <string name="settings_flock_nav_card">Varning för nummerplåtskameror</string>
     <string name="settings_flock_nav_card_hint">Under navigering visas ett kort när du närmar dig en nummerplåtskamera längs rutten. Kameror som är riktade tvärs över din väg hoppas över. Av som standard.</string>
     <string name="settings_flock_nav_voice">Säg till när en nummerplåtskamera är framför</string>
-    <string name="settings_flock_nav_voice_hint">Under navigering säger Vela ”Nummerplåtskamera framför” när du närmar dig en längs rutten, ungefär tolv sekunder innan du når den. Följer inställningen för röstanvisningar. Av som standard.</string>
+    <string name="settings_flock_nav_voice_hint">Under navigering säger MAP-RMG ”Nummerplåtskamera framför” när du närmar dig en längs rutten, ungefär tolv sekunder innan du når den. Följer inställningen för röstanvisningar. Av som standard.</string>
     <string name="nav_flock_camera_ahead">Nummerplåtskamera framför</string>
     <string name="nav_flock_cameras_ahead">Nummerplåtskameror framför</string>
     <string name="settings_region_updates">Uppdatera hämtade regioner</string>
@@ -966,18 +966,18 @@
     <string name="nav_stop_offer_remove">Ta bort stopp</string>
     <string name="settings_google_session">Google-session</string>
     <string name="settings_block_google_telemetry">Blockera telemetri från Googles sidor</string>
-    <string name="settings_block_google_telemetry_hint">Googles sidor rapporterar om sig själva: loggningspingar och kontofältets bakgrundsanrop. Inget som Vela visar behöver dem. De skickas som standard, eftersom en webbläsare som aldrig skickar dem ser mindre ut som en människa för Google, och det är en del av det som avgör om din session får den begränsade vyn. Slå på detta för att besvara dem på telefonen i stället.</string>
+    <string name="settings_block_google_telemetry_hint">Googles sidor rapporterar om sig själva: loggningspingar och kontofältets bakgrundsanrop. Inget som MAP-RMG visar behöver dem. De skickas som standard, eftersom en webbläsare som aldrig skickar dem ser mindre ut som en människa för Google, och det är en del av det som avgör om din session får den begränsade vyn. Slå på detta för att besvara dem på telefonen i stället.</string>
     <string name="settings_google_session_limited">Just nu ger Google den här telefonen en begränsad vy: färre foton per sida, inga populära tider för vissa platser, och Fler recensioner laddar ingenting. Det brukar släppa av sig självt efter ett tag. En helt ny session börjar också begränsad, så att starta en hjälper sällan.</string>
     <string name="place_limited_view">Google visar en begränsad vy just nu, så populära tider och fler recensioner kan saknas här.</string>
-    <string name="settings_google_session_hint">Google känner igen den här telefonen med en cookie, så det Vela slår upp medan den gäller kan kopplas ihop, utan namn eller konto. Att starta en ny sätter en gräns för det. En ny session får en kortare vy från Google ett tag (färre recensioner, populära tider saknas för vissa platser).</string>
+    <string name="settings_google_session_hint">Google känner igen den här telefonen med en cookie, så det MAP-RMG slår upp medan den gäller kan kopplas ihop, utan namn eller konto. Att starta en ny sätter en gräns för det. En ny session får en kortare vy från Google ett tag (färre recensioner, populära tider saknas för vissa platser).</string>
     <string name="settings_google_session_week">Starta en ny varje vecka (rekommenderas)</string>
     <string name="settings_google_session_day">Starta en ny varje dag</string>
-    <string name="settings_google_session_launch">Starta en ny varje gång Vela öppnas (mest privat)</string>
+    <string name="settings_google_session_launch">Starta en ny varje gång MAP-RMG öppnas (mest privat)</string>
     <string name="settings_google_session_launch_hint">Vad det kostar: Google behandlar varje session som en ny besökare, så du får oftast den kortare vyn (runt fem recensioner, populära tider saknas ofta). Platser laddas lite långsammare och drar mer data, eftersom en ny sessions första svar kommer tillbaka beskurna och frågas om. Android startar om appar i bakgrunden, så det kan bli flera nya sessioner om dagen, och många nya besökare från en anslutning kan dra på sig fler robotkontroller från Google. Google ser fortfarande din IP-adress, som ändå kopplar ihop sessioner från en anslutning under en kort tid.</string>
     <string name="settings_google_session_now">Starta en ny session nu</string>
     <string name="settings_google_session_done">Ny Google-session startad</string>
-    <string name="settings_google_free">Använd Vela utan Google</string>
-    <string name="settings_google_free_hint">Inget skickas till Google. Sökningen använder OpenStreetMap och dina hämtade regioner, platserna på kartan kommer från Velas egna data och rutterna från den öppna ruttjänsten utan realtidstrafik. Du förlorar recensioner, foton, öppettider, ankomsttider i realtid, Street View, vägbeskrivningar med kollektivtrafik och satellitbilder på nära håll; hämtade regioner fungerar fortfarande helt offline.</string>
+    <string name="settings_google_free">Använd MAP-RMG utan Google</string>
+    <string name="settings_google_free_hint">Inget skickas till Google. Sökningen använder OpenStreetMap och dina hämtade regioner, platserna på kartan kommer från MAP-RMG:s egna data och rutterna från den öppna ruttjänsten utan realtidstrafik. Du förlorar recensioner, foton, öppettider, ankomsttider i realtid, Street View, vägbeskrivningar med kollektivtrafik och satellitbilder på nära håll; hämtade regioner fungerar fortfarande helt offline.</string>
     <string name="settings_diag_redact_trips_hint">Döljer sökningar, mål, länkar och platsnamn i diagnostikexporten och avrundar dess koordinater till ungefär 10 km. Tider, antal och fel behålls. Delade resor börjar på det största beskärningsavståndet.</string>
     <string name="settings_trip_more">Mer för den här resan</string>
     <string name="settings_trip_batch_title">Dela valda resor</string>
@@ -1016,8 +1016,8 @@
     <string name="mapvm_graphs_retired">Offlineruttningen har flyttat till ett mindre format. Hämta dina regioner igen under Inställningar, Offlinekartor.</string>
     <string name="navservice_notif_action_pause">Pausa</string>
     <string name="navservice_notif_action_resume">Återuppta</string>
-    <string name="update_car_title">Den här uppdateringen tar bort Vela från Android Auto</string>
-    <string name="update_car_body">Vela installerades på det sätt som Android Auto godtar. Installerar du den här uppdateringen här ersätts det, och bilen slutar visa Vela tills du installerar filen med verktyget du använde första gången (AAEnabler, King Installer).\n\nSpara filen och installera den på det sättet så att bilen fortsätter fungera.</string>
+    <string name="update_car_title">Den här uppdateringen tar bort MAP-RMG från Android Auto</string>
+    <string name="update_car_body">MAP-RMG installerades på det sätt som Android Auto godtar. Installerar du den här uppdateringen här ersätts det, och bilen slutar visa MAP-RMG tills du installerar filen med verktyget du använde första gången (AAEnabler, King Installer).\n\nSpara filen och installera den på det sättet så att bilen fortsätter fungera.</string>
     <string name="update_car_save">Spara filen</string>
     <string name="update_car_anyway">Uppdatera ändå</string>
     <string name="place_transit_cached">Senast sedd %1$s. Ingen anslutning, så tiderna kan ha ändrats.</string>
@@ -1028,7 +1028,7 @@
     <string name="car_along_none">Inget hittades i närheten</string>
     <string name="car_stop_added">%1$s lades till som nästa stopp</string>
     <string name="car_continue_on">Fortsätt på %1$s</string>
-    <string name="map_import_needs_google">En delad Google Maps-lista kan inte öppnas medan Vela körs utan Google.</string>
+    <string name="map_import_needs_google">En delad Google Maps-lista kan inte öppnas medan MAP-RMG körs utan Google.</string>
     <string name="map_link_needs_google">”Öppna delade Google Maps-länkar” är av under Inställningar &gt; Integritet.</string>
     <string name="map_link_unreadable">Kunde inte öppna den länken.</string>
     <string name="settings_performance">Prestanda</string>
@@ -1037,10 +1037,10 @@
     <string name="settings_full_place_load">Ladda alla foton och recensioner</string>
     <string name="settings_full_place_load_hint">Av = en plats laddar sina första foton och första sidan recensioner, och Fler foton eller Alla recensioner hämtar resten. På = varje plats du öppnar går igenom hela sitt fotogalleri och upp till 50 recensioner, vilket är långsammare och skickar många fler förfrågningar till Google.</string>
     <string name="settings_speech_preload">Ladda röstsökning vid start</string>
-    <string name="settings_speech_preload_hint">Laddar röstsökningsmodellen när Vela öppnas, så att mikrofonen lyssnar direkt. Den använder cirka 300 MB tills två tysta minuter har gått. Av = den laddas när du trycker i sökfältet. På som standard på telefoner med cirka 8 GB minne eller mer.</string>
+    <string name="settings_speech_preload_hint">Laddar röstsökningsmodellen när MAP-RMG öppnas, så att mikrofonen lyssnar direkt. Den använder cirka 300 MB tills två tysta minuter har gått. Av = den laddas när du trycker i sökfältet. På som standard på telefoner med cirka 8 GB minne eller mer.</string>
     <string name="settings_google_free_links">Öppna delade Google Maps-länkar</string>
-    <string name="settings_google_free_links_hint">En kort Google Maps-länk (maps.app.goo.gl) säger inte vart den pekar. Med detta på frågar Vela Googles länkförkortare en gång, utan cookies, och öppnar platsen med de öppna källorna. Fullständiga google.com/maps-länkar öppnas utan att fråga. Delade listor behöver fortfarande Google.</string>
-    <string name="place_avoid_not_honored">Dessa rutter kan ändå gå via vägtullar, motorvägar eller färjor: Google gick inte att nå för att runda dem, och den öppna ruttjänsten kan inte. I ett hämtat område undviker Vela dem offline.</string>
+    <string name="settings_google_free_links_hint">En kort Google Maps-länk (maps.app.goo.gl) säger inte vart den pekar. Med detta på frågar MAP-RMG Googles länkförkortare en gång, utan cookies, och öppnar platsen med de öppna källorna. Fullständiga google.com/maps-länkar öppnas utan att fråga. Delade listor behöver fortfarande Google.</string>
+    <string name="place_avoid_not_honored">Dessa rutter kan ändå gå via vägtullar, motorvägar eller färjor: Google gick inte att nå för att runda dem, och den öppna ruttjänsten kan inte. I ett hämtat område undviker MAP-RMG dem offline.</string>
     <string name="settings_road_label_inbar">Inuti nedre fältet</string>
     <string name="settings_faster_auto">Ta snabbare rutter automatiskt</string>
     <string name="settings_faster_auto_hint">När en snabbare rutt dyker upp under körning väljs den om du inte svarar inom några sekunder. Stäng av detta så avfärdas ett obesvarat erbjudande i stället. Hur som helst ligger erbjudandet aldrig kvar och väntar på kartan.</string>
@@ -1048,7 +1048,7 @@
     <string name="settings_pause_in_bar_hint">Lägger paus bredvid resans siffror, där knappen för steglistan annars sitter, och låter ljud av ligga kvar bland kartknapparna. Av lägger båda på en knapp till höger på kartan. Svep uppåt eller använd pilen för att öppna steglistan i båda fallen.</string>
     <string name="settings_pause_in_bar_hint_buttons">Med ”Föredra knappar framför svep” på har fältet paus och knappen för steglistan sida vid sida, och resans siffror krymper för att få plats.</string>
     <string name="settings_route_picker">Ruttväljare i Google-stil</string>
-    <string name="settings_route_picker_hint">Visar en rutt i taget, med de andra ett tryck bort och deras tider på kartan, och Starta längst ned. Stäng av det för Velas klassiska panel, som listar alla rutter på en gång.</string>
+    <string name="settings_route_picker_hint">Visar en rutt i taget, med de andra ett tryck bort och deras tider på kartan, och Starta längst ned. Stäng av det för MAP-RMG:s klassiska panel, som listar alla rutter på en gång.</string>
     <plurals name="exp_chooser_alts">
         <item quantity="one">%1$d annan rutt</item>
         <item quantity="other">%1$d andra rutter</item>
@@ -1069,7 +1069,7 @@
     <string name="settings_photos_on_tap">Läs in foton bara när jag trycker</string>
     <string name="settings_photos_on_tap_hint">En plats visar knappen Visa foton i stället för att läsa in fotona. Sparar en Google-förfrågan per plats.</string>
     <string name="settings_details_retry">Vänta på populära tider</string>
-    <string name="settings_details_retry_hint">Google utelämnar ofta populära tider i första svaret, så Vela frågar upp till två gånger till. Av = en förfrågan per plats, och populära tider kan saknas.</string>
+    <string name="settings_details_retry_hint">Google utelämnar ofta populära tider i första svaret, så MAP-RMG frågar upp till två gånger till. Av = en förfrågan per plats, och populära tider kan saknas.</string>
     <string name="place_show_photos">Visa foton</string>
     <string name="place_no_photos">Inga foton än</string>
     <string name="place_all_n_reviews_open">Alla %1$d recensioner</string>
@@ -1129,9 +1129,9 @@
     <string name="settings_storage_no_space">Inte tillräckligt med utrymme där: offlinedatan behöver cirka %1$d MB.</string>
     <string name="settings_storage_moved">Offlinedatan har flyttats.</string>
     <string name="settings_storage_failed">Flytten slutfördes inte, offlinedatan ligger kvar där den var.</string>
-    <string name="settings_maps_links_on">Länkar till Google Maps öppnas i Vela.</string>
-    <string name="settings_maps_links_partial">Vissa Google Maps-länkar öppnas i Vela. Lägg till resten under Öppna som standard så att alla typer av länkar gör det.</string>
-    <string name="settings_maps_links_off">Android öppnar Google Maps-länkar i webbläsaren. Aktivera Öppna länkar som stöds och lägg till länkarna under Öppna som standard för att öppna dem i Vela.</string>
+    <string name="settings_maps_links_on">Länkar till Google Maps öppnas i MAP-RMG.</string>
+    <string name="settings_maps_links_partial">Vissa Google Maps-länkar öppnas i MAP-RMG. Lägg till resten under Öppna som standard så att alla typer av länkar gör det.</string>
+    <string name="settings_maps_links_off">Android öppnar Google Maps-länkar i webbläsaren. Aktivera Öppna länkar som stöds och lägg till länkarna under Öppna som standard för att öppna dem i MAP-RMG.</string>
     <string name="settings_maps_links_open">Inställningar för Öppna som standard</string>
     <string name="mapvm_cells_progress">%1$s, del %2$d av %3$d</string>
     <string name="mapvm_cells_ready">Vägbeskrivningar och platser för den här delen av %1$s fungerar offline</string>
@@ -1214,7 +1214,7 @@
     <string name="settings_link_action_place">Visa platsen</string>
     <string name="settings_link_action_directions">Öppna vägbeskrivning</string>
     <string name="settings_link_action_start">Starta navigering</string>
-    <string name="settings_link_action_hint">Vad som händer när en annan app skickar en plats till Vela. Starta navigering passar leveransappar som skickar ett stopp i taget.</string>
+    <string name="settings_link_action_hint">Vad som händer när en annan app skickar en plats till MAP-RMG. Starta navigering passar leveransappar som skickar ett stopp i taget.</string>
     <string name="car_nearby">I närheten</string>
     <string name="car_more_nearby">Mer i närheten</string>
     <string name="car_saved">Sparade</string>
@@ -1227,8 +1227,8 @@
     <string name="car_setting_avoid_highways">Undvik motorvägar</string>
     <string name="car_setting_avoid_ferries">Undvik färjor</string>
     <string name="car_location_title">Tillåt plats</string>
-    <string name="car_location_body">Vela behöver den för att visa var du är och ge vägbeskrivningar</string>
-    <string name="car_location_denied">Plats är avstängd. Slå på den för Vela i telefonens inställningar.</string>
+    <string name="car_location_body">MAP-RMG behöver den för att visa var du är och ge vägbeskrivningar</string>
+    <string name="car_location_denied">Plats är avstängd. Slå på den för MAP-RMG i telefonens inställningar.</string>
     <string name="settings_page_transitions">Sidövergångar</string>
     <string name="settings_page_transitions_hint">Animerar sidor och bottenpaneler när de öppnas och stängs, och förhandsvisar föregående sida när du sveper bakåt.</string>
     <string name="place_avoid_label">Undvik</string>
@@ -1256,7 +1256,7 @@
     <string name="exp_chooser_share_text">Vägbeskrivning till %1$s: %2$s, %3$s</string>
     <string name="settings_flock_route_alert">Undvik övervakningskameror</string>
     <string name="settings_flock_detour">Prova sidogator runt kameror</string>
-    <string name="settings_flock_detour_hint">När den bästa rutten fortfarande passerar kameror provar Vela en punkt strax vid sidan av vägen vid varje kamera och ruttar genom den, på samma sätt som när du trycker länge på kartan. En rutt som passerar färre kameror inom samma lilla omväg hamnar överst i listan. Kostar några extra ruttförfrågningar per resa. Av som standard.</string>
+    <string name="settings_flock_detour_hint">När den bästa rutten fortfarande passerar kameror provar MAP-RMG en punkt strax vid sidan av vägen vid varje kamera och ruttar genom den, på samma sätt som när du trycker länge på kartan. En rutt som passerar färre kameror inom samma lilla omväg hamnar överst i listan. Kostar några extra ruttförfrågningar per resa. Av som standard.</string>
     <string name="settings_flock_route_alert_hint">Räknar nummerplåtskamerorna (Flock) längs varje rutt (en kamera som är riktad tvärs över vägen räknas inte, eftersom den läser korsande trafik) och väljer automatiskt en rutt med färre kameror när den bara tar lite längre tid. Du skickas aldrig långt ur vägen, så där kameror inte går att undvika visas bara antalen och valet är ditt. Tryck länge på kartan för att själv rutta genom en punkt. Av som standard.</string>
     <plurals name="dir_cameras_avoided">
         <item quantity="one">Passerar %1$d kamera färre än den snabbaste rutten</item>
@@ -1278,7 +1278,7 @@
     <string name="street_view_offline">Street View kräver anslutning här: den här platsen har inte visats tidigare</string>
     <string name="mapscreen_other_locations">Visa andra filialer</string>
     <string name="settings_other_locations_auto">Hitta andra filialer automatiskt</string>
-    <string name="settings_other_locations_auto_hint">När en namnsökning hamnar på en enda plats frågar Vela också Google efter dess andra filialer. Det blir några fler förfrågningar till Google vid varje sådan sökning. Av: knappen ”Visa andra filialer” gör det när du trycker på den.</string>
+    <string name="settings_other_locations_auto_hint">När en namnsökning hamnar på en enda plats frågar MAP-RMG också Google efter dess andra filialer. Det blir några fler förfrågningar till Google vid varje sådan sökning. Av: knappen ”Visa andra filialer” gör det när du trycker på den.</string>
     <string name="mapscreen_view_map">Visa kartan</string>
     <string name="whatsnew_show_after_updates">Visa nyheter efter uppdateringar</string>
     <string name="replay_play">Spela upp</string>
@@ -1322,17 +1322,17 @@
     <string name="settings_map_names_hint">Romaniserade namn görs av en maskin där OpenStreetMap saknar engelskt namn, och läses dåligt på hebreiska och några andra skriftsystem. Appens språk och rösten ändras inte.</string>
     <string name="settings_project">Projekt</string>
     <string name="settings_project_hint">Källkod, felrapporter och diskussioner finns på GitHub.</string>
-    <string name="settings_project_github_button">Vela på GitHub</string>
+    <string name="settings_project_github_button">MAP-RMG på GitHub</string>
     <string name="mapvm_rechecking_connection">Kontrollerar anslutningen…</string>
     <string name="mapvm_back_online">Online igen</string>
-    <string name="mapvm_still_offline">Fortfarande offline. Vela märker det så fort anslutningen är tillbaka.</string>
+    <string name="mapvm_still_offline">Fortfarande offline. MAP-RMG märker det så fort anslutningen är tillbaka.</string>
     <string name="search_offline_recheck">Offline. Tryck för att kontrollera igen</string>
     <string name="settings_turn_declutter">Förenkla kartan i svängar</string>
     <string name="settings_turn_declutter_hint">Medan kartan vrider sig genom en sväng ligger bara gatunamnen kvar. Platser, skyltar och kameror kommer tillbaka så fort den stannat upp. Håller svängarna mjuka på långsammare telefoner.</string>
     <string name="settings_softkeys">Fysiska funktionsknappar</string>
     <string name="settings_softkeys_hint">Zooma kartan med telefonens två funktionsknappar. Endast för telefoner med knappsats.</string>
     <string name="settings_softkeys_calibrate">Kalibrera funktionsknapparna</string>
-    <string name="settings_softkeys_calibrate_hint">Om funktionsknapparna inte zoomar, tryck här och tryck sedan på vänster och därefter höger funktionsknapp så att Vela lär sig deras koder.</string>
+    <string name="settings_softkeys_calibrate_hint">Om funktionsknapparna inte zoomar, tryck här och tryck sedan på vänster och därefter höger funktionsknapp så att MAP-RMG lär sig deras koder.</string>
     <string name="map_zoom_mode_hint">Zoom:  ◀ ut   ·   in ▶      TILLBAKA avslutar</string>
     <string name="map_move_mode_hint">Flytta karta:  ◀ ▲ ▼ ▶      TILLBAKA avslutar</string>
     <string name="softkey_zoom_menu">Zoom (◀ − ▶ +)</string>

@@ -19,7 +19,7 @@
     <string name="settings_appearance_hint">Csak a Velára vonatkozik.</string>
     <string name="settings_app_name_title">Alkalmazásnév</string>
     <string name="settings_app_name_generic">Hívd egyszerűen „Térképek”-nek</string>
-    <string name="settings_app_name_generic_hint">A launcher ikonon „Vela” helyett „Térképek” jelenik meg a gyári megjelenés érdekében. A váltás után lehet, hogy újra hozzá kell adnod a parancsikont a kezdőképernyőhöz.</string>
+    <string name="settings_app_name_generic_hint">A launcher ikonon „MAP-RMG” helyett „Térképek” jelenik meg a gyári megjelenés érdekében. A váltás után lehet, hogy újra hozzá kell adnod a parancsikont a kezdőképernyőhöz.</string>
     <string name="settings_dynamic_color">Material You színek</string>
     <string name="settings_dynamic_color_hint">A gombokat és kiemeléseket a háttérképedhez igazítja. A térkép semleges marad.</string>
     <string name="settings_map_style">Térképstílus</string>
@@ -43,7 +43,7 @@
     <string name="settings_voice_none_hint">Még nincs hang. Nyisd meg lent a Hangkönyvtárat, hogy letölts egy természetes, telefonon futó hangot (fiók nélkül, valós időben régi telefonokon is). A telepített rendszer TTS-motorok is itt jelennek meg választható opcióként.</string>
     <string name="settings_voice_test">Hang tesztelése</string>
     <string name="settings_voice_system_settings">Rendszer hangbeállítások</string>
-    <string name="settings_voice_test_hint">Koppints a Hang tesztelésére, hogy halld. A Vela Hang ajánlott; bármelyik telepített szövegfelolvasó motorra átválthatsz.</string>
+    <string name="settings_voice_test_hint">Koppints a Hang tesztelésére, hogy halld. A MAP-RMG Hang ajánlott; bármelyik telepített szövegfelolvasó motorra átválthatsz.</string>
     <string name="settings_voice_library">Hangkönyvtár</string>
     <string name="settings_voice_advanced">Speciális hangbeállítások</string>
     <string name="settings_voice_try_label">Próbáld ki a hangot bármilyen szövegen</string>
@@ -66,8 +66,8 @@
     <string name="settings_vibrate_hint">Iránykódolt rezgés minden kanyarnál, balra és jobbra eltérő mintázattal, hogy tapintással is követhesd az útvonalat. Közlekedési módonként külön állítható (pl. kerékpáron/gyaloglásnál be, autózásnál ki).</string>
     <string name="settings_keep_screen_on">Képernyő ébren tartása navigáció közben</string>
     <string name="settings_keep_screen_on_hint">Ébren tartja a képernyőt útvonalvezetés közben.</string>
-    <string name="map_voice_downloading">Vela Hang letöltése · %1$d%%</string>
-    <string name="map_voice_installing">Vela Hang telepítése…</string>
+    <string name="map_voice_downloading">MAP-RMG Hang letöltése · %1$d%%</string>
+    <string name="map_voice_installing">MAP-RMG Hang telepítése…</string>
     <string name="map_region_downloading">%1$s útvonaltervezési adat letöltése · %2$d%%</string>
     <string name="map_region_places_downloading">%1$s helyek mentése offline kereséshez · %2$d%%</string>
     <string name="map_region_placesfile_downloading">%1$s helyek mentése a térképhez · %2$d%%</string>
@@ -90,7 +90,7 @@
     <string name="settings_speed_cams">Traffipaxok</string>
     <string name="settings_speed_cams_hint">Az OpenStreetMap-ben térképezett fix radarokat és traffipaxokat jeleníti meg. Csak fix telepítések; a lefedettség a térképet követi, Európában a legerősebb. Alapból kikapcsolva.</string>
     <string name="settings_read_all_reviews">„Összes vélemény elolvasása” gomb</string>
-    <string name="settings_read_all_reviews_hint">Hozzáad egy „Összes vélemény elolvasása” gombot, ami megnyitja a Google teljes véleményoldalát az appon belül, minden véleménnyel. Ki = csak a Vela saját véleménylistája.</string>
+    <string name="settings_read_all_reviews_hint">Hozzáad egy „Összes vélemény elolvasása” gombot, ami megnyitja a Google teljes véleményoldalát az appon belül, minden véleménnyel. Ki = csak a MAP-RMG saját véleménylistája.</string>
     <string name="settings_buildings_3d">3D épületek</string>
     <string name="settings_buildings_3d_hint">Kiemelt épületek közeli nagyításnál, ha a térkép meg van döntve. Kikapcsolása simábbá teheti a mozgatást régebbi telefonokon.</string>
     <string name="settings_building_overlay">Hiányzó épületek kitöltése</string>
@@ -101,13 +101,13 @@
     <string name="settings_nav_trace_hint">Rögzíti, hogyan mozog a térkép kamerája navigáció közben, hogy egy szaggatott vagy imbolygó térkép diagnosztizálható legyen. Nem tartalmaz helyadatot, csak irányokat, sebességeket és időzítéseket, ezért biztonságosan csatolható egy hibajelentéshez.</string>
     <string name="settings_nav_trace_export">Nav-nyomkövetés megosztása</string>
     <string name="settings_nav_trace_empty">Még nincs rögzített nyomkövetés. Navigálj valahová először.</string>
-    <string name="settings_voice_vela_name">Vela hang (%1$s)</string>
-    <string name="settings_voice_install_vela">A Vela hang telepítése (%1$d MB)</string>
+    <string name="settings_voice_vela_name">MAP-RMG hang (%1$s)</string>
+    <string name="settings_voice_install_vela">A MAP-RMG hang telepítése (%1$d MB)</string>
     <string name="settings_voice_install_vela_hint">Az ajánlott navigációs hang. Bármikor újratelepítheted itt, ha eltűnne vagy a letöltés sikertelen lenne.</string>
     <string name="settings_texture_render">Kompatibilitási megjelenítés</string>
     <string name="settings_texture_render_hint">A térképet egy kompatibilitási úton rajzolja ki, ami elkerül bizonyos eszközök grafikai driver-hibáit. Magától bekapcsol, ha a térkép induláskor összeomlasztotta az appot. Kicsit lassabb; az alkalmazás újraindítása szükséges hozzá.</string>
     <string name="settings_show_reviews">Vélemények megjelenítése</string>
-    <string name="settings_show_reviews_hint">Ki = a helyoldalak nem mutatnak véleményeket, és a Vela soha nem is tölti le őket.</string>
+    <string name="settings_show_reviews_hint">Ki = a helyoldalak nem mutatnak véleményeket, és a MAP-RMG soha nem is tölti le őket.</string>
     <string name="settings_load_photos">Fotók betöltése</string>
     <string name="settings_load_photos_hint">Ki = a helyoldalak nem mutatnak fotókat, és semmi nem töltődik le hozzájuk. Adatot takarít meg.</string>
     <string name="settings_hide_adult">Felnőtt kategóriák elrejtése</string>
@@ -158,7 +158,7 @@
     <string name="settings_no_saved_places">Még nincs mentett hely</string>
     <string name="settings_export">Exportálás</string>
     <string name="settings_import">Importálás</string>
-    <string name="settings_data_privacy_hint">A Vela közvetlenül erről az eszközről beszél a Google nyilvános végpontjaival: nincs háttérrendszer, nincs fiók, nincs API-kulcs. A Google látja az IP-címedet, a keresésedet és a térképterületet, de nem tudja, ki vagy.</string>
+    <string name="settings_data_privacy_hint">A MAP-RMG közvetlenül erről az eszközről beszél a Google nyilvános végpontjaival: nincs háttérrendszer, nincs fiók, nincs API-kulcs. A Google látja az IP-címedet, a keresésedet és a térképterületet, de nem tudja, ki vagy.</string>
     <string name="settings_map_places">Helyek a térképen</string>
     <string name="settings_show_pois">Helyek megjelenítése</string>
     <string name="settings_show_pois_hint">Üzlet- és helyikonok a böngésző térképen. Ki = tiszta térkép; a keresett helyek továbbra is megjelennek.</string>
@@ -172,7 +172,7 @@
     <string name="settings_poi_size_large">Nagy</string>
     <string name="settings_poi_icon_size_hint">A kicsi jól illik alacsony felbontású kijelzőkhöz, mint pl. autós fejegységek, ahol az alapértelmezett ikonok túl nagynak tűnnek.</string>
     <string name="settings_live_rechecks">Élő forgalmi újraellenőrzés navigáció közben</string>
-    <string name="settings_live_rechecks_hint">Vezetés közben néhány percenként a Vela friss forgalmi adatot kér a Google-től a jelenlegi helyzetedről. Ez teszi lehetővé a gyorsabb útvonal ajánlását és az élő érkezési időt, de a Google-nek is elárulja, hol tartasz az útvonalon. Kikapcsolva: az útvonal továbbra is újratervezésre kerül, ha letérsz róla.</string>
+    <string name="settings_live_rechecks_hint">Vezetés közben néhány percenként a MAP-RMG friss forgalmi adatot kér a Google-től a jelenlegi helyzetedről. Ez teszi lehetővé a gyorsabb útvonal ajánlását és az élő érkezési időt, de a Google-nek is elárulja, hol tartasz az útvonalon. Kikapcsolva: az útvonal továbbra is újratervezésre kerül, ha letérsz róla.</string>
     <string name="nav_edit_route">Útvonal szerkesztése</string>
     <string name="nav_edit_route_hint">Megálló hozzáadása útközben</string>
     <string name="nav_stops_remove_next">Következő eltávolítása</string>
@@ -181,21 +181,21 @@
     <string name="nav_stop_offer_remove">Megálló eltávolítása</string>
     <string name="settings_google_session">Google-munkamenet</string>
     <string name="settings_block_google_telemetry">Google-oldalak telemetriájának tiltása</string>
-    <string name="settings_block_google_telemetry_hint">A Google oldalai jelentenek magukról: naplózó pingek és a fióksáv háttérhívásai. Semmi, amit a Vela mutat, nem igényli őket. Alapból kimennek, mert egy böngésző, amely soha nem küldi el őket, kevésbé tűnik embernek a Google szemében, és ez is befolyásolja, hogy a munkameneted korlátozott nézetet kap-e. Kapcsold be, hogy inkább a telefon válaszoljon rájuk.</string>
+    <string name="settings_block_google_telemetry_hint">A Google oldalai jelentenek magukról: naplózó pingek és a fióksáv háttérhívásai. Semmi, amit a MAP-RMG mutat, nem igényli őket. Alapból kimennek, mert egy böngésző, amely soha nem küldi el őket, kevésbé tűnik embernek a Google szemében, és ez is befolyásolja, hogy a munkameneted korlátozott nézetet kap-e. Kapcsold be, hogy inkább a telefon válaszoljon rájuk.</string>
     <string name="settings_google_session_limited">A Google most korlátozott nézetet ad ennek a telefonnak: oldalanként kevesebb fotó, egyes helyeknél nincsenek népszerű időpontok, és a További vélemények nem tölt be semmit. Általában egy idő után magától megszűnik. Egy vadonatúj munkamenet is korlátozottan indul, így egy új indítása ritkán segít.</string>
     <string name="place_limited_view">A Google most korlátozott nézetet mutat, ezért a népszerű időpontok és a további vélemények hiányozhatnak itt.</string>
-    <string name="settings_google_session_hint">A Google egy sütivel ismeri fel ezt a telefont, így amit a Vela a süti élettartama alatt lekérdez, összekapcsolható, név vagy fiók nélkül is. Egy új munkamenet indítása ezt korlátozza. Egy új munkamenet egy ideig rövidebb nézetet kap a Google-tól (kevesebb vélemény, egyes helyeknél hiányoznak a népszerű időpontok).</string>
+    <string name="settings_google_session_hint">A Google egy sütivel ismeri fel ezt a telefont, így amit a MAP-RMG a süti élettartama alatt lekérdez, összekapcsolható, név vagy fiók nélkül is. Egy új munkamenet indítása ezt korlátozza. Egy új munkamenet egy ideig rövidebb nézetet kap a Google-tól (kevesebb vélemény, egyes helyeknél hiányoznak a népszerű időpontok).</string>
     <string name="settings_google_session_week">Új indítása hetente (ajánlott)</string>
     <string name="settings_google_session_day">Új indítása naponta</string>
-    <string name="settings_google_session_launch">Új indítása a Vela minden megnyitásakor (legprivátabb)</string>
+    <string name="settings_google_session_launch">Új indítása a MAP-RMG minden megnyitásakor (legprivátabb)</string>
     <string name="settings_google_session_launch_hint">Az ára: a Google minden munkamenetet új látogatóként kezel, így többnyire a rövidebb nézetét kapod (kb. öt vélemény, a népszerű időpontok gyakran hiányoznak). A helyek kicsit lassabban töltődnek be és több adatot használnak, mert egy új munkamenet első válaszai csonkítva érkeznek, és újra le kell kérni őket. Az Android a háttérben újraindítja az appokat, így ez naponta több új munkamenetet is jelenthet, és sok új látogató egyetlen kapcsolatról több robotellenőrzést válthat ki a Google-nál. A Google továbbra is látja az IP-címedet, ami rövid időn belül amúgy is összeköti az egy kapcsolatról érkező munkameneteket.</string>
     <string name="settings_google_session_now">Új munkamenet indítása most</string>
     <string name="settings_google_session_done">Új Google-munkamenet elindítva</string>
     <string name="settings_privacy_button">Milyen adatot kap a Google</string>
-    <string name="settings_google_free">Vela használata Google nélkül</string>
-    <string name="settings_google_free_hint">Semmi nem kerül a Google-hoz. A keresés az OpenStreetMapet és a letöltött régióidat használja, a térképen lévő helyek a Vela saját adataiból jönnek, az útvonalak pedig a nyílt útvonaltervezőtől, élő forgalom nélkül. Elveszíted a véleményeket, fotókat, nyitvatartást, élő érkezési időket, az Utcaképet, a tömegközlekedési útvonalakat és a közeli műholdképeket; a letöltött régiók továbbra is teljesen offline működnek.</string>
+    <string name="settings_google_free">MAP-RMG használata Google nélkül</string>
+    <string name="settings_google_free_hint">Semmi nem kerül a Google-hoz. A keresés az OpenStreetMapet és a letöltött régióidat használja, a térképen lévő helyek a MAP-RMG saját adataiból jönnek, az útvonalak pedig a nyílt útvonaltervezőtől, élő forgalom nélkül. Elveszíted a véleményeket, fotókat, nyitvatartást, élő érkezési időket, az Utcaképet, a tömegközlekedési útvonalakat és a közeli műholdképeket; a letöltött régiók továbbra is teljesen offline működnek.</string>
     <string name="settings_diagnostics">Diagnosztika</string>
-    <string name="settings_diagnostics_hint">Alapból kikapcsolva. Bekapcsolva a Vela egy rövid helyi naplót vezet, amit exportálhatsz és átadhatsz egy fejlesztőnek. Semmi nem kerül feltöltésre, és a kikapcsolás törli a naplót.</string>
+    <string name="settings_diagnostics_hint">Alapból kikapcsolva. Bekapcsolva a MAP-RMG egy rövid helyi naplót vezet, amit exportálhatsz és átadhatsz egy fejlesztőnek. Semmi nem kerül feltöltésre, és a kikapcsolás törli a naplót.</string>
     <string name="settings_share_diagnostics">Diagnosztika megosztása</string>
     <string name="settings_diag_nothing">Még nincs rögzítve semmi. Használd az appot, majd exportálj.</string>
     <string name="settings_diag_export">Hibakeresési munkamenet exportálása</string>
@@ -210,24 +210,24 @@
     <string name="settings_trip_delete">Út törlése</string>
     <string name="settings_no_trips_hint">Még nincs rögzített út. Navigálj valahová ezzel bekapcsolva, és megjelenik itt visszajátszásra.</string>
     <string name="settings_trip_consent_title">Menteni szeretnéd az utazásaidat?</string>
-    <string name="settings_trip_consent_body">A Vela minden navigáció GPS-nyomvonalát rögzíti ezen a telefonon, hogy egy út visszajátszható legyen teszteléshez, anélkül hogy újra le kellene vezetni. Ez érzékenyebb, mint a diagnosztika (rögzíti a pontos útvonalaidat), de a telefonon marad és soha nem kerül feltöltésre. Bármikor kikapcsolhatod.</string>
+    <string name="settings_trip_consent_body">A MAP-RMG minden navigáció GPS-nyomvonalát rögzíti ezen a telefonon, hogy egy út visszajátszható legyen teszteléshez, anélkül hogy újra le kellene vezetni. Ez érzékenyebb, mint a diagnosztika (rögzíti a pontos útvonalaidat), de a telefonon marad és soha nem kerül feltöltésre. Bármikor kikapcsolhatod.</string>
     <string name="settings_turn_on">Bekapcsolás</string>
     <string name="settings_cancel">Mégse</string>
-    <string name="settings_crash_hint">A Vela nemrég váratlanul bezáródott. A hibajelentés (stack trace) elküldése segít kijavítani. Egy egyszerű szöveges fájl, nincs benne személyes adat.</string>
+    <string name="settings_crash_hint">A MAP-RMG nemrég váratlanul bezáródott. A hibajelentés (stack trace) elküldése segít kijavítani. Egy egyszerű szöveges fájl, nincs benne személyes adat.</string>
     <string name="settings_crash_export">Hibajelentés exportálása</string>
     <string name="settings_crash_discard">Elvetés</string>
     <string name="settings_crash_diag_offer">A diagnosztika ki van kapcsolva, így semmi nem lett rögzítve ez előtt. Kapcsold be, hogy több részletet rögzítsen, ha újra megtörténne.</string>
     <string name="settings_crash_enable_diag">Diagnosztika bekapcsolása</string>
     <string name="settings_diag_consent_title">Bekapcsolod a diagnosztikát?</string>
-    <string name="settings_diag_consent_body">A Vela egy rövid helyi naplót vezet a kereséseidről, útvonalaidról és a hibákról. Soha nem hagyja el a telefont, hacsak nem koppintasz az Exportálásra és választasz egy célt. Bármikor kikapcsolhatod a napló törléséhez.</string>
+    <string name="settings_diag_consent_body">A MAP-RMG egy rövid helyi naplót vezet a kereséseidről, útvonalaidról és a hibákról. Soha nem hagyja el a telefont, hacsak nem koppintasz az Exportálásra és választasz egy célt. Bármikor kikapcsolhatod a napló törléséhez.</string>
     <string name="settings_about">Névjegy</string>
-    <string name="settings_about_hint">A Vela egy degoogled térképkliens: nyílt csempék az alaptérképhez, lekapart Google-adat helyekhez, útvonaltervezéshez és forgalomfüggő érkezési időkhöz, a telefonon futó Piper hang. GPLv3. Nincs szükség Play Services-re.</string>
+    <string name="settings_about_hint">A MAP-RMG egy degoogled térképkliens: nyílt csempék az alaptérképhez, lekapart Google-adat helyekhez, útvonaltervezéshez és forgalomfüggő érkezési időkhöz, a telefonon futó Piper hang. GPLv3. Nincs szükség Play Services-re. Vela Maps · GPLv3.</string>
     <string name="settings_support">Támogatás</string>
-    <string name="settings_support_hint">A Vela ingyenes és reklámmentes. Ha hasznosnak bizonyult, egy adomány segít fenntartani a fejlesztést. Teljesen opcionális.</string>
-    <string name="settings_support_button">Vela támogatása</string>
+    <string name="settings_support_hint">A MAP-RMG ingyenes és reklámmentes. Ha hasznosnak bizonyult, egy adomány segít fenntartani a fejlesztést. Teljesen opcionális.</string>
+    <string name="settings_support_button">MAP-RMG támogatása</string>
     <string name="donate_no_browser">Nincs telepített böngésző az adományozási oldal megnyitásához</string>
     <string name="settings_version">Verzió</string>
-    <string name="settings_version_line">Vela %1$s (build %2$d)</string>
+    <string name="settings_version_line">MAP-RMG %1$s (build %2$d)</string>
     <string name="settings_installer_play">Telepítette: %1$s. Ez a telepítés Android Auto-hoz van beállítva; egy alkalmazáson belüli frissítés ezt visszacsinálná, ezért ugyanazzal a telepítővel frissíts.</string>
     <string name="settings_installer_none">Kézzel telepítve (nincs rögzített telepítő). Az Android Auto nem fogja listázni ezt a telepítést.</string>
     <string name="settings_installer_other">Telepítette: %1$s. Az Android Auto nem fogja listázni ezt a telepítést.</string>
@@ -242,7 +242,7 @@
     <string name="settings_voice_show_less">Kevesebb megjelenítése</string>
     <string name="settings_voice_this_voice">ez a hang</string>
     <string name="settings_voice_remove_title">Eltávolítod ezt: %1$s?</string>
-    <string name="settings_voice_remove_body">Ez az egyetlen Vela hangod. A hangos útvonalvezetés egy rendszer szövegfelolvasóra vált vissza (vagy elnémul, ha nincs telepítve egy sem), amíg le nem töltesz egy másikat.</string>
+    <string name="settings_voice_remove_body">Ez az egyetlen MAP-RMG hangod. A hangos útvonalvezetés egy rendszer szövegfelolvasóra vált vissza (vagy elnémul, ha nincs telepítve egy sem), amíg le nem töltesz egy másikat.</string>
     <string name="settings_voice_remove">Eltávolítás</string>
     <string name="settings_voice_gender_female">Női</string>
     <string name="settings_voice_gender_male">Férfi</string>
@@ -434,10 +434,10 @@
     <string name="mapscreen_resume">Folytatás</string>
     <string name="root_not_now">Most nem</string>
     <string name="root_voice_title">Hangos navigációs hang</string>
-    <string name="root_voice_body_intro">A Vela saját hangja teljesen a telefonodon fut: természetes hangos útvonalvezetés, fiók nélkül, külön app nélkül. Ajánlott, egyszeri %1$d MB-os letöltés.</string>
+    <string name="root_voice_body_intro">A MAP-RMG saját hangja teljesen a telefonodon fut: természetes hangos útvonalvezetés, fiók nélkül, külön app nélkül. Ajánlott, egyszeri %1$d MB-os letöltés.</string>
     <string name="root_voice_body_system">Nem szeretnéd? Használj egy már a telefonodon lévő hangot.</string>
     <string name="root_voice_body_outro">Bármikor módosíthatod a Beállítások → Hang menüben.</string>
-    <string name="root_voice_download">Vela Hang letöltése</string>
+    <string name="root_voice_download">MAP-RMG Hang letöltése</string>
     <string name="root_voice_use_system">Rendszerhang használata</string>
     <string name="nav_overview">Útvonal áttekintése</string>
     <string name="nav_maneuver_continue">Tovább egyenesen</string>
@@ -465,9 +465,9 @@
     <string name="welcome_feature_open_source_title">Ingyenes és nyílt forráskódú</string>
     <string name="welcome_feature_open_source_body">GPLv3, GrapheneOS-hez és más degoogled telefonokhoz készült.</string>
     <string name="welcome_get_started">Kezdjük</string>
-    <string name="welcome_donate_title">Tetszik a Vela?</string>
-    <string name="welcome_donate_body">A Vela ingyenes és reklámmentes, szűkös keretből épül. Ha hasznosnak bizonyult, egy kis egyszeri adomány segít fenntartani. Teljesen opcionális, és csak most kérdezzük meg. A Beállítások menüben mindig van egy Támogatás pont is.</string>
-    <string name="welcome_donate_confirm">Vela támogatása</string>
+    <string name="welcome_donate_title">Tetszik a MAP-RMG?</string>
+    <string name="welcome_donate_body">A MAP-RMG ingyenes és reklámmentes, szűkös keretből épül. Ha hasznosnak bizonyult, egy kis egyszeri adomány segít fenntartani. Teljesen opcionális, és csak most kérdezzük meg. A Beállítások menüben mindig van egy Támogatás pont is.</string>
+    <string name="welcome_donate_confirm">MAP-RMG támogatása</string>
     <string name="welcome_donate_dismiss">Talán később</string>
     <string name="search_close_cd">Keresés bezárása</string>
     <string name="search_fill_cd">Beírás a keresőmezőbe</string>
@@ -507,15 +507,15 @@
     <string name="mapvm_resume_failed">Nem sikerült folytatni a navigációt</string>
     <string name="mapvm_no_track_to_replay">Ahhoz az úthoz nincs visszajátszható nyomvonal</string>
     <string name="mapvm_replaying">%1$s visszajátszása…</string>
-    <string name="mapvm_export_saved_subject">Vela mentett helyek (%1$d)</string>
+    <string name="mapvm_export_saved_subject">MAP-RMG mentett helyek (%1$d)</string>
     <string name="mapvm_export_saved_chooser">Mentett helyek exportálása</string>
-    <string name="mapvm_export_trip_subject">Vela út: %1$s (%2$d pont)</string>
+    <string name="mapvm_export_trip_subject">MAP-RMG út: %1$s (%2$d pont)</string>
     <string name="mapvm_share_trip_chooser">Út megosztása</string>
     <string name="mapvm_voice_sample">400 méter múlva fordulj jobbra a Fő utcára.</string>
     <string name="mapvm_not_enough_space">Nincs elég szabad hely ehhez: %1$s (%2$d MB)</string>
     <string name="mapvm_voice_downloaded">%1$s letöltve</string>
     <string name="mapvm_voice_download_failed">%1$s letöltése sikertelen</string>
-    <string name="mapvm_vela_voice_removed">Vela Hang eltávolítva</string>
+    <string name="mapvm_vela_voice_removed">MAP-RMG Hang eltávolítva</string>
     <string name="mapvm_opening_installer">Telepítő megnyitása ehhez: %1$s…</string>
     <string name="mapvm_pan_to_area_first">Nyisd meg a térképet és mozogj egy területre először</string>
     <string name="mapvm_offline_routing_ready">Offline útvonaltervezés kész: %1$s</string>
@@ -536,18 +536,18 @@
     <string name="navservice_channel_name">Navigáció</string>
     <string name="navservice_channel_turns_name">Hangos kanyar-figyelmeztetések</string>
     <string name="navservice_notif_eta">Érkezés: %1$s</string>
-    <string name="update_available_title">Elérhető a Vela %1$s</string>
+    <string name="update_available_title">Elérhető a MAP-RMG %1$s</string>
     <string name="update_downloading">Letöltés… %1$d%%</string>
     <string name="update_later">Most nem</string>
     <string name="update_install">Frissítés</string>
     <string name="update_download_failed">A frissítés letöltése sikertelen. Próbáld újra később.</string>
-    <string name="update_car_title">Ezzel a frissítéssel a Vela eltűnik az Android Auto-ból</string>
-    <string name="update_car_body">A Vela úgy lett telepítve, ahogy az Android Auto elfogadja. Ha itt telepíted ezt a frissítést, az felülírja ezt, és az autó addig nem listázza a Velát, amíg a fájlt azzal az eszközzel nem telepíted, amelyet először is használtál (AAEnabler, King Installer).\n\nMentsd el a fájlt, és telepítsd úgy, hogy az autóban is megmaradjon.</string>
+    <string name="update_car_title">Ezzel a frissítéssel a MAP-RMG eltűnik az Android Auto-ból</string>
+    <string name="update_car_body">A MAP-RMG úgy lett telepítve, ahogy az Android Auto elfogadja. Ha itt telepíted ezt a frissítést, az felülírja ezt, és az autó addig nem listázza a Velát, amíg a fájlt azzal az eszközzel nem telepíted, amelyet először is használtál (AAEnabler, King Installer).\n\nMentsd el a fájlt, és telepítsd úgy, hogy az autóban is megmaradjon.</string>
     <string name="update_car_save">Fájl mentése</string>
     <string name="update_car_anyway">Frissítés mégis</string>
     <string name="download_notif_channel">Letöltések</string>
     <string name="download_notif_title">%1$s letöltése</string>
-    <string name="download_label_update">Vela frissítés</string>
+    <string name="download_label_update">MAP-RMG frissítés</string>
     <string name="download_label_map_data">térképadat</string>
     <string name="download_label_offline_places">offline helyek</string>
     <string name="map_area_downloading">Ez a terület mentése offline használatra · %1$d%%</string>
@@ -607,7 +607,7 @@
     <string name="map_parking_earlier">Korábbi helyek</string>
     <string name="map_parking_clear">Parkolás törlése</string>
     <string name="map_parking_moved">Parkolás áthelyezve ide</string>
-    <string name="map_import_needs_google">Megosztott Google Maps-lista nem nyitható meg, amíg a Vela Google nélkül fut.</string>
+    <string name="map_import_needs_google">Megosztott Google Maps-lista nem nyitható meg, amíg a MAP-RMG Google nélkül fut.</string>
     <string name="map_link_needs_google">A \"Megosztott Google Maps-linkek megnyitása\" ki van kapcsolva a Beállítások &gt; Adatvédelem alatt.</string>
     <string name="map_link_unreadable">Nem sikerült megnyitni ezt a linket.</string>
     <string name="settings_performance">Teljesítmény</string>
@@ -616,9 +616,9 @@
     <string name="settings_full_place_load">Minden fotó és vélemény betöltése</string>
     <string name="settings_full_place_load_hint">Kikapcsolva egy hely az első néhány fotót és a vélemények első oldalát tölti be, a többit a További fotók vagy az Összes vélemény hozza. Bekapcsolva minden megnyitott hely a teljes fotógalériáját és legfeljebb 50 véleményt betölt, ami lassabb, és sokkal több kérést küld a Google-nak.</string>
     <string name="settings_speech_preload">Hangkeresés betöltése indításkor</string>
-    <string name="settings_speech_preload_hint">A Vela megnyitásakor betölti a hangkeresési modellt, így a mikrofon azonnal figyel. Kb. 300 MB-ot foglal, amíg el nem telik két csendes perc. Kikapcsolva akkor töltődik be, amikor a keresőmezőbe koppintasz. Alapból be van kapcsolva a kb. 8 GB vagy több memóriával rendelkező telefonokon.</string>
+    <string name="settings_speech_preload_hint">A MAP-RMG megnyitásakor betölti a hangkeresési modellt, így a mikrofon azonnal figyel. Kb. 300 MB-ot foglal, amíg el nem telik két csendes perc. Kikapcsolva akkor töltődik be, amikor a keresőmezőbe koppintasz. Alapból be van kapcsolva a kb. 8 GB vagy több memóriával rendelkező telefonokon.</string>
     <string name="settings_google_free_links">Megosztott Google Maps-linkek megnyitása</string>
-    <string name="settings_google_free_links_hint">Egy rövid Google Maps-link (maps.app.goo.gl) nem árulja el, hová mutat. Ha ez be van kapcsolva, a Vela egyszer, sütik nélkül megkérdezi a Google linkrövidítőjét, és a nyílt forrásokkal nyitja meg a helyet. A teljes google.com/maps linkek kérdezés nélkül megnyílnak. A megosztott listákhoz továbbra is Google kell.</string>
+    <string name="settings_google_free_links_hint">Egy rövid Google Maps-link (maps.app.goo.gl) nem árulja el, hová mutat. Ha ez be van kapcsolva, a MAP-RMG egyszer, sütik nélkül megkérdezi a Google linkrövidítőjét, és a nyílt forrásokkal nyitja meg a helyet. A teljes google.com/maps linkek kérdezés nélkül megnyílnak. A megosztott listákhoz továbbra is Google kell.</string>
     <string name="map_import_failed">Nem sikerült importálni azt a listát. Ellenőrizd a linket és próbáld újra.</string>
     <string name="place_clear_parking">Parkolás törlése</string>
     <string name="parking_history_title">Parkolási előzmények</string>
@@ -659,13 +659,13 @@
     <string name="settings_voice_volume_normal">Normál</string>
     <string name="settings_voice_volume_louder">Hangosabb</string>
     <string name="settings_voice_volume_loudest">Leghangosabb</string>
-    <string name="settings_voice_volume_hint">Milyen hangosan szól a hangos útvonalvezetés a médialejátszás felett. A hangosabb szintek csak a Vela hangra vonatkoznak; a rendszerhangok csak halkíthatók.</string>
-    <string name="place_avoid_not_honored">Ezek az útvonalak továbbra is tartalmazhatnak díjköteles utakat, autópályákat vagy kompokat: a Google nem volt elérhető a kikerülésükhöz, a nyílt útvonaltervező pedig erre nem képes. Letöltött területen a Vela offline is elkerüli őket.</string>
+    <string name="settings_voice_volume_hint">Milyen hangosan szól a hangos útvonalvezetés a médialejátszás felett. A hangosabb szintek csak a MAP-RMG hangra vonatkoznak; a rendszerhangok csak halkíthatók.</string>
+    <string name="place_avoid_not_honored">Ezek az útvonalak továbbra is tartalmazhatnak díjköteles utakat, autópályákat vagy kompokat: a Google nem volt elérhető a kikerülésükhöz, a nyílt útvonaltervező pedig erre nem képes. Letöltött területen a MAP-RMG offline is elkerüli őket.</string>
     <string name="settings_lists_export_hint">Mentsd el a listáidat egy fájlba, vagy állítsd vissza egy másik eszközön.</string>
     <string name="settings_lists_imported">%1$d lista importálva</string>
     <string name="settings_places_imported">%1$d hely importálva</string>
     <string name="settings_no_lists">Még nincs exportálandó lista</string>
-    <string name="mapvm_export_lists_subject">Vela listák (%1$d)</string>
+    <string name="mapvm_export_lists_subject">MAP-RMG listák (%1$d)</string>
     <string name="mapvm_export_lists_chooser">Listák exportálása</string>
     <string name="lists_empty_hint">Még nincs lista. Koppints az Újra egy létrehozásához, vagy ments el egy helyet az oldaláról.</string>
     <plurals name="lists_place_count">
@@ -676,16 +676,16 @@
     <string name="settings_developer">Fejlesztői</string>
     <string name="settings_developer_hint">Eszközök bemutatókhoz, képernyőképekhez és teszteléshez. Valódi használathoz kapcsold ki mindet.</string>
     <string name="settings_browse_voices">Hangok böngészése</string>
-    <string name="settings_browse_voices_hint">Töltsd le és válts a Vela on-device hangjai között.</string>
+    <string name="settings_browse_voices_hint">Töltsd le és válts a MAP-RMG on-device hangjai között.</string>
     <string name="voice_capture_listening">Hallgatás…</string>
     <string name="voice_capture_starting">Előkészítés…</string>
     <string name="voice_capture_done">Kész</string>
-    <string name="mapvm_asr_ready">A Vela Hang készen áll</string>
+    <string name="mapvm_asr_ready">A MAP-RMG Hang készen áll</string>
     <string name="mapvm_asr_download_failed">Nem sikerült letölteni a hangmodellt. Ellenőrizd a kapcsolatot és próbáld újra.</string>
     <string name="mapvm_closing_soon">%1$s ekkor zár: %2$s, te pedig kb. %3$s körül érkezel</string>
     <string name="mapvm_closing_before_arrival">%1$s ekkor zár: %2$s, mielőtt kb. %3$s körül megérkeznél</string>
-    <string name="settings_voice_search_model">Vela Hang</string>
-    <string name="settings_voice_search_model_hint">A Vela Hang beszédet alakít kereséssé közvetlenül a telefonodon: nincs szükség másik appra, és semmi nem kerül feltöltésre. Egyszeri %1$d MB-os letöltés.</string>
+    <string name="settings_voice_search_model">MAP-RMG Hang</string>
+    <string name="settings_voice_search_model_hint">A MAP-RMG Hang beszédet alakít kereséssé közvetlenül a telefonodon: nincs szükség másik appra, és semmi nem kerül feltöltésre. Egyszeri %1$d MB-os letöltés.</string>
     <string name="settings_voice_search_download">Letöltés (%1$d MB)</string>
     <string name="settings_voice_search_remove">Eltávolítás</string>
     <string name="settings_voice_search_downloading">Letöltés… %1$d%%</string>
@@ -693,20 +693,20 @@
     <string name="settings_asr_engines_title">On-device felismerő motor</string>
     <string name="settings_asr_engines_hint">A beszéd közvetlenül a telefonodon válik kereséssé: nincs szükség másik appra, és semmi nem kerül feltöltésre. Tölts le egy vagy több motort, és válaszd ki, melyiket használja a mikrofon.</string>
     <string name="settings_asr_engine_meta">%1$s · %2$d MB</string>
-    <string name="settings_asr_langs_whisper">Minden nyelv, amit a Vela támogat</string>
+    <string name="settings_asr_langs_whisper">Minden nyelv, amit a MAP-RMG támogat</string>
     <string name="settings_asr_langs_sensevoice">Angol, kínai, japán, koreai, kantoni</string>
     <string name="settings_asr_langs_moonshine">Csak angol</string>
     <string name="settings_asr_active">Aktív</string>
     <string name="settings_asr_use">Használat</string>
     <string name="settings_voice_search_engine_title">Amikor a mikrofonra koppintasz</string>
-    <string name="settings_voice_search_engine_auto">Vela Hang</string>
+    <string name="settings_voice_search_engine_auto">MAP-RMG Hang</string>
     <string name="settings_voice_search_engine_default">Android alapértelmezett</string>
     <string name="settings_voice_search_engine_system">Másik hangalkalmazás</string>
     <string name="map_asr_offer_title">Hangkeresés</string>
-    <string name="map_asr_offer_body">Töltsd le a Vela Hangot, hogy hangosan kereshess. Teljesen a telefonodon fut, és semmit nem tölt fel.</string>
-    <string name="map_asr_downloading">Vela Hang mikrofon letöltése · %1$d%%</string>
-    <string name="map_asr_installing">Vela Hang mikrofon telepítése…</string>
-    <string name="map_asr_waiting">Vela Hang mikrofon · a hangra vár</string>
+    <string name="map_asr_offer_body">Töltsd le a MAP-RMG Hangot, hogy hangosan kereshess. Teljesen a telefonodon fut, és semmit nem tölt fel.</string>
+    <string name="map_asr_downloading">MAP-RMG Hang mikrofon letöltése · %1$d%%</string>
+    <string name="map_asr_installing">MAP-RMG Hang mikrofon telepítése…</string>
+    <string name="map_asr_waiting">MAP-RMG Hang mikrofon · a hangra vár</string>
     <string name="mapscreen_filter_top_rated">4,0★</string>
     <string name="mapscreen_section_recent_searches">Legutóbbi keresések</string>
     <string name="mapscreen_clear_recent_searches">Legutóbbi keresések törlése</string>
@@ -723,7 +723,7 @@
     <string name="root_voice_mic_desc">Diktáld be a kereséseket gépelés nélkül. Enélkül a mikrofon a Google-t használja. Egyszeri %1$d MB-os letöltés.</string>
     <string name="root_voice_none_picked">Előbb pipálj be egy opciót, vagy válaszd a Most nem lehetőséget.</string>
     <string name="root_offline_title">Offline térképek</string>
-    <string name="root_offline_body">A Vela a Google-től kapja a helyeket, kereséseket és útvonalakat, így jelzés nélkül csak a letöltött területek fognak működni. Állíts be most egy területet, hogy fel legyél készülve, ha elveszíted a szolgáltatást.</string>
+    <string name="root_offline_body">A MAP-RMG a Google-től kapja a helyeket, kereséseket és útvonalakat, így jelzés nélkül csak a letöltött területek fognak működni. Állíts be most egy területet, hogy fel legyél készülve, ha elveszíted a szolgáltatást.</string>
     <string name="root_offline_setup">Offline beállítása</string>
     <string name="mapvm_stop_added">Megálló hozzáadva</string>
     <string name="voice_error_title">A hangkeresés nem indult el</string>
@@ -735,14 +735,14 @@
     <string name="voice_error_recording">A felvétel váratlanul leállt. Próbáld újra.</string>
     <string name="no_browser_installed">Az eszközödön nincs böngésző telepítve</string>
     <string name="nav_precise_title">Pontos helyzet szükséges</string>
-    <string name="nav_precise_body">Az útvonalvezetés GPS-szel követ, amihez pontos helyzet kell. A Vela jelenleg csak a hozzávetőleges körzetedet ismeri.</string>
+    <string name="nav_precise_body">Az útvonalvezetés GPS-szel követ, amihez pontos helyzet kell. A MAP-RMG jelenleg csak a hozzávetőleges körzetedet ismeri.</string>
     <string name="nav_precise_allow">Pontos engedélyezése</string>
     <string name="nav_precise_toast">Az útvonalvezetéshez pontos helyzet szükséges</string>
     <string name="loc_off_title">A helyadatok ki vannak kapcsolva</string>
     <string name="loc_off_body">A Velának nincs helyadat-hozzáférése. Engedélyezheted a rendszerbeállításokban.</string>
     <string name="loc_off_settings">Beállítások megnyitása</string>
     <string name="loc_approx_title">Hozzávetőleges helyzet</string>
-    <string name="loc_approx_body">A Vela csak a hozzávetőleges körzetedet ismeri, nem a pontos helyzetedet. A térkép egy tág kört mutat pont helyett, és a hangos útvonalvezetés nem fog működni. Bármikor átválthatsz pontos helyzetre.</string>
+    <string name="loc_approx_body">A MAP-RMG csak a hozzávetőleges körzetedet ismeri, nem a pontos helyzetedet. A térkép egy tág kört mutat pont helyett, és a hangos útvonalvezetés nem fog működni. Bármikor átválthatsz pontos helyzetre.</string>
     <string name="loc_approx_allow">Pontos engedélyezése</string>
     <string name="loc_approx_keep">Hozzávetőleges megtartása</string>
     <string name="notif_ask_title">Kihagyod az értesítéseket?</string>
@@ -754,7 +754,7 @@
     <string name="settings_map_colors">Térkép színei</string>
     <string name="settings_map_colors_modern">Modern</string>
     <string name="settings_map_colors_classic">Klasszikus</string>
-    <string name="settings_map_colors_hint">A Modern a Google app jelenlegi palettáját követi. A Klasszikus a Vela korábbi kinézete: fehér utak, sárga autópályák, valódi zöldek. A kettő sötét módban különbözik leginkább jelenleg.</string>
+    <string name="settings_map_colors_hint">A Modern a Google app jelenlegi palettáját követi. A Klasszikus a MAP-RMG korábbi kinézete: fehér utak, sárga autópályák, valódi zöldek. A kettő sötét módban különbözik leginkább jelenleg.</string>
     <string name="map_satellite_toggle">Műholdas nézet</string>
     <string name="map_layers">Rétegek</string>
     <string name="settings_layers_button">Rétegek gomb megjelenítése</string>
@@ -780,7 +780,7 @@
     <string name="settings_softkeys">Hardveres funkciógombok</string>
     <string name="settings_softkeys_hint">A térkép nagyítása a telefon két funkciógombjával. Csak nyomógombos telefonokhoz.</string>
     <string name="settings_softkeys_calibrate">Funkciógombok kalibrálása</string>
-    <string name="settings_softkeys_calibrate_hint">Ha a funkciógombok nem nagyítanak, koppints ide, majd nyomd meg a bal, aztán a jobb funkciógombot, hogy a Vela megtanulja a kódjaikat.</string>
+    <string name="settings_softkeys_calibrate_hint">Ha a funkciógombok nem nagyítanak, koppints ide, majd nyomd meg a bal, aztán a jobb funkciógombot, hogy a MAP-RMG megtanulja a kódjaikat.</string>
     <string name="map_zoom_mode_hint">Nagyítás: ◀ ki · be ▶ VISSZA a kilépéshez</string>
     <string name="map_move_mode_hint">Mozgatás: ◀ ▲ ▼ ▶ VISSZA a kilépéshez</string>
     <string name="softkey_options">Beállítások</string>
@@ -827,7 +827,7 @@
     <string name="nav_flock_cameras_ahead">Rendszámfelismerő kamerák előttünk</string>
     <string name="settings_texture_render_auto_hint">Automatikusan bekapcsolt ezen: %1$s, miután a térkép kétszer összeomlott induláskor. Ha a térkép kikapcsolva is működik, hagyd kikapcsolva: lassabb, és vezetés közben szaggathatja a térképet. Az alkalmazás újraindítása szükséges hozzá.</string>
     <string name="settings_offline_places_with_downloads">Helyek a letöltésekkel együtt</string>
-    <string name="settings_offline_places_with_downloads_hint">Egy régió letöltése a hozzá tartozó Vela-helyadatot is elhozza, így az üzletek jelzés nélkül is látszanak a térképen. Egy nagy államnál nagyjából fél gigabájt. Ki = a helyek csak online töltődnek be.</string>
+    <string name="settings_offline_places_with_downloads_hint">Egy régió letöltése a hozzá tartozó MAP-RMG-helyadatot is elhozza, így az üzletek jelzés nélkül is látszanak a térképen. Egy nagy államnál nagyjából fél gigabájt. Ki = a helyek csak online töltődnek be.</string>
     <string name="settings_routing_size_installed_here">Telepítve kb. %1$s · lefedi a helyzetedet</string>
     <string name="settings_routing_size_installed">Telepítve kb. %1$s</string>
     <string name="settings_storage_title">Tárhely</string>
@@ -846,7 +846,7 @@
     <string name="mapvm_offline_all_deleted">Offline adatok törölve</string>
     <string name="settings_import_nothing_new">A fájlban minden már el van mentve.</string>
     <string name="settings_import_unreadable">Azt a fájlt nem sikerült megnyitni.</string>
-    <string name="settings_import_wrong_format">Nem található hely abban a fájlban. A Vela a saját exportjait olvassa, valamint más térképappokból mentett GPX, KML vagy GeoJSON fájlokat.</string>
+    <string name="settings_import_wrong_format">Nem található hely abban a fájlban. A MAP-RMG a saját exportjait olvassa, valamint más térképappokból mentett GPX, KML vagy GeoJSON fájlokat.</string>
     <string name="settings_import_wrong_format_named">Nem található hely abban a(z) %1$s fájlban.</string>
     <string name="settings_import_no_picker">Ezen az eszközön nincs fájlválasztó, így nem lehet fájlt kiválasztani.</string>
     <string name="settings_house_numbers">Házszámok</string>
@@ -855,18 +855,18 @@
     <string name="settings_house_numbers_far">Távolabbról is</string>
     <string name="settings_house_numbers_hint">A házszámok az OpenStreetMap-ből, az Egyesült Államokban pedig az OpenAddresses-ből származnak. Amelyik épülethez egyikben sincs szám, annál nem jelenik meg semmi, még akkor sem, ha a keresés a Google-n keresztül továbbra is megtalálja a címet.</string>
     <string name="settings_places_source">Helyikonok a térképen</string>
-    <string name="settings_places_source_open">Vela-adat</string>
+    <string name="settings_places_source_open">MAP-RMG-adat</string>
     <string name="settings_places_source_google">Google</string>
     <string name="settings_places_source_both">Mindkettő</string>
-    <string name="settings_places_source_open_hint">Az ikonok a Vela saját adataiból származnak. A térkép mozgatása soha nem fordul a Google-höz, és offline is működik.</string>
+    <string name="settings_places_source_open_hint">Az ikonok a MAP-RMG saját adataiból származnak. A térkép mozgatása soha nem fordul a Google-höz, és offline is működik.</string>
     <string name="settings_places_source_google_hint">Az ikonok a Google-től származnak. Minden mozgatás elküldi a térképpozíciódat a Google-nek, és offline semmi nem rajzolódik ki.</string>
-    <string name="settings_places_source_both_hint">A Vela ikonjai, és amint abbahagyod a mozgatást, mindaz, amit a Google ezen felül ismer.</string>
+    <string name="settings_places_source_both_hint">A MAP-RMG ikonjai, és amint abbahagyod a mozgatást, mindaz, amit a Google ezen felül ismer.</string>
     <string name="settings_places_source_more">Tudj meg többet</string>
     <string name="settings_places_source_more_credit">Overture Maps</string>
     <string name="settings_places_lookup">Megkoppintott helyek keresése a Google-ben</string>
-    <string name="settings_places_lookup_hint">Egy helyre koppintva a Vela lekéri a nyitvatartását, véleményeit és fotóit a Google-től, és megjegyzi a találatot, így a következő koppintás azonnali. Ki = a megkoppintott hely csak azt mutatja, ami a Vela adatában szerepel (név, típus, cím, telefonszám, weboldal), és semmi nem jut el a koppintásról a Google-höz. A keresés és az útvonaltervezés továbbra is a Google-t használja.</string>
-    <string name="settings_places_source_more_title">Honnan származik a Vela helyadata</string>
-    <string name="settings_places_source_more_body">A Vela helyadata az Overture Maps, egy nyílt üzleti adatbázis, amit a Meta, a Microsoft és mások tartanak karban. A Vela a saját GitHub-tárolójából szolgálja ki, így semmi nem jut el a Metához vagy a Google-höz arról, hol nézelődsz.\n\nBöngészés közben folyamatosan töltődik, és egy régióval együtt offline használatra is letölthető. Ahol a Velának még nincs adata egy területről, ott a térkép a Google-re vált vissza.\n\nA keresés, a helyek részletei, a nyitvatartás, a vélemények és a fotók mindig a Google-től jönnek, bármelyik lehetőséget választod.</string>
+    <string name="settings_places_lookup_hint">Egy helyre koppintva a MAP-RMG lekéri a nyitvatartását, véleményeit és fotóit a Google-től, és megjegyzi a találatot, így a következő koppintás azonnali. Ki = a megkoppintott hely csak azt mutatja, ami a MAP-RMG adatában szerepel (név, típus, cím, telefonszám, weboldal), és semmi nem jut el a koppintásról a Google-höz. A keresés és az útvonaltervezés továbbra is a Google-t használja.</string>
+    <string name="settings_places_source_more_title">Honnan származik a MAP-RMG helyadata</string>
+    <string name="settings_places_source_more_body">A MAP-RMG helyadata az Overture Maps, egy nyílt üzleti adatbázis, amit a Meta, a Microsoft és mások tartanak karban. A MAP-RMG a saját GitHub-tárolójából szolgálja ki, így semmi nem jut el a Metához vagy a Google-höz arról, hol nézelődsz.\n\nBöngészés közben folyamatosan töltődik, és egy régióval együtt offline használatra is letölthető. Ahol a Velának még nincs adata egy területről, ott a térkép a Google-re vált vissza.\n\nA keresés, a helyek részletei, a nyitvatartás, a vélemények és a fotók mindig a Google-től jönnek, bármelyik lehetőséget választod.</string>
     <string name="settings_clear_history">Előzmények törlése</string>
     <string name="settings_clear_history_hint">Legutóbbi keresések, legutóbbi helyek, parkolási előzmények és rögzített utak. A mentett helyek és listák megmaradnak.</string>
     <string name="settings_clear_history_action">Törlés</string>
@@ -899,7 +899,7 @@
     <string name="settings_trip_batch_none">Minden kijelölt út rövidebb a levágási távolságnál, így nem marad mit megosztani. Próbálj kisebbet.</string>
     <string name="settings_trip_batch_confirm">Zip megosztása</string>
     <string name="settings_name_trips">Minden út elnevezése mentéskor</string>
-    <string name="settings_name_trips_hint">Egy rögzített út végén a Vela megkérdezi, minek nevezd el. Alapból kikapcsolva; egy utat később bármikor átnevezhetsz a lenti listában.</string>
+    <string name="settings_name_trips_hint">Egy rögzített út végén a MAP-RMG megkérdezi, minek nevezd el. Alapból kikapcsolva; egy utat később bármikor átnevezhetsz a lenti listában.</string>
     <string name="trip_name_prompt_title">Nevezd el ezt az utat</string>
     <string name="trip_name_prompt_save">Név mentése</string>
     <string name="trip_name_prompt_skip">Most nem</string>
@@ -921,8 +921,8 @@
     <string name="whatsnew_full_notes">Teljes kiadási jegyzet</string>
     <string name="settings_whatsnew">Újdonságok ebben a verzióban</string>
     <string name="settings_whatsnew_hint">A jelenleg használt build kiadási jegyzete. Minden frissítés után egyszer automatikusan is megjelenik.</string>
-    <string name="mapvm_export_trips_subject">Vela utak: %1$d út (%2$d pont)</string>
-    <string name="mapvm_export_trip_scrubbed_subject">Vela út: %1$d pont, levágott végekkel</string>
+    <string name="mapvm_export_trips_subject">MAP-RMG utak: %1$d út (%2$d pont)</string>
+    <string name="mapvm_export_trip_scrubbed_subject">MAP-RMG út: %1$d pont, levágott végekkel</string>
     <string name="mapvm_area_uses_pack">Ennek a területnek a helyei és címei a(z) %1$s letöltésével érkeznek</string>
     <string name="place_transit_prefer">Előnyben részesített</string>
     <string name="place_transit_route">Útvonal</string>
@@ -971,7 +971,7 @@
     <string name="settings_prefer_buttons">Gombok a húzások helyett</string>
     <string name="settings_prefer_buttons_hint">Meghagy egy gombot azokhoz a műveletekhez, amelyekhez gesztus is tartozik: nagyítás és kicsinyítés gombok a térképen, valamint a lépéslista gomb a navigációs sávon. Érintőképernyő nélküli telefonokon mindig bekapcsolva.</string>
     <string name="settings_faster_auto">Gyorsabb útvonalak automatikus választása</string>
-    <string name="settings_faster_auto_hint">Ha vezetés közben gyorsabb útvonal adódik, a Vela átvált rá, ha néhány másodpercen belül nem válaszolsz. Ha ezt kikapcsolod, a megválaszolatlan ajánlat inkább eltűnik. Az ajánlat egyik esetben sem marad várakozva a térképen.</string>
+    <string name="settings_faster_auto_hint">Ha vezetés közben gyorsabb útvonal adódik, a MAP-RMG átvált rá, ha néhány másodpercen belül nem válaszolsz. Ha ezt kikapcsolod, a megválaszolatlan ajánlat inkább eltűnik. Az ajánlat egyik esetben sem marad várakozva a térképen.</string>
     <string name="settings_pause_in_bar">Szünet gomb a navigációs sávon</string>
     <string name="settings_pause_in_bar_hint">A szünet gombot az út adatai mellé teszi, ahol a lépéslista gomb lenne, a némítást pedig a térképgomboknál hagyja. Kikapcsolva mindkettő egy gombon van a térkép jobb szélén. A lépéslistát mindkét esetben felfelé húzással vagy a nyíllal nyithatod meg.</string>
     <string name="settings_pause_in_bar_hint_buttons">Ha a \"Gombok a húzások helyett\" be van kapcsolva, a sávon egymás mellett van a szünet és a lépéslista gomb, az út adatai pedig összébb húzódnak.</string>
@@ -981,9 +981,9 @@
     <string name="settings_bike_safe">A kerékpáros útvonalak a bringasávokat és a csendes utcákat részesítik előnyben</string>
     <string name="settings_bike_safe_hint">A kerékpáros útvonalak a kijelölt kerékpárutakat, a bringasávokat és a lakóutcákat részesítik előnyben a leggyorsabb úttal szemben, ahogy a Google is tervez kerékpárral. Ahol van letöltött offline térképed, azt használja, egyébként egy nyílt online útvonaltervezőt. Kikapcsolva az egyszerű leggyorsabb kerékpáros útvonalat adja.</string>
     <string name="settings_route_picker">Google-stílusú útvonalválasztó</string>
-    <string name="settings_route_picker_hint">Egyszerre egy útvonalat mutat, a többit egy koppintással éred el, az idejük a térképen látszik, az Indítás gomb pedig alul van. Kapcsold ki a Vela klasszikus paneljéhez, amely minden útvonalat egyszerre listáz.</string>
+    <string name="settings_route_picker_hint">Egyszerre egy útvonalat mutat, a többit egy koppintással éred el, az idejük a térképen látszik, az Indítás gomb pedig alul van. Kapcsold ki a MAP-RMG klasszikus paneljéhez, amely minden útvonalat egyszerre listáz.</string>
     <string name="settings_route_bar">Előtted lévő út sávja</string>
-    <string name="settings_route_bar_hint">Egy sáv a térkép mellett, ami a forgalmat és az útvonalad hátralévő részén következő dolgokat mutatja. Csak azt jeleníti meg, amit a Vela tényleg tud: torlódás, lámpák, stoptáblák, vasúti átjárók, fekvőrendőrök és térfigyelő kamerák. Csak álló tájolásban.</string>
+    <string name="settings_route_bar_hint">Egy sáv a térkép mellett, ami a forgalmat és az útvonalad hátralévő részén következő dolgokat mutatja. Csak azt jeleníti meg, amit a MAP-RMG tényleg tud: torlódás, lámpák, stoptáblák, vasúti átjárók, fekvőrendőrök és térfigyelő kamerák. Csak álló tájolásban.</string>
     <string name="settings_font">Betűtípus</string>
     <string name="settings_font_system">Rendszer betűtípusa</string>
     <string name="settings_font_choose">Betűtípusfájl kiválasztása…</string>
@@ -1025,7 +1025,7 @@
     <string name="settings_photos_on_tap">Fotók betöltése csak koppintásra</string>
     <string name="settings_photos_on_tap_hint">A helyoldalon egy Fotók megjelenítése gomb jelenik meg a betöltés helyett. Helyenként egy Google-kérést takarít meg.</string>
     <string name="settings_details_retry">Várakozás a forgalmas időszakokra</string>
-    <string name="settings_details_retry_hint">A Google az első válaszból gyakran kihagyja a forgalmas időszakokat, ezért a Vela legfeljebb még kétszer rákérdez. Ki = helyenként egy kérés, és a forgalmas időszakok hiányozhatnak.</string>
+    <string name="settings_details_retry_hint">A Google az első válaszból gyakran kihagyja a forgalmas időszakokat, ezért a MAP-RMG legfeljebb még kétszer rákérdez. Ki = helyenként egy kérés, és a forgalmas időszakok hiányozhatnak.</string>
     <string name="place_show_photos">Fotók megjelenítése</string>
     <string name="place_no_photos">Még nincsenek fotók</string>
     <string name="place_all_n_reviews_open">Mind a(z) %1$d értékelés</string>
@@ -1234,7 +1234,7 @@
     <string name="street_view_offline">Az Utcaképhez itt kapcsolat kell: ezt a pontot még nem nézted meg</string>
     <string name="mapscreen_other_locations">További helyszínek megjelenítése</string>
     <string name="settings_other_locations_auto">További helyszínek automatikus keresése</string>
-    <string name="settings_other_locations_auto_hint">Ha egy névre keresés egyetlen helyet talál, a Vela a Google-től a többi helyszínét is lekéri. Ez minden ilyen keresésnél néhány további kérés a Google felé. Kikapcsolva a „További helyszínek megjelenítése” gomb teszi ezt meg, amikor rákoppintasz.</string>
+    <string name="settings_other_locations_auto_hint">Ha egy névre keresés egyetlen helyet talál, a MAP-RMG a Google-től a többi helyszínét is lekéri. Ez minden ilyen keresésnél néhány további kérés a Google felé. Kikapcsolva a „További helyszínek megjelenítése” gomb teszi ezt meg, amikor rákoppintasz.</string>
     <string name="mapscreen_view_map">Térkép megtekintése</string>
     <string name="whatsnew_show_after_updates">Újdonságok megjelenítése frissítés után</string>
     <string name="replay_play">Lejátszás</string>
@@ -1280,10 +1280,10 @@
     <string name="settings_map_names_hint">Az átírt neveket gép készíti ott, ahol az OpenStreetMapen nincs angol név, és héberül meg néhány más írásban rosszul olvashatók. Az alkalmazás nyelve és a hang nem változik.</string>
     <string name="settings_project">Projekt</string>
     <string name="settings_project_hint">A forráskód, a hibajelentések és a beszélgetések a GitHubon vannak.</string>
-    <string name="settings_project_github_button">Vela a GitHubon</string>
+    <string name="settings_project_github_button">MAP-RMG a GitHubon</string>
     <string name="mapvm_rechecking_connection">Kapcsolat ellenőrzése…</string>
     <string name="mapvm_back_online">Újra online</string>
-    <string name="mapvm_still_offline">Még mindig offline. A Vela azonnal észreveszi, amint visszatér a kapcsolat.</string>
+    <string name="mapvm_still_offline">Még mindig offline. A MAP-RMG azonnal észreveszi, amint visszatér a kapcsolat.</string>
     <string name="search_offline_recheck">Offline. Koppints az újraellenőrzéshez</string>
     <string name="settings_turn_declutter">Térkép egyszerűsítése kanyarokban</string>
     <string name="settings_turn_declutter_hint">Amíg a térkép elfordul egy kanyarban, csak az utcanevek maradnak rajta. A helyek, táblák és kamerák visszatérnek, amint megnyugszik. Lassabb telefonokon is simán tartja a kanyarokat.</string>
