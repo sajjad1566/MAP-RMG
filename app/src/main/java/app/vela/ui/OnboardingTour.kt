@@ -34,6 +34,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.systemBars
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.windowInsetsPadding
+import androidx.compose.foundation.relocation.bringIntoViewRequester
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -46,6 +47,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -53,6 +55,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusRequester
+import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.foundation.focusable
 import androidx.compose.ui.input.key.Key
@@ -82,6 +85,7 @@ import androidx.compose.ui.unit.dp
 import app.vela.R
 import app.vela.ui.icons.SymOutlined
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 /**
  * The three promo pages a brand-new install sees before anything else (first launch only: the
@@ -337,6 +341,7 @@ private fun SegmentedProgress(page: Int, fill: Float) {
 
 /** The primary button: a filled white pill with a royal-blue label, or the gold pill on the last
  *  page, which is the one that starts the app. */
+@OptIn(androidx.compose.foundation.ExperimentalFoundationApi::class)
 @Composable
 private fun PrimaryButton(
     label: String,
@@ -348,10 +353,18 @@ private fun PrimaryButton(
     val shape = RoundedCornerShape(19.dp)
     val dpadFirst = rememberDpadFirstDevice()
     val requester = remember { FocusRequester() }
+    // The copy column scrolls on a short screen or a landscape TV, so a button that takes focus
+    // (or is focused for the user on a D-pad first device) asks the scroller to show it. Without
+    // this the user could be holding a focused button that is below the fold.
+    val scrollReq = remember { androidx.compose.foundation.relocation.BringIntoViewRequester() }
+    val scope = rememberCoroutineScope()
     LaunchedEffect(dpadFirst) {
         if (!dpadFirst) return@LaunchedEffect
         repeat(40) {
-            if (runCatching { requester.requestFocus() }.isSuccess) return@LaunchedEffect
+            if (runCatching { requester.requestFocus() }.isSuccess) {
+                runCatching { scrollReq.bringIntoView() }
+                return@LaunchedEffect
+            }
             delay(50)
         }
     }
@@ -365,6 +378,13 @@ private fun PrimaryButton(
             .background(if (gold) GoldAccent else Color.White)
             .dpadClickable(onClick = onClick)
             .then(pageKeys(onKeyMove))
+            .bringIntoViewRequester(scrollReq)
+            .onFocusChanged { focus ->
+                if (focus.isFocused) scope.launch {
+                    delay(80)
+                    runCatching { scrollReq.bringIntoView() }
+                }
+            }
             .focusable(),
         contentAlignment = Alignment.Center,
     ) {
