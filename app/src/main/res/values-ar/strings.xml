@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Arabic (العربية) — MAP-RMG's default language.
+<!-- Arabic (العربية): MAP-RMG's default language.
      Generated/maintained against res/values/strings.xml: same keys, same order, same
      section comments, and identical %n$s / %n$d placeholders (tools/check-translations.py
      enforces the last one). Strings marked translatable="false" in the base (brand names,
@@ -1077,7 +1077,7 @@
     <string name="car_location_title">السماح بتحديد الموقع</string>
     <string name="car_location_body">يحتاجه MAP-RMG لعرض موقعك وتقديم الإرشادات</string>
     <string name="car_location_denied">تحديد الموقع معطّل. فعّله لـ MAP-RMG من إعدادات هاتفك.</string>
-    <string name="car_no_route">لا مسار متاح — تحقّق من موقعك</string>
+    <string name="car_no_route">لا مسار متاح: تحقّق من موقعك</string>
     <string name="map_parking_saved">حُفظ موقف السيارة</string>
     <string name="map_parking_no_fix">في انتظار تحديد الموقع</string>
     <string name="map_parking_cleared">أُزيل موقف السيارة</string>

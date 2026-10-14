@@ -2426,7 +2426,7 @@ object RoNavStrings : NavStrings {
 }
 
 /**
- * Arabic (العربية) — RTL, and the language this build ships in by default (AppLocale.DEFAULT_LANGUAGE).
+ * Arabic (العربية): RTL, and the language this build ships in by default (AppLocale.DEFAULT_LANGUAGE).
  * Spoken/banner nav text uses the masculine-singular imperative register Gulf/Levant drivers hear from
  * Google Maps Arabic («انعطف يمينًا», «تابع»). Road and dest NAMES are DATA and are never translated;
  * the templates only decide the word order around them («انعطف يمينًا إلى <شارع>»). Metric in practice,
@@ -2466,7 +2466,7 @@ object ArNavStrings : NavStrings {
         else -> "رقم $n"
     }
 
-    /** «دقيقة واحدة» / «دقيقتان» / «5 دقائق» / «15 دقيقة» — Arabic counts agree in number. */
+    /** «دقيقة واحدة» / «دقيقتان» / «5 دقائق» / «15 دقيقة»: Arabic counts agree in number. */
     private fun minuteWord(n: Int): String = when {
         n == 1 -> "دقيقة واحدة"
         n == 2 -> "دقيقتين"
@@ -2487,7 +2487,7 @@ object ArNavStrings : NavStrings {
             "arrive" -> "وصلت إلى وجهتك"
             "turn", "end of road" -> ("انعطف $m").trim() + onto
             "continue", "new name" -> if (m.isNotBlank() && m != "للأمام") ("انحرف $m").trim() + onto else "تابع$onto"
-            // «اندمج في I 5» — a merge takes «في», not the «إلى» a turn uses.
+            // «اندمج في I 5»: a merge takes «في», not the «إلى» a turn uses.
             "merge" -> "اندمج" + when {
                 dest != null -> " باتجاه $dest"
                 road != null -> " في $road"
@@ -2499,7 +2499,7 @@ object ArNavStrings : NavStrings {
                 else -> "اسلك المنحدر$toward"
             }
             "off ramp" -> if (exitNo != null) "اسلك المخرج $exitNo$toward" else "اسلك المخرج$toward"
-            // «ابقَ على اليمين/اليسار باتجاه X» — the turn adverb would read as "keep slightly right".
+            // «ابقَ على اليمين/اليسار باتجاه X»: the turn adverb would read as "keep slightly right".
             "fork" -> "ابقَ " + forkWord(mod) + toward
             "roundabout", "rotary", "exit roundabout", "exit rotary" -> when {
                 rbExit == null -> "ادخل الدوار$onto"
@@ -2519,7 +2519,7 @@ object ArNavStrings : NavStrings {
     // Arabic has no letter case, so the default's replaceFirstChar(lowercase) is meaningless here.
     override fun lightThen(lead: String, instruction: String): String = "$lead، ثم $instruction"
 
-    // «500 قدم» / «150 مترًا» / «1.2 كيلومتر» — Latin digits, the convention Google Maps Arabic uses.
+    // «500 قدم» / «150 مترًا» / «1.2 كيلومتر»: Latin digits, the convention Google Maps Arabic uses.
     override fun spokenDistance(meters: Double, imperial: Boolean): String = if (imperial) {
         val feet = meters * 3.28084
         if (feet < 800) "${(if (feet < 100) maxOf(10, (feet / 10).roundToInt() * 10) else (feet / 50).roundToInt() * 50)} قدم"

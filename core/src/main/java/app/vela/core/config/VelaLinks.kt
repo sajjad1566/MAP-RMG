@@ -124,10 +124,10 @@ object VelaLinks {
 
     fun repo(): String = get(REPO)
     fun api(path: String): String = get(API) + path
-    /** This project's own repository — the MAP-RMG fork — for links about THIS app (release
+    /** This project's own repository (the MAP-RMG fork) for links about THIS app (release
      *  notes, the update channel). Distinct from [repo]: the data bases above stay upstream. */
     fun appRepo(): String = get(APP_REPO)
-    /** This project's own GitHub API — what the in-app updater asks. */
+    /** This project's own GitHub API: what the in-app updater asks. */
     fun appApi(path: String): String = get(APP_API) + path
     fun release(tag: String, file: String): String = "${get(RELEASES)}/$tag/$file"
     fun raw(path: String): String = get(RAW) + path

@@ -10,7 +10,7 @@ name: MAP-RMG APK
 #
 # Two notes worth keeping:
 #  * The three vendored binaries (the Cronet AAR, the sherpa-onnx AAR, the OsmAnd router jars) are
-#    gitignored and fetched here, falling back to the upstream Vela release that hosts them — the
+#    gitignored and fetched here, falling back to the upstream Vela release that hosts them. The
 #    same arrangement ci.yml uses. A fork's own release 404s, the upstream one answers.
 #  * Signing: without a VELA_KEYSTORE_BASE64 secret this falls back to the debug key (the app is
 #    still installable). Each runner makes a FRESH debug keystore, so builds signed that way
@@ -72,7 +72,7 @@ jobs:
             echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/maprmg-release.jks"
             echo "Decoded the release keystore."
           else
-            echo "No keystore secret — the APK will be debug-signed (installable, not updatable)."
+            echo "No keystore secret: the APK will be debug-signed (installable, not updatable)."
           fi
 
       - name: Fetch the vendored binaries
