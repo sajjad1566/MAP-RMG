@@ -1,0 +1,165 @@
+name: MAP-RMG APK
+
+# The build path for this fork (2026-10-15). Fork Actions is off until it is turned on in
+# Settings → Actions → "Allow all actions"; after that, every push to the MAP-RMG branches below
+# builds a real APK on GitHub's runners and leaves it on the run page under "Artifacts".
+#
+# It exists because the MAP-RMG work happens in an environment with no JDK, no Android SDK and no
+# route to dl.google.com / Maven Central / services.gradle.org, so nothing there can compile. This
+# workflow is the compile + test + package step the phase plan asks for.
+#
+# Two notes worth keeping:
+#  * The three vendored binaries (the Cronet AAR, the sherpa-onnx AAR, the OsmAnd router jars) are
+#    gitignored and fetched here, falling back to the upstream Vela release that hosts them — the
+#    same arrangement ci.yml uses. A fork's own release 404s, the upstream one answers.
+#  * Signing: without a VELA_KEYSTORE_BASE64 secret this falls back to the debug key (the app is
+#    still installable). Each runner makes a FRESH debug keystore, so builds signed that way
+#    cannot install over each other and the in-app updater cannot use them. Add these three
+#    repository secrets to get signed, mutually-updatable builds:
+#      VELA_KEYSTORE_BASE64 (base64 of a .jks), VELA_KEYSTORE_PASSWORD, VELA_KEY_ALIAS
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Also publish the APK as a GitHub release (this is what the in-app updater reads)
+        type: boolean
+        default: false
+  push:
+    branches:
+      - arena/39229671-map-rmg
+      - map-rmg-branding-phase1
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - 'site/**'
+      - 'fdroid/metadata/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: map-rmg-apk-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6 # v6.0.1
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@be39fa834029ff78f1a44aa3bb0819b8fc2bd8fd # v4.0.4
+        with:
+          # platform-tools only: AGP fetches the platform and build-tools it needs itself, and the
+          # full default install drags in the emulator (large, and it has failed CI before).
+          packages: platform-tools
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@0723195856401067f7a2779048b490ace7a47d7c # v5.0.2
+
+      - name: Decode the signing keystore (optional)
+        env:
+          KEYSTORE_B64: ${{ secrets.VELA_KEYSTORE_BASE64 }}
+        run: |
+          if [ -n "$KEYSTORE_B64" ]; then
+            echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/maprmg-release.jks"
+            echo "Decoded the release keystore."
+          else
+            echo "No keystore secret — the APK will be debug-signed (installable, not updatable)."
+          fi
+
+      - name: Fetch the vendored binaries
+        # Not in git, no Maven artifact, hosted on fixed-tag releases: the OsmAnd router + obf
+        # reader (:core's offline routing), the Cronet AAR (Google-host requests), the sherpa-onnx
+        # AAR (the neural voice runtime). This repo's release first, upstream Vela's second.
+        run: |
+          set -e
+          mkdir -p app/libs core/libs
+          for f in osmand-java.jar osmand-shared-jvm.jar gnu-trove-osmand.jar kxml2-vela.jar; do
+            curl -fSL -o "core/libs/$f" \
+              "https://github.com/${{ github.repository }}/releases/download/obf-runtime/$f" \
+            || curl -fSL -o "core/libs/$f" \
+              "https://github.com/PimpinPumpkin/Vela/releases/download/obf-runtime/$f"
+          done
+          test "$(stat -c%s core/libs/osmand-java.jar)" -gt 10000000
+          test "$(stat -c%s core/libs/osmand-shared-jvm.jar)" -gt 1000000
+          test "$(stat -c%s core/libs/gnu-trove-osmand.jar)" -gt 100000
+          test "$(stat -c%s core/libs/kxml2-vela.jar)" -gt 10000
+          v=$(sed -n 's/^vela.cronetVersion=//p' gradle.properties)
+          f="app/libs/cronet-$v.aar"
+          curl -fsSL -o "$f" "https://github.com/${{ github.repository }}/releases/download/cronet-runtime/cronet-$v.aar" \
+          || curl -fsSL -o "$f" "https://github.com/PimpinPumpkin/Vela/releases/download/cronet-runtime/cronet-$v.aar" \
+          || bash scripts/build-cronet-aar.sh "$v" app/libs
+          test "$(stat -c%s "$f")" -gt 10000000
+          curl -fSL -o app/libs/sherpa-onnx-1.13.3.aar \
+            "https://github.com/${{ github.repository }}/releases/download/tts-runtime/sherpa-onnx-1.13.3.aar" \
+          || curl -fSL -o app/libs/sherpa-onnx-1.13.3.aar \
+            "https://github.com/PimpinPumpkin/Vela/releases/download/tts-runtime/sherpa-onnx-1.13.3.aar"
+          test "$(stat -c%s app/libs/sherpa-onnx-1.13.3.aar)" -gt 50000000
+
+      - name: Derive the build version
+        id: ver
+        # The same scale CI uses: versionName 0.5.<run>, versionCode (2000+run)*10. The in-app
+        # updater reads the run out of a `v0.5.<run>` tag and folds the code back with
+        # update/ApkChoice.legacyCode, so this fork's releases update their own installs.
+        run: |
+          RUN="${GITHUB_RUN_NUMBER}"
+          echo "name=0.5.${RUN}" >> "$GITHUB_OUTPUT"
+          echo "code=$(( (2000 + RUN) * 10 ))" >> "$GITHUB_OUTPUT"
+
+      - name: Unit tests (:core and :app)
+        run: ./gradlew :core:test :app:testDebugUnitTest --no-daemon
+
+      - name: Translation check
+        run: python3 tools/check-translations.py
+
+      - name: D-pad static audit
+        run: bash dpad_test_suite/audit_static.sh
+
+      - name: Build the release APK
+        env:
+          VELA_KEYSTORE_PATH: ${{ runner.temp }}/maprmg-release.jks
+          VELA_KEYSTORE_PASSWORD: ${{ secrets.VELA_KEYSTORE_PASSWORD }}
+          VELA_KEY_ALIAS: ${{ secrets.VELA_KEY_ALIAS }}
+        run: >-
+          ./gradlew :app:assembleRelease --no-daemon
+          -PappVersionName=${{ steps.ver.outputs.name }}
+          -PappVersionCode=${{ steps.ver.outputs.code }}
+
+      - name: Stage the APK
+        id: apk
+        run: |
+          APK="$(find app/build/outputs/apk/release -name '*.apk' | head -1)"
+          test -n "$APK"
+          OUT="MAP-RMG-${{ steps.ver.outputs.name }}.apk"
+          cp "$APK" "$OUT"
+          echo "path=$OUT" >> "$GITHUB_OUTPUT"
+          ls -l "$OUT"
+
+      - name: Upload the APK
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: map-rmg-apk-${{ steps.ver.outputs.name }}
+          path: ${{ steps.apk.outputs.path }}
+          if-no-files-found: error
+
+      - name: Publish as a release (optional)
+        # Only on a manual run with "publish" ticked. A NON-prerelease release on a v0.5.<run> tag,
+        # which is exactly what the in-app updater's stable channel asks for.
+        if: github.event_name == 'workflow_dispatch' && inputs.publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "v${{ steps.ver.outputs.name }}" \
+            --target "$GITHUB_SHA" \
+            --title "MAP-RMG ${{ steps.ver.outputs.name }}" \
+            --notes "versionName: ${{ steps.ver.outputs.name }}
+          versionCode: ${{ steps.ver.outputs.code }}" \
+            "${{ steps.apk.outputs.path }}"

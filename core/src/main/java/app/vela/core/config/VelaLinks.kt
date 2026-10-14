@@ -26,6 +26,14 @@ object VelaLinks {
     const val SITE = "site"
     const val PAGES = "pages"
     const val DONATE = "donate"
+    // The APP's own update channel, separate from the data bases above (MAP-RMG fork, 2026-10-15).
+    // The data stays on upstream Vela's releases on purpose: obf-regions, basemap-tiles, poi-packs,
+    // map-fonts and the calibration bundle are baked there and are not rebuilt by a fork, so moving
+    // those bases would 404 every offline download. The APK, however, must come from this project:
+    // `api`/`releases` are what the in-app updater asks, and pointing those upstream would offer a
+    // Vela build to a MAP-RMG install. [APP_REPO] and [APP_API] are that seam.
+    const val APP_REPO = "appRepo"
+    const val APP_API = "appApi"
     const val PRIVACY = "privacy"
     const val CALIBRATION = "calibration"
     const val CALIBRATION_MIRROR = "calibrationMirror"
@@ -57,6 +65,10 @@ object VelaLinks {
         // point here.
         PAGES to "https://pimpinpumpkin.github.io/Vela",
         DONATE to "https://buymeacoffee.com/PimpinPumpkin",
+        // This project's own releases (the APK the in-app updater installs). See the note on
+        // [APP_REPO]/[APP_API]: data hosts stay upstream, the app does not.
+        APP_REPO to "https://github.com/sajjad1566/MAP-RMG",
+        APP_API to "https://api.github.com/repos/sajjad1566/MAP-RMG",
     )
 
     /** Key to (base key, path appended to the base). */
@@ -112,6 +124,11 @@ object VelaLinks {
 
     fun repo(): String = get(REPO)
     fun api(path: String): String = get(API) + path
+    /** This project's own repository — the MAP-RMG fork — for links about THIS app (release
+     *  notes, the update channel). Distinct from [repo]: the data bases above stay upstream. */
+    fun appRepo(): String = get(APP_REPO)
+    /** This project's own GitHub API — what the in-app updater asks. */
+    fun appApi(path: String): String = get(APP_API) + path
     fun release(tag: String, file: String): String = "${get(RELEASES)}/$tag/$file"
     fun raw(path: String): String = get(RAW) + path
     fun site(): String = get(SITE)

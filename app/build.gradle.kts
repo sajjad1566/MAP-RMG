@@ -25,11 +25,13 @@ android {
     compileSdk = 37
 
     defaultConfig {
-        // `-PappId=<id>` builds the app under another package name: the Android Auto ownership
-        // experiment (2026-09-22, ROADMAP "A Google Play listing") sideloads Vela under the id of
-        // an app the account once installed from Play, to learn whether Android Auto's check is
-        // Play's library record alone or also the signing certificate. Never a shipped path.
-        applicationId = (project.findProperty("appId") as String?)?.takeIf { it.isNotBlank() } ?: "app.vela"
+        // MAP-RMG ships under its own id, distinct from upstream Vela's `app.vela`, so the fork
+        // installs side by side with Vela and can never be offered Vela's releases as an update.
+        // The KOTLIN namespaces stay `app.vela` / `app.vela.core` (see `namespace` above): every
+        // generated R/BuildConfig reference, the Hilt graph and the :core seam are keyed on them,
+        // and the id is a property of the installed app, not of the code.
+        // `-PappId=<id>` still overrides it for a side-by-side test build (`-PappId=app.vela.dev`).
+        applicationId = (project.findProperty("appId") as String?)?.takeIf { it.isNotBlank() } ?: "com.maprmg.navigation"
         minSdk = 26
         targetSdk = 35
         // Overridable from CI: -PappVersionCode / -PappVersionName (ci.yml derives them from the

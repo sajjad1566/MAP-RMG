@@ -61,4 +61,14 @@ class VelaLinksTest {
         val c = CalibrationStore.parseBundle("""{"version": 99, "links": {"site": "https://vela.example", "repo": ""}}""")!!
         assertEquals(mapOf("site" to "https://vela.example"), c.links)
     }
+
+    @Test fun `the app's own release channel is the fork, the data bases stay upstream`() {
+        // MAP-RMG (2026-10-15): the in-app updater asks this project's API, never Vela's, or it
+        // would offer a Vela build to a MAP-RMG install. The data (obf, basemaps, places, fonts)
+        // is baked on the upstream releases and must keep resolving there.
+        assertEquals("https://api.github.com/repos/sajjad1566/MAP-RMG/releases/latest", VelaLinks.appApi("/releases/latest"))
+        assertEquals("https://github.com/sajjad1566/MAP-RMG", VelaLinks.appRepo())
+        assertEquals("https://api.github.com/repos/PimpinPumpkin/Vela/releases/latest", VelaLinks.api("/releases/latest"))
+        assertFalse(VelaLinks.release("obf-regions", "obf-manifest.json").contains("MAP-RMG"))
+    }
 }
