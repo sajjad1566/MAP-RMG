@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The per-app language list Android 13+ shows in Settings → Apps → MAP-RMG → Language
+     (android:localeConfig). It must stay in sync with AppLocale.SUPPORTED, which drives the
+     in-app picker; Arabic leads because this build ships Arabic-first. Hebrew is listed under its
+     modern code ("he") while its resources live in the legacy values-iw folder, the same pairing
+     AppLocale documents. -->
+<locale-config xmlns:android="http://schemas.android.com/apk/res/android">
+    <locale android:name="ar" />
+    <locale android:name="en" />
+    <locale android:name="fr" />
+    <locale android:name="de" />
+    <locale android:name="es" />
+    <locale android:name="it" />
+    <locale android:name="pt" />
+    <locale android:name="pt-BR" />
+    <locale android:name="nl" />
+    <locale android:name="ru" />
+    <locale android:name="pl" />
+    <locale android:name="sv" />
+    <locale android:name="uk" />
+    <locale android:name="hu" />
+    <locale android:name="ro" />
+    <locale android:name="et" />
+    <locale android:name="zh" />
+    <locale android:name="zh-TW" />
+    <locale android:name="ja" />
+    <locale android:name="he" />
+</locale-config>

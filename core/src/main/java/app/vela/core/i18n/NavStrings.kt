@@ -2425,6 +2425,183 @@ object RoNavStrings : NavStrings {
     }
 }
 
+/**
+ * Arabic (العربية) — RTL, and the language this build ships in by default (AppLocale.DEFAULT_LANGUAGE).
+ * Spoken/banner nav text uses the masculine-singular imperative register Gulf/Levant drivers hear from
+ * Google Maps Arabic («انعطف يمينًا», «تابع»). Road and dest NAMES are DATA and are never translated;
+ * the templates only decide the word order around them («انعطف يمينًا إلى <شارع>»). Metric in practice,
+ * but the imperial branch is kept for parity, like every other language here.
+ */
+object ArNavStrings : NavStrings {
+    override val locale: Locale = Locale("ar")
+
+    private fun modWord(mod: String?): String = when ((mod ?: "").trim().lowercase()) {
+        "left" -> "يسارًا"
+        "right" -> "يمينًا"
+        // The adverb sits AFTER the direction word so the road clause that follows reads naturally:
+        // «انعطف يمينًا قليلاً إلى <شارع>» (the naive «قليلاً إلى اليمين» + «إلى X» stacked two «إلى»).
+        "slight left" -> "يسارًا قليلاً"
+        "slight right" -> "يمينًا قليلاً"
+        "sharp left" -> "يسارًا بحدة"
+        "sharp right" -> "يمينًا بحدة"
+        "straight" -> "للأمام"
+        "uturn" -> "استدر"
+        else -> ""
+    }
+
+    /** Which side a fork keeps to («ابقَ على اليمين»), from OSRM's modifier token. */
+    private fun forkWord(mod: String?): String {
+        val t = (mod ?: "").trim().lowercase()
+        return when {
+            t.contains("left") -> "على اليسار"
+            t.contains("right") -> "على اليمين"
+            else -> "للأمام"
+        }
+    }
+
+    /** Masculine ordinals for roundabout exits («المخرج الثالث»); «رقم N» past the tenth. */
+    private fun exitOrdinal(n: Int): String = when (n) {
+        1 -> "الأول"; 2 -> "الثاني"; 3 -> "الثالث"; 4 -> "الرابع"; 5 -> "الخامس"
+        6 -> "السادس"; 7 -> "السابع"; 8 -> "الثامن"; 9 -> "التاسع"; 10 -> "العاشر"
+        else -> "رقم $n"
+    }
+
+    /** «دقيقة واحدة» / «دقيقتان» / «5 دقائق» / «15 دقيقة» — Arabic counts agree in number. */
+    private fun minuteWord(n: Int): String = when {
+        n == 1 -> "دقيقة واحدة"
+        n == 2 -> "دقيقتين"
+        n in 3..10 -> "$n دقائق"
+        else -> "$n دقيقة"
+    }
+
+    override fun phrase(type: String, mod: String?, road: String?, dest: String?, exitNo: String?, rbExit: Int?): String {
+        val onto = if (road != null) " إلى $road" else ""
+        val toward = when {
+            dest != null -> " باتجاه $dest"
+            road != null -> " إلى $road"
+            else -> ""
+        }
+        val m = modWord(mod)
+        return when (type) {
+            "depart" -> if (road != null) "انطلق على $road" else "ابدأ رحلتك"
+            "arrive" -> "وصلت إلى وجهتك"
+            "turn", "end of road" -> ("انعطف $m").trim() + onto
+            "continue", "new name" -> if (m.isNotBlank() && m != "للأمام") ("انحرف $m").trim() + onto else "تابع$onto"
+            // «اندمج في I 5» — a merge takes «في», not the «إلى» a turn uses.
+            "merge" -> "اندمج" + when {
+                dest != null -> " باتجاه $dest"
+                road != null -> " في $road"
+                else -> ""
+            }
+            "on ramp", "ramp" -> when {
+                mod?.contains("right") == true -> "اسلك المنحدر على اليمين$toward"
+                mod?.contains("left") == true -> "اسلك المنحدر على اليسار$toward"
+                else -> "اسلك المنحدر$toward"
+            }
+            "off ramp" -> if (exitNo != null) "اسلك المخرج $exitNo$toward" else "اسلك المخرج$toward"
+            // «ابقَ على اليمين/اليسار باتجاه X» — the turn adverb would read as "keep slightly right".
+            "fork" -> "ابقَ " + forkWord(mod) + toward
+            "roundabout", "rotary", "exit roundabout", "exit rotary" -> when {
+                rbExit == null -> "ادخل الدوار$onto"
+                mod == "straight" -> "عند الدوار، تابع للأمام$onto، ثم اسلك المخرج ${exitOrdinal(rbExit)}"
+                else -> "عند الدوار، اسلك المخرج ${exitOrdinal(rbExit)}$onto"
+            }
+            "roundabout turn" -> ("عند الدوار، انعطف $m").trim() + onto
+            "uturn" -> "استدر$onto"
+            else -> if (m.isNotBlank()) ("انعطف $m").trim() + onto else "تابع$onto"
+        }
+    }
+
+    /** Landmark lead-in, joined by [lightThen]: «بعد إشارة المرور، ثم انعطف يمينًا». */
+    override fun passLights(count: Int): String =
+        if (count == 1) "بعد إشارة المرور" else "بعد $count إشارات مرور"
+
+    // Arabic has no letter case, so the default's replaceFirstChar(lowercase) is meaningless here.
+    override fun lightThen(lead: String, instruction: String): String = "$lead، ثم $instruction"
+
+    // «500 قدم» / «150 مترًا» / «1.2 كيلومتر» — Latin digits, the convention Google Maps Arabic uses.
+    override fun spokenDistance(meters: Double, imperial: Boolean): String = if (imperial) {
+        val feet = meters * 3.28084
+        if (feet < 800) "${(if (feet < 100) maxOf(10, (feet / 10).roundToInt() * 10) else (feet / 50).roundToInt() * 50)} قدم"
+        else {
+            val miles = (meters / 1609.34 * 10).roundToInt() / 10.0
+            if (miles == 1.0) "1 ميل" else "$miles ميل"
+        }
+    } else {
+        if (meters < 950) {
+            // 10 takes the plural («عشرة أمتار»); 20 and up take the accusative singular («20 مترًا»).
+            val n = (meters / 10).roundToInt() * 10
+            if (n == 10) "10 أمتار" else "$n مترًا"
+        }
+        else {
+            val km = (meters / 100).roundToInt() / 10.0
+            if (km == 1.0) "1 كيلومتر" else "$km كيلومتر"
+        }
+    }
+
+    override fun inThen(distancePhrase: String, instruction: String): String = "بعد $distancePhrase، $instruction"
+
+    override fun arrived(): String = "لقد وصلت إلى وجهتك"
+
+    override fun destinationSide(left: Boolean): String = if (left) "وجهتك على اليسار" else "وجهتك على اليمين"
+
+    override fun startNav(firstInstruction: String): String = "بدء الملاحة. $firstInstruction"
+
+    override fun reachedStop(label: String): String =
+        if (label.isNotBlank()) "لقد وصلت إلى $label" else "لقد وصلت إلى محطتك"
+
+    override fun stopAhead(label: String, left: Boolean?): String {
+        val who = label.ifBlank { "محطتك" }
+        return when (left) {
+            true -> "$who على يسارك"
+            false -> "$who على يمينك"
+            null -> "$who أمامك"
+        }
+    }
+
+    override fun thenStop(instruction: String, label: String, left: Boolean?): String =
+        "$instruction، ثم " + stopAhead(label.ifBlank { "محطتك" }, left)
+
+    override fun intoLot(turnLeft: Boolean): String =
+        "انعطف ${if (turnLeft) "يسارًا" else "يمينًا"} إلى موقف السيارات"
+
+    override fun intoLotThen(turnLeft: Boolean, label: String, left: Boolean?): String {
+        val who = label.ifBlank { "محطتك" }
+        val where = when (left) { true -> "على يسارك"; false -> "على يمينك"; null -> "أمامك" }
+        return "انعطف ${if (turnLeft) "يسارًا" else "يمينًا"} إلى موقف السيارات، ثم $who $where"
+    }
+
+    override fun thenNext(instruction: String, next: String): String = "$instruction، ثم $next"
+
+    override fun fasterRoute(firstInstruction: String): String = "مسار أسرع. $firstInstruction"
+
+    override fun rerouting(): String = "جارٍ إعادة حساب المسار"
+
+    override fun fasterRouteAvailable(minutes: Int): String =
+        "يتوفر مسار أسرع، ويوفّر نحو ${minuteWord(minutes)}"
+
+    override fun stopsNotIncluded(): String = "تعذّر تضمين محطاتك في هذا المسار. سأستمر في المحاولة."
+
+    override fun leftYourRoute(): String = "لقد خرجت عن مسارك. سأسلك الطريق الأسرع."
+
+    override fun destinationAhead(): String = "ستكون وجهتك أمامك"
+
+    override fun voiceTest(): String = "تم تفعيل الإرشادات الصوتية. انعطف يمينًا بعد 400 متر."
+
+    override fun useLanes(side: LaneSide, count: Int): String {
+        val one = when (side) { LaneSide.LEFT -> "الأيسر"; LaneSide.RIGHT -> "الأيمن"; LaneSide.CENTER -> "الأوسط" }
+        val two = when (side) { LaneSide.LEFT -> "الأيسرين"; LaneSide.RIGHT -> "الأيمنين"; LaneSide.CENTER -> "الأوسطين" }
+        val many = when (side) { LaneSide.LEFT -> "على اليسار"; LaneSide.RIGHT -> "على اليمين"; LaneSide.CENTER -> "في الوسط" }
+        return when (count) {
+            0, 1 -> "اسلك المسار $one"
+            2 -> "اسلك المسارين $two"
+            else -> "اسلك $count مسارات $many"
+        }
+    }
+
+    // expandForSpeech stays the interface default (identity): Arabic road names are read natively.
+}
+
 object NavStringsRegistry {
     @Volatile
     private var active: NavStrings = EnNavStrings
@@ -2460,6 +2637,7 @@ object NavStringsRegistry {
         "zh" -> ZhNavStrings
         "zh-tw" -> ZhTwNavStrings
         "ja" -> JaNavStrings
+        "ar" -> ArNavStrings
         "he", "iw" -> HeNavStrings // JDK 17+ normalizes the old code "iw" → "he"; accept both
         else -> EnNavStrings
     }

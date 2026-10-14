@@ -39,10 +39,33 @@ class NavStringsTest {
         assertEquals("Continuez sur Rue de Rivoli", fr.phrase("continue", "straight", "Rue de Rivoli", null, null, null))
     }
 
+    @Test fun `arabic is rtl, keeps the road name untranslated and words the turns`() {
+        val ar = ArNavStrings
+        assertEquals(Locale("ar"), ar.locale)
+        assertEquals("انعطف يمينًا إلى King Fahd Road", ar.phrase("turn", "right", "King Fahd Road", null, null, null))
+        assertEquals("انعطف يسارًا إلى شارع الملك", ar.phrase("turn", "left", "شارع الملك", null, null, null))
+        assertEquals("اسلك المخرج 15 باتجاه Sacramento", ar.phrase("off ramp", null, null, "Sacramento", "15", null))
+        assertEquals("عند الدوار، اسلك المخرج الثاني إلى Elm St", ar.phrase("roundabout", null, "Elm St", null, null, 2))
+        assertEquals("استدر إلى Main St", ar.phrase("uturn", null, "Main St", null, null, null))
+        assertEquals("ابدأ رحلتك", ar.phrase("depart", null, null, null, null, null))
+        assertEquals("وصلت إلى وجهتك", ar.phrase("arrive", null, null, null, null, null))
+        // The frame and the arrival, in Arabic word order («بعد 400 مترًا، ...»).
+        assertEquals("بعد 400 مترًا، انعطف يمينًا", ar.inThen(ar.spokenDistance(400.0, false), ar.phrase("turn", "right", null, null, null, null)))
+        assertEquals("150 مترًا", ar.spokenDistance(150.0, false))
+        assertEquals("1 كيلومتر", ar.spokenDistance(1000.0, false))
+        assertEquals("لقد وصلت إلى وجهتك", ar.arrived())
+        assertEquals("وجهتك على اليسار", ar.destinationSide(true))
+        assertEquals("اسلك المسار الأيمن", ar.useLanes(LaneSide.RIGHT, 1))
+        assertEquals("اسلك المسارين الأيمنين", ar.useLanes(LaneSide.RIGHT, 2))
+        assertEquals("يتوفر مسار أسرع، ويوفّر نحو دقيقتين", ar.fasterRouteAvailable(2))
+        assertEquals("جارٍ إعادة حساب المسار", ar.rerouting())
+    }
+
     @Test fun `registry defaults to english and switches by language`() {
         assertEquals(EnNavStrings, NavStringsRegistry.current()) // default, locale-independent
         assertEquals(FrNavStrings, NavStringsRegistry.forLanguage("fr"))
         assertEquals(JaNavStrings, NavStringsRegistry.forLanguage("ja")) // now translated
+        assertEquals(ArNavStrings, NavStringsRegistry.forLanguage("ar")) // the build's default language
         assertEquals(EnNavStrings, NavStringsRegistry.forLanguage("th")) // untranslated → English fallback
         NavStringsRegistry.setLocale(Locale.FRANCE)
         assertEquals(FrNavStrings, NavStringsRegistry.current())
@@ -143,7 +166,7 @@ class NavStringsTest {
     }
 
     @Test fun `every registered language produces non-blank nav strings and keeps road names`() {
-        val langs = listOf("fr", "de", "es", "it", "pt", "nl", "ru", "pl", "sv", "uk", "hu", "ro", "zh", "ja", "he")
+        val langs = listOf("ar", "fr", "de", "es", "it", "pt", "nl", "ru", "pl", "sv", "uk", "hu", "ro", "zh", "ja", "he")
         for (code in langs) {
             val ns = NavStringsRegistry.forLanguage(code)
             assertEquals("$code should map to its own NavStrings", code, ns.locale.language)
@@ -182,6 +205,8 @@ class NavStringsTest {
             // substring of the emitted "ימינה" (medial נ) — so match the emitted forms themselves.
             "sv" to ("vänster" to "höger"), "uk" to ("лів" to "прав"), "he" to ("שמאלה" to "ימינה"),
             "ro" to ("stânga" to "dreapta"),
+            // Arabic directional adverbs ("يمين"/"يسار" are substrings of the emitted forms).
+            "ar" to ("يسار" to "يمين"),
         )
         for ((code, words) in sideWords) {
             val ns = NavStringsRegistry.forLanguage(code)

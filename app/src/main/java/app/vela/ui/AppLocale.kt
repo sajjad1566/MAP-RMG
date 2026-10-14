@@ -32,13 +32,23 @@ object AppLocale {
     // "he" is the modern Hebrew code the picker + NavStrings use; the Android RESOURCES live in the
     // legacy-qualifier folder res/values-iw (AAPT's Hebrew qualifier), and the platform maps a "he"
     // locale onto values-iw, so the two agree. (Same legacy-pair handling as id/in, yi/ji.)
-    val SUPPORTED = listOf("en", "fr", "de", "es", "it", "pt", "pt-BR", "nl", "ru", "pl", "sv", "uk", "hu", "ro", "et", "zh", "zh-TW", "ja", "he")
+    val SUPPORTED = listOf("ar", "en", "fr", "de", "es", "it", "pt", "pt-BR", "nl", "ru", "pl", "sv", "uk", "hu", "ro", "et", "zh", "zh-TW", "ja", "he")
+
+    /**
+     * The language a fresh install starts in (MAP-RMG is an Arabic-first build, 2026-10-15). It
+     * applies only while the user has never picked a language: [init] and [wrap] read the stored
+     * pref and fall back to this, so choosing Arabic explicitly, English, or "follow the system"
+     * all outlive it. English and the other eighteen translations stay one tap away in Settings,
+     * and the nav text in :core has its own table per language.
+     */
+    const val DEFAULT_LANGUAGE = "ar"
 
     private val ENDONYMS = mapOf(
         "en" to "English", "fr" to "Français", "de" to "Deutsch", "es" to "Español",
         "it" to "Italiano", "pt" to "Português (Portugal)", "pt-BR" to "Português (Brasil)", "nl" to "Nederlands", "ru" to "Русский",
         "pl" to "Polski", "sv" to "Svenska", "uk" to "Українська", "hu" to "Magyar", "ro" to "Română", "et" to "Eesti",
         "zh" to "简体中文", "zh-TW" to "繁體中文（台灣）", "ja" to "日本語", "he" to "עברית",
+        "ar" to "العربية",
     )
 
     /** The language's own name (endonym) — what a speaker of it expects to see in a language list. */
@@ -59,7 +69,9 @@ object AppLocale {
     }
 
     fun init(context: Context) {
-        language.value = prefs(context).getString(KEY, "") ?: ""
+        // A stored value wins, including the empty string the "follow the system" toggle writes.
+        // Only a missing key (a fresh install) takes DEFAULT_LANGUAGE.
+        language.value = prefs(context).getString(KEY, null) ?: DEFAULT_LANGUAGE
         directions.value = prefs(context).getString(KEY_DIRECTIONS, "") ?: ""
         apply()
     }
@@ -108,7 +120,7 @@ object AppLocale {
      *  (user 2026-07-10). */
     fun wrap(base: Context): Context {
         if (systemDefault == null) systemDefault = Locale.getDefault()
-        val lang = prefs(base).getString(KEY, "").orEmpty()
+        val lang = prefs(base).getString(KEY, null) ?: DEFAULT_LANGUAGE
         if (lang.isBlank()) {
             systemDefault?.let { if (Locale.getDefault() != it) Locale.setDefault(it) }
             syncAcceptLanguage()
