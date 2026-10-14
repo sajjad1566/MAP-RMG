@@ -3,6 +3,7 @@ package app.vela.ui.settings
 import app.vela.ui.icons.SymOutlined
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -113,6 +114,11 @@ internal fun SettingsHub(
                         .padding(vertical = 3.dp)
                         .clip(DpadShape(16.dp))
                         .background(MaterialTheme.colorScheme.surfaceContainer)
+                        .border(
+                            1.dp,
+                            MaterialTheme.colorScheme.primary.copy(alpha = 0.16f),
+                            DpadShape(16.dp),
+                        )
                         .dpadHighlight(DpadShape(16.dp))
                         .dpadClickable { searchQuery = ""; onOpen(section, label) }
                         .padding(vertical = 10.dp, horizontal = 12.dp),
@@ -248,13 +254,19 @@ private fun HubRow(
             // ring draws over the same rounded shape when the row is focused.
             .clip(DpadShape(26.dp))
             .background(MaterialTheme.colorScheme.surfaceContainer)
+            .border(
+                1.dp,
+                MaterialTheme.colorScheme.primary.copy(alpha = 0.16f),
+                DpadShape(26.dp),
+            )
             .dpadHighlight(DpadShape(26.dp))
             .dpadClickable(onClick = onClick)
             .padding(vertical = 16.dp, horizontal = 18.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {
-        // Outlined stock-style glyph in the quiet ink (single-ink rule - never the teal primary).
-        Icon(icon, contentDescription = null, tint = MaterialTheme.colorScheme.onSurfaceVariant)
+        // The glyph carries the brand: royal blue, as the accent the hub is built around. The
+        // rest of the row stays in the surface ink so the list reads calmly.
+        Icon(icon, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
         Spacer(Modifier.width(18.dp))
         Column(Modifier.weight(1f)) {
             Text(title, style = MaterialTheme.typography.titleMedium)

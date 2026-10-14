@@ -358,15 +358,20 @@ private fun VelaMark(size: androidx.compose.ui.unit.Dp) {
             .clip(RoundedCornerShape(percent = 27))
             .background(
                 androidx.compose.ui.graphics.Brush.linearGradient(
-                    listOf(androidx.compose.ui.graphics.Color(0xFF0D3D43), androidx.compose.ui.graphics.Color(0xFF149387)),
+                    listOf(
+                        androidx.compose.ui.graphics.Color(0xFF0B1C3D),
+                        androidx.compose.ui.graphics.Color(0xFF2457D6),
+                    ),
                 ),
             ),
         contentAlignment = Alignment.Center,
     ) {
         androidx.compose.foundation.Image(
-            painter = androidx.compose.ui.res.painterResource(R.drawable.ic_launcher_foreground),
+            // The official artwork, drawn exactly as the launcher draws it: the foreground layer
+            // already keeps the mark inside the adaptive icon's safe zone.
+            painter = androidx.compose.ui.res.painterResource(R.mipmap.ic_launcher_foreground),
             contentDescription = null,
-            modifier = Modifier.requiredSize(size * 1.5f),
+            modifier = Modifier.requiredSize(size),
         )
     }
 }

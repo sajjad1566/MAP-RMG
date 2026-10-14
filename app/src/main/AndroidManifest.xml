@@ -68,6 +68,7 @@
         android:fullBackupContent="@xml/backup_rules"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:largeHeap="true"
         android:label="@string/app_name"
         android:localeConfig="@xml/locales_config"
@@ -98,7 +99,7 @@
             android:launchMode="singleTop"
             android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboardHidden|uiMode"
             android:supportsPictureInPicture="true"
-            android:theme="@style/Theme.Vela">
+            android:theme="@style/Theme.Vela.Splash">
             <!-- Android Automotive: a navigation app may stay on screen while the car moves. Without
                  this the car greys Vela out of its app list the moment it is in gear (seen on the
                  emulator); a production car also wants the app to come from a store it trusts. -->

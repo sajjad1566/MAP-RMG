@@ -10,11 +10,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.platform.LocalContext
 
-// Containers are set to blue tints too - otherwise Material's defaults leave
-// primaryContainer/secondaryContainer a stock purple, which made the map FABs and
-// selected chips read "weirdly purple" against the brand.
+// Containers are set to royal-blue tints too (Color.kt): Material's defaults leave
+// primaryContainer/secondaryContainer a stock purple, which made the map FABs and selected chips
+// read "weirdly purple" against the brand.
 private val LightColors = lightColorScheme(
-    // Neutral near-whites like Google Maps (no teal cast): a full-white page is
+    surfaceTint = VelaTeal,
+    // Neutral near-whites like Google Maps (no blue cast): a full-white page is
     // harsh, and the container roles step down so bars/cards still read as layers.
     background = androidx.compose.ui.graphics.Color(0xFFF8F9FA),
     surface = androidx.compose.ui.graphics.Color(0xFFF8F9FA),
@@ -25,21 +26,22 @@ private val LightColors = lightColorScheme(
     surfaceContainerHighest = androidx.compose.ui.graphics.Color(0xFFDADCE0),
     primary = VelaTeal,
     onPrimary = androidx.compose.ui.graphics.Color.White,
-    primaryContainer = androidx.compose.ui.graphics.Color(0xFFB6E7DF),
-    onPrimaryContainer = androidx.compose.ui.graphics.Color(0xFF00201D),
+    primaryContainer = MapRmgBlueContainer,
+    onPrimaryContainer = MapRmgOnBlueContainer,
     secondary = VelaTealDark,
-    secondaryContainer = androidx.compose.ui.graphics.Color(0xFFCDE9E3),
-    onSecondaryContainer = androidx.compose.ui.graphics.Color(0xFF06201C),
+    secondaryContainer = androidx.compose.ui.graphics.Color(0xFFE4EBFA),
+    onSecondaryContainer = androidx.compose.ui.graphics.Color(0xFF10245C),
     tertiary = VelaAmber,
     // Attention surfaces (the faster-route offer, warn-level notices) ride tertiaryContainer.
     // Without these, Material's baseline kicked in and drew them PINK (user 2026-07-14) -
     // amber tints keep them on-brand with the VelaAmber accent.
-    tertiaryContainer = androidx.compose.ui.graphics.Color(0xFFFFDCBE),
-    onTertiaryContainer = androidx.compose.ui.graphics.Color(0xFF2C1600),
+    tertiaryContainer = MapRmgPaleGold,
+    onTertiaryContainer = androidx.compose.ui.graphics.Color(0xFF3A2D05),
 )
 
 private val DarkColors = darkColorScheme(
-    // Neutral near-black surfaces under the teal accent.
+    surfaceTint = VelaTealLight,
+    // Neutral near-black surfaces under the royal-blue accent such as it is at night.
     background = androidx.compose.ui.graphics.Color(0xFF131314),
     surface = androidx.compose.ui.graphics.Color(0xFF131314),
     surfaceContainerLowest = androidx.compose.ui.graphics.Color(0xFF131314),
@@ -52,16 +54,16 @@ private val DarkColors = darkColorScheme(
     outline = androidx.compose.ui.graphics.Color(0xFF5F6368),
     outlineVariant = androidx.compose.ui.graphics.Color(0xFF5F6368),
     primary = VelaTealLight,
-    onPrimary = androidx.compose.ui.graphics.Color(0xFF003730),
-    primaryContainer = androidx.compose.ui.graphics.Color(0xFF13534B),
-    onPrimaryContainer = androidx.compose.ui.graphics.Color(0xFFB6E7DF),
+    onPrimary = MapRmgDarkBlue,
+    primaryContainer = MapRmgBlueContainerDark,
+    onPrimaryContainer = MapRmgOnBlueContainerDark,
     secondary = VelaTeal,
-    secondaryContainer = androidx.compose.ui.graphics.Color(0xFF1F4A44),
-    onSecondaryContainer = androidx.compose.ui.graphics.Color(0xFFCDE9E3),
+    secondaryContainer = androidx.compose.ui.graphics.Color(0xFF17306B),
+    onSecondaryContainer = MapRmgOnBlueContainerDark,
     tertiary = VelaAmber,
     // See LightColors: baseline tertiaryContainer is pink; keep the attention cards amber.
-    tertiaryContainer = androidx.compose.ui.graphics.Color(0xFF6B4520),
-    onTertiaryContainer = androidx.compose.ui.graphics.Color(0xFFFFDCBE),
+    tertiaryContainer = androidx.compose.ui.graphics.Color(0xFF443607),
+    onTertiaryContainer = MapRmgPaleGold,
 )
 
 // AMOLED: the dark scheme on TRUE BLACK surfaces (every lit pixel costs battery on OLED, and

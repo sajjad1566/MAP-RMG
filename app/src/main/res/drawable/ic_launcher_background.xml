@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Brand gradient behind the launcher sail, matching docs/logo.svg. -->
+<!-- The adaptive icon's background: the MAP-RMG brand gradient, dark blue into royal blue. The
+     official artwork (@mipmap/ic_launcher_foreground) sits on top of it inside the safe zone.
+     Also the backdrop of the in-app brand mark (ui/WelcomeScreen.kt, the onboarding pages). -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
         android:angle="315"
-        android:startColor="#0D3D43"
-        android:endColor="#149387"
+        android:startColor="@color/maprmg_dark_blue"
+        android:endColor="@color/maprmg_royal_blue"
         android:type="linear" />
 </shape>

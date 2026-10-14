@@ -3005,7 +3005,7 @@ private fun LocateGlyph(dark: Boolean) {
         contentAlignment = Alignment.Center,
     ) {
         // Blue, as the dot it sends you back to is: the one place on these buttons blue means "you".
-        Icon(Sym.MyLocation, contentDescription = stringResource(R.string.mapscreen_center_on_my_location), tint = if (app.vela.ui.theme.wallpaperColorsInUse()) androidx.compose.material3.LocalContentColor.current else if (dark) Color(0xFF8AB4F8) else Color(0xFF1A73E8))
+        Icon(Sym.MyLocation, contentDescription = stringResource(R.string.mapscreen_center_on_my_location), tint = if (app.vela.ui.theme.wallpaperColorsInUse()) androidx.compose.material3.LocalContentColor.current else if (dark) Color(0xFF8AB4F8) else app.vela.ui.theme.MapRmgRoyalBlue)
     }
 }
 

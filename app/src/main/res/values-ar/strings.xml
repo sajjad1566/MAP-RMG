@@ -1678,4 +1678,25 @@
     <string name="place_avoid_short_ferries">العبّارات</string>
     <string name="place_avoid_short_cameras">الكاميرات</string>
     <string name="trip_shortcut_themed">مطابقة الأيقونات المنسّقة</string>
+    <!-- onboarding tour: OnboardingTour.kt (three promo pages, first launch only) -->
+    <string name="tour_skip">تخطي الكل</string>
+    <string name="tour_next">التالي</string>
+    <string name="tour_start">ابدأ الآن</string>
+    <string name="tour_step">%1$d من %2$d</string>
+    <!-- format -->
+    <string name="tour_slide1_title">اكتشف العالم</string>
+    <string name="tour_slide1_body">ترسم لك MAP-RMG الشوارع والأماكن والمعالم من حولك، بخريطة أنيقة تبقى واضحة في النهار وفي الليل.</string>
+    <string name="tour_slide1_p1">خرائط دقيقة</string>
+    <string name="tour_slide1_p2">بحث عن الشوارع والأماكن</string>
+    <string name="tour_slide1_p3">شكل هادئ وواضح</string>
+    <string name="tour_slide2_title">ملاحة ذكية</string>
+    <string name="tour_slide2_body">مسار أزرق مع إرشادات خطوة بخطوة عبر GPS، وازدحام مباشر، والمنعطف التالي أمامك دائمًا.</string>
+    <string name="tour_slide2_p1">خط مسار أزرق</string>
+    <string name="tour_slide2_p2">إرشادات خطوة بخطوة بـ GPS</string>
+    <string name="tour_slide2_p3">أماكن ومحطات محفوظة</string>
+    <string name="tour_slide3_title">أونلاين وأوفلاين</string>
+    <string name="tour_slide3_body">تصفّح الخرائط وأنت متصل كالمعتاد، ونزّل المناطق التي تسافر عبرها لتبقى الخريطة والبحث والتوجيه تعمل بلا إشارة.</string>
+    <string name="tour_slide3_p1">تنزيل مناطق الخرائط</string>
+    <string name="tour_slide3_p2">بحث وتوجيه دون اتصال</string>
+    <string name="tour_slide3_p3">موثوق في كل رحلة</string>
 </resources>

@@ -1482,4 +1482,25 @@
     <string name="place_avoid_short_ferries">Ferries</string>
     <string name="place_avoid_short_cameras">Cameras</string>
     <string name="trip_shortcut_themed">Match themed icons</string>
+
+    <!-- onboarding tour: OnboardingTour.kt (three promo pages, first launch only) -->
+    <string name="tour_skip">Skip all</string>
+    <string name="tour_next">Next</string>
+    <string name="tour_start">Start now</string>
+    <string name="tour_step">%1$d of %2$d</string> <!-- format -->
+    <string name="tour_slide1_title">Discover the world</string>
+    <string name="tour_slide1_body">MAP-RMG maps the streets, places and landmarks around you, with an elegant map that stays readable in daylight and at night.</string>
+    <string name="tour_slide1_p1">Accurate maps</string>
+    <string name="tour_slide1_p2">Search streets and places</string>
+    <string name="tour_slide1_p3">Serene, uncluttered look</string>
+    <string name="tour_slide2_title">Smart navigation</string>
+    <string name="tour_slide2_body">Blue route lines with GPS turn-by-turn, live traffic, and the next turn always in view.</string>
+    <string name="tour_slide2_p1">Blue route line</string>
+    <string name="tour_slide2_p2">Turn-by-turn with GPS</string>
+    <string name="tour_slide2_p3">Saved places and stops</string>
+    <string name="tour_slide3_title">Online and offline</string>
+    <string name="tour_slide3_body">Browse online as usual, and download the areas you drive through, so the map, search and routing keep working with no signal.</string>
+    <string name="tour_slide3_p1">Download map areas</string>
+    <string name="tour_slide3_p2">Offline search and routing</string>
+    <string name="tour_slide3_p3">Reliable on any trip</string>
 </resources>

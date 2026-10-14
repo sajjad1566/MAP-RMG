@@ -23,6 +23,12 @@ object Onboarding {
     /** False until the user has seen the welcome screen once. */
     val welcomeDone = mutableStateOf(true)
 
+    /** False until the three promo pages ([OnboardingTour]) are done; they are the first thing a
+     *  brand-new install shows, and skipping them counts. An install that already finished the
+     *  welcome flow never sees them, so an upgrade does not replay the intro to somebody who has
+     *  been using the app for months. */
+    val tourDone = mutableStateOf(true)
+
     /** True for the single session where the one-time donate prompt should show. */
     val showDonatePrompt = mutableStateOf(false)
 
@@ -70,6 +76,7 @@ object Onboarding {
     fun init(context: Context) {
         val p = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
         welcomeDone.value = p.getBoolean("welcome_done", false)
+        tourDone.value = p.getBoolean("tour_done", welcomeDone.value)
         var firstMs = p.getLong("first_ms", 0L)
         if (firstMs == 0L) {
             firstMs = System.currentTimeMillis()
@@ -130,6 +137,13 @@ object Onboarding {
         showVoicePrompt.value = false
         context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
             .edit().putBoolean("voice_prompt_done", true).apply()
+    }
+
+    /** The promo pages are done, by the last page's button or by Skip all: never show them again. */
+    fun completeTour(context: Context) {
+        tourDone.value = true
+        context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
+            .edit().putBoolean("tour_done", true).apply()
     }
 
     fun completeWelcome(context: Context) {

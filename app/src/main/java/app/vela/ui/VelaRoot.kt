@@ -33,6 +33,13 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 fun VelaRoot(vm: MapViewModel = hiltViewModel()) {
     val context = LocalContext.current
 
+    // First run, in order: the three promo pages, then the privacy and Google choice, then the map.
+    // Both are one flag in vela_onboarding, so each is shown once, and a deep link afterwards lands
+    // where it always did (the gates are the same ones the welcome flow already had).
+    if (!Onboarding.tourDone.value) {
+        OnboardingTour(onDone = { Onboarding.completeTour(context) })
+        return
+    }
     if (!Onboarding.welcomeDone.value) {
         WelcomeScreen(vm, onGetStarted = { Onboarding.completeWelcome(context) })
         return

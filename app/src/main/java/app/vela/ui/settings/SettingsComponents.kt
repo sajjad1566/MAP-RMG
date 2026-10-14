@@ -15,6 +15,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.foundation.relocation.bringIntoViewRequester
 import androidx.compose.ui.res.stringResource
@@ -109,8 +110,22 @@ internal fun CollapsibleSectionTitle(text: String, expanded: Boolean, modifier: 
 
 @Composable
 internal fun SelectableRow(label: String, selected: Boolean, onClick: () -> Unit, modifier: Modifier = Modifier) {
+    // The whole row carries the brand tint when it is the chosen one, so the state reads at a
+    // glance and not only from the small radio mark. Primary at low alpha: readable in light, dark
+    // and AMOLED, and it never fights the radio (which Material paints in primary anyway).
+    val shape = DpadShape(10.dp)
     Row(
-        modifier.fillMaxWidth().settingsAnchor(label).dpadHighlight(DpadShape(10.dp)).dpadClickable(onClick = onClick).padding(horizontal = 16.dp, vertical = 8.dp),
+        modifier
+            .fillMaxWidth()
+            .settingsAnchor(label)
+            .clip(shape)
+            .background(
+                if (selected) MaterialTheme.colorScheme.primary.copy(alpha = 0.10f)
+                else androidx.compose.ui.graphics.Color.Transparent,
+            )
+            .dpadHighlight(shape)
+            .dpadClickable(onClick = onClick)
+            .padding(horizontal = 16.dp, vertical = 8.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {
         // onClick = null: the RadioButton is display-only so the ROW is the single focus stop. A
@@ -142,6 +157,12 @@ internal fun SettingsGroup(
         modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
         shape = DpadShape(24.dp),
         color = MaterialTheme.colorScheme.surfaceContainer,
+        // A hairline in the brand blue: it outlines every settings card and stays subtle in all
+        // three themes (in dark it is the light royal blue at the same alpha).
+        border = androidx.compose.foundation.BorderStroke(
+            1.dp,
+            MaterialTheme.colorScheme.primary.copy(alpha = 0.16f),
+        ),
     ) {
         androidx.compose.foundation.layout.Column(
             Modifier.fillMaxWidth().padding(vertical = 6.dp),
@@ -254,8 +275,13 @@ internal fun ToggleRow(
  */
 @Composable
 internal fun settingsFieldColors() = androidx.compose.material3.OutlinedTextFieldDefaults.colors(
-    focusedBorderColor = androidx.compose.ui.graphics.Color.Transparent,
+    // Focused: the brand blue draws the field, both as a soft fill and as its border, so the field
+    // the keys are in is obvious (an invisible focus state was the old behavior).
+    focusedBorderColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.75f),
     unfocusedBorderColor = androidx.compose.ui.graphics.Color.Transparent,
-    focusedContainerColor = MaterialTheme.colorScheme.surfaceContainerHigh,
+    focusedContainerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.07f),
     unfocusedContainerColor = MaterialTheme.colorScheme.surfaceContainerHigh,
+    focusedTextColor = MaterialTheme.colorScheme.onSurface,
+    unfocusedTextColor = MaterialTheme.colorScheme.onSurface,
+    cursorColor = MaterialTheme.colorScheme.primary,
 )

@@ -164,7 +164,7 @@ object PoiIcons {
 
     /** Register a NUMBERED STOP pin ("vela-stopnum-<n>"): brand-teal circle, white ring and
      *  number, a short tail so the tip marks the spot - the trip's intermediate stops drawn in
-     *  visit order (theme-independent; the teal is VelaTeal, bitmaps can't read the theme). */
+     *  visit order (theme-independent; the blue is the brand royal blue, bitmaps can't read the theme). */
     /** The DESTINATION pin: the same teardrop as a numbered stop, wearing a flag instead of a
      *  number, so the end of a trip reads as the end and not as "one more stop" (user 2026-09-17). */
     fun ensureDestinationPin(style: Style, context: Context): String = ensureStopNumberIcon(style, DESTINATION_PIN, context)
@@ -695,7 +695,7 @@ object PoiIcons {
             fg = if (night) 0xFFC8CDD4.toInt() else 0xFF3C4043.toInt()
         } else {
             canvas.drawRect(0f, 0f, w.toFloat(), w.toFloat(), Paint().apply {
-                shader = android.graphics.LinearGradient(0f, 0f, w.toFloat(), w.toFloat(), 0xFF0D3D43.toInt(), 0xFF149387.toInt(), android.graphics.Shader.TileMode.CLAMP)
+                shader = android.graphics.LinearGradient(0f, 0f, w.toFloat(), w.toFloat(), 0xFF0B1C3D.toInt(), 0xFF2457D6.toInt(), android.graphics.Shader.TileMode.CLAMP)
             })
         }
         val paint = Paint(Paint.ANTI_ALIAS_FLAG).apply {

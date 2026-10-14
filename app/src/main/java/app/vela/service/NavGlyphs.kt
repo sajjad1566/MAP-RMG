@@ -19,7 +19,7 @@ import app.vela.ui.nav.maneuverGlyph
  */
 object NavGlyphs {
 
-    const val TEAL = 0xFF14857A.toInt() // ui.theme.VelaTeal; also the notification accent
+    const val TEAL = 0xFF2457D6.toInt() // ui.theme.VelaTeal (brand royal blue); also the notification accent
 
     fun bitmap(type: ManeuverType, sizePx: Int, background: Int = TEAL): Bitmap {
         val bmp = Bitmap.createBitmap(sizePx, sizePx, Bitmap.Config.ARGB_8888)
