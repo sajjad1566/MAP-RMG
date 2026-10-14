@@ -1,0 +1,1681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Arabic (العربية) — MAP-RMG's default language.
+     Generated/maintained against res/values/strings.xml: same keys, same order, same
+     section comments, and identical %n$s / %n$d placeholders (tools/check-translations.py
+     enforces the last one). Strings marked translatable="false" in the base (brand names,
+     map attributions) are deliberately absent: they fall back to the default value.
+     Arabic plurals use the CLDR categories (zero/one/two/few/many/other). -->
+<resources>
+    <!-- shared search-category chip labels (map + along-route); the search QUERY stays English in code -->
+    <string name="cat_restaurants">مطاعم</string>
+    <string name="cat_coffee">قهوة</string>
+    <string name="cat_gas">وقود</string>
+    <string name="cat_ev">شحن كهربائي</string>
+    <string name="cat_groceries">بقالة</string>
+    <string name="cat_hotels">فنادق</string>
+    <string name="cat_pharmacy">صيدليات</string>
+    <string name="cat_atms">أجهزة صراف آلي</string>
+    <string name="cat_parks">حدائق</string>
+    <string name="cat_things_to_do">أنشطة وفعاليات</string>
+    <string name="cat_bars">حانات</string>
+    <string name="cat_parking">مواقف سيارات</string>
+    <string name="cat_hospitals">مستشفيات</string>
+    <string name="cat_banks">بنوك</string>
+    <string name="cat_post_offices">مكاتب بريد</string>
+    <string name="cat_campgrounds">مخيّمات</string>
+    <!-- settings: SettingsScreen.kt -->
+    <string name="settings_title">الإعدادات</string>
+    <string name="settings_search_hint">ابحث في الإعدادات</string>
+    <string name="settings_search_none">لا توجد نتائج</string>
+    <string name="settings_back">رجوع</string>
+    <string name="settings_appearance">المظهر</string>
+    <string name="settings_follow_system">حسب النظام</string>
+    <string name="settings_theme_light">فاتح</string>
+    <string name="settings_theme_dark">داكن</string>
+    <string name="settings_appearance_hint">يُطبَّق على MAP-RMG فقط.</string>
+    <string name="settings_app_name_title">اسم التطبيق</string>
+    <string name="settings_app_name_generic">اجعل الاسم «الخرائط» فقط</string>
+    <string name="settings_app_name_generic_hint">يعرض أيقونة التطبيق باسم «الخرائط» بدل MAP-RMG لمظهر أقرب إلى تطبيقات النظام. قد تحتاج إلى إعادة إضافة اختصار على الشاشة الرئيسية بعد التبديل.</string>
+    <string name="settings_dynamic_color">ألوان Material You</string>
+    <string name="settings_dynamic_color_hint">يستمد ألوان الأزرار واللمسات من خلفية جهازك. تبقى الخريطة محايدة.</string>
+    <string name="settings_map_style">نمط الخريطة</string>
+    <string name="settings_map_style_hint">يعمل OpenFreeMap دون أي مفتاح API.</string>
+    <string name="settings_units">الوحدات</string>
+    <string name="settings_clock">الساعة</string>
+    <string name="settings_clock_system">كما في الهاتف</string>
+    <string name="settings_clock_12">12 ساعة (4:35 م)</string>
+    <string name="settings_clock_24">24 ساعة (16:35)</string>
+    <string name="settings_units_imperial">الإمبراطورية (أميال، أقدام)</string>
+    <string name="settings_units_metric">المترية (كيلومترات، أمتار)</string>
+    <string name="settings_language">اللغة</string>
+    <string name="settings_follow_system_language">اتّباع لغة النظام</string>
+    <string name="settings_language_hint">يغيّر لغة التطبيق ولغة الإرشادات المنطوقة. نزّل صوتًا مطابقًا من مكتبة الأصوات.</string>
+    <string name="settings_directions_language">لغة الإرشادات</string>
+    <string name="settings_directions_same_as_app">نفس لغة التطبيق</string>
+    <string name="settings_directions_language_hint">اللغة التي تُعرض وتُلفظ بها الإرشادات. نزّل صوتًا مطابقًا من مكتبة الأصوات.</string>
+    <string name="settings_search">البحث</string>
+    <string name="settings_voice_search_toggle">ميكروفون البحث الصوتي</string>
+    <string name="settings_voice_search_hint">يعرض ميكروفونًا في شريط البحث للبحث بالصوت.</string>
+    <string name="settings_contacts_search">البحث في جهات الاتصال</string>
+    <string name="settings_contacts_search_hint">عند كتابة اسم جهة اتصال، تظهر عناوينها المحفوظة مع صورتها وتسمية العنوان من دفتر هاتفك. تبقى جهات اتصالك على هذا الهاتف؛ واختيار إحداها يبحث عن عنوانها كأي استعلام مكتوب ويفتحه باسم جهة الاتصال.</string>
+    <string name="suggestion_contact_badge">جهة اتصال</string>
+    <string name="search_voice_cd">البحث الصوتي</string>
+    <string name="search_voice_prompt">تحدّث للبحث</string>
+    <string name="settings_voice">الصوت</string>
+    <string name="settings_voice_fallback_name">صوت</string>
+    <string name="settings_voice_downloading">نزيل %1$s… %2$d%%</string>
+    <!-- format -->
+    <string name="settings_voice_none_hint">لا يوجد صوت بعد. افتح مكتبة الأصوات أدناه لتنزيل صوت طبيعي يعمل على الجهاز (بلا حساب، وفوري حتى على الهواتف القديمة). وسيظهر هنا أيضًا أي محرك تحويل نص إلى كلام مثبَّت لديك لاختياره.</string>
+    <string name="settings_voice_test">تجربة الصوت</string>
+    <string name="settings_voice_system_settings">إعدادات صوت النظام</string>
+    <string name="settings_voice_test_hint">اضغط «تجربة الصوت» لسماعه. صوت MAP-RMG هو الموصى به؛ ويمكنك اختيار أي محرك تحويل نص إلى كلام مثبَّت.</string>
+    <string name="settings_voice_library">مكتبة الأصوات</string>
+    <string name="settings_voice_advanced">خيارات صوت متقدمة</string>
+    <string name="settings_voice_try_label">جرّب الصوت على أي نص</string>
+    <string name="settings_voice_nav_sample_text">بعد 400 متر، انعطف يمينًا إلى الشارع الرئيسي، ثم تكون وجهتك على اليسار.</string>
+    <string name="settings_voice_speak">انطق</string>
+    <string name="settings_voice_nav_sample">نموذج إرشاد</string>
+    <string name="settings_voice_speed">سرعة الصوت · %1$s</string>
+    <!-- format -->
+    <string name="settings_voice_speed_hint">إرشادات منطوقة أبطأ أو أسرع. اضغط − / + (سينطق نموذجًا). 1.00× هو الطبيعي.</string>
+    <string name="settings_voice_variant">نسخة الصوت رقم %1$d</string>
+    <!-- format -->
+    <string name="settings_voice_variant_of">نسخة الصوت رقم %1$d من %2$d</string>
+    <!-- format -->
+    <string name="settings_voice_variant_field">رقم النسخة</string>
+    <string name="settings_voice_variant_go">انتقال</string>
+    <string name="settings_voice_variant_hint">يضم هذا الصوت مئات المتحدّثين. اضغط ◀ ▶ للاستماع إليهم واحدًا تلو الآخر، أو اكتب رقم النسخة ثم «انتقال» للوصول إليها مباشرة (سينطق نموذجًا). احتفظ بالنسخة التي تعجبك.</string>
+    <string name="settings_navigation">الملاحة</string>
+    <string name="settings_vibrate_on_turns">الاهتزاز عند المنعطفات</string>
+    <string name="settings_mode_driving">القيادة</string>
+    <string name="settings_mode_walking">المشي</string>
+    <string name="settings_mode_cycling">الدرّاجة</string>
+    <string name="settings_mode_transit">النقل العام</string>
+    <string name="settings_vibrate_hint">اهتزازات متمايزة عند كل منعطف، مختلفة لليسار عن اليمين، لتتبّع المسار بالإحساس. اضبطها لكل نمط تنقّل (مثلًا: مفعّلة للدرّاجة والمشي، ومعطّلة أثناء القيادة).</string>
+    <string name="settings_keep_screen_on">إبقاء الشاشة مضاءة أثناء الملاحة</string>
+    <string name="settings_keep_screen_on_hint">يمنع الشاشة من الإطفاء أثناء الإرشاد خطوة بخطوة.</string>
+    <string name="map_voice_downloading">نزيل صوت MAP-RMG · %1$d%%</string>
+    <string name="map_voice_installing">نثبّت صوت MAP-RMG…</string>
+    <string name="map_region_downloading">نزيل مسارات %1$s · %2$d%%</string>
+    <!-- format -->
+    <string name="map_region_places_downloading">نحفظ أماكن %1$s للبحث دون اتصال · %2$d%%</string>
+    <!-- format -->
+    <string name="map_region_placesfile_downloading">نحفظ أماكن %1$s للخريطة · %2$d%%</string>
+    <!-- format -->
+    <string name="map_region_update_applying">نكتب تحديث الأماكن لمنطقة %1$s. قد يستغرق ذلك بضع دقائق.</string>
+    <string name="map_region_update_applying_map">نكتب تحديث الخريطة لمنطقة %1$s. قد يستغرق ذلك بضع دقائق.</string>
+    <string name="map_region_update_full">لم يتّسع التحديث الصغير. نزيل كل أماكن %1$s · %2$d%%</string>
+    <string name="map_region_update_full_map">لم يتّسع التحديث الصغير. نزيل خريطة %1$s كاملة · %2$d%%</string>
+    <string name="settings_routing_applying">نكتب التحديث…</string>
+    <string name="settings_routing_full">نزيل بالكامل · %1$d%%</string>
+    <string name="map_region_map_downloading">نزيل خريطة %1$s · %2$d%%</string>
+    <!-- format -->
+    <string name="mapvm_cells_progress">%1$s، الجزء %2$d من %3$d</string>
+    <!-- format -->
+    <string name="mapvm_cells_ready">الإرشادات والأماكن لهذا الجزء من %1$s تعمل دون اتصال</string>
+    <!-- format -->
+    <string name="mapvm_cells_incomplete">لم تُنزَّل بعض أجزاء %1$s. حاول مرة أخرى لاحقًا.</string>
+    <!-- format -->
+    <string name="mapvm_region_ready">تم تنزيل %1$s: الخريطة والمسارات والأماكن تعمل دون اتصال</string>
+    <!-- format -->
+    <string name="mapvm_region_incomplete">لم يُنزَّل %1$s كاملًا. اتصل بالإنترنت واضغط «تحديث» في الإعدادات ← الخرائط دون اتصال لإكماله</string>
+    <!-- format -->
+    <string name="mapvm_poipack_ready">أصبحت أماكن %1$s قابلة للبحث دون اتصال</string>
+    <!-- format -->
+    <string name="mapvm_poipack_unavailable">لا توجد حزمة أماكن لـ %1$s بعد. ستظهر هنا بمجرد نشرها.</string>
+    <!-- format -->
+    <string name="settings_demo_drive">محاكاة القيادة (تجريبي)</string>
+    <string name="settings_demo_drive_hint">عند التشغيل، يُنفَّذ المسار المخطَّط كمحاكاة بدل استخدام GPS. أوقفه للملاحة الحقيقية.</string>
+    <string name="settings_sim_location">محاكاة موقعي (تجريبي)</string>
+    <string name="settings_sim_location_hint">يتظاهر بأنك في مركز الخريطة، للعروض ولقطات الشاشة. أوقفه لاستخدام GPS الحقيقي.</string>
+    <string name="settings_map">الخريطة</string>
+    <string name="settings_live_traffic">طبقة الازدحام المباشر</string>
+    <string name="settings_live_traffic_hint">يلوّن الطرق حسب الازدحام أثناء التصفّح. الملاحة تلوّن مسارك حسب الازدحام أصلًا.</string>
+    <string name="settings_transit_layer">إبراز خطوط النقل العام</string>
+    <string name="settings_transit_layer_hint">يرسم خطوط القطارات ومترو الأنفاق على الخريطة، كل خط بلونه الخاص حيث توفّره بيانات النقل العام المفتوحة.</string>
+    <string name="settings_transit_lines_metro">خطوط المترو والترام والسكك الخفيفة</string>
+    <string name="settings_transit_lines_trains">خطوط القطارات</string>
+    <string name="settings_transit_stops_bus">مواقف الباصات</string>
+    <string name="settings_transit_stops_metro">محطات المترو والترام</string>
+    <string name="settings_transit_stops_train">محطات القطارات</string>
+    <string name="settings_topography">تظليل التضاريس</string>
+    <string name="settings_topography_hint">يظلّل التلال والجبال على الخريطة. معطّل افتراضيًا.</string>
+    <string name="settings_flock">كاميرات المراقبة</string>
+    <string name="settings_flock_hint">يعرض كاميرات قراءة لوحات السيارات الآلية (Flock) المرصودة على الخريطة، من مشروع DeFlock المجتمعي في OpenStreetMap. مفعّل افتراضيًا.</string>
+    <string name="settings_speed_cams">كاميرات السرعة</string>
+    <string name="settings_speed_cam_warn">نبّهني بصوت مسموع</string>
+    <string name="settings_speed_cam_warn_hint">يقول «كاميرا سرعة أمامك» ويعرض بطاقة عند الاقتراب منها أثناء الملاحة، قبل نحو اثنتي عشرة ثانية. يتبع إعداد الإرشادات المنطوقة. التحذير من الكاميرات أثناء القيادة مقيَّد في بعض الدول، لذا هو معطّل ما لم تفعّله.</string>
+    <string name="nav_speed_camera_ahead">كاميرا سرعة أمامك</string>
+    <string name="settings_flock_nav_card">تنبيه كاميرا اللوحات</string>
+    <string name="settings_flock_nav_card_hint">أثناء الملاحة، يعرض بطاقة عند اقترابك من كاميرا لوحات على مسارك. تُتجاهل الكاميرات الموجَّهة عبر طريقك. معطّل افتراضيًا.</string>
+    <string name="settings_flock_nav_voice">النطق عند وجود كاميرا لوحات أمامك</string>
+    <string name="settings_flock_nav_voice_hint">أثناء الملاحة، يقول «كاميرا قراءة لوحات أمامك» عند اقترابك من إحداها على مسارك، قبل نحو اثنتي عشرة ثانية. يتبع إعداد الإرشادات المنطوقة. معطّل افتراضيًا.</string>
+    <string name="nav_flock_camera_ahead">كاميرا قراءة لوحات أمامك</string>
+    <string name="nav_flock_cameras_ahead">كاميرات قراءة لوحات أمامك</string>
+    <string name="settings_speed_cams_hint">يعرض كاميرات الرادار والسرعة الثابتة المرصودة في OpenStreetMap. التركيبات الثابتة فقط؛ والتغطية تتبع الخريطة، وهي الأقوى في أوروبا. معطّل افتراضيًا.</string>
+    <string name="exp_chooser_fastest">أسرع مسار الآن</string>
+    <string name="exp_chooser_slower">أبطأ بـ %1$s من أسرع مسار</string>
+    <string name="exp_chooser_via">عبر %1$s</string>
+    <string name="exp_chooser_options">خيارات المسار</string>
+    <string name="exp_chooser_more">خيارات إضافية</string>
+    <string name="exp_chooser_add_stops">إضافة محطات</string>
+    <string name="exp_chooser_alts_none">مسار واحد فقط</string>
+    <string name="exp_chooser_alts_title">مسارات بديلة</string>
+    <string name="exp_chooser_alts_back">رجوع</string>
+    <string name="exp_chooser_along">إضافة محطة على الطريق</string>
+    <string name="exp_chooser_share_text">إرشادات إلى %1$s: %2$s، %3$s</string>
+    <string name="settings_flock_route_alert">تجنّب كاميرات المراقبة</string>
+    <string name="settings_flock_detour">جرّب الطرق الجانبية حول الكاميرات</string>
+    <string name="settings_flock_detour_hint">عندما يمرّ أفضل مسار بالكاميرات، يجرّب نقطة قريبة من الطريق عند كل كاميرا ويمرّ بها، كما لو ضغطت مطوّلًا على الخريطة. والمسار الذي يمرّ بكاميرات أقل ضمن انحراف صغير مماثل يصعد إلى أعلى القائمة. يكلّف ذلك طلبات مسار إضافية قليلة في كل رحلة. معطّل افتراضيًا.</string>
+    <string name="settings_flock_route_alert_hint">يحصي كاميرات قراءة لوحات السيارات (Flock) على كل مسار (وتُستثنى الكاميرا الموجَّهة عبر الطريق لأنها تقرأ حركة المرور المتقاطعة) ويختار تلقائيًا مسارًا بكاميرات أقل عندما يكون الفارق الزمني بسيطًا. ولا يأخذك بعيدًا عن طريقك أبدًا، لذا حين يتعذّر تفادي الكاميرات يعرض الأعداد فقط ويترك القرار لك. اضغط مطوّلًا على الخريطة لتوجيه المسار عبر نقطة بنفسك. معطّل افتراضيًا.</string>
+    <plurals name="dir_cameras_avoided">
+        <item quantity="zero">لا فرق في عدد الكاميرات عن أسرع مسار</item>
+        <item quantity="one">يمرّ بكاميرا واحدة أقلّ من أسرع مسار</item>
+        <item quantity="two">يمرّ بكاميرتين أقلّ من أسرع مسار</item>
+        <item quantity="few">يمرّ بـ %1$d كاميرات أقلّ من أسرع مسار</item>
+        <item quantity="many">يمرّ بـ %1$d كاميرا أقلّ من أسرع مسار</item>
+        <item quantity="other">يمرّ بـ %1$d كاميرا أقلّ من أسرع مسار</item>
+    </plurals>
+    <plurals name="dir_cameras_on_route">
+        <item quantity="zero">لا كاميرات على هذا المسار</item>
+        <item quantity="one">كاميرا واحدة على هذا المسار</item>
+        <item quantity="two">كاميرتان على هذا المسار</item>
+        <item quantity="few">%1$d كاميرات على هذا المسار</item>
+        <item quantity="many">%1$d كاميرا على هذا المسار</item>
+        <item quantity="other">%1$d كاميرا على هذا المسار</item>
+    </plurals>
+    <string name="settings_read_all_reviews">زر «قراءة كل المراجعات»</string>
+    <string name="settings_read_all_reviews_hint">يضيف زر «قراءة كل المراجعات» يفتح صفحة مراجعات Google الكاملة داخل التطبيق، بكل المراجعات. الإيقاف = قائمة مراجعات MAP-RMG وحدها.</string>
+    <string name="settings_buildings_3d">مبانٍ ثلاثية الأبعاد</string>
+    <string name="settings_buildings_3d_hint">يُظهر المباني مرتفعة عند التقريب الشديد وعند إمالة الخريطة. إيقافه قد يجعل التحريك أكثر سلاسة على الهواتف القديمة.</string>
+    <string name="settings_building_overlay">تعبئة المباني الناقصة</string>
+    <string name="settings_building_overlay_hint">يرسم أشكال المباني في الضواحي التي تنقصها الخريطة. وتُتخطّى تلقائيًا في المناطق المكتظّة التي تحتوي عليها أصلًا. أوقفه لعدم رسم أي مبانٍ إضافية.</string>
+    <string name="settings_building_debug">تتبّع طبقة المباني</string>
+    <string name="settings_building_debug_hint">يعرض شارة صغيرة على الخريطة تبيّن حالة تعبئة المباني (معطّلة / لا شيء هنا / مخفية / قيد الرسم). أداة اختبار؛ أوقفها للاستخدام العادي.</string>
+    <string name="settings_nav_trace">تسجيل سلاسة الملاحة</string>
+    <string name="settings_nav_trace_hint">يسجّل حركة كاميرا الخريطة أثناء الملاحة، لتشخيص خريطة مهتزّة أو منزلقة. لا يحتوي على بيانات موقع، بل اتجاهات وسرعات وتوقيتات فقط، لذا يمكن إرفاقه بتقرير خطأ بأمان.</string>
+    <string name="settings_nav_trace_export">مشاركة سجل الملاحة</string>
+    <string name="settings_nav_trace_empty">لم يُسجَّل شيء بعد. ابدأ الملاحة إلى مكان أولًا.</string>
+    <string name="settings_voice_vela_name">صوت MAP-RMG (%1$s)</string>
+    <!-- format -->
+    <string name="settings_voice_install_vela">تثبيت صوت MAP-RMG (%1$d م.ب)</string>
+    <!-- format -->
+    <string name="settings_voice_install_vela_hint">صوت الملاحة الموصى به. أعد تثبيته من هنا متى فُقد أو فشل تنزيله.</string>
+    <string name="settings_texture_render">عرض متوافق</string>
+    <string name="settings_texture_render_hint">يرسم الخريطة عبر مسار توافق يتجنّب أخطاء برامج التشغيل الرسومية في بعض الأجهزة. يُفعَّل تلقائيًا إذا تعطّل التطبيق بسبب الخريطة عند التشغيل. أبطأ قليلًا؛ ويتطلّب إعادة تشغيل التطبيق.</string>
+    <string name="settings_texture_render_auto_hint">فُعِّل تلقائيًا على %1$s بعد تعطّل الخريطة عند التشغيل مرتين. وإن كانت الخريطة تعمل مع إيقافه فاتركه موقوفًا: فهو أبطأ وقد يجعل الخريطة تتقطّع أثناء القيادة. يتطلّب إعادة تشغيل التطبيق.</string>
+    <string name="settings_show_reviews">عرض المراجعات</string>
+    <string name="settings_show_reviews_hint">الإيقاف = لا تعرض صفحات الأماكن أي مراجعات، ولن يجلبها MAP-RMG أبدًا.</string>
+    <string name="settings_load_photos">تحميل الصور</string>
+    <string name="settings_load_photos_hint">الإيقاف = لا تعرض صفحات الأماكن أي صور، ولا يُنزَّل شيء من أجلها. يوفّر البيانات.</string>
+    <string name="settings_hide_adult">إخفاء فئات البالغين</string>
+    <string name="settings_hide_adult_hint">التشغيل = إخفاء الحانات والنوادي والكازينوهات ومتاجر الخمور وغيرها من أماكن البالغين والحياة الليلية من البحث والخريطة.</string>
+    <string name="settings_hide_external_links">إخفاء الموقع والروابط الخارجية</string>
+    <string name="settings_hide_external_links_hint">التشغيل = لا تعرض صفحات الأماكن أزرار الموقع أو التجوال الافتراضي أو الحجز / الطلب (فلا فتح لمواقع خارجية عشوائية).</string>
+    <string name="settings_offline">الخرائط دون اتصال</string>
+    <string name="settings_offline_hint">حفظ المنطقة حولك هو كل ما تحتاجه عادةً: الخريطة الكاملة والعناوين والأماكن القريبة، مع المسارات. أما الولايات والدول كاملة فللرحلات الطويلة بلا تغطية، وهي كبيرة الحجم.</string>
+    <string name="settings_offline_map_area">هذه المنطقة (الخريطة الكاملة)</string>
+    <string name="settings_offline_download_viewport">تنزيل منطقة</string>
+    <string name="settings_region_updates">تحديث المناطق المنزَّلة</string>
+    <string name="settings_region_updates_off">أبدًا من تلقاء نفسه</string>
+    <string name="settings_region_updates_wifi">على Wi-Fi</string>
+    <string name="settings_region_updates_mobile">على Wi-Fi وبيانات الجوال</string>
+    <string name="settings_offline_places_with_downloads">تضمين الأماكن مع التنزيلات</string>
+    <string name="settings_offline_places_with_downloads_hint">تنزيل المنطقة يجلب أيضًا بيانات أماكن MAP-RMG الخاصة بها، فتظهر المحال على الخريطة بلا تغطية. نحو نصف غيغابايت لولاية كبيرة. الإيقاف = تُبَثّ الأماكن أثناء الاتصال فقط.</string>
+    <string name="settings_offline_cached_places">الاحتفاظ بالأماكن المعروضة للعمل دون اتصال</string>
+    <string name="settings_offline_cached_places_hint">كل مكان تفتحه أثناء الاتصال يُحفظ على هذا الهاتف مع ما حُمِّل له (التفاصيل والمراجعات والصور التي شاهدتها)، فيُفتح بلا تغطية. يُحتفظ بأحدث 400 مكان لمدة شهر. ويمسحها «مسح السجل» و«حذف كل البيانات دون اتصال».</string>
+    <string name="settings_offline_cached_places_clear">مسح الأماكن المخزَّنة</string>
+    <string name="settings_offline_cached_places_used">%1$s محفوظة على هذا الهاتف</string>
+    <string name="settings_offline_cached_sv_used">التجوال الافتراضي: %1$s محفوظة على هذا الهاتف</string>
+    <string name="settings_offline_cached_sv_clear">مسح التجوال الافتراضي</string>
+    <string name="settings_offline_download_viewport_hint">يفتح الخريطة بإطار فوقها. حرّك الخريطة وقرّبها حتى يغطي الإطار المنطقة التي تريدها، من حيّ إلى نصف ولاية؛ وسترى الحجم قبل تنزيل أي شيء. ويُحفظ كل ما داخل الإطار بتفصيل الشوارع الكامل.</string>
+    <string name="area_pick_hint">حرّك الخريطة وقرّبها حتى يغطي الإطار المنطقة المطلوب تنزيلها</string>
+    <string name="area_pick_estimate">نحو %1$s بتفصيل الشوارع الكامل</string>
+    <string name="area_pick_estimating">نحسب الحجم…</string>
+    <string name="area_pick_too_large">أكبر من أن تُحفظ كمنطقة واحدة. قرّب أكثر، أو نزّل كل %1$s أدناه.</string>
+    <string name="area_pick_too_large_plain">أكبر من أن تُحفظ كمنطقة واحدة. قرّب الخريطة قليلًا.</string>
+    <string name="settings_area_confirm_region">احصل أيضًا على %1$s لإرشادات وأماكن وخريطة دون اتصال تتجاوز هذه المنطقة: نحو %2$s. وهذه لا تتوفر إلا كمنطقة كاملة.</string>
+    <plurals name="area_pick_cells">
+        <item quantity="zero">احصل على الإرشادات والأماكن دون اتصال لهذه المنطقة فقط: نحو %1$s</item>
+        <item quantity="one">احصل على الإرشادات والأماكن دون اتصال لهذه المنطقة فقط: نحو %1$s (جزء واحد من المنطقة)</item>
+        <item quantity="two">احصل على الإرشادات والأماكن دون اتصال لهذه المنطقة فقط: نحو %1$s (جزءان من المنطقة)</item>
+        <item quantity="few">احصل على الإرشادات والأماكن دون اتصال لهذه المنطقة فقط: نحو %1$s (%2$d أجزاء من المنطقة)</item>
+        <item quantity="many">احصل على الإرشادات والأماكن دون اتصال لهذه المنطقة فقط: نحو %1$s (%2$d جزءًا من المنطقة)</item>
+        <item quantity="other">احصل على الإرشادات والأماكن دون اتصال لهذه المنطقة فقط: نحو %1$s (%2$d جزء من المنطقة)</item>
+    </plurals>
+    <plurals name="settings_downloaded_cells">
+        <item quantity="zero">جزء من المنطقة: لا أجزاء، %2$s</item>
+        <item quantity="one">جزء من المنطقة: جزء واحد، %2$s</item>
+        <item quantity="two">جزء من المنطقة: جزءان، %2$s</item>
+        <item quantity="few">جزء من المنطقة: %1$d أجزاء، %2$s</item>
+        <item quantity="many">جزء من المنطقة: %1$d جزءًا، %2$s</item>
+        <item quantity="other">جزء من المنطقة: %1$d جزء، %2$s</item>
+    </plurals>
+    <string name="settings_offline_delete_cells">حذف هذه الأجزاء</string>
+    <plurals name="settings_cells_update_available">
+        <item quantity="zero">لا توجد نسخ أحدث</item>
+        <item quantity="one">جزء واحد له نسخة أحدث</item>
+        <item quantity="two">جزءان لهما نسخة أحدث</item>
+        <item quantity="few">%1$d أجزاء لها نسخة أحدث</item>
+        <item quantity="many">%1$d جزءًا له نسخة أحدث</item>
+        <item quantity="other">%1$d جزء له نسخة أحدث</item>
+    </plurals>
+    <string name="settings_area_confirm_region_have">إرشادات وأماكن %1$s دون اتصال منزَّلة بالفعل.</string>
+    <string name="settings_offline_no_areas">لم تُحفظ أي مناطق بعد.</string>
+    <string name="settings_offline_addresses_missing">المناطق التي حفظتها قبل هذا التحديث لا تتضمن بيانات العناوين. حدّثها للبحث عن العناوين والتوجّه إليها دون اتصال.</string>
+    <string name="settings_offline_addresses_update">تحديث المناطق المحفوظة</string>
+    <string name="settings_offline_delete_area">حذف هذه المنطقة دون اتصال</string>
+    <string name="settings_routing_regions">ولايات ودول كاملة</string>
+    <string name="settings_routing_regions_hint">إرشادات وبحث أماكن وصورة الخريطة لولاية أو محافظة أو دولة كاملة، لتتنقّل وتبحث في أي مكان داخلها دون اتصال. صورة الخريطة هي الجزء الأكبر من التنزيل؛ والمناطق الأصغر التي تحفظها أعلاه تغطي مدينة فقط.</string>
+    <string name="settings_routing_no_regions">لا توجد مناطق متاحة بعد.</string>
+    <string name="settings_clear_filter">مسح التصفية</string>
+    <string name="settings_routing_filter_placeholder">بحث</string>
+    <string name="settings_routing_no_match">لا مناطق تطابق «%1$s».</string>
+    <!-- format -->
+    <string name="settings_routing_downloading">نزيل… %1$d%%</string>
+    <!-- format -->
+    <string name="settings_routing_updating">نحدّث… %1$d%%</string>
+    <!-- format -->
+    <string name="settings_routing_installed">مثبَّت · المسارات تعمل دون اتصال هنا</string>
+    <string name="settings_routing_installed_places">مثبَّت · الأماكن قابلة للبحث دون اتصال</string>
+    <string name="settings_link_action">الروابط من التطبيقات الأخرى</string>
+    <string name="settings_link_action_place">عرض المكان</string>
+    <string name="settings_link_action_directions">فتح الإرشادات</string>
+    <string name="settings_link_action_start">بدء الملاحة</string>
+    <string name="settings_link_action_hint">ما يحدث عندما يسلّم تطبيق آخر موقعًا إلى MAP-RMG. و«بدء الملاحة» مناسب لتطبيقات التوصيل التي ترسل محطة بعد أخرى.</string>
+    <string name="settings_confirm_end_nav">السؤال قبل إنهاء الملاحة</string>
+    <string name="settings_confirm_end_nav_hint">زر الرجوع أثناء القيادة يسأل دائمًا. وعند تفعيل هذا، يسأل الزر الأحمر X أيضًا</string>
+    <string name="nav_end_confirm_title">إنهاء الملاحة؟</string>
+    <string name="nav_end_confirm_body">سيُمسح المسار ومحطاته.</string>
+    <string name="nav_end_confirm_end">إنهاء</string>
+    <string name="nav_end_confirm_keep">متابعة</string>
+    <string name="settings_parking_button">زر موقف السيارات</string>
+    <string name="settings_parking_button_hint">زر P على الخريطة الذي يحفظ مكان وقوفك. الإيقاف: يظهر فقط أثناء وجود موقف محفوظ.</string>
+    <string name="map_layers_places">أيقونات الأماكن: %1$s</string>
+    <!-- format: %1$s is a source, "MAP-RMG data", "Google" or "Both" -->
+    <string name="settings_two_finger_tilt">الإمالة بإصبعين</string>
+    <string name="settings_two_finger_tilt_hint">اسحب بإصبعين للأعلى أو للأسفل لإمالة الخريطة إلى ثلاثي الأبعاد. الإيقاف: القرص يقرّب فقط.</string>
+    <string name="settings_keep_north_up">تثبيت الشمال في الأعلى</string>
+    <string name="settings_keep_north_up_hint">لا تدور الخريطة أبدًا: يُعطَّل التدوير بإصبعين، وتبقى القيادة باتجاه الشمال.</string>
+    <string name="settings_start_view">مكان فتح الخريطة</string>
+    <string name="settings_start_view_here">موقعي الحالي</string>
+    <string name="settings_start_view_last">حيث تركت الخريطة</string>
+    <string name="settings_start_view_place">مكان أختاره</string>
+    <string name="settings_start_view_use_current">استخدام عرض الخريطة الحالي</string>
+    <string name="settings_start_view_hint">مكان الخريطة عند تشغيل MAP-RMG. ورابط من تطبيق آخر يفتح على مكانه الخاص دائمًا.</string>
+    <string name="settings_start_view_saved">سيفتح MAP-RMG على هذا العرض.</string>
+    <string name="settings_speed_display">عرض السرعة وحدّ السرعة</string>
+    <string name="settings_speed_display_hint">سرعتك والحدّ المعلن أثناء القيادة، على الهاتف وعلى شاشة السيارة</string>
+    <string name="mapvm_area_pack_big">البحث دون اتصال هنا يستخدم حزمة أماكن كل %1$s. احصل عليها من الإعدادات ← الخرائط دون اتصال.</string>
+    <!-- format: %1$s country or state name -->
+    <string name="settings_places_shared_pack">الأماكن تغطي كل %1$s (%2$s)</string>
+    <!-- format: %1$s country or state name, %2$s a size like "1.9 GB" -->
+    <string name="settings_routing_places_downloading">نحفظ الأماكن · %1$d%%</string>
+    <!-- format -->
+    <string name="settings_get_places">الحصول على الأماكن</string>
+    <string name="settings_update_places">تحديث الأماكن</string>
+    <string name="settings_routing_update_available">مثبَّت · يتوفر تحديث للأماكن</string>
+    <string name="settings_routing_size_installed_here">نحو %1$s بعد التثبيت · يغطي موقعك</string>
+    <!-- format -->
+    <string name="settings_routing_size_installed">نحو %1$s بعد التثبيت</string>
+    <!-- format -->
+    <string name="settings_storage_title">التخزين</string>
+    <string name="settings_storage_maps">المناطق المحفوظة وذاكرة الخريطة</string>
+    <string name="settings_storage_routing">المسارات دون اتصال</string>
+    <string name="settings_storage_places">الأماكن دون اتصال</string>
+    <string name="settings_storage_voices">الأصوات ونماذج الكلام</string>
+    <string name="settings_storage_measuring">نقيس…</string>
+    <string name="settings_clear_map_cache">مسح ذاكرة الخريطة</string>
+    <string name="settings_clear_map_cache_hint">يفرّغ بلاطات الخريطة المخزَّنة أثناء التصفّح. وتبقى المناطق المحفوظة.</string>
+    <string name="settings_map_cache_cleared">تم مسح ذاكرة الخريطة</string>
+    <string name="settings_delete_offline_all">حذف كل البيانات دون اتصال</string>
+    <string name="settings_delete_offline_all_hint">يزيل كل منطقة محفوظة، وكل منطقة منزَّلة (مسارات وأماكن وخريطة)، وطبقات المباني والعناوين، وذاكرة التصفّح، ويصغّر قاعدة بيانات الخريطة. وتبقى الأصوات. استخدمه إذا لم تتوافق أرقام التخزين أعلاه مع ما تراه في القوائم.</string>
+    <string name="settings_delete_offline_all_title">حذف كل البيانات دون اتصال؟</string>
+    <string name="settings_delete_offline_all_body">سيُحذف نحو %1$s من الخرائط والمسارات والأماكن المنزَّلة. وتبقى الأماكن المحفوظة والرحلات والأصوات.</string>
+    <string name="mapvm_offline_all_deleted">تم حذف البيانات دون اتصال</string>
+    <string name="settings_routing_remove">إزالة المسارات دون اتصال</string>
+    <string name="settings_download">تنزيل</string>
+    <string name="settings_region_whole_or_pieces">ملف واحد، أو %1$d أجزاء أدناه</string>
+    <!-- format -->
+    <string name="settings_downloaded_title">المنزَّل</string>
+    <string name="settings_downloaded_none">لم يُنزَّل شيء بعد. احفظ المنطقة التي تعرضها أعلاه، أو اختر ولاية أو دولة أدناه.</string>
+    <string name="settings_downloaded_area">منطقة محفوظة</string>
+    <string name="settings_region_group_title">كل %1$s</string>
+    <!-- format -->
+    <string name="settings_region_group_size">%1$d أجزاء، نحو %2$s بعد التثبيت</string>
+    <!-- format -->
+    <string name="settings_region_group_partial">%1$d من %2$d أجزاء مثبَّتة، ونحو %3$s للكل</string>
+    <!-- format -->
+    <string name="settings_region_group_installed">كل الأجزاء الـ %1$d مثبَّتة</string>
+    <!-- format -->
+    <string name="settings_region_group_downloading">نزيل الجزء %1$d من %2$d</string>
+    <!-- format -->
+    <string name="settings_region_group_download">تنزيل الكل</string>
+    <string name="settings_update_region">تحديث</string>
+    <string name="settings_saved_places">الأماكن المحفوظة</string>
+    <string name="settings_saved_places_hint">انسخ أماكنك المميّزة بنجمة إلى ملف، أو استعدها على جهاز آخر. والاستيراد يدمج مع ما لديك، ولا يكتب فوق شيء ولا يحذفه، ويقرأ أيضًا ملفات GPX وKML وGeoJSON المصدَّرة من تطبيقات خرائط أخرى.</string>
+    <string name="settings_import_nothing_new">كل ما في هذا الملف محفوظ لديك بالفعل.</string>
+    <string name="settings_import_unreadable">تعذّر فتح هذا الملف.</string>
+    <string name="settings_import_wrong_format">لم يُعثر على أماكن في هذا الملف. يقرأ MAP-RMG ملفاته المصدَّرة، إضافة إلى ملفات GPX أو KML أو GeoJSON المحفوظة من تطبيقات خرائط أخرى.</string>
+    <string name="settings_import_wrong_format_named">لم يُعثر على أماكن في ملف %1$s هذا.</string>
+    <!-- format -->
+    <string name="settings_import_no_picker">لا يوجد منتقي ملفات على هذا الجهاز، لذا لا يمكن اختيار ملف.</string>
+    <string name="settings_no_saved_places">لا أماكن محفوظة بعد</string>
+    <string name="settings_export">تصدير</string>
+    <string name="settings_import">استيراد</string>
+    <string name="settings_data_privacy_hint">يتحدّث MAP-RMG مع نقاط Google العامة مباشرة من هذا الجهاز: بلا خادم وسيط، وبلا حساب، وبلا مفتاح API. وترى Google عنوان IP والاستعلام ومنطقة الخريطة، لا هويتك.</string>
+    <string name="nav_overview">نظرة عامة على المسار</string>
+    <string name="settings_map_places">الأماكن على الخريطة</string>
+    <string name="settings_house_numbers">أرقام المباني</string>
+    <string name="settings_house_numbers_near">عند التقريب الشديد فقط</string>
+    <string name="settings_house_numbers_normal">عادي</string>
+    <string name="settings_house_numbers_far">أبعد قليلًا</string>
+    <string name="settings_house_numbers_hint">تأتي أرقام المباني من OpenStreetMap، ومن OpenAddresses في الولايات المتحدة. والمبنى الذي لا رقم له في أيٍّ منهما لا يُعرض له رقم، مع أن البحث يجد عنوانه عبر Google.</string>
+    <string name="settings_show_pois">إظهار الأماكن</string>
+    <string name="settings_show_pois_hint">أيقونات المحال والأماكن على خريطة التصفّح. الإيقاف = خريطة نظيفة؛ وتبقى الأماكن التي تبحث عنها ظاهرة.</string>
+    <string name="settings_places_source">أيقونات الأماكن على الخريطة</string>
+    <string name="settings_places_source_open">بيانات MAP-RMG</string>
+    <string name="settings_places_source_google">Google</string>
+    <string name="settings_places_source_both">كلاهما</string>
+    <string name="settings_places_source_open_hint">تأتي الأيقونات من بيانات MAP-RMG الخاصة. وتحريك الخريطة لا يتصل بـ Google أبدًا، ويعمل دون اتصال.</string>
+    <string name="settings_places_source_google_hint">تأتي الأيقونات من Google. وكل تحريك للخريطة يرسل موضعها إلى Google، ولا يُرسم شيء دون اتصال.</string>
+    <string name="settings_places_source_both_hint">أيقونات MAP-RMG، مع أي إضافات لدى Google بمجرد توقّفك عن تحريك الخريطة.</string>
+    <string name="settings_places_source_note">البحث، أو الضغط على مكان، يطلب من Google ساعات العمل والمراجعات والصور أيًّا كان اختيارك.</string>
+    <string name="settings_places_source_more">اعرف المزيد</string>
+    <string name="settings_places_source_more_credit">Overture Maps</string>
+    <string name="settings_places_lookup">البحث عن الأماكن المضغوطة في Google</string>
+    <string name="settings_places_lookup_hint">الضغط على مكان يجلب ساعات عمله ومراجعاته وصوره من Google، ويتذكّر MAP-RMG التطابق ليكون الضغط التالي فوريًا. الإيقاف = يعرض المكان المضغوط ما في بيانات MAP-RMG فقط (الاسم والنوع والعنوان والهاتف والموقع)، ولا يصل شيء عن الضغطة إلى Google. ويبقى البحث والإرشادات يستخدمان Google.</string>
+    <string name="settings_places_source_more_title">من أين تأتي بيانات أماكن MAP-RMG</string>
+    <string name="settings_places_source_more_body">بيانات أماكن MAP-RMG هي Overture Maps، مجموعة بيانات مفتوحة للأعمال تديرها Meta وMicrosoft وغيرهما، إضافة إلى AllThePlaces التي تجمع سلاسل المتاجر من مواقعها الرسمية، مع تصحيح OpenStreetMap لموقع كل متجر فعليًا. تُخبز هذه المصادر الثلاثة في بلاطات الخريطة وتُقدَّم من مستودع GitHub الخاص بالمشروع، فلا يصل شيء عن مناطق تصفّحك إلى Meta أو Google.\n\nوتُبَثّ أثناء التصفّح وتُنزَّل مع المنطقة للاستخدام دون اتصال. وحيث لا تتوفر بيانات لمنطقة بعد، تعود الخريطة إلى Google.\n\nأما البحث وتفاصيل الأماكن وساعات العمل والمراجعات والصور فتأتي دائمًا من Google، أيًّا كان الخيار الذي تختاره.</string>
+    <string name="settings_show_civic">الحدائق والمدارس والأماكن العامة</string>
+    <string name="settings_show_civic_hint">الفئة غير التجارية من أيقونات الأماكن. الإيقاف يعرض المحال التجارية فقط.</string>
+    <string name="settings_show_transit_stops">محطات النقل العام</string>
+    <string name="settings_show_transit_stops_hint">أيقونات مواقف الباصات ومحطات القطارات عند تقريب الشوارع.</string>
+    <string name="settings_poi_icon_size">حجم أيقونات الأماكن</string>
+    <string name="settings_poi_size_small">صغير</string>
+    <string name="settings_poi_size_default">افتراضي</string>
+    <string name="settings_poi_size_large">كبير</string>
+    <string name="settings_poi_icon_size_hint">المقاس الصغير مناسب للشاشات منخفضة الدقة مثل شاشات السيارات، حيث تظهر الأيقونات الافتراضية كبيرة الحجم.</string>
+    <string name="settings_live_rechecks">إعادة فحص الازدحام أثناء الملاحة</string>
+    <string name="settings_live_rechecks_hint">كل دقيقتين أثناء القيادة، يطلب MAP-RMG من Google بيانات ازدحام محدَّثة من موقعك الحالي. وهذا يشغّل عروض المسار الأسرع ووقت الوصول المباشر، لكنه يخبر Google أيضًا بمكانك على المسار. الإيقاف: يبقى مسارك يُعاد حسابه عند خروجك عنه.</string>
+    <string name="nav_edit_route">تعديل المسار</string>
+    <string name="nav_edit_route_hint">إضافة محطة على الطريق</string>
+    <string name="nav_bar_to_stop">إلى %1$s</string>
+    <!-- format: whole trip's time left, then its arrival clock -->
+    <string name="nav_bar_trip">الرحلة %1$s · %2$s</string>
+    <string name="nav_bar_your_stop">محطتك</string>
+    <string name="nav_bar_stop_cd">%1$s و%2$s إلى %3$s، والوصول عند %4$s. الرحلة كاملة %5$s و%6$s، والوصول عند %7$s.</string>
+    <string name="nav_stops_whole_trip">الرحلة كاملة: %1$s · %2$s · الوصول %3$s</string>
+    <string name="nav_stops_remove_next">إزالة التالية</string>
+    <string name="nav_stops_remove_confirm">إزالة %1$s من هذه الرحلة؟</string>
+    <!-- format -->
+    <string name="nav_stops_remove_action">إزالة</string>
+    <string name="nav_stop_offer_remove">إزالة المحطة</string>
+    <string name="settings_google_session">جلسة Google</string>
+    <string name="settings_block_google_telemetry">حجب قياسات صفحات Google</string>
+    <string name="settings_google_usage">الطلبات إلى Google</string>
+    <string name="settings_google_usage_hint">تُحسب على هذا الهاتف ولا تُرسل إلى أي جهة. ولا تشملها بلاطات الخريطة الخاصة بالازدحام المباشر وبعض صور الأقمار الاصطناعية.</string>
+    <string name="google_usage_kind_page_resources">ما تحمّله صفحات Google (صور، سكربتات، تسجيل)</string>
+    <string name="settings_google_usage_summary">اليوم: %1$d. آخر 7 أيام: نحو %2$d يوميًا.</string>
+    <string name="settings_google_usage_none">لا شيء بعد.</string>
+    <string name="settings_google_usage_row">%1$s: %2$d اليوم، %3$d هذا الأسبوع</string>
+    <string name="google_usage_kind_search">البحث والبحث عن الأماكن</string>
+    <string name="google_usage_kind_nearby">الأماكن حول الخريطة</string>
+    <string name="google_usage_kind_details">تفاصيل الأماكن</string>
+    <string name="google_usage_kind_photos">صور الأماكن</string>
+    <string name="google_usage_kind_reviews">المراجعات</string>
+    <string name="google_usage_kind_images">الصور المصغّرة</string>
+    <string name="google_usage_kind_directions">الإرشادات والازدحام</string>
+    <string name="google_usage_kind_suggestions">اقتراحات البحث</string>
+    <string name="google_usage_kind_streetview">التجوال الافتراضي</string>
+    <string name="google_usage_kind_session">بدء الجلسة</string>
+    <string name="google_usage_kind_lists">القوائم المشتركة</string>
+    <string name="google_usage_kind_page">صفحات Google (%1$s)</string>
+    <string name="google_usage_kind_other">أخرى</string>
+    <string name="settings_block_google_telemetry_hint">تُبلّغ صفحات Google عن نفسها: إشارات تسجيل وطلبات خلفية من شريط الحساب. ولا يحتاج MAP-RMG إلى أيٍّ منها. وتُرسل افتراضيًا لأن المتصفح الذي لا يرسلها يبدو لـ Google أقل شبيهًا بإنسان، وهذا جزء مما يحدّد حصول جلستك على العرض المحدود. فعّل هذا للردّ عليها على الهاتف بدلًا من ذلك.</string>
+    <string name="settings_google_session_limited">تمنح Google هذا الهاتف الآن عرضًا محدودًا: صور أقل في كل صفحة، ولا «الأوقات الشائعة» في بعض الأماكن، و«المزيد من المراجعات» لا يحمّل شيئًا. ويرتفع ذلك عادةً من تلقاء نفسه بعد حين. والجلسة الجديدة تبدأ محدودة أيضًا، لذا نادرًا ما يفيد بدء واحدة.</string>
+    <string name="place_limited_view">تعرض Google الآن عرضًا محدودًا، لذا قد تغيب «الأوقات الشائعة» و«المزيد من المراجعات» هنا.</string>
+    <string name="settings_google_session_hint">تتذكّر Google هذا الهاتف بملف تعريف ارتباط (كوكي)، فيمكن ربط ما يبحث عنه MAP-RMG ما دامت الجلسة قائمة، بلا اسم أو حساب. وبدء جلسة جديدة يحدّ من ذلك. لكن الجلسة الجديدة تحصل على عرض أقصر من Google مؤقتًا (مراجعات أقل، وغياب «الأوقات الشائعة» في بعض الأماكن).</string>
+    <string name="settings_google_session_week">بدء جلسة جديدة كل أسبوع (موصى به)</string>
+    <string name="settings_google_session_day">بدء جلسة جديدة كل يوم</string>
+    <string name="settings_google_session_launch">بدء جلسة جديدة كل مرة يفتح فيها MAP-RMG (الأكثر خصوصية)</string>
+    <string name="settings_google_session_launch_hint">الثمن: تتعامل Google مع كل جلسة كزائر جديد، فتحصل غالبًا على عرضها الأقصر (نحو خمس مراجعات، مع غياب «الأوقات الشائعة» في كثير من الأحيان). وتحمّل الأماكن أبطأ وتستهلك بيانات أكثر، لأن أول إجابات الجلسة الجديدة تعود مختصرة فتُطلب مرة أخرى. ونظام أندرويد يعيد تشغيل التطبيقات في الخلفية، فقد يعني ذلك عدة جلسات جديدة يوميًا، وكثرة الزوار الجدد من اتصال واحد قد تجلب مزيدًا من فحوص Google الآلية. وتبقى Google ترى عنوان IP نفسه، الذي يربط الجلسات من اتصال واحد خلال مدة قصيرة على أي حال.</string>
+    <string name="settings_google_session_now">بدء جلسة جديدة الآن</string>
+    <string name="settings_google_session_done">بدأت جلسة Google جديدة</string>
+    <string name="settings_clear_history">مسح السجل</string>
+    <string name="settings_clear_history_hint">عمليات البحث الأخيرة، والأماكن الأخيرة، وسجل المواقف، والرحلات المسجّلة. وتبقى الأماكن المحفوظة والقوائم.</string>
+    <string name="settings_clear_history_action">مسح</string>
+    <string name="settings_clear_history_confirm_title">مسح كل السجل؟</string>
+    <string name="settings_clear_history_confirm_body">ستُحذف عمليات البحث الأخيرة والأماكن الأخيرة وسجل المواقف وكل رحلة مسجّلة. ولا يمكن التراجع عن ذلك. أما الأماكن المحفوظة والقوائم فلا تتأثر.</string>
+    <string name="settings_clear_history_done">تم مسح السجل</string>
+    <string name="settings_privacy_button">ما الذي تتلقّاه Google من بيانات</string>
+    <string name="settings_google_free">استخدام MAP-RMG دون Google</string>
+    <string name="settings_google_free_hint">لا يُرسل شيء إلى Google. يستخدم البحث OpenStreetMap والمناطق المنزّلة لديك، وتأتي أماكن الخريطة من بيانات MAP-RMG الخاصة، والمسارات من الموجّه المفتوح بلا ازدحام مباشر. وستفقد المراجعات والصور وساعات عمل Google وأوقات الوصول المباشرة والتجوال الافتراضي والصور المقربة بالأقمار الاصطناعية. أما إرشادات النقل العام فتأتي من المخطِّط المفتوح. وتبقى المناطق المنزّلة تعمل دون اتصال بالكامل.</string>
+    <string name="settings_diagnostics">التشخيص</string>
+    <string name="settings_diagnostics_hint">معطّل افتراضيًا. وعند تفعيله يحتفظ MAP-RMG بسجل محلي قصير يمكنك تصديره وتسليمه لمطوّر. ولا يُرفع أي شيء، وإيقافه يمحو السجل.</string>
+    <string name="settings_share_diagnostics">مشاركة التشخيص</string>
+    <string name="settings_diag_nothing">لم يُسجَّل شيء بعد. استخدم التطبيق ثم صدّر.</string>
+    <string name="settings_diag_export">تصدير جلسة التصحيح</string>
+    <string name="settings_diag_redact">حجب الأماكن في الملفات المصدَّرة</string>
+    <string name="settings_diag_redact_trips_hint">يخفي عمليات البحث والوجهات والروابط وأسماء الأماكن من تقرير التشخيص ويقرّب إحداثياته إلى نحو 10 كم. وتبقى الأوقات والأعداد والأخطاء. وتبدأ مشاركة الرحلات على أكبر مسافة قصّ.</string>
+    <string name="settings_save_trips">حفظ رحلاتي (لإعادة العرض)</string>
+    <string name="settings_save_trips_hint">يسجّل مسار GPS لكل قيادة على هذا الهاتف، لإعادة عرضها لاحقًا. ولا يغادر الهاتف أبدًا.</string>
+    <string name="settings_recorded_trips_hint">الرحلات المسجّلة. اضغط «إعادة العرض» لتشغيل إحداها على الخريطة (3×):</string>
+    <string name="settings_trip_replay">إعادة العرض</string>
+    <string name="settings_trip_read_error">تعذّرت قراءة هذه الرحلة</string>
+    <string name="settings_trip_share">مشاركة</string>
+    <string name="settings_trip_share_title">مشاركة هذه الرحلة</string>
+    <string name="settings_trip_share_explain">الرحلة المسجّلة تبدأ وتنتهي حيث تبدأ أنت وتنتهي. والقصّ يحذف كل نقطة قريبة من البداية والنهاية والوجهة ومن موقعَي المنزل والعمل، مع الحفاظ على الجزء الأوسط بدقته الكاملة.</string>
+    <string name="settings_trip_share_radius">مسافة القصّ</string>
+    <string name="settings_trip_share_radius_m">%1$d م</string>
+    <!-- 1: fixes removed, 2: fixes kept, 3: meters off the start, 4: meters off the end -->
+    <string name="settings_trip_share_summary">يحذف %1$d من النقاط المسجّلة ويحتفظ بـ %2$d. أي %3$d م من البداية و%4$d م من النهاية.</string>
+    <string name="settings_trip_share_also">ويُحذف أيضًا الوجهة واسم الرحلة والإرشادات المنطوقة عند الطرفين وبداية خط المسار. وتُعاد ضبط الأوقات بحيث لا يبيّن الملف وقت قيادتك.</string>
+    <!-- 1: latitude, 2: longitude -->
+    <string name="settings_trip_share_first">أول نقطة متبقية: %1$s، %2$s. تأكّد أنها ليست مكانًا يكشف هويتك.</string>
+    <string name="settings_trip_share_trimmed">مشاركة مقصوصة</string>
+    <string name="settings_trip_share_full">مشاركة المسار كاملًا</string>
+    <string name="settings_trip_scrub_short">هذه القيادة أقصر من مسافة القصّ، فلم يتبقَّ جزء أوسط للمشاركة. جرّب مسافة أصغر.</string>
+    <string name="settings_trip_delete">حذف الرحلة</string>
+    <string name="settings_trip_delete_selected">حذف (%1$d)</string>
+    <string name="settings_trip_delete_selected_body">ستُحذف الرحلات المسجّلة المحدَّدة من هذا الهاتف. ولا يمكن التراجع عن ذلك.</string>
+    <string name="settings_trip_rename">إعادة التسمية</string>
+    <string name="settings_trip_rename_title">اسم هذه الرحلة</string>
+    <string name="settings_trip_rename_hint">اسم الرحلة</string>
+    <string name="settings_trip_rename_failed">تعذّرت إعادة تسمية هذه الرحلة</string>
+    <string name="settings_trip_select">تحديد الرحلات</string>
+    <string name="settings_trip_select_done">تم</string>
+    <string name="settings_trip_share_selected">مشاركة %1$d</string>
+    <!-- format -->
+    <string name="settings_trip_select_all">تحديد الكل</string>
+    <string name="settings_trip_more">المزيد لهذه الرحلة</string>
+    <string name="settings_trip_batch_title">مشاركة الرحلات المحدَّدة</string>
+    <string name="settings_trip_batch_explain">تُرسل الرحلات معًا في ملف zip واحد. وتُقصّ كل واحدة بالمسافة نفسها: تُحذف كل نقطة قريبة من بدايتها ونهايتها ووجهتها ومن موقعَي المنزل والعمل، ويُحفظ الوسط بدقته الكاملة.</string>
+    <string name="settings_trip_batch_summary">الرحلات في الملف: %1$d من %2$d. النقاط المحذوفة: %3$d. النقاط المحفوظة: %4$d.</string>
+    <!-- format -->
+    <string name="settings_trip_batch_left_out">استُبعدت لأنها أقصر من مسافة القصّ: %1$d. وقد تحفظها مسافة أصغر.</string>
+    <!-- format -->
+    <string name="settings_trip_batch_none">كل رحلة محدَّدة أقصر من مسافة القصّ، فلم يتبقَّ شيء للمشاركة. جرّب مسافة أصغر.</string>
+    <string name="settings_trip_batch_confirm">مشاركة الملف المضغوط</string>
+    <string name="settings_name_trips">تسمية كل رحلة عند حفظها</string>
+    <string name="settings_name_trips_hint">بعد انتهاء قيادة مسجّلة، يسألك MAP-RMG عمّا تسمّيها. معطّل افتراضيًا؛ ويمكنك دائمًا إعادة تسمية أي رحلة لاحقًا من القائمة أدناه.</string>
+    <string name="trip_name_prompt_title">اسم هذه القيادة</string>
+    <string name="trip_name_prompt_save">حفظ الاسم</string>
+    <string name="trip_name_prompt_skip">ليس الآن</string>
+    <string name="settings_no_trips_hint">لم تُسجَّل رحلات بعد. ابدأ الملاحة إلى مكان مع تفعيل هذا الخيار وستظهر هنا لإعادة العرض.</string>
+    <string name="settings_trip_consent_title">حفظ رحلاتك؟</string>
+    <string name="settings_trip_consent_body">سيسجّل MAP-RMG مسار GPS لكل ملاحة على هذا الهاتف، لتُعاد عرض أي قيادة للاختبار دون تكرارها. وهذا أكثر كشفًا من التشخيص (فهو يلتقط مساراتك بدقة)، لكنه يبقى على الهاتف ولا يُرفع أبدًا. أوقفه وقتما تشاء.</string>
+    <string name="settings_turn_on">تشغيل</string>
+    <string name="settings_cancel">إلغاء</string>
+    <string name="settings_crash_hint">أُغلق MAP-RMG بشكل غير متوقّع مؤخرًا. وإرسال تقرير العطل (تتبّع الاستدعاءات) يساعد في إصلاحه. وهو ملف نصي بسيط بلا بيانات شخصية.</string>
+    <string name="settings_crash_export">تصدير تقرير العطل</string>
+    <string name="settings_crash_discard">تجاهل</string>
+    <string name="settings_crash_diag_offer">التشخيص معطّل، فلم يُسجَّل شيء قبل هذه الحالة. فعّله لتسجيل تفاصيل أكثر إن تكرّر الأمر.</string>
+    <string name="settings_crash_enable_diag">تفعيل التشخيص</string>
+    <string name="settings_diag_consent_title">تفعيل التشخيص؟</string>
+    <string name="settings_diag_consent_body">سيحتفظ MAP-RMG بسجل محلي قصير لعمليات بحثك ومساراتك وأي أخطاء. ولا يغادر الهاتف إلا إذا ضغطت «تصدير» واخترت وجهته. أوقفه وقتما تشاء لمسح السجل.</string>
+    <string name="settings_about">حول</string>
+    <string name="settings_about_hint">MAP-RMG تطبيق خرائط مبني على Vela Maps مفتوحة المصدر: بلاطات مفتوحة للخريطة الأساسية، وبيانات أماكن، وتوجيه وأوقات وصول تراعي الازدحام، وصوت يعمل على الهاتف. رخصة GPLv3. ولا يحتاج خدمات Play.</string>
+    <string name="settings_support">الدعم</string>
+    <string name="settings_support_hint">MAP-RMG مجاني وبلا إعلانات. وإن أصبح مفيدًا لك، فالتبرّع يساعد على استمرار التطوير. وهو اختياري تمامًا.</string>
+    <string name="settings_support_button">دعم MAP-RMG</string>
+    <string name="donate_no_browser">لا يوجد متصفح مثبَّت لفتح صفحة التبرّع</string>
+    <string name="settings_version">الإصدار</string>
+    <string name="settings_version_line">MAP-RMG %1$s  (بنية %2$d)</string>
+    <!-- format -->
+    <string name="settings_installer_play">مثبَّت بواسطة %1$s. وهذا التثبيت مهيّأ لـ Android Auto؛ والتحديث من داخل التطبيق سيلغي ذلك، لذا حدّث عبر المُثبِّت نفسه.</string>
+    <string name="settings_installer_started_by">بدأ التثبيت %1$s، وهو ما تتحقّق منه إصدارات Android Auto الأحدث.</string>
+    <string name="settings_installer_none">تثبيت يدوي (لا مُثبِّت مسجَّل). ولن يُدرج Android Auto هذا التثبيت.</string>
+    <string name="settings_installer_other">مثبَّت بواسطة %1$s. ولن يُدرج Android Auto هذا التثبيت.</string>
+    <string name="settings_version_copied">تم نسخ الإصدار</string>
+    <string name="settings_collapse">طيّ</string>
+    <string name="settings_expand">توسيع</string>
+    <string name="settings_voice_lib_empty_hint">تُميّز ★ الأصوات الموصى بها. وكل صوت يعمل دون اتصال على هاتفك.</string>
+    <string name="settings_voice_lib_installed_hint">المثبَّت: %1$d م.ب · %2$d صوت.</string>
+    <!-- format -->
+    <string name="settings_voice_lib_lang_hint">الإرشادات بـ %1$s. نزّل صوتًا بلغة %2$s أدناه لتتوافق الإرشادات المنطوقة (فالصوت الإنجليزي ينطق أسماء شوارع %3$s خطأً).</string>
+    <!-- format -->
+    <string name="settings_voice_search">ابحث في الأصوات</string>
+    <string name="settings_voice_show_more">عرض %1$d إضافية</string>
+    <string name="settings_voice_show_less">عرض أقل</string>
+    <string name="settings_voice_this_voice">هذا الصوت</string>
+    <string name="settings_voice_remove_title">إزالة %1$s؟</string>
+    <!-- format -->
+    <string name="settings_voice_remove_body">هذا هو صوت MAP-RMG الوحيد لديك. وستعود الإرشادات المنطوقة إلى محرّك تحويل نص إلى كلام في النظام (أو تصمت إن لم يوجد) حتى تنزّل صوتًا آخر.</string>
+    <string name="settings_voice_remove">إزالة</string>
+    <string name="settings_voice_gender_female">أنثوي</string>
+    <string name="settings_voice_gender_male">ذكوري</string>
+    <string name="settings_voice_gender_multi">%1$d أصوات</string>
+    <!-- format -->
+    <string name="settings_voice_gender_neutral">محايد</string>
+    <string name="settings_voice_row_downloading">نزيل… %1$d%%</string>
+    <!-- format -->
+    <string name="settings_voice_row_in_use">قيد الاستخدام · %1$s · %2$s · %3$s م.ب</string>
+    <!-- format -->
+    <string name="settings_voice_row_other_language">تُلفظ الإرشادات بـ %1$s. ولسماع هذا الصوت، اجعل لغة الإرشادات %2$s.</string>
+    <!-- format: %1$s and %2$s are language names -->
+    <string name="settings_voice_row_downloaded">منزَّل · %1$s · %2$s · %3$s م.ب</string>
+    <!-- format -->
+    <string name="settings_voice_row_use">استخدام</string>
+    <string name="settings_voice_row_remove">إزالة %1$s</string>
+    <!-- format -->
+    <!-- place: PlaceSheet.kt -->
+    <string name="place_photo_number">صورة %1$d</string>
+    <!-- format -->
+    <string name="place_photo_category_all">الكل</string>
+    <string name="place_saved">محفوظ</string>
+    <string name="place_save">حفظ</string>
+    <string name="place_more_options">خيارات إضافية</string>
+    <string name="place_set_as_home">تعيين كالمنزل</string>
+    <string name="place_set_as_work">تعيين كالعمل</string>
+    <string name="place_close">إغلاق</string>
+    <string name="place_permanently_closed">مغلق نهائيًا</string>
+    <string name="place_temporarily_closed">مغلق مؤقتًا</string>
+    <string name="place_address_copied">تم نسخ العنوان</string>
+    <string name="place_copy_address">نسخ العنوان</string>
+    <string name="place_directions">الإرشادات</string>
+    <string name="place_call">اتصال</string>
+    <string name="place_website">الموقع الإلكتروني</string>
+    <string name="place_hours_not_listed">ساعات العمل غير مدرجة</string>
+    <string name="place_source_overture">Overture</string>
+    <string name="place_source_atp">AllThePlaces (%1$s)</string>
+    <string name="place_source_osm">OpenStreetMap</string>
+    <string name="place_origin_checking">من %1$s · نتحقق من Google</string>
+    <string name="place_origin_unlinked">من %1$s · لا تطابق في Google</string>
+    <string name="place_origin_plain">من %1$s</string>
+    <string name="place_also_at_location">أيضًا في هذا الموقع</string>
+    <string name="place_open">مفتوح</string>
+    <string name="place_people_also_search">يبحث الناس أيضًا عن</string>
+    <string name="place_photo_caption">صورة · %1$s</string>
+    <!-- format -->
+    <string name="place_change_start">تغيير نقطة البداية</string>
+    <string name="place_move_stop_up">تحريك المحطة للأعلى</string>
+    <string name="place_move_stop_down">تحريك المحطة للأسفل</string>
+    <string name="place_remove_stop">حذف المحطة</string>
+    <string name="place_add_stop">إضافة محطة</string>
+    <string name="stops_editor_title">المحطات</string>
+    <string name="stops_edit">تعديل المحطات</string>
+    <string name="steps_stop_at">محطة: %1$s</string>
+    <string name="steps_stop">محطة</string>
+    <string name="stops_drag_reorder">اسحب لإعادة الترتيب</string>
+    <string name="place_change_destination">تغيير الوجهة</string>
+    <string name="place_swap_start_destination">تبديل البداية والوجهة</string>
+    <string name="place_close_directions">إغلاق الإرشادات</string>
+    <string name="place_mode_drive">القيادة</string>
+    <string name="place_mode_transit">النقل العام</string>
+    <string name="place_mode_walk">المشي</string>
+    <string name="place_mode_bike">الدرّاجة</string>
+    <string name="place_finding_route">نبحث عن أفضل مسار…</string>
+    <string name="place_start">ابدأ</string>
+    <string name="place_steps">الخطوات</string>
+    <string name="place_search_along_route">البحث على طول المسار</string>
+    <string name="place_leave_now">المغادرة الآن</string>
+    <string name="place_depart_at">المغادرة عند</string>
+    <string name="place_arrive_by">الوصول قبل</string>
+    <string name="place_depart_arrive">المغادرة %1$s  ·  الوصول %2$s</string>
+    <!-- format -->
+    <string name="place_arriveby_leave">الوصول قبل %1$s  ·  المغادرة %2$s</string>
+    <!-- format -->
+    <string name="place_in_typical_traffic">حسب الازدحام المعتاد</string>
+    <string name="place_based_current_traffic">حسب الازدحام الحالي</string>
+    <string name="place_arrive_approx">الوصول عند %1$s</string>
+    <!-- format -->
+    <string name="place_usually_range">عادةً %1$s – %2$s</string>
+    <!-- format -->
+    <string name="place_fastest">الأسرع</string>
+    <string name="place_delta_min">+%1$d د</string>
+    <!-- format -->
+    <string name="place_via">عبر %1$s</string>
+    <!-- format -->
+    <string name="place_live_traffic">ازدحام مباشر</string>
+    <string name="place_route_offline">مسار دون اتصال، بلا ازدحام مباشر</string>
+    <string name="place_traffic_light">ازدحام خفيف</string>
+    <string name="place_traffic_moderate">ازدحام متوسط</string>
+    <string name="place_traffic_heavy">ازدحام كثيف</string>
+    <string name="place_finding_transit">نبحث عن مسارات النقل العام…</string>
+    <string name="place_no_transit">لم يُعثر على مسارات نقل عام</string>
+    <string name="place_hide_steps">إخفاء الخطوات</string>
+    <string name="place_show_steps">عرض الخطوات</string>
+    <string name="place_walk">مشي</string>
+    <string name="place_gallery_counter">%1$d / %2$d</string>
+    <!-- format -->
+    <string name="place_search_reviews">البحث في المراجعات</string>
+    <string name="place_sort_reviews">ترتيب المراجعات</string>
+    <string name="place_tab_reviews">المراجعات</string>
+    <string name="place_tab_menu">القائمة</string>
+    <string name="place_tab_about">نبذة</string>
+    <string name="place_sort_relevant">الأكثر صلة</string>
+    <string name="place_sort_newest">الأحدث</string>
+    <string name="place_sort_highest">الأعلى تقييمًا</string>
+    <string name="place_sort_lowest">الأدنى تقييمًا</string>
+    <plurals name="place_review_count">
+        <item quantity="zero">لا مراجعات</item>
+        <item quantity="one">مراجعة واحدة</item>
+        <item quantity="two">مراجعتان</item>
+        <item quantity="few">%1$d مراجعات</item>
+        <item quantity="many">%1$d مراجعة</item>
+        <item quantity="other">%1$d مراجعة</item>
+    </plurals>
+    <string name="place_more_photos">صور أكثر</string>
+    <string name="place_more_reviews">مراجعات أكثر</string>
+    <string name="place_reviews_limited">تعرض Google الآن قائمة مراجعات أقصر.</string>
+    <string name="place_reviews_so_far">المراجعات · %1$d حتى الآن</string>
+    <!-- format -->
+    <string name="place_gathering_reviews">نجمع المراجعات…</string>
+    <string name="place_reviews_throttled">لا تقدّم Google مراجعات لهذه الجلسة الآن. حاول مرة أخرى بعد دقائق.</string>
+    <string name="place_reviews_load_failed">تعذّر تحميل المراجعات. اضغط لإعادة المحاولة.</string>
+    <string name="place_no_reviews">لا مراجعات متاحة.</string>
+    <string name="place_review_more">المزيد</string>
+    <string name="place_review_less">أقل</string>
+    <string name="place_clear_review_search">مسح البحث في المراجعات</string>
+    <string name="place_no_reviews_mention">لا مراجعات تذكر «%1$s» (بحثنا في %2$d مراجعة محمَّلة).</string>
+    <!-- format -->
+    <string name="place_back">رجوع</string>
+    <string name="place_street_view">التجوال الافتراضي</string>
+    <string name="street_view_none">لا صور للتجوال الافتراضي هنا</string>
+    <string name="street_view_offline">يحتاج التجوال الافتراضي إلى اتصال هنا: لم يُعرض هذا الموقع من قبل</string>
+    <string name="street_view_move">الانتقال إلى هنا</string>
+    <string name="street_view_dates">تواريخ أخرى</string>
+    <string name="street_view_fullscreen">تبديل ملء الشاشة</string>
+    <string name="place_reviews_title">المراجعات</string>
+    <string name="place_from_the_owner">من المالك</string>
+    <string name="place_share_place">مشاركة المكان</string>
+    <string name="place_share">مشاركة</string>
+    <string name="place_open_web">فتح على الويب</string>
+    <string name="place_copy_link">نسخ الرابط</string>
+    <string name="place_copy_name">نسخ الاسم</string>
+    <string name="update_notes_show">الجديد في هذا الإصدار</string>
+    <string name="update_notes_hide">إخفاء الجديد</string>
+    <string name="place_name_copied">تم نسخ الاسم</string>
+    <string name="place_link_copied">تم نسخ الرابط</string>
+    <string name="place_share_gmaps_link">رابط خرائط Google</string>
+    <string name="place_share_map_pin">دبوس خريطة (geo:)</string>
+    <string name="place_open_other_app">الفتح في تطبيق خرائط آخر</string>
+    <string name="place_share_coordinates">الإحداثيات</string>
+    <string name="place_copy_coordinates">نسخ الإحداثيات</string>
+    <string name="place_coordinates_copied">تم نسخ الإحداثيات</string>
+    <string name="place_share_address">العنوان</string>
+    <string name="place_popular_times">الأوقات الشائعة</string>
+    <string name="place_busyness_right_now">%1$s الآن</string>
+    <!-- format -->
+    <string name="place_hours">ساعات العمل</string>
+    <string name="place_departments">الأقسام</string>
+    <string name="place_collapse_hours">طيّ ساعات العمل</string>
+    <string name="place_expand_hours">توسيع ساعات العمل</string>
+    <!-- mapscreen: MapScreen.kt -->
+    <string name="mapscreen_recenter">إعادة التمركز</string>
+    <string name="mapscreen_search_this_area">البحث في هذه المنطقة</string>
+    <string name="mapscreen_place">مكان</string>
+    <string name="mapscreen_your_location">موقعك</string>
+    <string name="mapscreen_choose_on_map">التحديد على الخريطة</string>
+    <string name="mapscreen_choose_origin_hint">حرّك الخريطة لتحديد نقطة البداية</string>
+    <string name="mapscreen_choose_stop_hint">حرّك الخريطة لتحديد المحطة</string>
+    <string name="mapscreen_choose_dest_hint">حرّك الخريطة لتحديد الوجهة</string>
+    <string name="mapscreen_choose_set_dest">تعيين الوجهة</string>
+    <string name="mapscreen_choose_set_start">تعيين البداية</string>
+    <string name="mapscreen_choose_set_stop">تعيين المحطة</string>
+    <string name="mapscreen_destination">الوجهة</string>
+    <string name="mapscreen_center_on_my_location">التمركز على موقعي</string>
+    <string name="mapscreen_zoom_in">تقريب</string>
+    <string name="mapscreen_zoom_out">إبعاد</string>
+    <string name="mapscreen_dpad_engage">موافق: تحريك الخريطة</string>
+    <string name="mapscreen_stop_replay">إيقاف إعادة العرض</string>
+    <string name="mapscreen_location_tip_title">لا يوجد موقع بعد؟</string>
+    <string name="mapscreen_location_tip_body">غالبًا لا يستطيع GPS وحده تحديد الموقع داخل المباني. وعلى GrapheneOS، فعّل «تحديد الموقع عبر الشبكة» من الإعدادات ← الموقع ← خدمات الموقع.</string>
+    <string name="mapscreen_location_tip_settings">إعدادات الموقع</string>
+    <string name="mapscreen_psds_tip_title">تحديد GPS بطيء؟</string>
+    <string name="mapscreen_psds_tip_body">فعّل PSDS من الإعدادات ← الموقع للحصول على تحديد أسرع بكثير (وعلى GrapheneOS يمرّ عبر وسيطهم).</string>
+    <string name="mapscreen_got_it">فهمت</string>
+    <string name="search_saved_tip">أماكنك المحفوظة تحت زر الإشارة المرجعية أعلاه. ثبّت واحدًا ليبقى هنا.</string>
+    <string name="mapscreen_heads_up">تنبيه</string>
+    <string name="mapscreen_dismiss">تجاهل</string>
+    <plurals name="mapscreen_results_count">
+        <item quantity="zero">لا نتائج</item>
+        <item quantity="one">نتيجة واحدة</item>
+        <item quantity="two">نتيجتان</item>
+        <item quantity="few">%1$d نتائج</item>
+        <item quantity="many">%1$d نتيجة</item>
+        <item quantity="other">%1$d نتيجة</item>
+    </plurals>
+    <string name="mapscreen_shrink_list">تقليص القائمة</string>
+    <string name="mapscreen_expand_list">توسيع القائمة</string>
+    <string name="mapscreen_close_results">إغلاق نتائج البحث</string>
+    <string name="mapscreen_filter_open_now">مفتوح الآن</string>
+    <!-- Not shown. Added to a search sent to Google when "Open now" is on, to ask for places open now. Use the words Google Maps understands in your language, lower case. -->
+    <string name="search_open_now_phrase">مفتوح الآن</string>
+    <string name="mapscreen_more_results">مزيد من النتائج</string>
+    <string name="mapscreen_other_locations">عرض المواقع الأخرى</string>
+    <string name="settings_other_locations_auto">البحث عن المواقع الأخرى تلقائيًا</string>
+    <string name="settings_other_locations_auto_hint">عندما ينتهي البحث بالاسم إلى مكان واحد، يسأل Google أيضًا عن مواقعه الأخرى. وهذا يضيف طلبات قليلة إلى Google في كل بحث من هذا النوع. وعند الإيقاف، يقوم زر «عرض المواقع الأخرى» بذلك عند الضغط عليه.</string>
+    <string name="mapscreen_view_map">عرض الخريطة</string>
+    <string name="intent_home_unset">عيّن المنزل أولًا (صفحة البحث، أسفل شريط البحث)</string>
+    <string name="intent_work_unset">عيّن العمل أولًا (صفحة البحث، أسفل شريط البحث)</string>
+    <string name="intent_eta_reply">بقي نحو %1$s</string>
+    <string name="intent_eta_not_navigating">ابدأ رحلة أولًا ثم اسأل مرة أخرى</string>
+    <string name="intent_place_not_found">تعذّر العثور على «%1$s»</string>
+    <string name="mapscreen_filter_rating">التقييم</string>
+    <string name="mapscreen_filter_any_rating">أي تقييم</string>
+    <string name="mapscreen_filter_any_price">أي سعر</string>
+    <string name="mapscreen_filter_accessible">مهيّأ لكراسي المتحركة</string>
+    <string name="mapscreen_sort_relevance">الصلة</string>
+    <string name="mapscreen_sort_rating_item">التقييم</string>
+    <string name="mapscreen_sort_distance_item">المسافة</string>
+    <string name="mapscreen_filter_price">السعر</string>
+    <string name="mapscreen_sort">الترتيب</string>
+    <string name="mapscreen_sort_rating">الترتيب: التقييم</string>
+    <string name="mapscreen_sort_distance">الترتيب: المسافة</string>
+    <string name="mapscreen_permanently_closed">مغلق نهائيًا</string>
+    <string name="mapscreen_section_saved">محفوظة</string>
+    <string name="mapscreen_section_recent">الأخيرة</string>
+    <string name="mapscreen_clear_recents">مسح الأخيرة</string>
+    <string name="mapscreen_search_empty_hint">ابحث عن أماكن وعناوين وفئات.</string>
+    <string name="mapscreen_set_shortcut_address">تعيين عنوان %1$s</string>
+    <!-- format -->
+    <string name="mapscreen_edit_shortcut">تعديل %1$s</string>
+    <!-- format -->
+    <string name="mapscreen_menu_change">تغيير</string>
+    <string name="mapscreen_menu_remove">إزالة</string>
+    <string name="mapscreen_remove_from_history">إزالة من السجل</string>
+    <string name="mapscreen_suggestion_options">خيارات الاقتراح</string>
+    <string name="mapscreen_saved_place_options">خيارات المكان المحفوظ</string>
+    <string name="mapscreen_menu_rename">إعادة التسمية</string>
+    <string name="saved_rename_title">إعادة تسمية المكان المحفوظ</string>
+    <string name="saved_rename_action">إعادة التسمية</string>
+    <string name="mapscreen_set_as_home">تعيين كالمنزل</string>
+    <string name="mapscreen_set_as_work">تعيين كالعمل</string>
+    <string name="mapscreen_cancel">إلغاء</string>
+    <string name="mapscreen_assign_shortcut_hint">ابحث عن عنوان %1$s</string>
+    <!-- format -->
+    <string name="mapscreen_pick_stop_hint">اختر مكانًا لإضافته كمحطة</string>
+    <string name="mapscreen_learn_more">اعرف المزيد</string>
+    <string name="mapscreen_faster_route_title">مسار أسرع</string>
+    <string name="mapscreen_faster_route_saves">يوفّر نحو %1$s حسب الازدحام الحالي</string>
+    <!-- format -->
+    <string name="mapscreen_no">لا</string>
+    <string name="mapscreen_switch">تبديل</string>
+    <string name="mapscreen_resume_nav">استئناف الملاحة إلى %1$s؟</string>
+    <!-- format -->
+    <string name="mapscreen_resume">استئناف</string>
+    <string name="mapscreen_your_destination">وجهتك</string>
+    <!-- root: VelaRoot.kt -->
+    <string name="root_not_now">ليس الآن</string>
+    <string name="root_voice_title">صوت الإرشادات المنطوقة</string>
+    <string name="root_voice_body_intro">صوت MAP-RMG يعمل بالكامل على هاتفك: إرشادات منطوقة طبيعية بلا حساب وبلا تطبيق إضافي. موصى به، وتنزيل لمرة واحدة بحجم %1$d م.ب.</string>
+    <string name="root_voice_body_system">تفضّل غير ذلك؟ استخدم صوتًا موجودًا على هاتفك.</string>
+    <string name="root_voice_body_outro">غيّره وقتما تشاء من الإعدادات ← الصوت.</string>
+    <string name="root_voice_download">تنزيل صوت MAP-RMG</string>
+    <string name="root_voice_use_system">استخدام صوت النظام</string>
+    <!-- nav: NavOverlays.kt -->
+    <string name="nav_maneuver_continue">متابعة</string>
+    <string name="nav_gps_lost">نبحث عن إشارة GPS…</string>
+    <string name="nav_compound_then">ثم</string>
+    <string name="nav_preview_tap_resume">معاينة، اضغط للاستئناف</string>
+    <string name="nav_rerouting">إعادة حساب المسار…</string>
+    <string name="nav_voice_button">الإرشادات المنطوقة: مفعّلة، التنبيهات فقط، أو معطّلة</string>
+    <string name="nav_steps">الخطوات</string>
+    <string name="nav_pause">إيقاف الرحلة مؤقتًا</string>
+    <string name="nav_resume">استئناف الرحلة</string>
+    <string name="nav_paused">متوقّفة مؤقتًا</string>
+    <string name="nav_end">إنهاء</string>
+    <string name="nav_arrived">لقد وصلت</string>
+    <string name="nav_trip_time">زمن الرحلة</string>
+    <string name="nav_distance">المسافة</string>
+    <string name="nav_done">تم</string>
+    <!-- steps: StepsSheet.kt -->
+    <string name="steps_title">الخطوات</string>
+    <string name="steps_live_traffic">ازدحام مباشر</string>
+    <string name="steps_close_cd">إغلاق الخطوات</string>
+    <string name="steps_continue">متابعة</string>
+    <!-- welcome: WelcomeScreen.kt -->
+    <string name="welcome_tagline">خرائط وملاحة بلا Google.</string>
+    <string name="welcome_feature_no_tracking_title">بلا تتبّع</string>
+    <string name="welcome_feature_private_body">بلا حساب، وبلا إعلانات، وبلا تحليلات، وبلا خادم MAP-RMG.</string>
+    <string name="welcome_feature_places_title">أماكن ومسارات حقيقية</string>
+    <string name="welcome_feature_places_body">بحث مباشر، ومراجعات، وصور، ونقل عام، وإرشادات تراعي الازدحام.</string>
+    <string name="welcome_feature_open_source_title">مجاني ومفتوح المصدر</string>
+    <string name="welcome_feature_open_source_body">برخصة GPLv3، مصمَّم لـ GrapheneOS وغيره من الهواتف الخالية من Google.</string>
+    <string name="welcome_get_started">لنبدأ</string>
+    <string name="welcome_continue">متابعة</string>
+    <string name="welcome_cameras_title">كاميرات اللوحات</string>
+    <string name="welcome_cameras_intro">تُميّز هذه الشارة كاميرا Flock أو غيرها من كاميرات قراءة لوحات السيارات على الخريطة. ويستطيع MAP-RMG أيضًا:</string>
+    <string name="camera_badge_plate">علامة كاميرا قراءة اللوحات</string>
+    <string name="camera_badge_speed">علامة كاميرا السرعة</string>
+    <string name="welcome_cameras_avoid">توجيه المسار بعيدًا عنها</string>
+    <string name="welcome_cameras_warn">تنبيهي عند الاقتراب</string>
+    <string name="welcome_google_customize">اختيار ما يُستخدم فيه Google</string>
+    <string name="welcome_google_title">استخدام Google؟</string>
+    <string name="welcome_google_intro">يمكنك تغيير هذا لاحقًا من الإعدادات، أو إيقاف أجزاء منه فقط.</string>
+    <string name="welcome_google_on_title">استخدام Google</string>
+    <string name="welcome_google_on_gives">المراجعات والصور والازدحام المباشر والتجوال الافتراضي.</string>
+    <string name="welcome_google_on_sends">تُرسل عمليات البحث والمسارات إلى Google، بلا حساب.</string>
+    <string name="welcome_google_off_title">بدون Google</string>
+    <string name="welcome_google_off_gives">بيانات مفتوحة فقط. بلا مراجعات أو صور أو ازدحام مباشر.</string>
+    <string name="welcome_google_off_sends">لا يُرسل شيء إلى Google.</string>
+    <string name="whatsnew_title">الجديد في %1$s</string>
+    <!-- format -->
+    <string name="whatsnew_got_it">فهمت</string>
+    <string name="whatsnew_full_notes">الملاحظات الكاملة</string>
+    <string name="settings_whatsnew">الجديد في هذا الإصدار</string>
+    <string name="settings_whatsnew_hint">ملاحظات الإصدار الخاص بالبنية التي تستخدمها.</string>
+    <string name="whatsnew_show_after_updates">عرض الجديد بعد التحديثات</string>
+    <string name="welcome_donate_title">هل أعجبك MAP-RMG؟</string>
+    <string name="welcome_donate_body">MAP-RMG مجاني وبلا إعلانات، ومبني بميزانية محدودة. وإن أصبح مفيدًا لك، فتبرّع بسيط لمرة واحدة يساعد على استمراره. اختياري تمامًا، وهذه المرة الوحيدة التي سيطلب فيها ذلك. وهناك دائمًا «الدعم» في الإعدادات.</string>
+    <string name="welcome_donate_confirm">دعم MAP-RMG</string>
+    <string name="welcome_donate_dismiss">ربما لاحقًا</string>
+    <!-- search: SearchBar.kt -->
+    <string name="search_close_cd">إغلاق البحث</string>
+    <string name="search_fill_cd">الوضع في مربع البحث</string>
+    <string name="search_placeholder">بحث</string>
+    <string name="search_offline">دون اتصال</string>
+    <string name="search_clear_cd">مسح البحث</string>
+    <string name="search_settings_cd">الإعدادات</string>
+    <!-- mapvm: MapViewModel.kt -->
+    <string name="mapvm_shortcut_set">تم تعيين %1$s إلى %2$s</string>
+    <!-- format -->
+    <string name="mapvm_search_needs_recalibration">يحتاج البحث إلى معايرة: %1$s</string>
+    <!-- format -->
+    <string name="mapvm_offline_no_data">أنت دون اتصال. نزّل منطقة من الإعدادات ▸ دون اتصال للبحث بلا اتصال.</string>
+    <string name="mapvm_offline_no_match">لا نتائج دون اتصال لـ «%1$s» في منطقتك المحفوظة. ويغطي البحث دون اتصال أماكن OpenStreetMap التي نزّلتها.</string>
+    <string name="mapvm_no_results">لا نتائج لـ «%1$s».</string>
+    <!-- format -->
+    <string name="mapvm_offline_results">نتائج دون اتصال (بلا اتصال)</string>
+    <string name="mapvm_search_failed_reason">فشل البحث: %1$s</string>
+    <!-- format -->
+    <string name="mapvm_none_found_along_route">لم يُعثر على «%1$s» على طول مسارك</string>
+    <!-- format -->
+    <string name="mapvm_search_failed">فشل البحث</string>
+    <string name="mapvm_dropped_pin">دبوس مُسقَط</string>
+    <string name="mapvm_no_mode_route_found">لم يُعثر على مسار %1$s</string>
+    <!-- format -->
+    <string name="mapvm_directions_need_recalibration">تحتاج الإرشادات إلى معايرة: %1$s</string>
+    <!-- format -->
+    <string name="mapvm_routing_failed_reason">فشل التوجيه: %1$s</string>
+    <!-- format -->
+    <string name="mapvm_no_transit_routes">لم تُعثر على مسارات نقل عام</string>
+    <string name="mapvm_trip_default_name">رحلة</string>
+    <string name="mapvm_no_voice_engine">لا يوجد صوت مثبَّت للإرشادات المنطوقة</string>
+    <string name="mapscreen_get_voice">الحصول على صوت</string>
+    <string name="mapscreen_download_voice">تنزيل %1$s (%2$d م.ب)</string>
+    <!-- format -->
+    <string name="mapscreen_system_voices">أصوات النظام</string>
+    <string name="settings_spoken_directions">الإرشادات المنطوقة</string>
+    <string name="settings_voice_mode_on">مفعّلة</string>
+    <string name="settings_voice_mode_alerts">التنبيهات فقط</string>
+    <string name="settings_voice_mode_off">معطّلة</string>
+    <string name="settings_voice_mode_hint">«التنبيهات فقط» تُبقي تنبيهات السرعة والكاميرات كنغمة قصيرة ولا تقول شيئًا غيرها. وزر السماعة أثناء القيادة يفتح الخيارات الثلاثة نفسها.</string>
+    <string name="settings_spoken_road_names">نطق أسماء الشوارع</string>
+    <string name="settings_spoken_road_names_hint">عند الإيقاف تُعلن المنعطفات بلا اسم الشارع: «انعطف يسارًا» بدل «انعطف يسارًا إلى شارع القيقب». وتبقى الخريطة وقائمة الخطوات تعرضه.</string>
+    <string name="settings_spoken_detail">مقدار ما يقوله الصوت</string>
+    <string name="settings_spoken_detail_full">كل شيء</string>
+    <string name="settings_spoken_detail_brief">موجز</string>
+    <string name="settings_spoken_detail_exits">مخارج الطرق السريعة فقط</string>
+    <string name="settings_spoken_detail_hint">«موجز» يقول كل منعطف مرة واحدة بلا اسم الشارع. و«مخارج الطرق السريعة فقط» يبقى صامتًا داخل المدينة وينطق عند المخارج والتفرّعات والمنعطفات السريعة.</string>
+    <string name="mapvm_voice_lang_missing">تحتاج الإرشادات المنطوقة صوتًا بـ %1$s. احصل عليه من الإعدادات ← الصوت</string>
+    <!-- Shown when the language has no bundled MAP-RMG voice (e.g. Japanese) AND the phone has no
+         system voice for it either, so we point at the phone's own voice settings instead. -->
+    <string name="mapvm_voice_lang_system">إرشادات %1$s تستخدم صوت هاتفك. أضف صوتًا من إعدادات الصوت في النظام.</string>
+    <string name="mapvm_resume_waiting_gps">في انتظار إشارة GPS لاستئناف الملاحة…</string>
+    <string name="mapvm_resume_failed">تعذّر استئناف الملاحة</string>
+    <string name="mapvm_no_track_to_replay">هذه الرحلة لا تحتوي على مسار لإعادة عرضه</string>
+    <string name="mapvm_replaying">نعيد عرض %1$s…</string>
+    <!-- format -->
+    <string name="replay_play">تشغيل</string>
+    <string name="replay_pause">إيقاف مؤقت</string>
+    <string name="mapvm_export_saved_subject">أماكن MAP-RMG المحفوظة (%1$d)</string>
+    <!-- format -->
+    <string name="mapvm_export_saved_chooser">تصدير الأماكن المحفوظة</string>
+    <string name="mapvm_export_trip_subject">رحلة MAP-RMG: %1$s (%2$d نقطة)</string>
+    <!-- format -->
+    <string name="mapvm_export_trips_subject">رحلات MAP-RMG: %1$d قيادة (%2$d نقطة)</string>
+    <!-- format -->
+    <string name="mapvm_export_trip_scrubbed_subject">رحلة MAP-RMG: %1$d نقطة، مع قصّ الطرفين</string>
+    <!-- format -->
+    <string name="mapvm_share_trip_chooser">مشاركة الرحلة</string>
+    <string name="mapvm_voice_sample">بعد 400 متر، انعطف يمينًا إلى الشارع الرئيسي.</string>
+    <string name="mapvm_not_enough_space">لا توجد مساحة كافية لـ %1$s (%2$d م.ب)</string>
+    <!-- format -->
+    <string name="mapvm_voice_downloaded">تم تنزيل %1$s</string>
+    <!-- format -->
+    <string name="mapvm_voice_download_failed">فشل تنزيل %1$s</string>
+    <!-- format -->
+    <string name="mapvm_vela_voice_removed">تمت إزالة صوت MAP-RMG</string>
+    <string name="mapvm_opening_installer">نفتح مُثبِّت %1$s…</string>
+    <!-- format -->
+    <string name="mapvm_pan_to_area_first">افتح الخريطة وحرّكها إلى منطقة أولًا</string>
+    <string name="mapvm_offline_routing_ready">المسارات دون اتصال جاهزة: %1$s</string>
+    <!-- format -->
+    <string name="mapvm_offline_routing_failed">فشل تنزيل المسارات دون اتصال</string>
+    <string name="mapvm_offline_routing_removed">تمت إزالة المسارات دون اتصال</string>
+    <string name="mapvm_graphs_retired">انتقلت المسارات دون اتصال إلى صيغة أصغر. أعد تنزيل مناطقك من الإعدادات ← الخرائط دون اتصال.</string>
+    <string name="mapvm_saved_places_offline">حُفظ %1$d مكان للبحث دون اتصال</string>
+    <!-- format -->
+    <string name="mapvm_area_uses_pack">أماكن وعناوين هذه المنطقة تأتي مع تنزيل %1$s</string>
+    <!-- format -->
+    <string name="mapvm_saved_addresses_offline">حُفظ %1$d عنوان و%2$d شارع للتوجيه دون اتصال</string>
+    <!-- format -->
+    <!-- navservice: NavigationService.kt -->
+    <string name="navservice_notif_title_arrived">وصلت</string>
+    <string name="navservice_notif_title_navigating">الملاحة جارية</string>
+    <string name="navservice_notif_title_in_distance">بعد %1$s · %2$s</string>
+    <!-- format -->
+    <string name="navservice_notif_text_remaining">%1$s · %2$s</string>
+    <!-- format -->
+    <string name="navservice_notif_text_faster_saving"> · %1$s أسرع متاح</string>
+    <!-- format -->
+    <string name="navservice_notif_text_faster_available"> · مسار أسرع متاح</string>
+    <string name="navservice_notif_action_pause">إيقاف مؤقت</string>
+    <string name="navservice_notif_action_resume">استئناف</string>
+    <string name="navservice_notif_action_end">إنهاء</string>
+    <string name="navservice_channel_name">الملاحة</string>
+    <string name="navservice_channel_turns_name">تنبيهات المنعطفات المنطوقة</string>
+    <string name="update_available_title">يتوفر MAP-RMG %1$s</string>
+    <string name="update_downloading">نزيل… %1$d%%</string>
+    <string name="update_later">ليس الآن</string>
+    <string name="update_install">تحديث</string>
+    <string name="update_download_failed">فشل تنزيل التحديث. حاول لاحقًا.</string>
+    <string name="update_car_title">هذا التحديث سيزيل MAP-RMG من Android Auto</string>
+    <string name="update_car_body">ثُبِّت MAP-RMG بالطريقة التي يقبلها Android Auto. وتثبيت هذا التحديث من هنا يستبدل ذلك، وستتوقف السيارة عن إدراج MAP-RMG حتى تثبّت الملف بالأداة التي استخدمتها أول مرة (AAEnabler أو King Installer).\n\nاحفظ الملف وثبّته بتلك الطريقة ليبقى العرض على السيارة يعمل.</string>
+    <string name="update_car_save">حفظ الملف</string>
+    <string name="update_car_anyway">التحديث على أي حال</string>
+    <!-- Background-download keeper notification (DownloadService, issue #212). -->
+    <string name="download_notif_channel">التنزيلات</string>
+    <string name="download_notif_title">نزيل %1$s</string>
+    <!-- format -->
+    <string name="download_label_update">تحديث MAP-RMG</string>
+    <string name="download_label_map_data">بيانات الخريطة</string>
+    <string name="download_label_offline_places">الأماكن دون اتصال</string>
+    <!-- Map-area tile download: progress card + one completion flash (was hardcoded English
+         status spam that stacked a second banner over the card, 2026-07-23). -->
+    <string name="map_area_downloading">نحفظ هذه المنطقة للاستخدام دون اتصال · %1$d%%</string>
+    <!-- format -->
+    <string name="offline_area_saved">حُفظت هذه المنطقة للاستخدام دون اتصال</string>
+    <string name="offline_area_failed">فشل التنزيل دون اتصال. حاول لاحقًا.</string>
+    <string name="offline_area_too_large">المنطقة كبيرة جدًا. قرّب الخريطة واحفظ منطقة أصغر.</string>
+    <string name="settings_update_auto">التحقق من التحديثات عند التشغيل</string>
+    <string name="settings_update_auto_hint">يتحقق من GitHub نحو مرة يوميًا ويعرض الإصدارات الأحدث. أوقفه إن كنت تحدّث عبر Obtainium.</string>
+    <string name="settings_update_check_now">التحقق من التحديثات</string>
+    <string name="settings_update_checking">نتحقق…</string>
+    <string name="settings_update_none">أنت على أحدث إصدار.</string>
+    <string name="settings_place_pages">صفحات الأماكن</string>
+    <plurals name="place_transit_stops">
+        <item quantity="zero">لا محطات</item>
+        <item quantity="one">محطة واحدة</item>
+        <item quantity="two">محطتان</item>
+        <item quantity="few">%1$d محطات</item>
+        <item quantity="many">%1$d محطة</item>
+        <item quantity="other">%1$d محطة</item>
+    </plurals>
+    <string name="place_transit_stop_id">محطة %1$s</string>
+    <!-- format -->
+    <string name="place_transit_tickets">التذاكر والمعلومات</string>
+    <string name="route_detail_unavailable">تفاصيل المسار غير متاحة</string>
+    <string name="place_transit_now">المغادرة</string>
+    <string name="place_transit_in_min">بعد %1$d د</string>
+    <!-- format -->
+    <string name="place_transit_in_duration">بعد %1$s</string>
+    <!-- format -->
+    <string name="place_transit_more_times">%1$d أخرى</string>
+    <!-- format -->
+    <string name="place_transit_view_stops">المحطات</string>
+    <string name="place_transit_live">مباشر</string>
+    <string name="place_transit_scheduled">مجدول</string>
+    <string name="place_transit_cancelled">ملغى</string>
+    <string name="place_departures">المغادرات</string>
+    <string name="place_transit_cached">آخر مشاهدة %1$s. لا يوجد اتصال، لذا قد تكون الأوقات قد تغيّرت.</string>
+    <string name="place_every">كل %1$s</string>
+    <!-- format -->
+    <string name="transit_nav_arrived">لقد وصلت.</string>
+    <string name="transit_nav_walk">امشِ %1$s</string>
+    <!-- format -->
+    <string name="transit_nav_take">اسلك %1$s</string>
+    <!-- format -->
+    <string name="transit_nav_towards">باتجاه %1$s</string>
+    <!-- format -->
+    <string name="transit_nav_from">من %1$s</string>
+    <!-- format -->
+    <string name="transit_nav_get_off">انزل في %1$s</string>
+    <!-- format -->
+    <string name="transit_nav_next">التالي</string>
+    <string name="place_last_available">آخر موعد متاح</string>
+    <string name="place_transit_prefer">تفضيل</string>
+    <string name="transit_min_late">متأخر %1$d د</string>
+    <string name="transit_min_early">مبكر %1$d د</string>
+    <string name="place_transit_route">المسار</string>
+    <string name="place_transit_fewer_transfers">تبديلات أقل</string>
+    <string name="place_transit_less_walking">مشي أقل</string>
+    <string name="place_transit_bus">باص</string>
+    <string name="place_transit_subway">مترو</string>
+    <string name="place_transit_train">قطار</string>
+    <string name="place_transit_tram">ترام</string>
+    <!-- Android Auto -->
+    <string name="car_search">بحث</string>
+    <string name="car_search_hint">اكتب للبحث عن وجهة</string>
+    <string name="car_go">انطلق</string>
+    <string name="car_end">إنهاء</string>
+    <string name="car_mute">كتم الصوت</string>
+    <string name="car_unmute">إلغاء الكتم</string>
+    <string name="car_faster_route">أسرع −%1$d د</string>
+    <string name="car_pause">إيقاف مؤقت</string>
+    <string name="car_resume">استئناف</string>
+    <string name="car_paused">متوقّفة مؤقتًا</string>
+    <string name="car_along_route">البحث على طول المسار</string>
+    <string name="car_along_none">لم يُعثر على شيء قريب</string>
+    <string name="car_stop_added">أُضيف %1$s كمحطة تالية</string>
+    <string name="car_continue_on">تابع على %1$s</string>
+    <string name="car_nearby">قريب</string>
+    <string name="car_more_nearby">المزيد قريبًا</string>
+    <string name="car_saved">المحفوظة</string>
+    <string name="car_saved_empty">لا أماكن محفوظة بعد. احفظ واحدًا من هاتفك.</string>
+    <string name="car_home">المنزل</string>
+    <string name="car_work">العمل</string>
+    <string name="car_settings">الإعدادات</string>
+    <string name="car_setting_voice">الإرشادات المنطوقة</string>
+    <string name="car_setting_avoid_tolls">تجنّب الرسوم</string>
+    <string name="car_setting_avoid_highways">تجنّب الطرق السريعة</string>
+    <string name="car_setting_avoid_ferries">تجنّب العبّارات</string>
+    <string name="car_setting_traffic">الازدحام</string>
+    <string name="car_location_title">السماح بتحديد الموقع</string>
+    <string name="car_location_body">يحتاجه MAP-RMG لعرض موقعك وتقديم الإرشادات</string>
+    <string name="car_location_denied">تحديد الموقع معطّل. فعّله لـ MAP-RMG من إعدادات هاتفك.</string>
+    <string name="car_no_route">لا مسار متاح — تحقّق من موقعك</string>
+    <string name="map_parking_saved">حُفظ موقف السيارة</string>
+    <string name="map_parking_no_fix">في انتظار تحديد الموقع</string>
+    <string name="map_parking_cleared">أُزيل موقف السيارة</string>
+    <string name="map_parked_car">سيارة متوقّفة</string>
+    <string name="map_parking_save">حفظ موقف السيارة</string>
+    <string name="map_parking_find">العثور على سيارتي</string>
+    <string name="map_parking_move_here">نقل الموقف إلى هنا</string>
+    <string name="map_parking_earlier">مواقف سابقة</string>
+    <string name="map_parking_clear">مسح الموقف</string>
+    <string name="map_parking_moved">نُقل الموقف إلى هنا</string>
+    <string name="map_import_needs_google">لا يمكن فتح قائمة Google Maps المُشارَكة بينما يعمل MAP-RMG بلا Google.</string>
+    <string name="map_link_needs_google">خيار «فتح روابط Google Maps المُشارَكة» معطّل من الإعدادات ← الخصوصية.</string>
+    <string name="map_link_unreadable">تعذّر فتح ذلك الرابط.</string>
+    <string name="settings_performance">الأداء</string>
+    <string name="settings_hub_performance_sub">ما يُحمَّل مسبقًا، ورسم الخريطة</string>
+    <string name="settings_performance_intro">تحميل الأشياء مسبقًا يجعلها فورية عند الحاجة، ويستهلك الذاكرة حتى ذلك الحين. والإعدادات الافتراضية تتبع حجم ذاكرة هذا الهاتف.</string>
+    <string name="settings_full_place_load">تحميل كل الصور والمراجعات</string>
+    <string name="settings_full_place_load_hint">عند الإيقاف يحمّل المكان أول بضعة صور والصفحة الأولى من المراجعات، ويجلب زرّا «مزيد من الصور» و«كل المراجعات» الباقي. وعند التشغيل يمشي كل مكان تفتحه على كل معرض صوره وحتى 50 مراجعة، وهذا أبطأ ويرسل إلى Google طلبات أكثر بكثير.</string>
+    <string name="settings_speech_preload">تحميل البحث الصوتي عند التشغيل</string>
+    <string name="settings_speech_preload_hint">يحمّل نموذج البحث الصوتي عند فتح MAP-RMG، فيستمع الميكروفون فورًا. ويستخدم نحو 300 م.ب حتى تمرّ دقيقتان هادئتان. وعند الإيقاف يُحمَّل عند الضغط على مربع البحث. وهو مفعّل افتراضيًا على الهواتف التي ذاكرتها 8 غيغابايت أو أكثر.</string>
+    <string name="settings_google_uses">ما يُستخدم فيه Google</string>
+    <string name="settings_google_uses_hint">أوقف أحدها فيتوقف MAP-RMG عن سؤال Google عنه. وكل مفتاح موجود أيضًا في صفحته الخاصة.</string>
+    <string name="settings_google_uses_traffic">الازدحام والمسارات</string>
+    <string name="settings_google_free_links">فتح روابط Google Maps المُشارَكة</string>
+    <string name="settings_maps_links">روابط Google Maps</string>
+    <string name="settings_storage">تخزين المناطق المنزَّلة على</string>
+    <string name="settings_storage_internal">التخزين الداخلي</string>
+    <string name="settings_storage_sd">بطاقة SD</string>
+    <string name="settings_storage_hint">ينقل ما هو منزَّل بالفعل. وبطاقة SD أبطأ، وحين تكون مُخرَجة تصبح الخرائط دون اتصال عليها غير متاحة وتُبَثّ الخريطة بدلًا منها.</string>
+    <string name="settings_storage_missing">بطاقة SD غير موجودة، لذا تذهب التنزيلات إلى التخزين الداخلي إلى أن تعود.</string>
+    <string name="settings_storage_moving">ننقل البيانات دون اتصال… %1$d%%</string>
+    <string name="settings_storage_busy">انتظر انتهاء التنزيل أو الرحلة، ثم انقل البيانات دون اتصال.</string>
+    <string name="settings_storage_no_card">لم يُعثر على بطاقة SD.</string>
+    <string name="settings_storage_no_space">لا توجد مساحة كافية هناك: تحتاج البيانات دون اتصال نحو %1$d م.ب.</string>
+    <string name="settings_storage_moved">نُقلت البيانات دون اتصال.</string>
+    <string name="settings_storage_failed">لم يكتمل النقل؛ وتبقى البيانات دون اتصال في مكانها.</string>
+    <string name="settings_maps_links_on">روابط Google Maps تُفتح في MAP-RMG.</string>
+    <string name="settings_maps_links_partial">بعض روابط Google Maps تُفتح في MAP-RMG. أضف الباقي ضمن «الفتح افتراضيًا» ليُفتح كل نوع من الروابط.</string>
+    <string name="settings_maps_links_off">يفتح Android روابط Google Maps في المتصفح. ولتفتحها في MAP-RMG، فعّل «فتح الروابط المدعومة» وأضف الروابط ضمن «الفتح افتراضيًا».</string>
+    <string name="settings_maps_links_open">إعدادات الفتح افتراضيًا</string>
+    <string name="settings_google_free_links_hint">رابط Google Maps القصير (maps.app.goo.gl) لا يبيّن إلى أين يشير. وعند تشغيل هذا الخيار يسأل MAP-RMG مختصِر روابط Google مرة واحدة، بلا ملفات تعريف ارتباط، ويفتح المكان بالمصادر المفتوحة. أما روابط google.com/maps الكاملة فتُفتح دون سؤال. وتبقى القوائم المُشارَكة محتاجة إلى Google.</string>
+    <string name="map_mymap_failed">تعذّر فتح تلك الخريطة المخصصة. ربما لم تُشارَك عبر رابط.</string>
+    <string name="map_import_failed">تعذّر استيراد تلك القائمة. تحقّق من الرابط وحاول مرة أخرى.</string>
+    <string name="place_clear_parking">مسح الموقف</string>
+    <string name="parking_history_title">سجل المواقف</string>
+    <string name="parking_history_clear_all">مسح الكل</string>
+    <string name="parking_history_current">الحالي</string>
+    <string name="parking_history_delete">حذف</string>
+    <string name="parking_history_restore">استعادة</string>
+    <string name="settings_parking_history">سجل المواقف</string>
+    <string name="settings_parking_history_hint">أحدث مواقف السيارات. اضغط «استعادة» إن استبدلت موقفك بالخطأ.</string>
+    <string name="settings_parking_history_empty">لا مواقف محفوظة بعد. اضغط زر P على الخريطة لحفظ مكان وقوفك.</string>
+    <string name="mapscreen_section_lists">قوائمك</string>
+    <string name="mapscreen_new_list">جديدة</string>
+    <string name="list_edit">تعديل القائمة</string>
+    <string name="list_new_title">قائمة جديدة</string>
+    <string name="list_edit_title">تعديل القائمة</string>
+    <string name="list_name_label">اسم القائمة</string>
+    <string name="list_icon_label">الأيقونة</string>
+    <string name="list_emoji_label">اكتب أي رمز تعبيري</string>
+    <string name="list_color_label">اللون</string>
+    <string name="list_delete">حذف</string>
+    <string name="list_delete_title">حذف %1$s؟</string>
+    <!-- format -->
+    <plurals name="lists_delete_count">
+        <item quantity="zero">حذف هذه القائمة؟</item>
+        <item quantity="one">حذف هذه القائمة؟</item>
+        <item quantity="two">حذف القائمتين؟</item>
+        <item quantity="few">حذف %d قوائم؟</item>
+        <item quantity="many">حذف %d قائمة؟</item>
+        <item quantity="other">حذف %d قائمة؟</item>
+    </plurals>
+    <string name="list_reorder">اسحب لإعادة الترتيب</string>
+    <string name="recent_remove">إزالة من السجل</string>
+    <string name="list_cancel">إلغاء</string>
+    <string name="list_save">حفظ</string>
+    <string name="place_save_to_list">الحفظ في قائمة</string>
+    <string name="place_edit_note">تعديل الملاحظة</string>
+    <string name="place_note_label">ملاحظة</string>
+    <string name="place_choose_icon">اختيار أيقونة</string>
+    <string name="place_icon_title">أيقونة الخريطة لـ %1$s</string>
+    <!-- format: %1$s is the place name -->
+    <string name="place_icon_default">استخدام أيقونة القائمة</string>
+    <plurals name="map_save_list">
+        <item quantity="zero">حفظ القائمة · بلا أماكن</item>
+        <item quantity="one">حفظ القائمة · مكان واحد</item>
+        <item quantity="two">حفظ القائمة · مكانان</item>
+        <item quantity="few">حفظ القائمة · %1$d أماكن</item>
+        <item quantity="many">حفظ القائمة · %1$d مكانًا</item>
+        <item quantity="other">حفظ القائمة · %1$d مكان</item>
+    </plurals>
+    <string name="map_save_mymap">حفظ الخريطة</string>
+    <string name="shape_line">خط</string>
+    <string name="shape_area">منطقة</string>
+    <string name="shape_route_measure">مسار · %1$s · %2$d محطة</string>
+    <string name="shape_line_measure">خط · طوله %1$s</string>
+    <string name="shape_area_measure">منطقة · %1$s · ومحيط %2$s</string>
+    <string name="mapscreen_layers_chip">الطبقات</string>
+    <string name="draw_action">رسم</string>
+    <string name="draw_hint">اضغط على الخريطة لإضافة نقاط</string>
+    <string name="draw_hint_more">اضغط مرة أخرى لإضافة النقطة التالية</string>
+    <string name="draw_hint_points">اسحب نقطة لنقلها. واضغط على نقطة لحذفها.</string>
+    <string name="draw_edit">تعديل هذا الرسم</string>
+    <string name="draw_changed">حُفظت التعديلات على “%1$s”</string>
+    <string name="draw_name_hint">الاسم (اختياري)</string>
+    <string name="draw_undo">حذف النقطة الأخيرة</string>
+    <string name="draw_cancel">إلغاء</string>
+    <string name="draw_save">حفظ</string>
+    <string name="draw_saved">حُفظت “%1$s” في رسوماتي</string>
+    <string name="draw_list_name">رسوماتي</string>
+    <string name="draw_delete">حذف هذا الرسم</string>
+    <string name="map_list_saved">حُفظت “%1$s” في قوائمك</string>
+    <string name="settings_update_nightly">تضمين البنيات الليلية</string>
+    <string name="settings_update_nightly_hint">التحديث إلى أحدث بنية ليلية (إصدار تجريبي) بدل الإصدارات المستقرة فقط. والبنيات الليلية أحدث لكن أقل اختبارًا.</string>
+    <string name="settings_update_channel">قناة التحديث</string>
+    <string name="settings_update_channel_stable">مستقرة (أسبوعيًا)</string>
+    <string name="settings_update_channel_nightly">ليلية (يوميًا)</string>
+    <string name="settings_update_channel_canary">كاناري (بنيات تطوير)</string>
+    <string name="settings_update_channel_hint">القناة المستقرة تحصل على إصدار مُختبَر واحد أسبوعيًا. والليلية على بنية كل يوم فيه تغييرات. والكاناري تتابع العمل الجاري وقد تتعطّل في أي وقت.</string>
+    <string name="settings_voice_volume">مستوى صوت الإرشادات</string>
+    <string name="settings_voice_volume_softer">أخفض</string>
+    <string name="settings_voice_volume_normal">عادي</string>
+    <string name="settings_voice_volume_louder">أعلى</string>
+    <string name="settings_voice_volume_loudest">الأعلى</string>
+    <string name="settings_voice_volume_hint">مدى علو الإرشادات المنطوقة فوق وسائطك. والمستويات الأعلى تخص صوت MAP-RMG؛ وأصوات النظام يمكن خفضها فقط.</string>
+    <string name="place_avoid_not_honored">قد تستخدم هذه المسارات مع ذلك رسومًا أو طرقًا سريعة أو عبّارات: تعذّر الوصول إلى Google للتوجيه بعيدًا عنها، ولا يستطيع الموجّه المفتوح ذلك. وفي منطقة منزَّلة يتجنّبها MAP-RMG دون اتصال.</string>
+    <string name="settings_lists_export_hint">انسخ قوائمك احتياطيًا إلى ملف، أو استعدها على جهاز آخر. ويقبل الاستيراد أيضًا قائمة من مجلد Saved في Google Takeout (ملف CSV واحد لكل قائمة)؛ ويُبحث عن كل مكان فيها، لذا يحتاج اتصالًا.</string>
+    <string name="settings_lists_imported">استُوردت %1$d قائمة</string>
+    <string name="settings_takeout_list_default">قائمة مستوردة</string>
+    <string name="settings_takeout_progress">نبحث عن المكان %1$d من %2$d</string>
+    <!-- format -->
+    <!-- format: the count of places, then the list's name -->
+    <plurals name="settings_takeout_imported">
+        <item quantity="zero">لم يُستورد أي مكان في %2$s.</item>
+        <item quantity="one">استُورد مكان واحد في %2$s.</item>
+        <item quantity="two">استُورد مكانان في %2$s.</item>
+        <item quantity="few">استُوردت %1$d أماكن في %2$s.</item>
+        <item quantity="many">استُورد %1$d مكانًا في %2$s.</item>
+        <item quantity="other">استُورد %1$d مكان في %2$s.</item>
+    </plurals>
+    <!-- format: the count of places, the list's name, then the count not found -->
+    <plurals name="settings_takeout_imported_missed">
+        <item quantity="zero">لم يُستورد أي مكان في %2$s. وتعذّر العثور على %3$d.</item>
+        <item quantity="one">استُورد مكان واحد في %2$s. وتعذّر العثور على %3$d.</item>
+        <item quantity="two">استُورد مكانان في %2$s. وتعذّر العثور على %3$d.</item>
+        <item quantity="few">استُوردت %1$d أماكن في %2$s. وتعذّر العثور على %3$d.</item>
+        <item quantity="many">استُورد %1$d مكانًا في %2$s. وتعذّر العثور على %3$d.</item>
+        <item quantity="other">استُورد %1$d مكان في %2$s. وتعذّر العثور على %3$d.</item>
+    </plurals>
+    <string name="settings_takeout_imported_none">لم يُعثر على أي مكان في تلك القائمة، لذا لم تُنشأ %1$s.</string>
+    <!-- format -->
+    <!-- format: the count of places -->
+    <plurals name="settings_takeout_need_google">
+        <item quantity="zero">لا أماكن تحتاج Google للبحث عنها.</item>
+        <item quantity="one">مكان واحد يحتاج Google للبحث عنه.</item>
+        <item quantity="two">مكانان يحتاجان Google للبحث عنهما.</item>
+        <item quantity="few">%1$d أماكن تحتاج Google للبحث عنها.</item>
+        <item quantity="many">%1$d مكانًا يحتاج Google للبحث عنه.</item>
+        <item quantity="other">%1$d مكان يحتاج Google للبحث عنه.</item>
+    </plurals>
+    <!-- format: the count of places, then the list's name -->
+    <plurals name="settings_takeout_need_google_none">
+        <item quantity="zero">لا أماكن تحتاج Google للبحث عنها، لذا لم تُنشأ %2$s.</item>
+        <item quantity="one">مكان واحد يحتاج Google للبحث عنه، لذا لم تُنشأ %2$s.</item>
+        <item quantity="two">مكانان يحتاجان Google للبحث عنهما، لذا لم تُنشأ %2$s.</item>
+        <item quantity="few">%1$d أماكن تحتاج Google للبحث عنها، لذا لم تُنشأ %2$s.</item>
+        <item quantity="many">%1$d مكانًا يحتاج Google للبحث عنه، لذا لم تُنشأ %2$s.</item>
+        <item quantity="other">%1$d مكان يحتاج Google للبحث عنه، لذا لم تُنشأ %2$s.</item>
+    </plurals>
+    <string name="settings_takeout_busy">لا تزال قائمة قيد الاستيراد، فانتظر انتهاءها أولًا.</string>
+    <string name="settings_places_imported">استُورد %1$d مكان</string>
+    <!-- format -->
+    <string name="settings_no_lists">لا قوائم للتصدير بعد</string>
+    <string name="mapvm_export_lists_subject">قوائم MAP-RMG (%1$d)</string>
+    <string name="mapvm_export_lists_chooser">تصدير القوائم</string>
+    <string name="lists_empty_hint">لا قوائم بعد. اضغط «جديدة» لإنشاء واحدة، أو احفظ مكانًا من صفحته.</string>
+    <plurals name="lists_place_count">
+        <item quantity="zero">بلا أماكن</item>
+        <item quantity="one">مكان واحد</item>
+        <item quantity="two">مكانان</item>
+        <item quantity="few">%1$d أماكن</item>
+        <item quantity="many">%1$d مكانًا</item>
+        <item quantity="other">%1$d مكان</item>
+    </plurals>
+    <string name="navservice_notif_eta">الوصول %1$s</string>
+    <string name="settings_advanced">متقدّم</string>
+    <string name="settings_advanced_hint">خيارات لا يحتاجها معظم الناس أبدًا.</string>
+    <string name="settings_developer">المطوّر</string>
+    <string name="settings_developer_hint">أدوات للعروض ولقطات الشاشة والاختبار. أوقف كل واحدة منها للاستخدام الحقيقي.</string>
+    <string name="settings_browse_voices">استعراض الأصوات</string>
+    <string name="settings_browse_voices_hint">نزّل أصوات MAP-RMG على الجهاز وبدّل بينها.</string>
+    <string name="voice_capture_listening">نستمع…</string>
+    <string name="voice_capture_starting">نستعد…</string>
+    <string name="voice_capture_done">تم</string>
+    <string name="mapvm_asr_ready">صوت MAP-RMG جاهز</string>
+    <string name="mapvm_asr_download_failed">تعذّر تنزيل نموذج الصوت. تحقّق من اتصالك وحاول مرة أخرى.</string>
+    <string name="mapvm_closing_soon">%1$s يغلق عند %2$s وتصل نحو %3$s</string>
+    <!-- format -->
+    <string name="mapvm_closing_before_arrival">%1$s يغلق عند %2$s، أي قبل وصولك نحو %3$s</string>
+    <!-- format -->
+    <string name="settings_voice_search_model">صوت MAP-RMG</string>
+    <string name="settings_voice_search_model_hint">يحوّل «صوت MAP-RMG» الكلام إلى بحث على هاتفك مباشرة: بلا تطبيق آخر وبلا رفع أي شيء. تنزيل لمرة واحدة بحجم %1$d م.ب.</string>
+    <!-- format -->
+    <string name="settings_voice_search_download">تنزيل (%1$d م.ب)</string>
+    <!-- format -->
+    <string name="settings_voice_search_remove">إزالة</string>
+    <string name="settings_voice_search_downloading">نزيل… %1$d%%</string>
+    <!-- format -->
+    <string name="settings_voice_search_installing">نثبّت…</string>
+    <string name="settings_asr_engines_title">محرّك التعرّف على الجهاز</string>
+    <string name="settings_asr_engines_hint">يتحوّل الكلام إلى بحث على هاتفك مباشرة: بلا تطبيق آخر وبلا رفع أي شيء. نزّل محرّكًا واحدًا أو أكثر واختر المحرّك الذي يستخدمه الميكروفون.</string>
+    <string name="settings_asr_engine_meta">%1$s · %2$d م.ب</string>
+    <!-- format: languages · size -->
+    <string name="settings_asr_langs_whisper">كل اللغات التي يدعمها MAP-RMG</string>
+    <string name="settings_asr_langs_sensevoice">الإنجليزية والصينية واليابانية والكورية والكانتونية</string>
+    <string name="settings_asr_langs_moonshine">الإنجليزية فقط</string>
+    <string name="settings_asr_active">مُفعَّل</string>
+    <string name="settings_asr_use">استخدام</string>
+    <string name="settings_voice_search_engine_title">عند الضغط على الميكروفون</string>
+    <string name="settings_voice_search_engine_auto">صوت MAP-RMG</string>
+    <string name="settings_voice_search_engine_default">افتراضي Android</string>
+    <string name="settings_voice_search_engine_system">تطبيق صوت آخر</string>
+    <string name="map_asr_offer_title">البحث الصوتي</string>
+    <string name="map_asr_offer_body">نزّل «صوت MAP-RMG» لتنطق عمليات بحثك. يعمل بالكامل على هاتفك ولا يرفع أي شيء.</string>
+    <string name="voice_capture_examples_title">أشياء يمكنك قولها</string>
+    <string name="voice_capture_example_home">\"خذني إلى المنزل\" أو \"وصلني إلى العمل\"</string>
+    <string name="voice_capture_example_go">\"اذهب إلى شارع الزهراء ١٢\"</string>
+    <string name="voice_capture_example_route">\"من بغداد إلى كربلاء\"</string>
+    <string name="voice_capture_example_nearest">\"أقرب محطة وقود\"</string>
+    <string name="voice_capture_example_eta">\"ما وقت وصولي\" أثناء القيادة</string>
+    <string name="voice_cmd_home">اذهب إلى المنزل</string>
+    <string name="voice_cmd_work">اذهب إلى العمل</string>
+    <string name="voice_cmd_go">اذهب إلى مكان</string>
+    <string name="voice_cmd_route">بين مكانين</string>
+    <string name="voice_cmd_nearby">البحث عن قريب</string>
+    <string name="voice_cmd_eta">وقت الوصول، أثناء القيادة</string>
+    <string name="voice_cmd_hint">تعمل هذه منطوقةً أو مكتوبةً في شريط البحث، بلغة التطبيق أو بالإنجليزية. وأي شيء آخر يُنفَّذ كبحث عادي.</string>
+    <string name="nav_precise_title">يلزم تحديد موقع دقيق</string>
+    <string name="nav_precise_body">تتبع الإرشادات موقعك عبر GPS، وهذا يحتاج تحديد موقع دقيق. والآن لا يعرف MAP-RMG سوى منطقتك التقريبية.</string>
+    <string name="nav_precise_allow">السماح بالدقيق</string>
+    <string name="nav_precise_toast">تحتاج الإرشادات خطوة بخطوة إلى تحديد موقع دقيق</string>
+    <string name="loc_off_title">تحديد الموقع معطّل</string>
+    <string name="loc_off_body">لا يملك MAP-RMG إذن الوصول إلى موقعك. يمكنك منحه من إعدادات النظام.</string>
+    <string name="loc_off_settings">فتح الإعدادات</string>
+    <string name="loc_approx_title">موقع تقريبي</string>
+    <string name="loc_approx_body">لا يعرف MAP-RMG سوى منطقتك التقريبية لا موقعك. وتُظهر الخريطة دائرة واسعة بدل النقطة، ولن تعمل الإرشادات خطوة بخطوة. ويمكنك التبديل إلى الموقع الدقيق متى شئت.</string>
+    <string name="loc_approx_allow">السماح بالدقيق</string>
+    <string name="loc_approx_keep">الإبقاء على التقريبي</string>
+    <string name="notif_ask_title">أتريد تخطّي الإشعارات؟</string>
+    <string name="notif_ask_body">تُبقي الملاحة منعطفك التالي في إشعار، فتبقى الإرشادات معك والشاشة مغلقة أو عند تبديل التطبيقات. وبدون ذلك لا تظهر الإرشادات إلا داخل MAP-RMG.</string>
+    <string name="notif_ask_allow">السماح</string>
+    <string name="notif_ask_skip">تخطّي</string>
+    <string name="place_time_past_toast">ذلك الوقت مضى. تم التعيين إلى الآن.</string>
+    <string name="settings_ui_scale">حجم الواجهة</string>
+    <string name="settings_map_look">مظهر الخريطة</string>
+    <string name="settings_map_look_liberty">MAP-RMG</string>
+    <string name="settings_map_look_bright">مشرق</string>
+    <string name="settings_map_look_positron">Positron</string>
+    <string name="settings_map_look_fiord">Fiord</string>
+    <string name="settings_map_look_dark">داكن</string>
+    <string name="settings_map_look_hint">نمط MAP-RMG هو Liberty من OpenFreeMap بألوان MAP-RMG وأيقوناته وعروض طرقه. أما الأنماط الأخرى فهي Bright وPositron وFiord وDark من OpenFreeMap كما هي؛ وFiord وDark داكنان أيًّا كان المظهر.</string>
+    <string name="settings_map_colors">ألوان الخريطة</string>
+    <string name="settings_map_colors_modern">حديثة</string>
+    <string name="settings_map_colors_classic">كلاسيكية</string>
+    <string name="settings_map_colors_hint">«حديثة» تطابق لوحة تطبيق Google الحالية. أما «كلاسيكية» فهي مظهر MAP-RMG الأقدم: طرق بيضاء، وطرق سريعة صفراء، وأخضر حقيقي. وأكبرها فرقًا الآن هو الوضع الداكن.</string>
+    <string name="shortcut_home">المنزل</string>
+    <string name="shortcut_work">العمل</string>
+    <string name="map_satellite_toggle">عرض القمر الصناعي</string>
+    <string name="settings_map_data">بيانات الخريطة</string>
+    <string name="settings_map_data_hint">الخريطة وشوارعها وملصقاتها وأرقام منازلها بيانات OpenStreetMap، متاحة برخصة Open Database License، وتُقدَّم كبلاطات متجهية من OpenFreeMap. أما المتاجر الظاهرة على الخريطة في المناطق المغطاة فهي بيانات أماكن من مؤسسة Overture Maps (مصدرها Meta وMicrosoft)، متاحة برخصة Community Data License Agreement, Permissive 2.0. وتأتي تفاصيل الأماكن والمراجعات والتوجيه والازدحام من Google. والصور الجوية من Esri وGoogle. وطريقة نطق الصوت لنحو 3500 اسم مكان مصدرها ويكيبيديا الإنجليزية ومساهموها، برخصة CC BY-SA 4.0.</string>
+    <string name="settings_map_data_button">حقوق OpenStreetMap</string>
+    <string name="settings_map_data_overture_button">رخصة Overture Maps</string>
+    <string name="settings_map_data_fuel_gb">أسعار الوقود في المملكة المتحدة من خدمة Fuel Finder الحكومية، ويعيد نشرها matthewgall/fuelfinder-archive على GitHub. وتتضمن معلومات من القطاع العام برخصة Open Government Licence v3.0.</string>
+    <string name="settings_map_data_ogl_button">Open Government Licence</string>
+    <string name="place_fuel_updated_today">حُدِّثت اليوم</string>
+    <string name="place_fuel_updated_yesterday">حُدِّثت أمس</string>
+    <plurals name="place_fuel_updated_days">
+        <item quantity="zero">حُدِّثت اليوم</item>
+        <item quantity="one">حُدِّثت قبل %d يوم</item>
+        <item quantity="two">حُدِّثت قبل يومين</item>
+        <item quantity="few">حُدِّثت قبل %d أيام</item>
+        <item quantity="many">حُدِّثت قبل %d يومًا</item>
+        <item quantity="other">حُدِّثت قبل %d يوم</item>
+    </plurals>
+    <string name="map_layers">الطبقات</string>
+    <string name="settings_layers_button">إظهار زر الطبقات</string>
+    <string name="settings_layers_button_hint">الزر الموجود على الخريطة الذي يبدّل القمر الصناعي والازدحام والنقل العام والتضاريس.</string>
+    <plurals name="topcard_more_stops">
+        <item quantity="zero">+لا محطات أخرى</item>
+        <item quantity="one">+محطة أخرى</item>
+        <item quantity="two">+محطتان</item>
+        <item quantity="few">+%d محطات</item>
+        <item quantity="many">+%d محطة</item>
+        <item quantity="other">+%d محطة</item>
+    </plurals>
+    <string name="link_trip_finding">نبحث عن أماكن هذه الرحلة</string>
+    <string name="link_trip_while_navigating">أنهِ الملاحة لفتح هذه الرحلة</string>
+    <string name="link_trip_looking_cd">نبحث عنه</string>
+    <string name="link_trip_found_cd">عُثر عليه</string>
+    <string name="link_trip_not_found_cd">غير موجود</string>
+    <string name="link_trip_stop_missing">تعذّر العثور على %1$s. والمسار يتخطّاه.</string>
+    <string name="link_trip_start_missing">تعذّر العثور على %1$s. وتبدأ الرحلة من مكانك.</string>
+    <string name="link_trip_search">البحث عنه</string>
+    <string name="link_trip_skip">تخطّيه</string>
+    <string name="link_trip_stop_title">لم تُعثر على المحطة</string>
+    <string name="link_trip_start_title">لم تُعثر على نقطة البداية</string>
+    <string name="link_trip_pick_start">اختيار نقطة بداية</string>
+    <string name="link_trip_start_here">البدء من مكاني</string>
+    <string name="link_trip_fix">إصلاح</string>
+    <plurals name="link_trip_places_missing">
+        <item quantity="zero">كل الأماكن موجودة</item>
+        <item quantity="one">لم يُعثر على مكان واحد</item>
+        <item quantity="two">لم يُعثر على مكانين</item>
+        <item quantity="few">لم يُعثر على %1$d أماكن</item>
+        <item quantity="many">لم يُعثر على %1$d مكانًا</item>
+        <item quantity="other">لم يُعثر على %1$d مكان</item>
+    </plurals>
+    <string name="settings_places">الأماكن</string>
+    <string name="settings_privacy">الخصوصية</string>
+    <string name="settings_cameras_group">الكاميرات</string>
+    <string name="settings_road_alerts_group">تنبيهات الطريق</string>
+    <string name="settings_bridge_openings">فتحات الجسور</string>
+    <string name="settings_bridge_openings_hint">في هولندا، يخبرك عند وصولك إلى جسر متحرك على مسارك أنه مفتوح أو على وشك الفتح. وتأتي الفتحات المخطَّطة والمباشرة من بيانات NDW المفتوحة، ولا تُطلب إلا عند دخول مسارك هولندا.</string>
+    <string name="nav_bridge_open_ahead">الجسر أمامك مفتوح</string>
+    <string name="nav_bridge_opening_ahead">الجسر أمامك: فتح مخطَّط عند %1$s</string>
+    <!-- format: %1$s is a clock time -->
+    <string name="settings_experiments">التجارب</string>
+    <string name="settings_hub_places_sub">المصدر، وأيقونات الخريطة، وصفحات الأماكن</string>
+    <string name="settings_hub_appearance_sub">المظهر، ونمط الخريطة، والوحدات، واللغة</string>
+    <string name="settings_hub_map_sub">الازدحام، والنقل العام، والطبقات، والمباني ثلاثية الأبعاد</string>
+    <string name="settings_hub_navigation_sub">الإرشادات، والكاميرات، وإعادة الفحص المباشرة</string>
+    <string name="settings_hub_voice_sub">الإرشادات المنطوقة والأصوات</string>
+    <string name="settings_hub_search_sub">البحث الصوتي ونماذج الكلام</string>
+    <string name="settings_hub_offline_sub">الخرائط والتوجيه والأماكن دون اتصال</string>
+    <string name="settings_hub_saved_sub">قوائمك، والتصدير، وسجل المواقف</string>
+    <string name="settings_hub_privacy_sub">ما يصل إلى Google، ومسح السجل</string>
+    <string name="settings_hub_diagnostics_sub">تقارير الأعطال، والرحلات، ووضع العرض، والتجارب</string>
+    <string name="settings_hub_about_sub">الإصدار، والتحديثات، والدعم</string>
+    <string name="settings_theme_amoled">أسود AMOLED</string>
+    <string name="settings_map_theme_title">الخريطة</string>
+    <string name="settings_map_theme_follow">مثل التطبيق</string>
+    <string name="settings_map_theme_hint">الخريطة وحدها: شوارع فاتحة تحت تطبيق داكن، أو شوارع داكنة تحت تطبيق فاتح. ويبقى تبديل النهار والليل أثناء القيادة ساريًا على الخريطة.</string>
+    <string name="settings_theme_auto">النهار والليل</string>
+    <string name="settings_theme_auto_hint">فاتح نهارًا، وداكن بعد الغروب، بالاعتماد على موقعك.</string>
+    <string name="settings_nav_day_night">النهار والليل أثناء الملاحة</string>
+    <string name="settings_nav_day_night_hint">يبقي المظهر الذي اخترته في كل مكان آخر، ويبدّل حسب ضوء النهار أثناء القيادة فقط.</string>
+    <string name="mapscreen_shortcut_add">إضافة</string>
+    <string name="settings_road_label">اسم الطريق الحالي</string>
+    <string name="settings_road_label_off">معطّل</string>
+    <string name="settings_road_label_bar">فوق الشريط السفلي</string>
+    <string name="settings_road_label_puck">تحت السهم</string>
+    <string name="settings_road_label_inbar">داخل الشريط السفلي</string>
+    <string name="settings_puck_size">حجم السهم</string>
+    <string name="settings_puck_size_normal">عادي</string>
+    <string name="settings_puck_size_large">كبير</string>
+    <string name="settings_puck_size_xl">كبير جدًا</string>
+    <string name="settings_puck_style">ألوان السهم</string>
+    <string name="settings_puck_style_blue">قرص أزرق وسهم أبيض</string>
+    <string name="settings_puck_style_white">قرص أبيض وسهم أزرق</string>
+    <string name="settings_road_label_hint">مكان عرض اسم الطريق الذي تسير عليه أثناء القيادة. «فوق الشريط» يبقيه في الوسط مقروءًا للأسماء الطويلة، و«تحت السهم» يتبعه أينما تحرّك.</string>
+    <string name="settings_pip_turn_card">بطاقة المنعطف في الخريطة المصغّرة</string>
+    <string name="settings_pip_turn_card_hint">أثناء الملاحة في وضع الصورة داخل الصورة، يعرض المنعطف التالي كبطاقة في الأعلى والوقت المتبقي في الأسفل. وعند الإيقاف: شريط واحد في الأسفل يحمل الطريق والمسافة إلى المنعطف ووقت الوصول، مثل خريطة Google المصغّرة.</string>
+    <string name="settings_prefer_buttons">تفضيل الأزرار على السحب</string>
+    <string name="settings_zoom_key_in">مفتاح التقريب</string>
+    <string name="settings_zoom_key_out">مفتاح الإبعاد</string>
+    <string name="settings_zoom_key_none">غير معيَّن</string>
+    <string name="settings_zoom_keys_hint">مفتاحان يقرّبان الخريطة من أي مكان عليها، مثل 2 و5 في لوحة الأرقام. ويبقيان يكتبان داخل حقول النص.</string>
+    <string name="settings_zoom_key_press">اضغط المفتاح لاستخدامه. أما الأسهم وOK و«رجوع» فمحجوزة.</string>
+    <string name="settings_zoom_key_clear">مسح</string>
+    <string name="settings_prefer_buttons_hint">يبقي زرًا للأشياء التي لها إيماءة أيضًا: زرّا التقريب والإبعاد على الخريطة، وزر قائمة الخطوات على شريط الملاحة. وهو مفعّل دائمًا على الهواتف بلا شاشة لمس.</string>
+    <string name="settings_faster_auto">اتخاذ المسارات الأسرع تلقائيًا</string>
+    <string name="settings_faster_auto_hint">عند ظهور مسار أسرع أثناء الرحلة يُتَّخذ إن لم تجب خلال ثوانٍ. وعند إيقاف هذا الخيار يُتجاهل العرض غير المُجاب بدلًا من ذلك. وفي الحالتين لا يبقى العرض على الخريطة منتظرًا.</string>
+    <string name="settings_pause_in_bar">زر الإيقاف المؤقت على شريط الملاحة</string>
+    <string name="settings_pause_in_bar_hint">يضع الإيقاف المؤقت بجانب أرقام الرحلة، حيث يكون زر قائمة الخطوات، ويترك كتم الصوت مع أزرار الخريطة. وعند الإيقاف يضعهما معًا على زر واحد في يمين الخريطة. ويمكنك في الحالتين السحب لأعلى أو استخدام السهم لفتح قائمة الخطوات.</string>
+    <string name="settings_pause_in_bar_hint_buttons">مع تشغيل «تفضيل الأزرار على السحب»، يحمل الشريط الإيقاف المؤقت وزر قائمة الخطوات جنبًا إلى جنب، وتتقلّص أرقام الرحلة لتتّسع.</string>
+    <string name="nav_steps_handle_cd">عرض الخطوات</string>
+    <string name="settings_route_trail">الطريق خلفك</string>
+    <string name="cat_menu">الفئات</string>
+    <string name="settings_category_chips">اختصارات الفئات</string>
+    <string name="settings_category_chips_hint">اختصارات المطاعم والقهوة والوقود… أسفل شريط البحث. وزر واحد يطويها في قائمة.</string>
+    <string name="settings_category_chips_row">صف</string>
+    <string name="settings_category_chips_button">زر واحد</string>
+    <string name="settings_category_chips_hidden">مخفي</string>
+    <string name="settings_map_names">الأسماء على الخريطة</string>
+    <string name="settings_map_names_english_local">الإنجليزية حيث تُعرف، وإلا الاسم المحلي</string>
+    <string name="settings_map_names_english_latin">الإنجليزية حيث تُعرف، وإلا بحروف لاتينية</string>
+    <string name="settings_map_names_local">الأسماء المحلية فقط</string>
+    <string name="settings_map_names_local_english">المحلية والإنجليزية</string>
+    <string name="settings_map_names_hint">الأسماء بحروف لاتينية تُصنع آليًا حيث لا يوجد اسم إنجليزي في OpenStreetMap، وتُقرأ بشكل رديء بالعبرية وبعض الكتابات الأخرى. أما لغة التطبيق والصوت فلا تتغيّر.</string>
+    <string name="settings_project">المشروع</string>
+    <string name="settings_project_hint">على الموقع نظرة عامة وصفحة للصحافة. والشفرة المصدرية وتقارير الأخطاء والنقاشات على GitHub.</string>
+    <string name="settings_project_site_button">الموقع</string>
+    <string name="settings_project_github_button">‏MAP-RMG على GitHub</string>
+    <string name="mapvm_rechecking_connection">نتحقّق من الاتصال…</string>
+    <string name="mapvm_back_online">عاد الاتصال</string>
+    <string name="mapvm_still_offline">لا يزال دون اتصال. سيلاحظ MAP-RMG عودة الاتصال في الحال.</string>
+    <string name="search_offline_recheck">دون اتصال. اضغط للتحقق مرة أخرى</string>
+    <string name="settings_turn_declutter">تبسيط الخريطة أثناء الانعطاف</string>
+    <string name="settings_turn_declutter_hint">أثناء دوران الخريطة في منعطف، تبقى أسماء الشوارع وحدها عليها. وتعود الأماكن واللافتات والكاميرات بمجرد أن تستقرّ. يبقي الانعطافات سلسة على الهواتف الأبطأ.</string>
+    <string name="settings_route_trail_hint">يبقي الجزء الذي قطعته من المسار مرسومًا بالرمادي خلف السهم. وعند الإيقاف يُخفى فلا يُرسم إلا الطريق أمامك.</string>
+    <string name="settings_bike_safe">تفضيل مسارات الدراجات وطرق الهدوء</string>
+    <string name="settings_bike_safe_hint">تفضّل مسارات الدراجات المرخّصة والممرات المخصصة لها والطرق السكنية على أسرع طريق، على طريقة Google في توجيه الدراجات. ويستخدم الخريطة دون اتصال حيث نزّلتها، وإلا فموجّهًا مفتوحًا عبر الإنترنت. وعند الإيقاف يعطي أسرع مسار دراجة ببساطة.</string>
+    <string name="settings_route_picker">منتقي المسارات على طريقة Google</string>
+    <string name="settings_route_picker_hint">يعرض مسارًا واحدًا في المرة، وبقية المسارات خلف ضغطة مع أزمنتها على الخريطة، وزر «ابدأ» في الأسفل. أوقفه للعودة إلى لوحة MAP-RMG الكلاسيكية التي تسرد كل المسارات دفعة واحدة.</string>
+    <string name="settings_route_bar">شريط الطريق أمامك</string>
+    <string name="settings_route_bar_hint">شريط بجانب الخريطة يعرض الازدحام وما هو قادم في بقية مسارك. ولا يعرض إلا ما يعرفه MAP-RMG فعلًا: الزحام، والإشارات الضوئية، ولافتات التوقف، ومعابر السكك، والمطبات، وكاميرات المراقبة. عمودي فقط.</string>
+    <string name="settings_font">الخط</string>
+    <string name="settings_font_system">خط النظام</string>
+    <string name="settings_font_choose">اختيار ملف خط…</string>
+    <string name="settings_font_flex_hint">‏Google Sans Flex هو الشقيق مفتوح الرخصة لخط Google نفسه. ويغطي الحروف اللاتينية؛ أما كتابات أخرى فتبقى بخط النظام.</string>
+    <string name="settings_font_bad">تعذّرت قراءة ذلك الملف كخط.</string>
+    <string name="settings_font_custom">خط مخصص</string>
+    <string name="settings_traffic_lights">إرشادات الإشارات الضوئية</string>
+    <string name="settings_traffic_lights_hint">إشارات منطوقة على العلامات: تجاوز الضوء ثم انعطف. بالإنجليزية فقط، ومعطّلة افتراضيًا.</string>
+    <string name="settings_speeding_alert">تنبيه السرعة</string>
+    <string name="settings_speeding_alert_hint">يقول «لقد تجاوزت حد السرعة» بعد بقائك فوق الحد المعلن بضع ثوانٍ، ومرة أخرى بعد أن تخفّف وتتجاوزه من جديد. فقط حيث يكون الحد المعلن معروفًا، وهو نفسه الذي تعرضه شارة السرعة. معطّل إلا إن شغّلته.</string>
+    <string name="nav_speeding_alert">لقد تجاوزت حد السرعة</string>
+    <string name="settings_softkeys">المفاتيح اللينة</string>
+    <string name="settings_softkeys_hint">تقريب الخريطة بمفتاحي الهاتف اللينين. لهواتف لوحة الأرقام فقط.</string>
+    <string name="settings_softkeys_calibrate">معايرة المفاتيح اللينة</string>
+    <string name="settings_softkeys_calibrate_hint">إن لم تكن المفاتيح اللينة تقرّب الخريطة، اضغط هنا ثم اضغط المفتاح الأيسر ثم الأيمن ليتعلّم MAP-RMG رموزهما.</string>
+    <string name="map_zoom_mode_hint">التقريب:  ◀ إبعاد   ·   تقريب ▶      رجوع للخروج</string>
+    <string name="map_move_mode_hint">تحريك الخريطة:  ◀ ▲ ▼ ▶      رجوع للخروج</string>
+    <string name="softkey_options">الخيارات</string>
+    <string name="softkey_search">بحث</string>
+    <string name="softkey_move_map">تحريك الخريطة</string>
+    <string name="softkey_stop_zoom">إيقاف التقريب</string>
+    <string name="softkey_recenter">إعادة التمركز</string>
+    <string name="softkey_mute">كتم الصوت</string>
+    <string name="softkey_unmute">إلغاء الكتم</string>
+    <string name="softkey_zoom_menu">تقريب (◀ − ▶ +)</string>
+    <string name="map_asr_downloading">ننزّل ميكروفون صوت MAP-RMG · %1$d%%</string>
+    <!-- format -->
+    <string name="map_asr_installing">نثبّت ميكروفون صوت MAP-RMG…</string>
+    <string name="map_asr_waiting">ميكروفون صوت MAP-RMG · في انتظار الصوت</string>
+    <!-- format -->
+    <string name="mapscreen_filter_top_rated">4.0★</string>
+    <string name="mapscreen_section_recent_searches">عمليات البحث الأخيرة</string>
+    <string name="mapscreen_clear_recent_searches">مسح عمليات البحث الأخيرة</string>
+    <string name="root_diag_title">أتساعد في تطوير MAP-RMG؟</string>
+    <string name="root_diag_body">يبقى الاثنان على هاتفك. ولا يُرسل شيء إلا إن صدّرته بنفسك. ويمكنك تغيير أيهما متى شئت من الإعدادات.</string>
+    <string name="root_diag_share_title">مشاركة التشخيصات</string>
+    <string name="root_diag_share_desc">سجل محلي قصير لعمليات البحث والمسارات والأخطاء.</string>
+    <string name="root_diag_trips_title">حفظ رحلاتي</string>
+    <string name="root_diag_trips_desc">يسجّل مسارات GPS لرحلاتك لتُعاد للاختبار. وهو أكثر كشفًا: مساراتك الدقيقة.</string>
+    <string name="root_diag_save">حفظ الاختيارات</string>
+    <string name="root_voice_tts_title">نطق الإرشادات بصوت عالٍ</string>
+    <string name="root_voice_tts_desc">إرشادات منطوقة خطوة بخطوة. موصى به. تنزيل لمرة واحدة بحجم %1$d م.ب.</string>
+    <!-- format -->
+    <string name="root_voice_mic_title">البحث بالكلام</string>
+    <string name="root_voice_mic_desc">إملاء البحث دون كتابة. وبدونه يستخدم الميكروفون Google. تنزيل لمرة واحدة بحجم %1$d م.ب.</string>
+    <!-- format -->
+    <string name="root_voice_none_picked">اختر خيارًا أولًا، أو «ليس الآن».</string>
+    <string name="root_offline_title">الخرائط دون اتصال</string>
+    <string name="root_offline_body">يحصل MAP-RMG على الأماكن والبحث والإرشادات من Google، لذا بلا إشارة لن تعمل إلا المناطق التي نزّلتها. جهّز منطقة الآن لتكون مستعدًا عند انقطاع الخدمة.</string>
+    <string name="root_offline_setup">الإعداد دون اتصال</string>
+    <string name="mapvm_stop_added">أُضيفت المحطة</string>
+    <!-- format -->
+    <string name="voice_error_title">لم يبدأ البحث الصوتي</string>
+    <string name="voice_error_retry">حاول مرة أخرى</string>
+    <string name="voice_error_model">نموذج الصوت غير جاهز. أعد تنزيله من الإعدادات \u2192 البحث.</string>
+    <string name="voice_error_permission">يحتاج MAP-RMG إذن الميكروفون ليستمع. امنحه من إعدادات تطبيقات Android.</string>
+    <string name="voice_error_vad">جزء من نموذج الصوت مفقود. أعد تنزيله من الإعدادات \u2192 البحث.</string>
+    <string name="voice_error_audio">لم يفتح هذا الهاتف ميكروفونه لـ MAP-RMG. أغلق أي شيء آخر يسجّل الصوت وحاول مرة أخرى.</string>
+    <string name="voice_error_recording">توقف التسجيل بغير المتوقع. حاول مرة أخرى.</string>
+    <string name="no_browser_installed">لا يوجد متصفح على جهازك</string>
+    <string name="routing_offer_title">التوجيه دون اتصال لمنطقة %1$s؟</string>
+    <string name="routing_offer_download">تنزيل</string>
+    <string name="routing_offer_body">يجلب الطرق والأماكن والخريطة لهذه المنطقة، بنحو %1$s. وتأتي إعادة حساب المسار أسرع وتظل الإرشادات تعمل بلا إشارة. والتنزيلات في الإعدادات ← الخرائط دون اتصال.</string>
+    <plurals name="exp_chooser_alts">
+        <item quantity="zero">لا مسارات أخرى</item>
+        <item quantity="one">مسار آخر</item>
+        <item quantity="two">مساران آخران</item>
+        <item quantity="few">%1$d مسارات أخرى</item>
+        <item quantity="many">%1$d مسارًا آخر</item>
+        <item quantity="other">%1$d مسار آخر</item>
+    </plurals>
+    <string name="exp_chooser_alts_same">الوقت نفسه تقريبًا</string>
+    <string name="exp_chooser_fewest_cams">أقل كاميرات</string>
+    <string name="nav_hold_controls">إيقاف مؤقت أو كتم</string>
+    <string name="nav_stop_offer_add">إضافة محطة</string>
+    <string name="nav_stop_offer_ahead">بعد %1$s</string>
+    <!-- 1: how much the stop adds to the drive, already formatted ("4 min") -->
+    <string name="nav_stop_offer_detour">+%1$s</string>
+    <string name="settings_nav_tap_places">الضغط على الأماكن أثناء القيادة (تجربة)</string>
+    <string name="settings_nav_tap_places_hint">أثناء الملاحة تبقى أماكن الوقود والطعام والشحن على الخريطة، والضغط على أحدها يعرضه كمحطة، وضغطة ثانية تضيفه. معطّل افتراضيًا لأن الملاحة تخفي الأماكن لتبقى الخريطة مقروءة. وتشغيل هذا الخيار يشغّل «إظهار الأماكن» أيضًا.</string>
+    <string name="mapvm_start_from_here">البدء من مكانك الحالي</string>
+    <string name="place_busy_not">غير مزدحم</string>
+    <string name="place_busy_not_too">غير مزدحم كثيرًا</string>
+    <string name="place_busy_little">مزدحم قليلًا</string>
+    <string name="place_busy_usually">مزدحم عادةً</string>
+    <string name="place_busy_very">مزدحم جدًا</string>
+    <string name="settings_reviews_on_tap">تحميل المراجعات عند ضغطي فقط</string>
+    <string name="settings_reviews_on_tap_hint">يعرض المكان زر «عرض المراجعات» بدل تحميلها. والمراجعات أكبر طلب يُرسل إلى Google في صفحة المكان.</string>
+    <string name="settings_route_traffic_on_tap">الازدحام المباشر عند ضغطي فقط</string>
+    <string name="settings_route_traffic_on_tap_hint">تأتي المسارات من الموجّه المفتوح وحده حتى تضغط «عرض الازدحام» في قائمة المسارات. وحتى ذلك الحين تكون الأزمنة بلا ازدحام.</string>
+    <string name="place_show_reviews">عرض المراجعات</string>
+    <string name="place_traffic_not_loaded">أزمنة بلا ازدحام مباشر.</string>
+    <string name="place_show_traffic">عرض الازدحام</string>
+    <string name="place_tab_overview">نظرة عامة</string>
+    <string name="place_all_reviews_short">كل المراجعات</string>
+    <string name="place_tab_photos">الصور</string>
+    <string name="place_photos_all">الكل</string>
+    <string name="settings_photos_on_tap">تحميل الصور عند ضغطي فقط</string>
+    <string name="settings_photos_on_tap_hint">يعرض المكان زر «عرض الصور» بدل تحميل صوره. وهذا يوفّر طلبًا إلى Google لكل مكان.</string>
+    <string name="settings_details_retry">انتظار أوقات الازدحام</string>
+    <string name="settings_details_retry_hint">غالبًا ما يترك Google أوقات الازدحام خارج جوابه الأول، فيسأل MAP-RMG مرتين إضافيتين. وعند الإيقاف: طلب واحد لكل مكان، وقد تكون أوقات الازدحام مفقودة.</string>
+    <string name="place_show_photos">عرض الصور</string>
+    <string name="place_no_photos">لا صور بعد</string>
+    <string name="place_all_n_reviews_open">كل المراجعات (%1$d)</string>
+    <!-- format -->
+    <string name="place_updates">التحديثات</string>
+    <string name="place_updates_all">عرض كل التحديثات (%1$d)</string>
+    <!-- format -->
+    <string name="settings_nav_north_up">بدء الرحلة والشمال إلى الأعلى</string>
+    <string name="settings_nav_north_up_hint">تبقى الخريطة مسطّحة والشمال في الأعلى أثناء قيادتك. واضغط البوصلة أثناء الرحلة للتبديل.</string>
+    <string name="settings_puck_shape">أيقونة الملاحة</string>
+    <string name="settings_puck_shape_arrow">سهم</string>
+    <string name="settings_puck_shape_car">سيارة</string>
+    <string name="settings_car_red">حمراء</string>
+    <string name="settings_car_blue">زرقاء</string>
+    <string name="settings_car_white">بيضاء</string>
+    <string name="settings_car_green">خضراء</string>
+    <string name="settings_car_yellow">صفراء</string>
+    <string name="settings_puck_shape_ufo">طبق طائر</string>
+    <string name="settings_puck_shape_ship">سفينة قراصنة</string>
+    <string name="settings_puck_shape_duck">بطة مطاطية</string>
+    <string name="route_saved_label">مسارك: %1$s</string>
+    <string name="route_save">حفظ هذا المسار</string>
+    <string name="trip_shortcut_add">إضافة إلى الشاشة الرئيسية</string>
+    <string name="trip_shortcut_unsupported">هذه الشاشة الرئيسية لا تدعم تثبيت الاختصارات</string>
+    <string name="route_save_title">حفظ المسار</string>
+    <string name="route_save_hint">الاسم</string>
+    <string name="route_save_default">مسار إلى %1$s</string>
+    <string name="route_saved_toast">حُفظ المسار. ويظهر بجانب البقية كلما طلبت هذه الرحلة.</string>
+    <string name="nav_left_your_route">غادرت “%1$s”. ونسلك أسرع طريق.</string>
+    <string name="list_sound_label">صوت عند مرورك بأحدها</string>
+    <string name="list_sound_off">معطّل</string>
+    <string name="list_sound_ping">رنّة</string>
+    <string name="list_sound_bell">جرس</string>
+    <string name="list_sound_double">صوتان قصيران</string>
+    <string name="list_sound_low">نغمة منخفضة</string>
+    <string name="list_sound_name">نطق اسمه</string>
+    <string name="bulk_select">تحديد أماكن</string>
+    <plurals name="bulk_selected">
+        <item quantity="zero">لم يُحدَّد شيء</item>
+        <item quantity="one">حُدِّد واحد</item>
+        <item quantity="two">حُدِّد اثنان</item>
+        <item quantity="few">حُدِّد %1$d</item>
+        <item quantity="many">حُدِّد %1$d</item>
+        <item quantity="other">حُدِّد %1$d</item>
+    </plurals>
+    <string name="bulk_all">الكل</string>
+    <string name="bulk_move">نقل إلى قائمة</string>
+    <string name="bulk_new_list">قائمة جديدة…</string>
+    <string name="bulk_remove">إزالة</string>
+    <plurals name="bulk_remove_title">
+        <item quantity="zero">إزالة الأماكن المحدَّدة؟</item>
+        <item quantity="one">إزالة مكان واحد؟</item>
+        <item quantity="two">إزالة مكانين؟</item>
+        <item quantity="few">إزالة %1$d أماكن؟</item>
+        <item quantity="many">إزالة %1$d مكانًا؟</item>
+        <item quantity="other">إزالة %1$d مكان؟</item>
+    </plurals>
+    <string name="bulk_done">إنهاء التحديد</string>
+    <string name="bulk_moved">نُقل %1$d إلى %2$s</string>
+    <string name="settings_saved_routes">المسارات المحفوظة</string>
+    <string name="settings_saved_routes_empty">اختر مسارًا في منتقي المسارات ثم استخدم ⋮ &gt; حفظ هذا المسار. ويظهر بجانب البقية كلما طلبت الرحلة نفسها.</string>
+    <string name="settings_saved_route_rename">إعادة التسمية</string>
+    <string name="settings_saved_route_delete">حذف</string>
+    <string name="route_save_keep_stops">التوقف في هذه الأماكن</string>
+    <string name="route_save_keep_stops_hint">عند الإيقاف: المحطات تشكّل الطريق فقط، ويُعرض المسار بجانب البقية لهذه الرحلة.</string>
+    <plurals name="saved_route_stops">
+        <item quantity="zero">بلا محطات</item>
+        <item quantity="one">محطة واحدة</item>
+        <item quantity="two">محطتان</item>
+        <item quantity="few">%1$d محطات</item>
+        <item quantity="many">%1$d محطة</item>
+        <item quantity="other">%1$d محطة</item>
+    </plurals>
+    <string name="mapscreen_section_routes">مساراتك</string>
+    <string name="stops_max">يمكن أن تضم الرحلة حتى %1$d محطة</string>
+    <string name="route_update">حفظ التغييرات على %1$s</string>
+    <string name="route_updated_toast">حُفظت التغييرات على %1$s</string>
+    <string name="settings_saved_route_edit">تعديل</string>
+    <string name="settings_saved_route_edit_hint">غيّر المحطات أو اختر طريقًا آخر، ثم ⋮ &gt; حفظ التغييرات.</string>
+    <string name="saved_pin">تثبيت في صفحة البحث</string>
+    <string name="saved_unpin">إلغاء التثبيت من صفحة البحث</string>
+    <string name="saved_sheet_places">الأماكن المحفوظة</string>
+    <string name="saved_sheet_routes">مساراتك</string>
+    <string name="driven_route_title">سلكت طريقك الخاص</string>
+    <string name="driven_route_save">حفظ الطريق الذي سلكته</string>
+    <string name="settings_page_transitions">انتقالات الصفحات</string>
+    <string name="settings_page_transitions_hint">تحريك الصفحات والألواح السفلية عند فتحها وإغلاقها، ومعاينة الصفحة السابقة أثناء سحبك للرجوع.</string>
+    <string name="place_avoid_label">تجنّب</string>
+    <string name="place_avoid_short_tolls">الرسوم</string>
+    <string name="place_avoid_short_highways">الطرق السريعة</string>
+    <string name="place_avoid_short_ferries">العبّارات</string>
+    <string name="place_avoid_short_cameras">الكاميرات</string>
+    <string name="trip_shortcut_themed">مطابقة الأيقونات المنسّقة</string>
+</resources>
