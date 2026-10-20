@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- API 26+: the adaptive MAP-RMG icon. Background = the brand gradient, foreground = the official
-     artwork (tools/make-brand-assets.py renders it at 70% of the 108dp layer, which is what the
-     launcher's mask may crop), monochrome = the themed-icon silhouette. -->
+<!-- API 26+: the adaptive MAP-RMG icon. Background = a white field, foreground = the official
+     artwork (tools/make-brand-assets.py renders it at 62% of the 108dp layer; the launcher shows
+     only the middle 72dp, so the artwork's frame and its red pin stay whole under any mask),
+     monochrome = the themed-icon silhouette. -->
 <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
     <background android:drawable="@drawable/ic_launcher_background" />
     <foreground android:drawable="@mipmap/ic_launcher_foreground" />

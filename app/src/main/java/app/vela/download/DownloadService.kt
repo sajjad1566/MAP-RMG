@@ -76,7 +76,7 @@ class DownloadService : Service() {
             )
         }
         return NotificationCompat.Builder(this, CHANNEL_ID)
-            .setSmallIcon(android.R.drawable.stat_sys_download)
+            .setSmallIcon(R.mipmap.ic_notification)
             .setContentTitle(getString(R.string.download_notif_title, labels.joinToString(", ")))
             .setProgress(0, 0, true)
             .setOngoing(true)

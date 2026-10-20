@@ -241,7 +241,7 @@ class NavigationService : Service() {
             ).also { cachedGlyph = it; cachedGlyphType = t; cachedGlyphAccent = accent }
         }
         val b = NotificationCompat.Builder(this, CHANNEL_ID)
-            .setSmallIcon(R.drawable.ic_nav)
+            .setSmallIcon(R.mipmap.ic_notification)
             .setContentTitle(title)
             .setContentText(text)
             .setLargeIcon(largeIcon)
@@ -345,7 +345,7 @@ class NavigationService : Service() {
         ensureChannel()
         val base = buildNotification()
         return NotificationCompat.Builder(this, TURN_CHANNEL_ID)
-            .setSmallIcon(R.drawable.ic_nav)
+            .setSmallIcon(R.mipmap.ic_notification)
             .setContentTitle(base.extras.getCharSequence(Notification.EXTRA_TITLE))
             .setContentText(base.extras.getCharSequence(Notification.EXTRA_TEXT))
             .setLargeIcon(cachedGlyph)

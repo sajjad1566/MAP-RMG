@@ -3,7 +3,8 @@
          ui/theme/Color.kt (VelaTeal / VelaAmber and the gold settings tokens); these XML colors
          are for the pre-Compose window (splash, system bars) and anything XML-side, so the very
          first frame is already MAP-RMG rather than a blank light window.
-         The launcher background is @drawable/ic_launcher_background (brand gradient). -->
+         The launcher background is @drawable/ic_launcher_background, a white field behind the
+         official artwork (a pale map that supplies nearly the whole icon itself). -->
     <color name="maprmg_royal_blue">#FF2457D6</color>
     <color name="maprmg_gold">#FFD4AF37</color>
     <color name="maprmg_dark_blue">#FF0B1C3D</color>
@@ -13,4 +14,6 @@
     <!-- The splash background: the brand's dark blue, so the launch reads as MAP-RMG before the
          map is drawn. -->
     <color name="maprmg_splash_background">@color/maprmg_dark_blue</color>
+    <!-- Behind the adaptive icon's artwork, and around the splash mark. -->
+    <color name="maprmg_icon_background">#FFFFFFFF</color>
 </resources>

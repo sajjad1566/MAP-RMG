@@ -9,9 +9,10 @@
         <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
     </style>
 
-    <!-- The window MainActivity starts in: brand dark blue behind the official mark, so the first
-         frame of a launch is already MAP-RMG (androidx core-splashscreen draws this on every API
-         level; installSplashScreen() hands over to Theme.Vela once the app is up). -->
+    <!-- The window MainActivity starts in: brand dark blue behind a white disc carrying the
+         official mark, so the first frame of a launch is already MAP-RMG (androidx core-splashscreen
+         draws this on every API level; installSplashScreen() hands over to Theme.Vela once the app
+         is up). The disc is what keeps a pale map legible on the dark window. -->
     <style name="Theme.Vela.Splash" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/maprmg_splash_background</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo</item>

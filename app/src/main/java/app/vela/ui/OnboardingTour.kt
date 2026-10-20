@@ -29,7 +29,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.requiredSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.systemBars
 import androidx.compose.foundation.layout.width
@@ -486,21 +485,15 @@ private fun TourBackdrop(content: @Composable () -> Unit) {
     }
 }
 
-/** The app mark, drawn the way the launcher draws it: brand gradient behind the official art. */
+/** The app mark exactly as the logo was drawn: the artwork's own frame and colors, nothing added
+ *  behind it. The master is the unmasked image, so no launcher-mask margin shows at this size. */
 @Composable
 private fun BrandMark(size: androidx.compose.ui.unit.Dp) {
-    Box(
-        Modifier
-            .size(size)
-            .clip(RoundedCornerShape(percent = 27))
-            .background(BrandRoyalBlue),
-    ) {
-        Image(
-            painter = androidx.compose.ui.res.painterResource(R.mipmap.ic_launcher_foreground),
-            contentDescription = null,
-            modifier = Modifier.requiredSize(size),
-        )
-    }
+    Image(
+        painter = androidx.compose.ui.res.painterResource(R.drawable.ic_brand_mark),
+        contentDescription = null,
+        modifier = Modifier.size(size),
+    )
 }
 
 // ---------------------------------------------------------------------------------------------

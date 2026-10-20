@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- The adaptive icon's background: the MAP-RMG brand gradient, dark blue into royal blue. The
-     official artwork (@mipmap/ic_launcher_foreground) sits on top of it inside the safe zone.
-     Also the backdrop of the in-app brand mark (ui/WelcomeScreen.kt, the onboarding pages). -->
+<!-- The adaptive icon's background: a light neutral field. The official artwork is a pale, high-key
+     map, so it supplies nearly the whole 108dp layer itself (@mipmap/ic_launcher_foreground, 62%);
+     this only backs the small margin a launcher's mask can expose, and white keeps the icon's own
+     frame reading as the edge of the shape instead of a dark ring around it. -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <gradient
-        android:angle="315"
-        android:startColor="@color/maprmg_dark_blue"
-        android:endColor="@color/maprmg_royal_blue"
-        android:type="linear" />
+    <solid android:color="@color/maprmg_icon_background" />
 </shape>

@@ -15,7 +15,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.requiredSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.systemBars
 import androidx.compose.foundation.layout.width
@@ -347,33 +346,15 @@ private fun ChoiceCard(selected: Boolean, title: String, gives: String, sends: S
     }
 }
 
-/** The Vela mark as the launcher draws it: the two-tone sail on the brand gradient. The launcher
- *  foreground keeps its art inside the adaptive icon's safe zone, so it is drawn 1.5 times the
- *  box and clipped. */
+/** The MAP-RMG mark exactly as the logo was drawn: the artwork's own frame and colors, nothing
+ *  added behind it. The master is the unmasked image, so it stays whole at this size. */
 @Composable
 private fun VelaMark(size: androidx.compose.ui.unit.Dp) {
-    Box(
-        Modifier
-            .size(size)
-            .clip(RoundedCornerShape(percent = 27))
-            .background(
-                androidx.compose.ui.graphics.Brush.linearGradient(
-                    listOf(
-                        androidx.compose.ui.graphics.Color(0xFF0B1C3D),
-                        androidx.compose.ui.graphics.Color(0xFF2457D6),
-                    ),
-                ),
-            ),
-        contentAlignment = Alignment.Center,
-    ) {
-        androidx.compose.foundation.Image(
-            // The official artwork, drawn exactly as the launcher draws it: the foreground layer
-            // already keeps the mark inside the adaptive icon's safe zone.
-            painter = androidx.compose.ui.res.painterResource(R.mipmap.ic_launcher_foreground),
-            contentDescription = null,
-            modifier = Modifier.requiredSize(size),
-        )
-    }
+    androidx.compose.foundation.Image(
+        painter = androidx.compose.ui.res.painterResource(R.drawable.ic_brand_mark),
+        contentDescription = null,
+        modifier = Modifier.size(size),
+    )
 }
 
 /** The filled primary button of a first-run page, which takes focus on a D-pad device. A Material
