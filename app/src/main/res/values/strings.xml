@@ -485,13 +485,11 @@
     <string name="settings_hub_support_sub">Reach the support team on Telegram</string>
     <string name="support_center_title">Support and help center</string>
     <string name="support_welcome">Welcome to MAP-RMG support.</string>
-    <string name="support_body">We are here to help you, answer your questions, take your feedback and look into the problems you meet while using the app.</string>
+    <!-- The help message, one paragraph: the page shows it whole, then the button. -->
+    <string name="support_message">We are here to help you, answer your questions, take your feedback and look into the problems you meet while using the app.</string>
     <string name="support_telegram_intro">You can reach the support team directly on Telegram, and we will answer your message as soon as we can.</string>
     <string name="support_telegram_button">Contact us on Telegram</string>
     <string name="support_telegram_failed">No app on this phone can open that link</string>
-    <string name="support_app_info_group">App</string>
-    <string name="support_app_info">Version and updates</string>
-    <string name="support_app_info_hint">Version number, app updates and licenses.</string>
     <string name="settings_privacy_door_hint">The Google-off switch, session length and clearing history.</string>
     <string name="donate_no_browser">No browser installed to open the donate page</string>
     <string name="settings_version">Version</string>

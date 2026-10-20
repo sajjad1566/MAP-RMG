@@ -114,17 +114,14 @@ fun SettingsScreen(vm: MapViewModel, navController: androidx.navigation.NavHostC
                         SettingsSection.ABOUT -> AboutSettingsScreen(
                             vm,
                             onBack = toHub,
-                            // Plain navigate: Back from Privacy returns to About, then to Support.
+                            // Plain navigate: Back from Privacy returns to About.
                             onOpenPrivacy = { navController.navigate(SettingsSection.PRIVACY.route) { launchSingleTop = true } },
                         )
-                        SettingsSection.SUPPORT -> SupportSettingsScreen(
-                            onBack = toHub,
-                            // Plain navigate (no popUpTo): Back from About returns to Support, and
-                            // Back from Support still returns to the hub.
-                            onOpenAppInfo = {
-                                navController.navigate(SettingsSection.ABOUT.route) { launchSingleTop = true }
-                            },
-                        )
+                        // The page is the help message and the Telegram button, so nothing else
+                        // is wired in: Back returns to the hub. The About page (version, updater,
+                        // licenses) stays in the build and is still reachable from the settings
+                        // search by its own rows.
+                        SettingsSection.SUPPORT -> SupportSettingsScreen(onBack = toHub)
                     }
                 }
             }

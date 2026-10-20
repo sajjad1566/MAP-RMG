@@ -21,12 +21,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import app.vela.R
-import app.vela.ui.dpadClickable
 import app.vela.ui.dpadHighlight
 import app.vela.ui.icons.SymOutlined
-import app.vela.ui.settings.PageIntro
 import app.vela.ui.settings.SettingsGroup
 import app.vela.ui.settings.SettingsScaffold
 
@@ -37,36 +36,55 @@ private const val SUPPORT_HANDLE = "TAGI7VIP"
 private val TelegramBlue = Color(0xFF229ED9)
 
 /**
- * Support sub-screen: who to write to and how. Replaces the About card in the hub, but the About
- * page itself is still one row down the page, so the version line, the in-app updater and the
- * map-data license notices keep a door (nothing about them was deleted).
+ * Support sub-screen: the help message and one way to reach the team.
  *
- * No permission, no WebView, no in-app browser: the Telegram button hands the account to the
- * Telegram app and falls back to the t.me page when no app answers.
+ * Deliberately just those two things. It replaced the About card in the hub, but the About page
+ * itself stays in the build (the version line, the in-app updater and the map-data licenses);
+ * Support no longer carries a door to it, so this page reads as one message with one button. The
+ * Telegram button needs no permission, opens no WebView and adds no intermediate screen: it hands
+ * @TAGI7VIP to the Telegram app, falls back to the t.me page, and reports a phone with neither.
  */
 @Composable
-internal fun SupportSettingsScreen(
-    onBack: () -> Unit,
-    onOpenAppInfo: () -> Unit,
-) {
+internal fun SupportSettingsScreen(onBack: () -> Unit) {
     val context = LocalContext.current
     SettingsScaffold(stringResource(R.string.support_center_title), onBack) { topRow ->
         Spacer(Modifier.height(4.dp))
-        PageIntro(stringResource(R.string.support_welcome))
         SettingsGroup {
-            Column(Modifier.padding(horizontal = 16.dp, vertical = 12.dp)) {
+            Column(
+                // Centered column: the message reads as one block under the title and the button
+                // sits in the card's horizontal middle, the balance the page was missing.
+                Modifier.fillMaxWidth().padding(horizontal = 20.dp, vertical = 18.dp),
+                horizontalAlignment = Alignment.CenterHorizontally,
+            ) {
                 Text(
-                    stringResource(R.string.support_body),
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    stringResource(R.string.support_welcome),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    color = MaterialTheme.colorScheme.onSurface,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.fillMaxWidth(),
                 )
-                Spacer(Modifier.height(8.dp))
+                Spacer(Modifier.height(10.dp))
+                // The message is one paragraph, not three stacked ones: the gap that followed
+                // "... استخدام التطبيق." came from a second block with its own padding.
+                Text(
+                    stringResource(R.string.support_message),
+                    style = MaterialTheme.typography.bodyLarge,
+                    fontWeight = FontWeight.Medium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    textAlign = TextAlign.Center,
+                    lineHeight = MaterialTheme.typography.bodyLarge.fontSize * 1.7f,
+                    modifier = Modifier.fillMaxWidth(),
+                )
+                Spacer(Modifier.height(10.dp))
                 Text(
                     stringResource(R.string.support_telegram_intro),
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.fillMaxWidth(),
                 )
-                Spacer(Modifier.height(16.dp))
+                Spacer(Modifier.height(18.dp))
                 Button(
                     onClick = { openTelegram(context) },
                     // The top focusable control here: Back routes its DOWN to this button, and the
@@ -77,43 +95,12 @@ internal fun SupportSettingsScreen(
                         contentColor = Color.White,
                     ),
                 ) {
-                    Icon(SymOutlined.Send, contentDescription = null, modifier = Modifier.size(18.dp))
-                    Spacer(Modifier.width(8.dp))
-                    Text(stringResource(R.string.support_telegram_button), fontWeight = FontWeight.Medium)
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Icon(SymOutlined.Send, contentDescription = null, modifier = Modifier.size(18.dp))
+                        Spacer(Modifier.width(8.dp))
+                        Text(stringResource(R.string.support_telegram_button), fontWeight = FontWeight.SemiBold)
+                    }
                 }
-            }
-        }
-        Spacer(Modifier.height(8.dp))
-        SettingsGroup(title = stringResource(R.string.support_app_info_group)) {
-            Row(
-                Modifier
-                    .fillMaxWidth()
-                    .dpadHighlight(androidx.compose.foundation.shape.RoundedCornerShape(20.dp))
-                    .dpadClickable(onClick = onOpenAppInfo)
-                    .padding(horizontal = 16.dp, vertical = 14.dp),
-                verticalAlignment = Alignment.CenterVertically,
-            ) {
-                Icon(
-                    SymOutlined.Info,
-                    contentDescription = null,
-                    tint = MaterialTheme.colorScheme.primary,
-                    modifier = Modifier.size(22.dp),
-                )
-                Spacer(Modifier.width(14.dp))
-                Column(Modifier.weight(1f)) {
-                    Text(stringResource(R.string.support_app_info), style = MaterialTheme.typography.bodyLarge)
-                    Text(
-                        stringResource(R.string.support_app_info_hint),
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    )
-                }
-                Icon(
-                    SymOutlined.ChevronRight,
-                    contentDescription = null,
-                    tint = MaterialTheme.colorScheme.onSurfaceVariant,
-                    modifier = Modifier.size(20.dp),
-                )
             }
         }
         Spacer(Modifier.height(56.dp))
