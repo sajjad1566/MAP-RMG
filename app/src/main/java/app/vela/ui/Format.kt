@@ -44,6 +44,31 @@ fun formatDistance(meters: Double): String =
         else String.format(Locale.US, "%.1f km", meters / 1000.0)
     }
 
+/** The unit a [formatDistanceSplit] number carries, so a caller can name it in its own language
+ *  ("km" in English, "كم" in Arabic) instead of the [formatDistance] string's Latin unit. */
+enum class DistanceUnit { METERS, KILOMETERS, FEET, MILES }
+
+/**
+ * The nav bar's distance split into the number alone and its unit: ("10.2", KILOMETERS).
+ *
+ * Two separate runs, because the bar lays the number and the unit out as its own Text nodes: in an
+ * RTL layout a single "10.2 km · 11:13 PM" line was reordered by the bidi algorithm and the figures
+ * ran together in Arabic. The rounding is copied from [formatDistance] step for step, so the bar and
+ * every other surface never disagree by a meter. The digits are Western in every language, matching
+ * the distances the rest of the app shows.
+ */
+fun formatDistanceSplit(meters: Double): Pair<String, DistanceUnit> =
+    if (Units.imperial.value) {
+        val feet = meters * 3.28084
+        if (feet < 1000) {
+            val n = if (feet < 100) maxOf(10, (feet / 10).roundToInt() * 10) else (feet / 50).roundToInt() * 50
+            n.toString() to DistanceUnit.FEET
+        } else String.format(Locale.US, "%.1f", meters / 1609.344) to DistanceUnit.MILES
+    } else {
+        if (meters < 1000) meters.roundToInt().toString() to DistanceUnit.METERS
+        else String.format(Locale.US, "%.1f", meters / 1000.0) to DistanceUnit.KILOMETERS
+    }
+
 /** An area in the user's units: sq ft, acres, sq mi, or m², hectares, km². */
 fun formatArea(m2: Double): String =
     if (Units.imperial.value) {
@@ -136,6 +161,25 @@ fun formatArrivalClock(remainingSeconds: Double): String {
     val fmt = if (Clock24.on.value) java.time.format.DateTimeFormatter.ofPattern("HH:mm")
         else java.time.format.DateTimeFormatter.ofLocalizedTime(java.time.format.FormatStyle.SHORT)
     return arrival.format(fmt)
+}
+
+/**
+ * The nav bar's arrival clock split for its own layout: the time alone and whether it is before
+ * noon, or a null marker when the phone asks for a 24-hour clock.
+ *
+ * The bar draws "11:13" and "ص" as two Text nodes (see [formatDistanceSplit] for why), so this
+ * returns the pieces instead of a formatted string. A localized time format would have picked the
+ * locale's own numbering system - Arabic-Indic digits beside the bar's Western distance - so the
+ * time is formatted with Latin digits explicitly and the AM/PM word comes from the caller's
+ * resources. [DemoClock] still wins, so a demo drive keeps its simulated clock.
+ */
+fun arrivalClockSplit(remainingSeconds: Double): Pair<String, Boolean?> {
+    val arrival = (DemoClock.now()?.toLocalTime() ?: java.time.LocalTime.now()).plusSeconds(remainingSeconds.toLong())
+    if (Clock24.on.value) {
+        return arrival.format(java.time.format.DateTimeFormatter.ofPattern("HH:mm", Locale.US)) to null
+    }
+    val hour12 = ((arrival.hour + 11) % 12) + 1
+    return String.format(Locale.US, "%d:%02d", hour12, arrival.minute) to (arrival.hour < 12)
 }
 
 /** A wall-clock time [epochMs] in the phone's zone, "9:23 AM" or "09:23" by the 12/24-hour

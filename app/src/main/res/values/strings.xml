@@ -349,6 +349,28 @@
     <!-- format: whole trip's time left, then its arrival clock -->
     <string name="nav_bar_trip">Trip %1$s · %2$s</string>
     <string name="nav_bar_your_stop">your stop</string>
+    <!-- The nav bar's own figures: each value and its unit are separate resources because the bar
+         lays them out as separate Text nodes (one RTL line of mixed runs was being reordered). -->
+    <string name="nav_remaining_distance">Distance left</string>
+    <string name="nav_expected_arrival">Arrival</string>
+    <string name="nav_remaining_time">Time left</string>
+    <string name="nav_figures_cd">Distance left %1$s. Arrival %2$s. Time left %3$s.</string>
+    <string name="nav_unit_m">m</string>
+    <string name="nav_unit_km">km</string>
+    <string name="nav_unit_ft">ft</string>
+    <string name="nav_unit_mi">mi</string>
+    <string name="nav_time_am">AM</string>
+    <string name="nav_time_pm">PM</string>
+    <string name="nav_time_under_minute">under a minute</string>
+    <string name="nav_time_join">%1$s %2$s</string>
+    <plurals name="nav_time_minutes">
+        <item quantity="one">%1$d min</item>
+        <item quantity="other">%1$d min</item>
+    </plurals>
+    <plurals name="nav_time_hours">
+        <item quantity="one">%1$d h</item>
+        <item quantity="other">%1$d h</item>
+    </plurals>
     <string name="nav_bar_stop_cd">%1$s and %2$s to %3$s, arriving at %4$s. Whole trip %5$s and %6$s, arriving at %7$s.</string>
     <string name="nav_stops_whole_trip">Whole trip: %1$s · %2$s · arrive %3$s</string>
     <string name="nav_stops_remove_next">Remove next</string>
@@ -460,6 +482,16 @@
     <string name="settings_support">Support</string>
     <string name="settings_support_hint">MAP-RMG is free and ad-free. If it\'s become useful, a donation helps keep development going. Entirely optional.</string>
     <string name="settings_support_button">Support MAP-RMG</string>
+    <string name="settings_hub_support_sub">Reach the support team on Telegram</string>
+    <string name="support_center_title">Support and help center</string>
+    <string name="support_welcome">Welcome to MAP-RMG support.</string>
+    <string name="support_body">We are here to help you, answer your questions, take your feedback and look into the problems you meet while using the app.</string>
+    <string name="support_telegram_intro">You can reach the support team directly on Telegram, and we will answer your message as soon as we can.</string>
+    <string name="support_telegram_button">Contact us on Telegram</string>
+    <string name="support_telegram_failed">No app on this phone can open that link</string>
+    <string name="support_app_info_group">App</string>
+    <string name="support_app_info">Version and updates</string>
+    <string name="support_app_info_hint">Version number, app updates and licenses.</string>
     <string name="donate_no_browser">No browser installed to open the donate page</string>
     <string name="settings_version">Version</string>
     <string name="settings_version_line">MAP-RMG %1$s  (build %2$d)</string> <!-- format -->

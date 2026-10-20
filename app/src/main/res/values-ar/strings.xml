@@ -404,6 +404,35 @@
     <!-- format: whole trip's time left, then its arrival clock -->
     <string name="nav_bar_trip">الرحلة %1$s · %2$s</string>
     <string name="nav_bar_your_stop">محطتك</string>
+    <!-- The nav bar's own figures (see the base file). -->
+    <string name="nav_remaining_distance">المسافة المتبقية</string>
+    <string name="nav_expected_arrival">الوصول المتوقع</string>
+    <string name="nav_remaining_time">المدة المتبقية</string>
+    <string name="nav_figures_cd">المسافة المتبقية %1$s. الوصول المتوقع %2$s. المدة المتبقية %3$s.</string>
+    <string name="nav_unit_m">م</string>
+    <string name="nav_unit_km">كم</string>
+    <string name="nav_unit_ft">قدم</string>
+    <string name="nav_unit_mi">ميل</string>
+    <string name="nav_time_am">ص</string>
+    <string name="nav_time_pm">م</string>
+    <string name="nav_time_under_minute">أقل من دقيقة</string>
+    <string name="nav_time_join">%1$s و%2$s</string>
+    <plurals name="nav_time_minutes">
+        <item quantity="zero">%1$d دقيقة</item>
+        <item quantity="one">دقيقة واحدة</item>
+        <item quantity="two">دقيقتان</item>
+        <item quantity="few">%1$d دقائق</item>
+        <item quantity="many">%1$d دقيقة</item>
+        <item quantity="other">%1$d دقيقة</item>
+    </plurals>
+    <plurals name="nav_time_hours">
+        <item quantity="zero">%1$d ساعة</item>
+        <item quantity="one">ساعة واحدة</item>
+        <item quantity="two">ساعتان</item>
+        <item quantity="few">%1$d ساعات</item>
+        <item quantity="many">%1$d ساعة</item>
+        <item quantity="other">%1$d ساعة</item>
+    </plurals>
     <string name="nav_bar_stop_cd">%1$s و%2$s إلى %3$s، والوصول عند %4$s. الرحلة كاملة %5$s و%6$s، والوصول عند %7$s.</string>
     <string name="nav_stops_whole_trip">الرحلة كاملة: %1$s · %2$s · الوصول %3$s</string>
     <string name="nav_stops_remove_next">إزالة التالية</string>
@@ -519,6 +548,16 @@
     <string name="settings_support">الدعم</string>
     <string name="settings_support_hint">MAP-RMG مجاني وبلا إعلانات. وإن أصبح مفيدًا لك، فالتبرّع يساعد على استمرار التطوير. وهو اختياري تمامًا.</string>
     <string name="settings_support_button">دعم MAP-RMG</string>
+    <string name="settings_hub_support_sub">تواصل مع فريق الدعم عبر تيليجرام</string>
+    <string name="support_center_title">مركز الدعم والمساعدة</string>
+    <string name="support_welcome">أهلاً بك في مركز دعم MAP-RMG.</string>
+    <string name="support_body">نحن هنا لمساعدتك والإجابة عن استفساراتك واستقبال ملاحظاتك والمشاكل التي قد تواجهك أثناء استخدام التطبيق.</string>
+    <string name="support_telegram_intro">يمكنك التواصل مباشرةً مع فريق الدعم عبر تيليجرام، وسنسعى للرد على رسالتك في أقرب وقت ممكن.</string>
+    <string name="support_telegram_button">التواصل عبر تيليجرام</string>
+    <string name="support_telegram_failed">لا يوجد تطبيق على هذا الهاتف يمكنه فتح هذا الرابط</string>
+    <string name="support_app_info_group">التطبيق</string>
+    <string name="support_app_info">الإصدار والتحديثات</string>
+    <string name="support_app_info_hint">رقم الإصدار، وتحديث التطبيق، والتراخيص.</string>
     <string name="donate_no_browser">لا يوجد متصفح مثبَّت لفتح صفحة التبرّع</string>
     <string name="settings_version">الإصدار</string>
     <string name="settings_version_line">MAP-RMG %1$s  (بنية %2$d)</string>

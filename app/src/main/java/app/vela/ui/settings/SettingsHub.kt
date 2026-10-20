@@ -90,10 +90,12 @@ internal fun SettingsHub(
             SettingsSection.SEARCH to stringResource(R.string.settings_search),
             SettingsSection.OFFLINE to stringResource(R.string.settings_offline),
             SettingsSection.SAVED_PLACES to stringResource(R.string.settings_saved_places),
-            SettingsSection.PRIVACY to stringResource(R.string.settings_privacy),
             SettingsSection.PERFORMANCE to stringResource(R.string.settings_performance),
             SettingsSection.DIAGNOSTICS to stringResource(R.string.settings_diagnostics),
+            // ABOUT keeps its subtitles for the search rows that still open it (its card is gone
+            // from the list); SUPPORT is the card that took its place.
             SettingsSection.ABOUT to stringResource(R.string.settings_about),
+            SettingsSection.SUPPORT to stringResource(R.string.settings_support),
         )
         if (searchQuery.isNotBlank()) {
             val matches = SEARCH_INDEX.map { (res, section) -> stringResource(res) to section }
@@ -205,13 +207,6 @@ internal fun SettingsHub(
             onClick = { onOpen(SettingsSection.OFFLINE, null) },
         )
         HubRow(
-            icon = SymOutlined.Shield,
-            title = stringResource(R.string.settings_privacy),
-            subtitle = stringResource(R.string.settings_hub_privacy_sub),
-            modifier = rowModifier(SettingsSection.PRIVACY, first = false),
-            onClick = { onOpen(SettingsSection.PRIVACY, null) },
-        )
-        HubRow(
             icon = SymOutlined.Speed,
             title = stringResource(R.string.settings_performance),
             subtitle = stringResource(R.string.settings_hub_performance_sub),
@@ -226,11 +221,11 @@ internal fun SettingsHub(
             onClick = { onOpen(SettingsSection.DIAGNOSTICS, null) },
         )
         HubRow(
-            icon = SymOutlined.Info,
-            title = stringResource(R.string.settings_about),
-            subtitle = stringResource(R.string.settings_hub_about_sub),
-            modifier = rowModifier(SettingsSection.ABOUT, first = false),
-            onClick = { onOpen(SettingsSection.ABOUT, null) },
+            icon = SymOutlined.SupportAgent,
+            title = stringResource(R.string.settings_support),
+            subtitle = stringResource(R.string.settings_hub_support_sub),
+            modifier = rowModifier(SettingsSection.SUPPORT, first = false),
+            onClick = { onOpen(SettingsSection.SUPPORT, null) },
         )
         Spacer(Modifier.height(24.dp))
     }
@@ -354,7 +349,6 @@ private val SEARCH_INDEX: List<Pair<Int, SettingsSection>> = listOf(
     R.string.settings_puck_shape to SettingsSection.NAVIGATION,
     R.string.settings_photos_on_tap to SettingsSection.PLACES,
     R.string.settings_details_retry to SettingsSection.PLACES,
-    R.string.settings_route_traffic_on_tap to SettingsSection.PRIVACY,
     R.string.settings_read_all_reviews to SettingsSection.PLACES,
     R.string.settings_load_photos to SettingsSection.PLACES,
     R.string.settings_hide_adult to SettingsSection.PLACES,
@@ -416,18 +410,9 @@ private val SEARCH_INDEX: List<Pair<Int, SettingsSection>> = listOf(
     R.string.settings_export to SettingsSection.SAVED_PLACES,
     R.string.settings_import to SettingsSection.SAVED_PLACES,
     R.string.mapscreen_section_lists to SettingsSection.SAVED_PLACES,
-    // Privacy
-    R.string.settings_privacy_button to SettingsSection.PRIVACY,
-    R.string.settings_google_free to SettingsSection.PRIVACY,
-    R.string.settings_google_uses to SettingsSection.PRIVACY,
-    R.string.settings_google_free_links to SettingsSection.PRIVACY,
-    R.string.settings_maps_links to SettingsSection.PRIVACY,
+    // Rows that used to sit under Privacy now live on their own pages.
     R.string.settings_storage to SettingsSection.OFFLINE,
     R.string.settings_live_rechecks to SettingsSection.NAVIGATION,
-    R.string.settings_google_session to SettingsSection.PRIVACY,
-    R.string.settings_block_google_telemetry to SettingsSection.PRIVACY,
-    R.string.settings_google_usage to SettingsSection.PRIVACY,
-    R.string.settings_clear_history to SettingsSection.PRIVACY,
     // Diagnostics
     R.string.settings_share_diagnostics to SettingsSection.DIAGNOSTICS,
     R.string.settings_diag_redact to SettingsSection.DIAGNOSTICS,
@@ -442,8 +427,8 @@ private val SEARCH_INDEX: List<Pair<Int, SettingsSection>> = listOf(
     R.string.settings_places_source to SettingsSection.PLACES,
     R.string.settings_cameras_group to SettingsSection.NAVIGATION,
     R.string.voice_capture_examples_title to SettingsSection.SEARCH,
-    // About
-    R.string.settings_support to SettingsSection.ABOUT,
+    // Support, then the About rows that still open the preserved About page
+    R.string.settings_support to SettingsSection.SUPPORT,
     R.string.settings_version to SettingsSection.ABOUT,
     R.string.settings_update_auto to SettingsSection.ABOUT,
     R.string.settings_update_channel to SettingsSection.ABOUT,

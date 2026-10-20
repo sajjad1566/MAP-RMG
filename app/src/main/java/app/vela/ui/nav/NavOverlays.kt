@@ -86,6 +86,7 @@ import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
@@ -94,7 +95,9 @@ import app.vela.R
 import app.vela.core.model.Lane
 import app.vela.core.model.ManeuverType
 import app.vela.ui.SheetPalette
+import app.vela.ui.arrivalClockSplit
 import app.vela.ui.formatArrivalClock
+import app.vela.ui.formatDistanceSplit
 import kotlinx.coroutines.launch
 import app.vela.ui.formatDistance
 import app.vela.ui.formatDuration
@@ -570,7 +573,12 @@ private fun FitText(
 
 /** [FitText] for the trip time: the numbers in semibold, the units in the regular weight. */
 @Composable
-private fun FitDuration(text: String, style: androidx.compose.ui.text.TextStyle, color: Color) {
+private fun FitDuration(
+    text: String,
+    style: androidx.compose.ui.text.TextStyle,
+    color: Color,
+    modifier: Modifier = Modifier,
+) {
     val scaleState = remember(text) { androidx.compose.runtime.mutableStateOf(1f) }
     val styled = remember(text) {
         androidx.compose.ui.text.buildAnnotatedString {
@@ -584,7 +592,78 @@ private fun FitDuration(text: String, style: androidx.compose.ui.text.TextStyle,
         styled, style = style, color = color, maxLines = 1, softWrap = false,
         fontSize = style.fontSize * scaleState.value,
         onTextLayout = { if (it.hasVisualOverflow && scaleState.value > 0.55f) scaleState.value *= 0.92f },
+        modifier = modifier,
     )
+}
+
+/** One labeled figure in the nav bar: its value (and unit) over a small label, both laid out by
+ *  the bar itself so the number and the Arabic word beside it can never be reordered. */
+@Composable
+private fun NavBarFigure(
+    label: String,
+    value: String,
+    unit: String?,
+    valueStyle: androidx.compose.ui.text.TextStyle,
+    valueColor: Color,
+    dimColor: Color,
+    modifier: Modifier = Modifier,
+) {
+    Column(modifier, horizontalAlignment = Alignment.CenterHorizontally) {
+        Row(verticalAlignment = Alignment.Bottom) {
+            FitText(
+                value,
+                style = valueStyle,
+                color = valueColor,
+                modifier = Modifier.weight(1f, fill = false),
+                resetKey = value,
+            )
+            if (unit != null) {
+                Spacer(Modifier.width(3.dp))
+                Text(unit, style = MaterialTheme.typography.labelLarge, color = dimColor, maxLines = 1, softWrap = false)
+            }
+        }
+        // Shrinks rather than ellipsizing: with the list and pause buttons both in the bar the
+        // half-column gets narrow, and "المسافة المتبقية" cut to "المسافة المتبق..." says nothing.
+        FitText(label, style = MaterialTheme.typography.labelSmall, color = dimColor, resetKey = label)
+    }
+}
+
+/** The bar's distance unit in the app's language ("كم" / "م" in Arabic), beside a number that
+ *  [formatDistanceSplit] already rounded the way [formatDistance] rounds it. */
+@Composable
+private fun navUnitLabel(unit: app.vela.ui.DistanceUnit): String = stringResource(
+    when (unit) {
+        app.vela.ui.DistanceUnit.METERS -> R.string.nav_unit_m
+        app.vela.ui.DistanceUnit.KILOMETERS -> R.string.nav_unit_km
+        app.vela.ui.DistanceUnit.FEET -> R.string.nav_unit_ft
+        app.vela.ui.DistanceUnit.MILES -> R.string.nav_unit_mi
+    },
+)
+
+/** The trip's time left in the app's language and with Western digits ("16 دقيقة", "1 ساعة و25
+ *  دقيقة"), built from plurals so Arabic agrees with the number instead of printing "2 دقيقة". */
+@Composable
+private fun timeLeftText(seconds: Double): String {
+    val totalMin = (seconds / 60.0).roundToInt()
+    if (totalMin < 1) return stringResource(R.string.nav_time_under_minute)
+    val hours = totalMin / 60
+    val minutes = totalMin % 60
+    val h = if (hours > 0) pluralStringResource(R.plurals.nav_time_hours, hours, hours) else null
+    val m = if (minutes > 0) pluralStringResource(R.plurals.nav_time_minutes, minutes, minutes) else null
+    return when {
+        h != null && m != null -> stringResource(R.string.nav_time_join, h, m)
+        h != null -> h
+        m != null -> m
+        else -> stringResource(R.string.nav_time_under_minute)
+    }
+}
+
+/** The arrival clock with its day-period word ("11:13 ص"), or the bare 24-hour time. */
+@Composable
+private fun arrivalText(seconds: Double): String {
+    val (clock, beforeNoon) = arrivalClockSplit(seconds)
+    return if (beforeNoon == null) clock
+        else clock + "\u00A0" + stringResource(if (beforeNoon) R.string.nav_time_am else R.string.nav_time_pm)
 }
 
 @Composable
@@ -1147,6 +1226,19 @@ fun NavBarTop(
             val shownSeconds = leg?.stop?.seconds ?: remainingSeconds
             val shownMeters = leg?.stop?.distanceM ?: remainingDistanceMeters
             val stopName = leg?.stop?.label?.takeIf { it.isNotBlank() } ?: stringResource(R.string.nav_bar_your_stop)
+            // While PAUSED nothing updates the nav state, so nothing would recompose this and the
+            // arrival clock would sit frozen at whatever minute the stop began - the one figure that
+            // should keep moving while you stand still, because it is what the stop is costing you.
+            // A half-minute tick keeps it honest.
+            var pausedTick by remember { mutableStateOf(0) }
+            LaunchedEffect(paused) { while (paused) { kotlinx.coroutines.delay(30_000); pausedTick++ } }
+            val statusText = when {
+                paused -> stringResource(R.string.nav_paused)
+                offRoute -> stringResource(R.string.nav_rerouting)
+                else -> null
+            }
+            val (distanceNumber, distanceUnit) = formatDistanceSplit(shownMeters)
+            val distanceText = distanceNumber + "\u00A0" + navUnitLabel(distanceUnit)
             // A screen reader hears both, in words: the stop's figures, then the whole trip's.
             val figuresCd = leg?.let {
                 stringResource(
@@ -1154,35 +1246,74 @@ fun NavBarTop(
                     formatDuration(it.stop.seconds), formatDistance(it.stop.distanceM), stopName, formatArrivalClock(it.stop.seconds),
                     formatDuration(it.tripSeconds), formatDistance(it.tripMeters), formatArrivalClock(it.tripSeconds),
                 )
+            } ?: run {
+                val headline = stringResource(R.string.nav_figures_cd, distanceText, arrivalText(shownSeconds), timeLeftText(shownSeconds))
+                if (statusText == null) headline else headline + " " + statusText
             }
             Column(
-                Modifier.weight(1f).then(
-                    if (figuresCd != null) Modifier.clearAndSetSemantics { contentDescription = figuresCd } else Modifier,
-                ),
+                Modifier.weight(1f).clearAndSetSemantics { contentDescription = figuresCd },
                 horizontalAlignment = Alignment.CenterHorizontally,
             ) {
-                // Both lines SHRINK to fit rather than wrap or ellipsize: the 54dp buttons (and
-                // any Interface-size scale) squeezed the column and "1 hr 25 min" wrapped rough,
-                // while ellipsis on the second line cut off the arrival TIME (user 2026-07-11).
-                FitDuration(formatDuration(shownSeconds), style = MaterialTheme.typography.headlineSmall, color = etaColor)
-                // While PAUSED nothing updates the nav state, so nothing would recompose this and
-                // the arrival clock would sit frozen at whatever minute the stop began - the one
-                // figure that should keep moving while you stand still, because it is what the stop
-                // is costing you. A half-minute tick keeps it honest.
-                var pausedTick by remember { mutableStateOf(0) }
-                LaunchedEffect(paused) { while (paused) { kotlinx.coroutines.delay(30_000); pausedTick++ } }
-                FitText(
-                    formatDistance(shownMeters) +
-                        " · " + formatArrivalClock(shownSeconds).also { pausedTick } +
-                        when {
-                            paused -> " · " + stringResource(R.string.nav_paused)
-                            offRoute -> " · " + stringResource(R.string.nav_rerouting)
-                            else -> ""
-                        },
-                    // A size up and nearly white: this line is read at a glance too.
-                    style = MaterialTheme.typography.bodyLarge,
-                    color = if (paused) MaterialTheme.colorScheme.primary else if (look.onDark) androidx.compose.ui.graphics.Color(0xFFDADCE0) else barDim,
-                )
+                // The two figures a driver reads at a glance: the distance left and the arrival
+                // clock, each its own column with its own label and a hairline between them. They
+                // are separate Text nodes rather than one "10.2 km · 11:13 PM" string because an
+                // RTL layout let the bidi algorithm reorder the mixed Latin/Arabic run, which ran
+                // the figures together in Arabic. The distance keeps the larger number; the clock
+                // is a size down and reads "11:13 ص" (or "19:42" on a 24-hour phone).
+                Row(
+                    Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.Center,
+                    verticalAlignment = Alignment.CenterVertically,
+                ) {
+                    NavBarFigure(
+                        label = stringResource(R.string.nav_remaining_distance),
+                        value = distanceNumber,
+                        unit = navUnitLabel(distanceUnit),
+                        valueStyle = MaterialTheme.typography.titleLarge,
+                        valueColor = barInk,
+                        dimColor = barDim,
+                        modifier = Modifier.weight(1f),
+                    )
+                    Box(
+                        Modifier
+                            .padding(horizontal = 6.dp)
+                            .width(1.dp)
+                            .height(28.dp)
+                            .background(barDim.copy(alpha = 0.35f)),
+                    )
+                    val (clock, beforeNoon) = arrivalClockSplit(shownSeconds).also { pausedTick }
+                    NavBarFigure(
+                        label = stringResource(R.string.nav_expected_arrival),
+                        value = clock,
+                        unit = beforeNoon?.let { stringResource(if (it) R.string.nav_time_am else R.string.nav_time_pm) },
+                        valueStyle = MaterialTheme.typography.titleMedium,
+                        valueColor = barInk,
+                        dimColor = barDim,
+                        modifier = Modifier.weight(1f),
+                    )
+                }
+                Spacer(Modifier.height(1.dp))
+                // The trip's time left keeps its own line under the two figures, labeled so the
+                // number is never read as another arrival clock. Traffic colors it as before.
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Text(
+                        stringResource(R.string.nav_remaining_time) + ":",
+                        style = MaterialTheme.typography.labelSmall,
+                        color = barDim,
+                        maxLines = 1,
+                    )
+                    Spacer(Modifier.width(4.dp))
+                    FitDuration(
+                        timeLeftText(shownSeconds),
+                        style = MaterialTheme.typography.labelLarge,
+                        color = if (paused) MaterialTheme.colorScheme.primary else etaColor,
+                        modifier = Modifier.weight(1f, fill = false),
+                    )
+                    if (statusText != null) {
+                        Spacer(Modifier.width(6.dp))
+                        Text("· " + statusText, style = MaterialTheme.typography.labelSmall, color = barDim, maxLines = 1)
+                    }
+                }
                 // Which stop the figures above are for; a long name is cut, never the figures.
                 if (leg != null) {
                     Text(
@@ -1193,7 +1324,7 @@ fun NavBarTop(
                         overflow = TextOverflow.Ellipsis,
                     )
                     FitText(
-                        stringResource(R.string.nav_bar_trip, formatDuration(leg.tripSeconds), formatArrivalClock(leg.tripSeconds).also { pausedTick }),
+                        stringResource(R.string.nav_bar_trip, timeLeftText(leg.tripSeconds), arrivalText(leg.tripSeconds).also { pausedTick }),
                         style = MaterialTheme.typography.labelLarge,
                         color = barDim,
                     )

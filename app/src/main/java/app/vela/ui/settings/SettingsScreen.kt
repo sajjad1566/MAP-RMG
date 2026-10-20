@@ -27,6 +27,7 @@ import app.vela.ui.settings.sections.OfflineSettingsScreen
 import app.vela.ui.settings.sections.PlacesSettingsScreen
 import app.vela.ui.settings.sections.SavedPlacesSettingsScreen
 import app.vela.ui.settings.sections.SearchSettingsScreen
+import app.vela.ui.settings.sections.SupportSettingsScreen
 import app.vela.ui.settings.sections.VoiceSettingsScreen
 
 // A page preview must not steal keypad focus from the page the user is leaving.
@@ -111,6 +112,14 @@ fun SettingsScreen(vm: MapViewModel, navController: androidx.navigation.NavHostC
                         SettingsSection.PERFORMANCE -> PerformanceSettingsScreen(onBack = toHub)
                         SettingsSection.DIAGNOSTICS -> DiagnosticsSettingsScreen(vm, onBack = toHub, onCloseSettings = close)
                         SettingsSection.ABOUT -> AboutSettingsScreen(vm, onBack = toHub)
+                        SettingsSection.SUPPORT -> SupportSettingsScreen(
+                            onBack = toHub,
+                            // Plain navigate (no popUpTo): Back from About returns to Support, and
+                            // Back from Support still returns to the hub.
+                            onOpenAppInfo = {
+                                navController.navigate(SettingsSection.ABOUT.route) { launchSingleTop = true }
+                            },
+                        )
                     }
                 }
             }
