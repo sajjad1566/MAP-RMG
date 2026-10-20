@@ -558,6 +558,7 @@
     <string name="support_app_info_group">التطبيق</string>
     <string name="support_app_info">الإصدار والتحديثات</string>
     <string name="support_app_info_hint">رقم الإصدار، وتحديث التطبيق، والتراخيص.</string>
+    <string name="settings_privacy_door_hint">مفتاح إيقاف Google، ومدة الجلسة، ومسح السجل.</string>
     <string name="donate_no_browser">لا يوجد متصفح مثبَّت لفتح صفحة التبرّع</string>
     <string name="settings_version">الإصدار</string>
     <string name="settings_version_line">MAP-RMG %1$s  (بنية %2$d)</string>

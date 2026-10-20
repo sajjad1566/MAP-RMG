@@ -111,7 +111,12 @@ fun SettingsScreen(vm: MapViewModel, navController: androidx.navigation.NavHostC
                         SettingsSection.PRIVACY -> PrivacySettingsScreen(vm, onBack = toHub)
                         SettingsSection.PERFORMANCE -> PerformanceSettingsScreen(onBack = toHub)
                         SettingsSection.DIAGNOSTICS -> DiagnosticsSettingsScreen(vm, onBack = toHub, onCloseSettings = close)
-                        SettingsSection.ABOUT -> AboutSettingsScreen(vm, onBack = toHub)
+                        SettingsSection.ABOUT -> AboutSettingsScreen(
+                            vm,
+                            onBack = toHub,
+                            // Plain navigate: Back from Privacy returns to About, then to Support.
+                            onOpenPrivacy = { navController.navigate(SettingsSection.PRIVACY.route) { launchSingleTop = true } },
+                        )
                         SettingsSection.SUPPORT -> SupportSettingsScreen(
                             onBack = toHub,
                             // Plain navigate (no popUpTo): Back from About returns to Support, and

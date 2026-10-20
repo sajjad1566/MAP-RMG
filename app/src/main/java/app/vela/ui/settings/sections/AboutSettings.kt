@@ -45,7 +45,14 @@ import app.vela.ui.dpadRowSibling
 
 /** About sub-screen: the project blurb, support/donate, version + the in-app updater. */
 @Composable
-internal fun AboutSettingsScreen(vm: MapViewModel, onBack: () -> Unit) {
+internal fun AboutSettingsScreen(
+    vm: MapViewModel,
+    onBack: () -> Unit,
+    // The hub no longer lists a Privacy card, so this page (reached from Support) keeps the one
+    // door onto the privacy page: the Google-off switch, session rotation and Clear history all
+    // still have a way in. Nothing on that page was removed.
+    onOpenPrivacy: () -> Unit = {},
+) {
     val state by vm.state.collectAsStateWithLifecycle()
     val context = LocalContext.current
     val prefs = remember { context.getSharedPreferences("vela_settings", android.content.Context.MODE_PRIVATE) }
@@ -292,6 +299,18 @@ Onboarding.openDonate(context)
         }
         updateStatus?.let { Hint(it) }
         Spacer(Modifier.height(10.dp))
+        }
+        Spacer(Modifier.height(8.dp))
+        SettingsGroup(title = stringResource(R.string.settings_privacy)) {
+            Text(
+                stringResource(R.string.settings_privacy),
+                style = MaterialTheme.typography.bodyLarge,
+                modifier = Modifier
+                    .dpadHighlight()
+                    .clickable(onClick = onOpenPrivacy)
+                    .padding(horizontal = 16.dp, vertical = 12.dp),
+            )
+            Hint(stringResource(R.string.settings_privacy_door_hint))
         }
         // Breathing room under the last control so the button doesn't sit right on the
         // gesture bar at the end of the scroll.

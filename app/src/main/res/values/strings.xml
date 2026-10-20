@@ -492,6 +492,7 @@
     <string name="support_app_info_group">App</string>
     <string name="support_app_info">Version and updates</string>
     <string name="support_app_info_hint">Version number, app updates and licenses.</string>
+    <string name="settings_privacy_door_hint">The Google-off switch, session length and clearing history.</string>
     <string name="donate_no_browser">No browser installed to open the donate page</string>
     <string name="settings_version">Version</string>
     <string name="settings_version_line">MAP-RMG %1$s  (build %2$d)</string> <!-- format -->
