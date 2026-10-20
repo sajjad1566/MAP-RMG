@@ -65,14 +65,17 @@ jobs:
         uses: gradle/actions/setup-gradle@0723195856401067f7a2779048b490ace7a47d7c # v5.0.2
 
       - name: Decode the signing keystore (optional)
+        id: sign
         env:
           KEYSTORE_B64: ${{ secrets.VELA_KEYSTORE_BASE64 }}
         run: |
           if [ -n "$KEYSTORE_B64" ]; then
             echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/maprmg-release.jks"
             echo "Decoded the release keystore."
+            echo "signed=release" >> "$GITHUB_OUTPUT"
           else
             echo "No keystore secret: the APK will be debug-signed (installable, not updatable)."
+            echo "signed=debug" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Fetch the vendored binaries
@@ -151,15 +154,29 @@ jobs:
           if-no-files-found: error
 
       - name: Publish as a release (optional)
-        # Only on a manual run with "publish" ticked. A NON-prerelease release on a v0.5.<run> tag,
-        # which is exactly what the in-app updater's stable channel asks for.
+        # Only on a manual run with "publish" ticked. Release-signed, it is a NON-prerelease
+        # release on a v0.5.<run> tag, which is what the in-app updater's stable channel asks
+        # for; debug-signed, it is marked prerelease so the stable channel never offers it.
         if: github.event_name == 'workflow_dispatch' && inputs.publish
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          # The signing state goes into the notes and the prerelease flag: a debug-signed build
+          # is installable but cannot update an existing install, so it is never presented as a
+          # plain stable release the in-app updater should take.
+          if [ "${{ steps.sign.outputs.signed }}" = "release" ]; then
+            SIGN="release keystore"
+            FLAGS=""
+          else
+            SIGN="Android debug key (test build, cannot install over an existing install)"
+            FLAGS="--prerelease"
+          fi
           gh release create "v${{ steps.ver.outputs.name }}" \
             --target "$GITHUB_SHA" \
             --title "MAP-RMG ${{ steps.ver.outputs.name }}" \
+            $FLAGS \
             --notes "versionName: ${{ steps.ver.outputs.name }}
-          versionCode: ${{ steps.ver.outputs.code }}" \
+          versionCode: ${{ steps.ver.outputs.code }}
+          applicationId: com.maprmg.navigation
+          signed with: $SIGN" \
             "${{ steps.apk.outputs.path }}"
